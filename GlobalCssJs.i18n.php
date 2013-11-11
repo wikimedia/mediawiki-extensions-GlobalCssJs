@@ -11,6 +11,7 @@ $messages = array();
  * @author Ryan Schmidt
  */
 $messages['en'] = array(
+	'globalcssjs-desc' => 'Allows global CSS and JS on a "central" wiki to be loaded for all wikis in the farm',
 	'tog-enableglobalcssjs' => 'Enable Global User CSS and JS',
 );
 
@@ -18,6 +19,7 @@ $messages['en'] = array(
  * @author Kunal Mehta
  */
 $messages['qqq'] = array(
+	'globalcssjs-desc' => '{{desc|name=Global CSS/JS|url=http://www.mediawiki.org/wiki/Extension:GlobalCssJs}}',
 	'tog-enableglobalcssjs' => 'Preference toggle to enable Global User CSS and JS',
 );
 

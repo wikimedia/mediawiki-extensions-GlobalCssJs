@@ -16,7 +16,7 @@ $wgExtensionCredits['other'][] = array(
 'author' => 'Ryan Schmidt',
 'version' => '2.0.1',
 'url' => 'http://www.mediawiki.org/wiki/Extension:GlobalCssJs',
-'description' => 'Allows global CSS and JS on a "central" wiki to be loaded for all wikis in the farm',
+'descriptionmsg' => 'globalcssjs-desc',
 );
  
 $wgHooks['UserToggles'][] = 'wfGlobalCssJsAddPrefToggle';
