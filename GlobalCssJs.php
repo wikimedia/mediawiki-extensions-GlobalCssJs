@@ -3,12 +3,12 @@
 * Global CSS/JS loader by Ryan Schmidt
 * Put global site CSS/JS in the "central" wiki's MediaWiki:Global.css and MediaWiki:Global.js respectively
 * Put global user CSS/JS in the "central" wiki's User:Yourname/global.css and User:Yourname/global.js respectively
-* See http://www.mediawiki.org/wiki/Extension:GlobalCssJs
+* See https://www.mediawiki.org/wiki/Extension:GlobalCssJs
 */
  
-if(!defined('MEDIAWIKI')) {
-    echo("This is an extension to the MediaWiki software and cannot be used standalone");
-    die(1);
+if( !defined( 'MEDIAWIKI' ) ) {
+    echo( "This is an extension to the MediaWiki software and cannot be used standalone" );
+    die;
 }
  
 $wgExtensionCredits['other'][] = array(
@@ -19,23 +19,29 @@ $wgExtensionCredits['other'][] = array(
 'description' => 'Allows global CSS and JS on a "central" wiki to be loaded for all wikis in the farm',
 );
  
-$wgExtensionFunctions[] = 'efGlobalCssJs';
- 
 $wgHooks['UserToggles'][] = 'wfGlobalCssJsAddPrefToggle';
 $wgHooks['BeforePageDisplay'][] = 'wfGlobalCssJs';
+$wgExtensionMessagesFiles['GlobalCssJs'] = __DIR__ . '/GlobalCssJs.i18n.php';
+
  
 function wfGlobalCssJsAddPrefToggle(&$extraToggles) {
     $extraToggles[] = 'enableglobalcssjs';
     return true;
 }
- 
-function wfGlobalCssJs(&$out) {
-    global $wgGlobalCssJsUrl, $wgUser, $wgAllowUserCss, $wgAllowUserJs, $wgJsMimeType, $wgUseSiteCss, $wgUseSiteJs;
-    if( !isset($wgGlobalCssJsUrl) || !$wgUser->isLoggedIn() )
+
+/**
+ * @param OutputPage $out
+ * @param Skin $skin
+ * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
+ * @return bool
+ */
+function wfGlobalCssJs( OutputPage &$out, Skin &$skin ) {
+    global $wgGlobalCssJsUrl, $wgAllowUserCss, $wgAllowUserJs, $wgJsMimeType, $wgUseSiteCss, $wgUseSiteJs;
+    if( !isset($wgGlobalCssJsUrl) || !$out->getUser()->isLoggedIn() )
             return true;
-    $name = urlencode($wgUser->getName());
+    $name = urlencode($out->getUser()->getName());
     $url = $wgGlobalCssJsUrl; // just makes the lines shorter, nothing more.
-    $toggle = $wgUser->getBoolOption('enableglobalcssjs');
+    $toggle = $out->getUser()->getBoolOption('enableglobalcssjs');
     if($wgUseSiteCss)
         $out->addScript('<style type="text/css">/*<![CDATA[*/ @import "' . $url . '?title=MediaWiki:Global.css&action=raw&ctype=text/css";/*]]>*/</style>' . "\n");
     if($wgUseSiteJs)
@@ -45,11 +51,4 @@ function wfGlobalCssJs(&$out) {
     if($wgAllowUserJs)
         $out->addScript('<script type="' . $wgJsMimeType . '" src="' . $url . '?title=User:' . $name . '/global.js&action=raw&ctype=' . $wgJsMimeType . 'dontcountme=s"></script>' . "\n");
     return true;
-}
- 
-function efGlobalCssJs() {
-    global $wgMessageCache;
-    require_once( dirname( __FILE__ ) . '/GlobalCssJs.i18n.php' );
-    foreach( efGlobalCssJsMessages() as $lang => $messages )
-        $wgMessageCache->addMessages( $messages, $lang );
 }
