@@ -15,7 +15,7 @@ $wgExtensionCredits['other'][] = array(
 'name' => 'Global CSS/JS',
 'author' => 'Ryan Schmidt',
 'version' => '2.0.1',
-'url' => 'http://www.mediawiki.org/wiki/Extension:GlobalCssJs',
+'url' => 'https://www.mediawiki.org/wiki/Extension:GlobalCssJs',
 'descriptionmsg' => 'globalcssjs-desc',
 );
  

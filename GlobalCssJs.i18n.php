@@ -19,7 +19,7 @@ $messages['en'] = array(
  * @author Kunal Mehta
  */
 $messages['qqq'] = array(
-	'globalcssjs-desc' => '{{desc|name=Global CSS/JS|url=http://www.mediawiki.org/wiki/Extension:GlobalCssJs}}',
+	'globalcssjs-desc' => '{{desc|name=Global CSS/JS|url=https://www.mediawiki.org/wiki/Extension:GlobalCssJs}}',
 	'tog-enableglobalcssjs' => 'Preference toggle to enable Global User CSS and JS',
 );
 
