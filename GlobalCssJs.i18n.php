@@ -9,9 +9,12 @@ $messages = array();
 
 /** English
  * @author Ryan Schmidt
+ * @author Kunal Mehta
  */
 $messages['en'] = array(
 	'globalcssjs-desc' => 'Allows CSS and JavaScript on a central wiki to be loaded for all connected wikis',
+	'globalcssjs-warning-js' => 'Any JavaScript added to this page will be loaded on all wikis where you have an account.',
+	'globalcssjs-warning-css' => 'Any CSS added to this page will be loaded on all wikis where you have an account.',
 );
 
 /** Message documentation (Message documentation)
@@ -20,6 +23,8 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'globalcssjs-desc' => '{{desc|name=Global CSS/JS|url=https://www.mediawiki.org/wiki/Extension:GlobalCssJs}}',
 	'tog-enableglobalcssjs' => 'Preference toggle to enable Global User CSS and JS',
+	'globalcssjs-warning-js' => 'Notice on top of edit window',
+	'globalcssjs-warning-css' => 'Notice on top of edit window',
 );
 
 /** Asturian (asturianu)

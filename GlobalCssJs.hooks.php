@@ -62,4 +62,31 @@ class GlobalCssJsHooks {
 
 		return true;
 	}
+
+	/**
+	 * @param EditPage $editPage
+	 * @param OutputPage $output
+	 * @return bool
+	 */
+	static function onEditPageshowEditForminitial( EditPage $editPage, OutputPage $output ) {
+		global $wgGlobalCssJsConfig;
+		$user = $output->getUser();
+		if ( $wgGlobalCssJsConfig['wiki'] === wfWikiID() && $user->isLoggedIn()
+			&& $editPage->formtype == 'initial' && $editPage->isCssJsSubpage
+		) {
+			$title = $editPage->getTitle();
+			$name = $user->getName();
+			if ( $editPage->isJsSubpage && $title->getText() == $name . '/global.js' ) {
+				$msg = 'globalcssjs-warning-js';
+			} elseif ( $editPage->isCssSubpage && $title->getText() == $name . '/global.css' ) {
+				$msg = 'globalcssjs-warning-css';
+			} else {
+				// CSS or JS page, but not a global one
+				return true;
+			}
+			$output->wrapWikiMsg( "<div id='mw-$msg'>\n$1\n</div>", array( $msg ) );
+		}
+		return true;
+	}
+
 }

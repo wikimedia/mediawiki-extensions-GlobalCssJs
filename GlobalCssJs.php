@@ -60,3 +60,4 @@ $wgExtensionFunctions[] = function () {
 
 $wgHooks['BeforePageDisplay'][] = 'GlobalCssJsHooks::onBeforePageDisplay';
 $wgHooks['ResourceLoaderRegisterModules'][] = 'GlobalCssJsHooks::onResourceLoaderRegisterModules';
+$wgHooks['EditPage::showEditForm:initial'][] = 'GlobalCssJsHooks::onEditPageshowEditForminitial';
