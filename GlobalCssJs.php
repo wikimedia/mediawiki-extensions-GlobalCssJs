@@ -19,14 +19,17 @@ $wgExtensionCredits['other'][] = array(
 'descriptionmsg' => 'globalcssjs-desc',
 );
  
-$wgHooks['UserToggles'][] = 'wfGlobalCssJsAddPrefToggle';
+$wgHooks['GetPreferences'][] = 'wfGlobalCssJsAddPrefToggle';
 $wgHooks['BeforePageDisplay'][] = 'wfGlobalCssJs';
 $wgExtensionMessagesFiles['GlobalCssJs'] = __DIR__ . '/GlobalCssJs.i18n.php';
 
- 
-function wfGlobalCssJsAddPrefToggle(&$extraToggles) {
-    $extraToggles[] = 'enableglobalcssjs';
-    return true;
+
+function wfGlobalCssJsAddPrefToggle( User $user, array &$preferences ) {
+	$preferences['enableglobalcssjs'] = array(
+		'type' => 'toggle',
+		'label-message' => 'tog-enableglobalcssjs',
+		'section' => 'rendering/skin'
+	);
 }
 
 /**
