@@ -11,8 +11,8 @@ $messages = array();
  * @author Ryan Schmidt
  */
 $messages['en'] = array(
-	'globalcssjs-desc' => 'Allows global CSS and JS on a "central" wiki to be loaded for all wikis in the farm',
-	'tog-enableglobalcssjs' => 'Enable Global User CSS and JS',
+	'globalcssjs-desc' => 'Allows global CSS and JS on a central wiki to be loaded for all wikis in the farm',
+	'tog-enableglobalcssjs' => 'Enable global user CSS and JavaScript',
 );
 
 /** Message documentation
