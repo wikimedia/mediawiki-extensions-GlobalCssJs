@@ -15,7 +15,7 @@ $messages['en'] = array(
 	'tog-enableglobalcssjs' => 'Enable global user CSS and JavaScript',
 );
 
-/** Message documentation
+/** Message documentation (Message documentation)
  * @author Kunal Mehta
  */
 $messages['qqq'] = array(
@@ -23,23 +23,66 @@ $messages['qqq'] = array(
 	'tog-enableglobalcssjs' => 'Preference toggle to enable Global User CSS and JS',
 );
 
-/** German
+/** German (Deutsch)
+ * @author Metalhead64
  * @author Tim Weyer (SVG)
  */
 $messages['de'] = array(
-	'tog-enableglobalcssjs' => 'Erlaubt globale Benuter-CSS und -JS',
+	'globalcssjs-desc' => 'Ermöglicht globales CSS und JS auf einem zentralen Wiki, das für alle Wikis in der Farm geladen wird',
+	'tog-enableglobalcssjs' => 'Globales Benutzer-CSS und -JavaScript aktivieren',
 );
 
-/** Finnish
+/** Finnish (suomi)
  * @author Jack Phoenix
  */
 $messages['fi'] = array(
 	'tog-enableglobalcssjs' => 'Ota käyttöön käyttäjäkohtainen globaali CSS ja JS',
 );
 
-/** Russian
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'globalcssjs-desc' => 'Permite a carga de estilos CSS e JS globais desde un wiki central en todos os wikis da granxa',
+	'tog-enableglobalcssjs' => 'Activar o CSS e o JavaScript de usuario',
+);
+
+/** Italian (italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'globalcssjs-desc' => 'Permette a CSS e JS globali su un wiki centrale di essere caricati in tutti i wiki nella farm',
+	'tog-enableglobalcssjs' => 'Abilita CSS e JavaScript utente globali',
+);
+
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'globalcssjs-desc' => 'ファーム内のすべてのウィキで読み込まれる、中央管理ウィキ上のグローバル CSS および JavaScript を使用できるようにする',
+	'tog-enableglobalcssjs' => 'グローバル利用者 CSS および JavaScript を有効にする',
+);
+
+/** Macedonian (македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'tog-enableglobalcssjs' => 'Вклучи глобални лични CSS и JavaScript',
+);
+
+/** Russian (русский)
+ * @author Okras
  * @author Saint Johann
  */
 $messages['ru'] = array(
+	'globalcssjs-desc' => 'Позволяет использовать глобальные CSS и JS на центральном вики-проекте, который будет загружаться для всех подчинённых вики-проектов.',
 	'tog-enableglobalcssjs' => 'Включить глобальные личные CSS и JS',
+);
+
+/** Ukrainian (українська)
+ * @author Andriykopanytsia
+ */
+$messages['uk'] = array(
+	'globalcssjs-desc' => 'Дозволяє використовувати глобальні CSS і JS на центральному вікі-проекті, який буде завантажуватися для всіх підлеглих вікі-проектів.',
+	'tog-enableglobalcssjs' => 'Увімкнути глобальні особисті CSS і JS',
 );
