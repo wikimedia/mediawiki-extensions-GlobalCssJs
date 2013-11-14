@@ -39,6 +39,14 @@ $messages['fi'] = array(
 	'tog-enableglobalcssjs' => 'Ota käyttöön käyttäjäkohtainen globaali CSS ja JS',
 );
 
+/** French (français)
+ * @author Ltrlg
+ */
+$messages['fr'] = array(
+	'globalcssjs-desc' => 'Permet à tous les wikis d’une ferme de wikis de charger des scripts et styles depuis un wiki central',
+	'tog-enableglobalcssjs' => 'Activer les styles et scripts utilisateurs globaux',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
@@ -67,6 +75,7 @@ $messages['ja'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
+	'globalcssjs-desc' => 'Овозможува вчитување на глобален CSS и JS на централно вики за сите викија на фармата',
 	'tog-enableglobalcssjs' => 'Вклучи глобални лични CSS и JavaScript',
 );
 
