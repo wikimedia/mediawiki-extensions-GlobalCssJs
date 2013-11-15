@@ -71,6 +71,14 @@ $messages['ja'] = array(
 	'tog-enableglobalcssjs' => 'グローバル利用者 CSS および JavaScript を有効にする',
 );
 
+/** Korean (한국어)
+ * @author Hym411
+ */
+$messages['ko'] = array(
+	'globalcssjs-desc' => '전역 CSS 설정과 자바스크립트 설정을 중앙 위키에서 팜에 있는 모든 위키에서 불러올수 있도록 허용',
+	'tog-enableglobalcssjs' => '전역 사용자 CSS와 자바스크립트 허용',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
