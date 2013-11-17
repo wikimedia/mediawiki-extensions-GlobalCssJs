@@ -87,6 +87,21 @@ $messages['mk'] = array(
 	'tog-enableglobalcssjs' => 'Вклучи глобални лични CSS и JavaScript',
 );
 
+/** Dutch (Nederlands)
+ * @author Breghtje
+ */
+$messages['nl'] = array(
+	'tog-enableglobalcssjs' => 'Globale gebruiker CSS en JavaScript inschakelen',
+);
+
+/** Norwegian Nynorsk (norsk nynorsk)
+ * @author Njardarlogar
+ */
+$messages['nn'] = array(
+	'globalcssjs-desc' => 'Gjer det mogeleg å lasta global CSS og JS frå ein sentral wiki til alle wikiane i wikigruppa',
+	'tog-enableglobalcssjs' => 'Slå på global brukardefinert CSS og JavaScript',
+);
+
 /** Russian (русский)
  * @author Okras
  * @author Saint Johann
@@ -102,4 +117,12 @@ $messages['ru'] = array(
 $messages['uk'] = array(
 	'globalcssjs-desc' => 'Дозволяє використовувати глобальні CSS і JS на центральному вікі-проекті, який буде завантажуватися для всіх підлеглих вікі-проектів.',
 	'tog-enableglobalcssjs' => 'Увімкнути глобальні особисті CSS і JS',
+);
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Liuxinyu970226
+ */
+$messages['zh-hans'] = array(
+	'globalcssjs-desc' => '允许在一个中央wiki上的全局CSS和JS加载所有wiki农场',
+	'tog-enableglobalcssjs' => '启用全局用户CSS和JavaScript',
 );
