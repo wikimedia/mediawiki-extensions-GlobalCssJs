@@ -48,10 +48,10 @@ function wfGlobalCssJs( OutputPage &$out, Skin &$skin ) {
     if($wgUseSiteCss)
         $out->addScript('<style type="text/css">/*<![CDATA[*/ @import "' . $url . '?title=MediaWiki:Global.css&action=raw&ctype=text/css";/*]]>*/</style>' . "\n");
     if($wgUseSiteJs)
-        $out->addScript('<script type="' . $wgJsMimeType . '" src="' . $url . '?title=MediaWiki:Global.js&action=raw&ctype=' . $wgJsMimeType . 'dontcountme=s"></script>' . "\n");
+        $out->addScript('<script type="' . $wgJsMimeType . '" src="' . $url . '?title=MediaWiki:Global.js&action=raw&ctype=' . $wgJsMimeType . '&dontcountme=s"></script>' . "\n");
     if($wgAllowUserCss)
         $out->addScript('<style type="text/css">/*<![CDATA[*/ @import "' . $url . '?title=User:' . $name . '/global.css&action=raw&ctype=text/css"; /*]]>*/</style>' . "\n");
     if($wgAllowUserJs)
-        $out->addScript('<script type="' . $wgJsMimeType . '" src="' . $url . '?title=User:' . $name . '/global.js&action=raw&ctype=' . $wgJsMimeType . 'dontcountme=s"></script>' . "\n");
+        $out->addScript('<script type="' . $wgJsMimeType . '" src="' . $url . '?title=User:' . $name . '/global.js&action=raw&ctype=' . $wgJsMimeType . '&dontcountme=s"></script>' . "\n");
     return true;
 }
