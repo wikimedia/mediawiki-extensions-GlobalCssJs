@@ -23,6 +23,14 @@ $messages['qqq'] = array(
 	'tog-enableglobalcssjs' => 'Preference toggle to enable Global User CSS and JS',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'globalcssjs-desc' => "Permite cargar CSS y JS globales d'una wiki central en toles wikis de la granxa",
+	'tog-enableglobalcssjs' => "Activar CSS y JavaScript d'usuariu global",
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  * @author Tim Weyer (SVG)
