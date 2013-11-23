@@ -31,6 +31,13 @@ $messages['ast'] = array(
 	'tog-enableglobalcssjs' => "Activar CSS y JavaScript d'usuariu global",
 );
 
+/** Bengali (বাংলা)
+ * @author Aftab1995
+ */
+$messages['bn'] = array(
+	'tog-enableglobalcssjs' => 'উইকি বৈশ্বিক ব্যবহারকারী সিএসএস এবং জাভাস্ক্রিপ্ট সক্রিয় করো',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  * @author Tim Weyer (SVG)
