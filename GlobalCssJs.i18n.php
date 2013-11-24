@@ -47,6 +47,14 @@ $messages['de'] = array(
 	'tog-enableglobalcssjs' => 'Globales Benutzer-CSS und -JavaScript aktivieren',
 );
 
+/** Spanish (español)
+ * @author Fitoschido
+ */
+$messages['es'] = array(
+	'globalcssjs-desc' => 'Permite cargar CSS y JS en un wiki central para que éstos se carguen en todos los wikis del conjunto',
+	'tog-enableglobalcssjs' => 'Activar CSS y JavaScript global para el usuario',
+);
+
 /** Finnish (suomi)
  * @author Jack Phoenix
  */
