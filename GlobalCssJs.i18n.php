@@ -112,9 +112,10 @@ $messages['mk'] = array(
 
 /** Dutch (Nederlands)
  * @author Breghtje
+ * @author Siebrand
  */
 $messages['nl'] = array(
-	'tog-enableglobalcssjs' => 'Globale gebruiker CSS en JavaScript inschakelen',
+	'tog-enableglobalcssjs' => 'Globale gebruiker-CSS en -JavaScript inschakelen',
 );
 
 /** Norwegian Nynorsk (norsk nynorsk)
