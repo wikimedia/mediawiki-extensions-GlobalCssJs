@@ -115,6 +115,7 @@ $messages['mk'] = array(
  * @author Siebrand
  */
 $messages['nl'] = array(
+	'globalcssjs-desc' => "Maakt het mogelijk om CSS en JavaScript op een centrale wiki op te slaan en die in alle aangesloten wiki's te gebruiken",
 	'tog-enableglobalcssjs' => 'Globale gebruiker-CSS en -JavaScript inschakelen',
 );
 
