@@ -136,6 +136,13 @@ $messages['ru'] = array(
 	'tog-enableglobalcssjs' => 'Включить глобальные личные CSS и JS',
 );
 
+/** Swedish (svenska)
+ * @author Tobulos1
+ */
+$messages['sv'] = array(
+	'tog-enableglobalcssjs' => 'Aktiverar global användare för CSS och JavaScript',
+);
+
 /** Ukrainian (українська)
  * @author Andriykopanytsia
  */
