@@ -43,7 +43,7 @@ $messages['bn'] = array(
  * @author Tim Weyer (SVG)
  */
 $messages['de'] = array(
-	'globalcssjs-desc' => 'Ermöglicht globales CSS und JS auf einem zentralen Wiki, das für alle Wikis in der Farm geladen wird',
+	'globalcssjs-desc' => 'Ermöglicht CSS und JavaScript auf einem zentralen Wiki, das für alle verbundenen Wikis geladen wird',
 	'tog-enableglobalcssjs' => 'Globales Benutzer-CSS und -JavaScript aktivieren',
 );
 
@@ -63,10 +63,11 @@ $messages['fi'] = array(
 );
 
 /** French (français)
+ * @author Gomoko
  * @author Ltrlg
  */
 $messages['fr'] = array(
-	'globalcssjs-desc' => 'Permet à tous les wikis d’une ferme de wikis de charger des scripts et styles depuis un wiki central',
+	'globalcssjs-desc' => 'Permet à tous les wikis connectés d’une ferme de wikis de charger des fichiers CSS et JavaScript depuis un wiki central',
 	'tog-enableglobalcssjs' => 'Activer les styles et scripts utilisateurs globaux',
 );
 
@@ -90,7 +91,7 @@ $messages['it'] = array(
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'globalcssjs-desc' => 'ファーム内のすべてのウィキで読み込まれる、中央管理ウィキ上のグローバル CSS および JavaScript を使用できるようにする',
+	'globalcssjs-desc' => '接続されたすべてのウィキで読み込まれる、中央管理ウィキ上の CSS および JavaScript を使用できるようにする',
 	'tog-enableglobalcssjs' => 'グローバル利用者 CSS および JavaScript を有効にする',
 );
 
@@ -100,6 +101,13 @@ $messages['ja'] = array(
 $messages['ko'] = array(
 	'globalcssjs-desc' => '전역 CSS 설정과 자바스크립트 설정을 중앙 위키에서 팜에 있는 모든 위키에서 불러올수 있도록 허용',
 	'tog-enableglobalcssjs' => '전역 사용자 CSS와 자바스크립트 허용',
+);
+
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'globalcssjs-desc' => 'Erlaabt et datt CSS a JavaScript vun enger zentraler Wiki fir all verbonne Wikie geluede ginn',
 );
 
 /** Macedonian (македонски)
@@ -147,7 +155,7 @@ $messages['sv'] = array(
  * @author Andriykopanytsia
  */
 $messages['uk'] = array(
-	'globalcssjs-desc' => 'Дозволяє використовувати глобальні CSS і JS на центральному вікі-проекті, який буде завантажуватися для всіх підлеглих вікі-проектів.',
+	'globalcssjs-desc' => 'Дозволяє використовувати CSS і JavaScript на центральному вікі-проекті, який буде завантажуватися для всіх підлеглих вікі-проектів.',
 	'tog-enableglobalcssjs' => 'Увімкнути глобальні особисті CSS і JS',
 );
 
