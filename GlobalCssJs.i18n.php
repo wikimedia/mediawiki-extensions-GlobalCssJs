@@ -83,7 +83,7 @@ $messages['gl'] = array(
  * @author Beta16
  */
 $messages['it'] = array(
-	'globalcssjs-desc' => 'Permette a CSS e JS globali su un wiki centrale di essere caricati in tutti i wiki nella farm',
+	'globalcssjs-desc' => 'Permette a CSS e JavaScript su un wiki centrale di essere caricati in tutti i wiki collegati',
 	'tog-enableglobalcssjs' => 'Abilita CSS e JavaScript utente globali',
 );
 
