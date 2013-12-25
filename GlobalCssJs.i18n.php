@@ -114,7 +114,7 @@ $messages['lb'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'globalcssjs-desc' => 'Овозможува вчитување на глобален CSS и JS на централно вики за сите викија на фармата',
+	'globalcssjs-desc' => 'Овозможува вчитување на CSS и JavaScript на централно вики за сите поврзани викија',
 	'tog-enableglobalcssjs' => 'Вклучи глобални лични CSS и JavaScript',
 );
 
