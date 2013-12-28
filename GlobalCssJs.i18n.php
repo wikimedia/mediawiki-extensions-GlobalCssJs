@@ -47,6 +47,14 @@ $messages['de'] = array(
 	'tog-enableglobalcssjs' => 'Globales Benutzer-CSS und -JavaScript aktivieren',
 );
 
+/** Lower Sorbian (dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'globalcssjs-desc' => 'Zmóžnja CSS a JavaScript na centralnem wikiju, kótaryž zacytujo se za wšykne zwězane wikije',
+	'tog-enableglobalcssjs' => 'Globalny wužywarski CSS a JavaScript zmóžniś',
+);
+
 /** Spanish (español)
  * @author Fitoschido
  */
@@ -77,6 +85,14 @@ $messages['fr'] = array(
 $messages['gl'] = array(
 	'globalcssjs-desc' => 'Permite a carga de estilos CSS e JS globais desde un wiki central en todos os wikis da granxa',
 	'tog-enableglobalcssjs' => 'Activar o CSS e o JavaScript de usuario',
+);
+
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'globalcssjs-desc' => 'Zmóžnja CSS a JavaScript na centralnym wikiju, kotryž so za wšě zwjazane wikije začituje',
+	'tog-enableglobalcssjs' => 'Globalny wužiwarski CSS a JavaScript zmóžnić',
 );
 
 /** Italian (italiano)
