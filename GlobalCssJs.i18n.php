@@ -177,8 +177,9 @@ $messages['uk'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Liuxinyu970226
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
-	'globalcssjs-desc' => '允许在一个中央wiki上的全局CSS和JS加载所有wiki农场',
+	'globalcssjs-desc' => '允许中央wiki上的全局CSS和JavaScript加载到所有已连接的wiki农场',
 	'tog-enableglobalcssjs' => '启用全局用户CSS和JavaScript',
 );
