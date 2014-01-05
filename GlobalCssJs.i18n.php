@@ -63,6 +63,13 @@ $messages['es'] = array(
 	'tog-enableglobalcssjs' => 'Activar CSS y JavaScript global para el usuario',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'tog-enableglobalcssjs' => 'فعال کردن کاربر جهانی سی‌اس‌اس و جاوااسکریپت',
+);
+
 /** Finnish (suomi)
  * @author Jack Phoenix
  */
