@@ -27,7 +27,7 @@ $messages['qqq'] = array(
  * @author Xuacu
  */
 $messages['ast'] = array(
-	'globalcssjs-desc' => "Permite cargar CSS y JS globales d'una wiki central en toles wikis de la granxa",
+	'globalcssjs-desc' => "Permite cargar CSS y JavaScript d'una wiki central en toles wikis coneutaes",
 	'tog-enableglobalcssjs' => "Activar CSS y JavaScript d'usuariu global",
 );
 
@@ -159,11 +159,12 @@ $messages['nn'] = array(
 );
 
 /** Russian (русский)
+ * @author Kaganer
  * @author Okras
  * @author Saint Johann
  */
 $messages['ru'] = array(
-	'globalcssjs-desc' => 'Позволяет использовать глобальные CSS и JS на центральном вики-проекте, который будет загружаться для всех подчинённых вики-проектов.',
+	'globalcssjs-desc' => 'Позволяет использовать CSS и JavaScript, находящиеся в центральном вики-проекте, для загрузки во все связанные вики-проекты.',
 	'tog-enableglobalcssjs' => 'Включить глобальные личные CSS и JS',
 );
 
