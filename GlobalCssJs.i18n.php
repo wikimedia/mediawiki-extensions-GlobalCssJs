@@ -56,10 +56,11 @@ $messages['dsb'] = array(
 );
 
 /** Spanish (español)
+ * @author Ciencia Al Poder
  * @author Fitoschido
  */
 $messages['es'] = array(
-	'globalcssjs-desc' => 'Permite cargar CSS y JS en un wiki central para que éstos se carguen en todos los wikis del conjunto',
+	'globalcssjs-desc' => 'Permite cargar CSS y JS en un wiki central para que éstos se carguen en todos los wikis conectados',
 	'tog-enableglobalcssjs' => 'Activar CSS y JavaScript global para el usuario',
 );
 
