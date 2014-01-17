@@ -170,10 +170,12 @@ $messages['ru'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Lokal Profil
  * @author Tobulos1
  */
 $messages['sv'] = array(
-	'tog-enableglobalcssjs' => 'Aktiverar global användare för CSS och JavaScript',
+	'globalcssjs-desc' => 'Tillåter CSS och JavaScript på en central wiki att laddas för alla anslutna wikis',
+	'tog-enableglobalcssjs' => 'Aktiverar global användar-CSS och -JavaScript',
 );
 
 /** Ukrainian (українська)
