@@ -68,6 +68,7 @@ $messages['es'] = array(
  * @author Armin1392
  */
 $messages['fa'] = array(
+	'globalcssjs-desc' => 'اجازه دادن سی‌اس‌اس و جاوااسکریپت بر روی ویکی مرکزی برای بارگذاری شدن برای همهٔ ویکی‌های متصل شده',
 	'tog-enableglobalcssjs' => 'فعال کردن کاربر جهانی سی‌اس‌اس و جاوااسکریپت',
 );
 
