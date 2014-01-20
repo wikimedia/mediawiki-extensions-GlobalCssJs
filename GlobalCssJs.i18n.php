@@ -160,6 +160,13 @@ $messages['nn'] = array(
 	'tog-enableglobalcssjs' => 'Slå på global brukardefinert CSS og JavaScript',
 );
 
+/** Polish (polski)
+ * @author Chrumps
+ */
+$messages['pl'] = array(
+	'tog-enableglobalcssjs' => 'Włącz CSS i JavaScript dla użytkownika globalnego',
+);
+
 /** Russian (русский)
  * @author Kaganer
  * @author Okras
