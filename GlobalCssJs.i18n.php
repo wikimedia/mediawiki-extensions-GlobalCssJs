@@ -38,6 +38,13 @@ $messages['bn'] = array(
 	'tog-enableglobalcssjs' => 'উইকি বৈশ্বিক ব্যবহারকারী সিএসএস এবং জাভাস্ক্রিপ্ট সক্রিয় করো',
 );
 
+/** Breton (brezhoneg)
+ * @author Fohanno
+ */
+$messages['br'] = array(
+	'globalcssjs-desc' => 'Aotren CSS ha JavaScript war ur wiki kreiz da vezañ karget evit an holl wikioù kevreet',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  * @author Tim Weyer (SVG)
