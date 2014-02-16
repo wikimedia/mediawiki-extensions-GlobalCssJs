@@ -1,57 +1,58 @@
 <?php
-/**
-* Global CSS/JS loader by Ryan Schmidt
-* Put global site CSS/JS in the "central" wiki's MediaWiki:Global.css and MediaWiki:Global.js respectively
-* Put global user CSS/JS in the "central" wiki's User:Yourname/global.css and User:Yourname/global.js respectively
-* See https://www.mediawiki.org/wiki/Extension:GlobalCssJs
-*/
- 
+
 if( !defined( 'MEDIAWIKI' ) ) {
     echo( "This is an extension to the MediaWiki software and cannot be used standalone" );
     die;
 }
- 
+
 $wgExtensionCredits['other'][] = array(
-'name' => 'Global CSS/JS',
-'author' => 'Ryan Schmidt',
-'version' => '2.0.1',
-'url' => 'https://www.mediawiki.org/wiki/Extension:GlobalCssJs',
-'descriptionmsg' => 'globalcssjs-desc',
+	'name' => 'Global CSS/JS',
+	'author' => array( 'Ryan Schmidt', 'Szymon Świerkosz', 'Kunal Mehta' ),
+	'version' => '3.0.0',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:GlobalCssJs',
+	'descriptionmsg' => 'globalcssjs-desc',
 );
- 
-$wgHooks['GetPreferences'][] = 'wfGlobalCssJsAddPrefToggle';
-$wgHooks['BeforePageDisplay'][] = 'wfGlobalCssJs';
-$wgExtensionMessagesFiles['GlobalCssJs'] = __DIR__ . '/GlobalCssJs.i18n.php';
-
-
-function wfGlobalCssJsAddPrefToggle( User $user, array &$preferences ) {
-	$preferences['enableglobalcssjs'] = array(
-		'type' => 'toggle',
-		'label-message' => 'tog-enableglobalcssjs',
-		'section' => 'rendering/skin'
-	);
-}
 
 /**
- * @param OutputPage $out
- * @param Skin $skin
- * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
- * @return bool
+ * If set, users can put their custom JS and CSS code on pages
+ * User:Name/global.js and User:Name/global.css on a central wiki.
+ *
+ * Administrators can put global code on MediaWiki:Global.js and .css
+ *
+ * Required properties:
+ * 	'wiki' - name of the central wiki database
+ * 	'source' - name of a ResourceLoader source pointing to the central wiki
+ *
+ * For example:
+ * $wgGlobalCssJsConfig = array(
+ *     'wiki' => 'metawiki',
+ *     'source' => 'metawiki',
+ * );
+ * $wgResourceLoaderSources['metawiki'] = array(
+ *     'apiScript' => '//meta.wikimedia.org/w/api.php',
+ *     'loadScript' => '//meta.wikimedia.org/w/load.php',
+ * );
+ * @var array
  */
-function wfGlobalCssJs( OutputPage &$out, Skin &$skin ) {
-    global $wgGlobalCssJsUrl, $wgAllowUserCss, $wgAllowUserJs, $wgJsMimeType, $wgUseSiteCss, $wgUseSiteJs;
-    if( !isset($wgGlobalCssJsUrl) || !$out->getUser()->isLoggedIn() )
-            return true;
-    $name = urlencode($out->getUser()->getName());
-    $url = $wgGlobalCssJsUrl; // just makes the lines shorter, nothing more.
-    $toggle = $out->getUser()->getBoolOption('enableglobalcssjs');
-    if($wgUseSiteCss)
-        $out->addScript('<style type="text/css">/*<![CDATA[*/ @import "' . $url . '?title=MediaWiki:Global.css&action=raw&ctype=text/css";/*]]>*/</style>' . "\n");
-    if($wgUseSiteJs)
-        $out->addScript('<script type="' . $wgJsMimeType . '" src="' . $url . '?title=MediaWiki:Global.js&action=raw&ctype=' . $wgJsMimeType . '&dontcountme=s"></script>' . "\n");
-    if($wgAllowUserCss)
-        $out->addScript('<style type="text/css">/*<![CDATA[*/ @import "' . $url . '?title=User:' . $name . '/global.css&action=raw&ctype=text/css"; /*]]>*/</style>' . "\n");
-    if($wgAllowUserJs)
-        $out->addScript('<script type="' . $wgJsMimeType . '" src="' . $url . '?title=User:' . $name . '/global.js&action=raw&ctype=' . $wgJsMimeType . '&dontcountme=s"></script>' . "\n");
-    return true;
-}
+$wgGlobalCssJsConfig = array(
+	'wiki' => false,
+	'source' => false,
+);
+
+$wgAutoloadClasses['ResourceLoaderGlobalModule'] = __DIR__ . '/ResourceLoaderGlobalModule.php';
+$wgAutoloadClasses['ResourceLoaderGlobalSiteModule'] = __DIR__ . '/ResourceLoaderGlobalSiteModule.php';
+$wgAutoloadClasses['ResourceLoaderGlobalUserModule'] = __DIR__ . '/ResourceLoaderGlobalUserModule.php';
+$wgAutoloadClasses['GlobalCssJsHooks'] = __DIR__ . '/GlobalCssJs.hooks.php';
+$wgExtensionMessagesFiles['GlobalCssJs'] = __DIR__ . '/GlobalCssJs.i18n.php';
+$wgExtensionFunctions[] = function () {
+	global $wgGlobalCssJsConfig;
+	if ( $wgGlobalCssJsConfig['wiki'] === wfWikiID() ) {
+		$wgExtensionMessagesFiles['GlobalCssJsCentral'] = __DIR__ . '/GlobalCssJs.central.i18n.php';
+	}
+};
+
+$wgDefaultUserOptions['enableglobalcssjs'] = true;
+
+$wgHooks['GetPreferences'][] = 'GlobalCssJsHooks::onGetPreferences';
+$wgHooks['BeforePageDisplay'][] = 'GlobalCssJsHooks::onBeforePageDisplay';
+$wgHooks['ResourceLoaderRegisterModules'][] = 'GlobalCssJsHooks::onResourceLoaderRegisterModules';
