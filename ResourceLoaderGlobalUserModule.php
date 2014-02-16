@@ -25,7 +25,7 @@
 /**
  * Module for user customizations - runs on all wikis
  * This module does not do provide any resources directly.
- * It instructs Resource Loader to load a module from a remote site.
+ * It instructs ResourceLoader to load a module from a remote site.
  */
 class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 

@@ -22,7 +22,7 @@
 /**
  * Module for sitewide global customizations
  * This module does not do provide any resources directly.
- * It instructs Resource Loader to load a module from a remote site.
+ * It instructs ResourceLoader to load a module from a remote site.
  */
 class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 

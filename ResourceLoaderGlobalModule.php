@@ -23,7 +23,7 @@
 /**
  * Base class for global modules
  * This module does not do provide any resources directly.
- * It instructs Resource Loader to load a module from a remote site.
+ * It instructs ResourceLoader to load a module from a remote site.
  */
 abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 
