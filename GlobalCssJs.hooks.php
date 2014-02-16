@@ -2,14 +2,6 @@
 
 class GlobalCssJsHooks {
 
-	static function onGetPreferences( User $user, array &$preferences ) {
-		$preferences['enableglobalcssjs'] = array(
-			'type' => 'toggle',
-			'label-message' => 'tog-enableglobalcssjs',
-			'section' => 'rendering/skin'
-		);
-	}
-
 	/**
 	 * @param &$out OutputPage
 	 * @param &$skin Skin
@@ -24,11 +16,6 @@ class GlobalCssJsHooks {
 		$user = $out->getUser();
 		// Only load user modules for logged in users
 		if ( $user->isAnon() ) {
-			return true;
-		}
-
-		// Check if the user has disabled it
-		if ( !$user->getBoolOption( 'enableglobalcssjs' ) ) {
 			return true;
 		}
 

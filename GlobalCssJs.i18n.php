@@ -12,7 +12,6 @@ $messages = array();
  */
 $messages['en'] = array(
 	'globalcssjs-desc' => 'Allows CSS and JavaScript on a central wiki to be loaded for all connected wikis',
-	'tog-enableglobalcssjs' => 'Enable global user CSS and JavaScript',
 );
 
 /** Message documentation (Message documentation)

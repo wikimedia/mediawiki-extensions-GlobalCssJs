@@ -51,8 +51,5 @@ $wgExtensionFunctions[] = function () {
 	}
 };
 
-$wgDefaultUserOptions['enableglobalcssjs'] = true;
-
-$wgHooks['GetPreferences'][] = 'GlobalCssJsHooks::onGetPreferences';
 $wgHooks['BeforePageDisplay'][] = 'GlobalCssJsHooks::onBeforePageDisplay';
 $wgHooks['ResourceLoaderRegisterModules'][] = 'GlobalCssJsHooks::onResourceLoaderRegisterModules';
