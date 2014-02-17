@@ -134,6 +134,13 @@ $messages['ko'] = array(
 	'tog-enableglobalcssjs' => '전역 사용자 CSS와 자바스크립트 허용',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'globalcssjs-desc' => 'Määd-et müjjelesch, <i lang="en" xml:lang="en">CSS</i> un JavaSkrep vun enem jemeinsam jenozde Wiki op alle ande ze lahde un ze bruche.',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
