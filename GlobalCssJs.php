@@ -39,14 +39,21 @@ $wgGlobalCssJsConfig = array(
 	'source' => false,
 );
 
+/**
+ * If true, global site wide css / js is loaded from the central wiki
+ * for all users on all page loads.
+ * @var boolean
+*/
+$wgUseGlobalSiteCssJs = true;
+
 $wgAutoloadClasses['ResourceLoaderGlobalModule'] = __DIR__ . '/ResourceLoaderGlobalModule.php';
 $wgAutoloadClasses['ResourceLoaderGlobalSiteModule'] = __DIR__ . '/ResourceLoaderGlobalSiteModule.php';
 $wgAutoloadClasses['ResourceLoaderGlobalUserModule'] = __DIR__ . '/ResourceLoaderGlobalUserModule.php';
 $wgAutoloadClasses['GlobalCssJsHooks'] = __DIR__ . '/GlobalCssJs.hooks.php';
 $wgExtensionMessagesFiles['GlobalCssJs'] = __DIR__ . '/GlobalCssJs.i18n.php';
 $wgExtensionFunctions[] = function () {
-	global $wgGlobalCssJsConfig;
-	if ( $wgGlobalCssJsConfig['wiki'] === wfWikiID() ) {
+	global $wgGlobalCssJsConfig, $wgUseGlobalSiteCssJs;
+	if ( $wgGlobalCssJsConfig['wiki'] === wfWikiID() && $wgUseGlobalSiteCssJs ) {
 		$wgExtensionMessagesFiles['GlobalCssJsCentral'] = __DIR__ . '/GlobalCssJs.central.i18n.php';
 	}
 };

@@ -8,10 +8,12 @@ class GlobalCssJsHooks {
 	 * @return bool
 	 */
 	static function onBeforePageDisplay( &$out, &$skin ) {
-		global $wgGlobalCssJsConfig;
+		global $wgGlobalCssJsConfig, $wgUseGlobalSiteCssJs;
 
-		// Global site modules are loaded for everyone
-		$out->addModules( 'ext.globalcssjs.site' );
+		if ( $wgUseGlobalSiteCssJs ) {
+			// Global site modules are loaded for everyone, if enabled
+			$out->addModules( 'ext.globalcssjs.site' );
+		}
 
 		$user = $out->getUser();
 		// Only load user modules for logged in users
@@ -38,7 +40,7 @@ class GlobalCssJsHooks {
 	 * @return bool
 	 */
 	static function onResourceLoaderRegisterModules( &$resourceLoader ) {
-		global $wgGlobalCssJsConfig;
+		global $wgGlobalCssJsConfig, $wgUseGlobalSiteCssJs;
 
 		if ( $wgGlobalCssJsConfig['wiki'] === false || $wgGlobalCssJsConfig['source'] === false ) {
 			// If not configured properly, exit
@@ -49,13 +51,14 @@ class GlobalCssJsHooks {
 		$user = array(
 			'class' => 'ResourceLoaderGlobalUserModule',
 		) + $wgGlobalCssJsConfig;
-
-		$site = array(
-			'class' => 'ResourceLoaderGlobalSiteModule',
-		) + $wgGlobalCssJsConfig;
-
 		$resourceLoader->register( 'ext.globalcssjs.user', $user );
-		$resourceLoader->register( 'ext.globalcssjs.site', $site );
+
+		if ( $wgUseGlobalSiteCssJs ) {
+			$site = array(
+				'class' => 'ResourceLoaderGlobalSiteModule',
+			) + $wgGlobalCssJsConfig;
+			$resourceLoader->register( 'ext.globalcssjs.site', $site );
+		}
 
 		return true;
 	}
