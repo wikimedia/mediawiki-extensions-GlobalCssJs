@@ -102,6 +102,13 @@ $messages['gl'] = array(
 	'tog-enableglobalcssjs' => 'Activar o CSS e o JavaScript de usuario',
 );
 
+/** Hebrew (עברית)
+ * @author Yona b
+ */
+$messages['he'] = array(
+	'globalcssjs-desc' => 'מאפשר CSS ו־JavaScript מוויקי עיקרי להיטען בכל הוויקי המקושרים',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
