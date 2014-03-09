@@ -117,6 +117,13 @@ $messages['hsb'] = array(
 	'tog-enableglobalcssjs' => 'Globalny wužiwarski CSS a JavaScript zmóžnić',
 );
 
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'globalcssjs-desc' => 'Mangpalubos a maikarga ti CSS ken JavaScript iti sentral a wiki para kadagiti amin a naikapet a wiki',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
