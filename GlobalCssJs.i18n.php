@@ -98,8 +98,7 @@ $messages['fr'] = array(
  * @author Toliño
  */
 $messages['gl'] = array(
-	'globalcssjs-desc' => 'Permite a carga de estilos CSS e JS globais desde un wiki central en todos os wikis da granxa',
-	'tog-enableglobalcssjs' => 'Activar o CSS e o JavaScript de usuario',
+	'globalcssjs-desc' => 'Permite a carga de estilos CSS e JavaScript desde un wiki central en todos os wikis conectados',
 );
 
 /** Hebrew (עברית)
