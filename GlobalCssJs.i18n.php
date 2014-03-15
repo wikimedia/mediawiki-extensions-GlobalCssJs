@@ -186,6 +186,13 @@ $messages['nn'] = array(
 	'tog-enableglobalcssjs' => 'Slå på global brukardefinert CSS og JavaScript',
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'globalcssjs-desc' => "Permet a totes los wikis connectats d'una bòria de wikis de cargar de fichièrs CSS e JavaScript dempuèi un wiki central",
+);
+
 /** Polish (polski)
  * @author Chrumps
  */
