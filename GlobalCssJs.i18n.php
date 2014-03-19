@@ -22,7 +22,6 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'globalcssjs-desc' => '{{desc|name=Global CSS/JS|url=https://www.mediawiki.org/wiki/Extension:GlobalCssJs}}',
-	'tog-enableglobalcssjs' => 'Preference toggle to enable Global User CSS and JS',
 	'globalcssjs-warning-js' => 'Notice on top of edit window',
 	'globalcssjs-warning-css' => 'Notice on top of edit window',
 );
@@ -55,7 +54,8 @@ $messages['br'] = array(
  */
 $messages['de'] = array(
 	'globalcssjs-desc' => 'Ermöglicht CSS und JavaScript auf einem zentralen Wiki, das für alle verbundenen Wikis geladen wird',
-	'tog-enableglobalcssjs' => 'Globales Benutzer-CSS und -JavaScript aktivieren',
+	'globalcssjs-warning-js' => 'Jedes JavaScript auf dieser Seite wird auf allen Wikis geladen, auf denen du ein Benutzerkonto hast.',
+	'globalcssjs-warning-css' => 'Jedes CSS auf dieser Seite wird auf allen Wikis geladen, auf denen du ein Benutzerkonto hast.',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -96,7 +96,8 @@ $messages['fi'] = array(
  */
 $messages['fr'] = array(
 	'globalcssjs-desc' => 'Permet à tous les wikis connectés d’une ferme de wikis de charger des fichiers CSS et JavaScript depuis un wiki central',
-	'tog-enableglobalcssjs' => 'Activer les styles et scripts utilisateurs globaux',
+	'globalcssjs-warning-js' => 'Tout JavaScript ajouté à cette page sera chargé sur tous les wikis sur lesquels vous avez un compte.',
+	'globalcssjs-warning-css' => 'Tout CSS ajouté à cette page sera chargé sur tous les wikis sur lesquels vous avez un compte.',
 );
 
 /** Galician (galego)
@@ -111,6 +112,8 @@ $messages['gl'] = array(
  */
 $messages['he'] = array(
 	'globalcssjs-desc' => 'מאפשר CSS ו־JavaScript מוויקי עיקרי להיטען בכל הוויקי המקושרים',
+	'globalcssjs-warning-js' => 'כל ה־JavaScript שנוספו בדף זה ייטענו בכל הוויקי שבו יש לך חשבון.',
+	'globalcssjs-warning-css' => 'כל ה־CSS שנוספו בדף זה ייטענו בכל הוויקי שבו יש לך חשבון.',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -164,6 +167,7 @@ $messages['ksh'] = array(
  */
 $messages['lb'] = array(
 	'globalcssjs-desc' => 'Erlaabt et datt CSS a JavaScript vun enger zentraler Wiki fir all verbonne Wikie geluede ginn',
+	'globalcssjs-warning-js' => 'All JavaScript deen op dës Säit derbäigesat gëtt, gëtt op all Wikie gelueden op deenen Dir e Benotzerkont hutt.',
 );
 
 /** Macedonian (македонски)
@@ -171,7 +175,8 @@ $messages['lb'] = array(
  */
 $messages['mk'] = array(
 	'globalcssjs-desc' => 'Овозможува вчитување на CSS и JavaScript на централно вики за сите поврзани викија',
-	'tog-enableglobalcssjs' => 'Вклучи глобални лични CSS и JavaScript',
+	'globalcssjs-warning-js' => 'Тука поставениот JavaScript ќе се вчита на сите викија кајшто имате сметка.',
+	'globalcssjs-warning-css' => 'Тука постевениот CSS ќе се вчита на сите викија кајшто имате сметка.',
 );
 
 /** Dutch (Nederlands)
@@ -212,7 +217,8 @@ $messages['pl'] = array(
  */
 $messages['ru'] = array(
 	'globalcssjs-desc' => 'Позволяет использовать CSS и JavaScript, находящиеся в центральном вики-проекте, для загрузки во все связанные вики-проекты.',
-	'tog-enableglobalcssjs' => 'Включить глобальные личные CSS и JS',
+	'globalcssjs-warning-js' => 'Любой JavaScript, добавленный на эту страницу, будет загружаться на всех вики, где у вас есть учётная запись.',
+	'globalcssjs-warning-css' => 'Любой CSS, добавленный на эту страницу, будет загружаться на всех вики, где у вас есть учётная запись.',
 );
 
 /** Swedish (svenska)
