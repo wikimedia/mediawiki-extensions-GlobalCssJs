@@ -221,6 +221,14 @@ $messages['ru'] = array(
 	'globalcssjs-warning-css' => 'Любой CSS, добавленный на эту страницу, будет загружаться на всех вики, где у вас есть учётная запись.',
 );
 
+/** Scots (Scots)
+ * @author John Reid
+ */
+$messages['sco'] = array(
+	'globalcssjs-warning-js' => 'Onie JavaScript added til this page will be laided oan aw wikis whaur ye hae aen accoont.',
+	'globalcssjs-warning-css' => 'Onie CSS added til this page will be laided oan aw wikis whaur ye hae aen accoont.',
+);
+
 /** Swedish (svenska)
  * @author Lokal Profil
  * @author Tobulos1
