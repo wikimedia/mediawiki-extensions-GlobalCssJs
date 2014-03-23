@@ -7,5 +7,8 @@
     },
     "globalcssjs-desc": "Allows CSS and JavaScript on a central wiki to be loaded for all connected wikis",
     "globalcssjs-warning-js": "Any JavaScript added to this page will be loaded on all wikis where you have an account.",
-    "globalcssjs-warning-css": "Any CSS added to this page will be loaded on all wikis where you have an account."
+    "globalcssjs-warning-css": "Any CSS added to this page will be loaded on all wikis where you have an account.",
+    "globalcssjs-custom-css-js": "Shared CSS/JavaScript for all wikis",
+    "globalcssjs-custom-js": "Custom JavaScript",
+    "globalcssjs-custom-css": "Custom CSS"
 }

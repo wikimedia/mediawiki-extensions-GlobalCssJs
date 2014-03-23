@@ -6,5 +6,8 @@
     },
     "globalcssjs-desc": "{{desc|name=Global CSS/JS|url=https://www.mediawiki.org/wiki/Extension:GlobalCssJs}}",
     "globalcssjs-warning-js": "Notice on top of edit window",
-    "globalcssjs-warning-css": "Notice on top of edit window"
+    "globalcssjs-warning-css": "Notice on top of edit window",
+    "globalcssjs-custom-css-js": "Help message next to links to a user's global.js/global.css pages",
+    "globalcssjs-custom-js": "Link text for link to a user's global.js page",
+    "globalcssjs-custom-css": "Link text for a link to a user's global.css page"
 }

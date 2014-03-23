@@ -21,17 +21,25 @@ class GlobalCssJsHooks {
 			return true;
 		}
 
-		$wiki = $wgGlobalCssJsConfig['wiki'];
-
 		// If we are on a different site, use a hook to allow other extensions
 		// like CentralAuth verify that the same account exists on both sites
-		if ( $wiki === wfWikiID() || ( $wiki !== false
-			&&  wfRunHooks( 'LoadGlobalCssJs', array( $user, $wiki, wfWikiID() ) ) )
-		) {
+		if ( self::loadForUser( $user ) ) {
 			$out->addModules( 'ext.globalcssjs.user' );
 		}
 
 		return true;
+	}
+
+	/**
+	 * Given a user, should we load scripts for them?
+	 * @param User $user
+	 * @return bool
+	 */
+	static function loadForUser( User $user ) {
+		global $wgGlobalCssJsConfig;
+		$wiki = $wgGlobalCssJsConfig['wiki'];
+		return $wiki === wfWikiID() || ( $wiki !== false ) &&
+			wfRunHooks( 'LoadGlobalCssJs', array( $user, $wiki, wfWikiID() ) );
 	}
 
 	/**
@@ -89,4 +97,61 @@ class GlobalCssJsHooks {
 		return true;
 	}
 
+	/**
+	 * Convenince function to make a link to page that might be on another site
+	 * @param Title $title
+	 * @param string $msg message key
+	 * @return string HTMl link
+	 */
+	protected static function makeCentralLink( Title $title, $msg ) {
+		global $wgGlobalCssJsConfig;
+		$message = wfMessage( $msg )->escaped();
+		if ( $wgGlobalCssJsConfig['wiki'] === wfWikiID() ) {
+			return Linker::link( $title, $message );
+		} else {
+			return WikiMap::makeForeignLink(
+				$wgGlobalCssJsConfig['wiki'],
+				$title->getPrefixedText(),
+				$message
+			);
+		}
+	}
+
+	static function onGetPreferences( User $user, array &$prefs ) {
+		global $wgAllowUserCss, $wgAllowUserJs;
+
+		if ( !$wgAllowUserCss && !$wgAllowUserJs ) {
+			// No user CSS or JS allowed
+			return true;
+		}
+
+		if ( !self::loadForUser( $user ) ) {
+			// No global scripts for this user :(
+			return true;
+		}
+		$ctx = RequestContext::getMain();
+		$userName = $user->getName();
+		$linkTools = array();
+		if ( $wgAllowUserCss ) {
+			$cssPage = Title::makeTitleSafe( NS_USER, $userName . '/global.css' );
+			$linkTools[] = self::makeCentralLink( $cssPage, 'globalcssjs-custom-css' );
+		}
+		if ( $wgAllowUserJs ) {
+			$jsPage = Title::makeTitleSafe( NS_USER, $userName . '/global.js' );
+			$linkTools[] = self::makeCentralLink( $jsPage, 'globalcssjs-custom-js' );
+		}
+
+		$prefs = wfArrayInsertAfter(
+			$prefs,
+			array( 'globalcssjs' => array(
+				'type' => 'info',
+				'raw' => 'true',
+				'default' => $ctx->getLanguage()->pipeList( $linkTools ),
+				'label-message' => 'globalcssjs-custom-css-js',
+				'section' => 'rendering/skin',
+			) ),
+			'commoncssjs'
+		);
+		return true;
+	}
 }
