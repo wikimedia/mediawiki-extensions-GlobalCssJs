@@ -31,7 +31,6 @@ $messages['qqq'] = array(
  */
 $messages['ast'] = array(
 	'globalcssjs-desc' => "Permite cargar CSS y JavaScript d'una wiki central en toles wikis coneutaes",
-	'tog-enableglobalcssjs' => "Activar CSS y JavaScript d'usuariu global",
 );
 
 /** Bengali (বাংলা)
@@ -72,7 +71,6 @@ $messages['dsb'] = array(
  */
 $messages['es'] = array(
 	'globalcssjs-desc' => 'Permite cargar CSS y JS en un wiki central para que éstos se carguen en todos los wikis conectados',
-	'tog-enableglobalcssjs' => 'Activar CSS y JavaScript global para el usuario',
 );
 
 /** Persian (فارسی)
@@ -80,7 +78,6 @@ $messages['es'] = array(
  */
 $messages['fa'] = array(
 	'globalcssjs-desc' => 'اجازه دادن سی‌اس‌اس و جاوااسکریپت بر روی ویکی مرکزی برای بارگذاری شدن برای همهٔ ویکی‌های متصل شده',
-	'tog-enableglobalcssjs' => 'فعال کردن کاربر جهانی سی‌اس‌اس و جاوااسکریپت',
 );
 
 /** Finnish (suomi)
@@ -236,7 +233,6 @@ $messages['sco'] = array(
  */
 $messages['sv'] = array(
 	'globalcssjs-desc' => 'Tillåter CSS och JavaScript på en central wiki att laddas för alla anslutna wikis',
-	'tog-enableglobalcssjs' => 'Aktiverar global användar-CSS och -JavaScript',
 );
 
 /** Ukrainian (українська)
