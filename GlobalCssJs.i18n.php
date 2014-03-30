@@ -31,6 +31,8 @@ $messages['qqq'] = array(
  */
 $messages['ast'] = array(
 	'globalcssjs-desc' => "Permite cargar CSS y JavaScript d'una wiki central en toles wikis coneutaes",
+	'globalcssjs-warning-js' => "Cualquier JavaScript que s'escriba nesta páxina cargaráse'n toles wikis nes que tenga una cuenta.",
+	'globalcssjs-warning-css' => "Cualquier CSS que s'escriba nesta páxina cargaráse'n toles wikis nes que tenga una cuenta.",
 );
 
 /** Bengali (বাংলা)
@@ -102,6 +104,8 @@ $messages['fr'] = array(
  */
 $messages['gl'] = array(
 	'globalcssjs-desc' => 'Permite a carga de estilos CSS e JavaScript desde un wiki central en todos os wikis conectados',
+	'globalcssjs-warning-js' => 'Calquera JavaScript que se engada a esta páxina afectará a todos os wikis nos que ten unha conta.',
+	'globalcssjs-warning-css' => 'Calquera CSS que se engada a esta páxina afectará a todos os wikis nos que ten unha conta.',
 );
 
 /** Hebrew (עברית)
