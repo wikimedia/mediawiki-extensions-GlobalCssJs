@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Michawiki"
+        ]
+    },
+    "globalcssjs-desc": "Zmóžnja CSS a JavaScript na centralnym wikiju, kotryž so za wšě zwjazane wikije začituje",
+    "tog-enableglobalcssjs": "Globalny wužiwarski CSS a JavaScript zmóžnić"
+}

@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Liuxinyu970226",
+            "Yfdyh000"
+        ]
+    },
+    "globalcssjs-desc": "允许中央wiki上的全局CSS和JavaScript加载到所有已连接的wiki农场",
+    "tog-enableglobalcssjs": "启用全局用户CSS和JavaScript"
+}

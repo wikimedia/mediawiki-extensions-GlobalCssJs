@@ -8,7 +8,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'name' => 'Global CSS/JS',
 	'author' => array( 'Ryan Schmidt', 'Szymon Świerkosz', 'Kunal Mehta' ),
-	'version' => '3.0.0',
+	'version' => '3.1.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GlobalCssJs',
 	'descriptionmsg' => 'globalcssjs-desc',
 );
@@ -50,10 +50,12 @@ $wgAutoloadClasses['ResourceLoaderGlobalModule'] = __DIR__ . '/ResourceLoaderGlo
 $wgAutoloadClasses['ResourceLoaderGlobalSiteModule'] = __DIR__ . '/ResourceLoaderGlobalSiteModule.php';
 $wgAutoloadClasses['ResourceLoaderGlobalUserModule'] = __DIR__ . '/ResourceLoaderGlobalUserModule.php';
 $wgAutoloadClasses['GlobalCssJsHooks'] = __DIR__ . '/GlobalCssJs.hooks.php';
+$wgMessagesDirs['GlobalCssJs'] = __DIR__ . '/i18n/core';
 $wgExtensionMessagesFiles['GlobalCssJs'] = __DIR__ . '/GlobalCssJs.i18n.php';
 $wgExtensionFunctions[] = function () {
 	global $wgGlobalCssJsConfig, $wgUseGlobalSiteCssJs;
 	if ( $wgGlobalCssJsConfig['wiki'] === wfWikiID() && $wgUseGlobalSiteCssJs ) {
+		$wgMessagesDirs['GlobalCssJsCentral'] = __DIR__ . '/i18n/central';
 		$wgExtensionMessagesFiles['GlobalCssJsCentral'] = __DIR__ . '/GlobalCssJs.central.i18n.php';
 	}
 };
