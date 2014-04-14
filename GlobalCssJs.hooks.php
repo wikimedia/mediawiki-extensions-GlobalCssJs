@@ -12,7 +12,7 @@ class GlobalCssJsHooks {
 
 		if ( $wgUseGlobalSiteCssJs ) {
 			// Global site modules are loaded for everyone, if enabled
-			$out->addModules( 'ext.globalcssjs.site' );
+			$out->addModules( 'ext.globalCssJs.site' );
 		}
 
 		$user = $out->getUser();
@@ -24,7 +24,7 @@ class GlobalCssJsHooks {
 		// If we are on a different site, use a hook to allow other extensions
 		// like CentralAuth verify that the same account exists on both sites
 		if ( self::loadForUser( $user ) ) {
-			$out->addModules( 'ext.globalcssjs.user' );
+			$out->addModules( 'ext.globalCssJs.user' );
 		}
 
 		return true;
@@ -59,13 +59,13 @@ class GlobalCssJsHooks {
 		$user = array(
 			'class' => 'ResourceLoaderGlobalUserModule',
 		) + $wgGlobalCssJsConfig;
-		$resourceLoader->register( 'ext.globalcssjs.user', $user );
+		$resourceLoader->register( 'ext.globalCssJs.user', $user );
 
 		if ( $wgUseGlobalSiteCssJs ) {
 			$site = array(
 				'class' => 'ResourceLoaderGlobalSiteModule',
 			) + $wgGlobalCssJsConfig;
-			$resourceLoader->register( 'ext.globalcssjs.site', $site );
+			$resourceLoader->register( 'ext.globalCssJs.site', $site );
 		}
 
 		return true;
