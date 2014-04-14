@@ -6,5 +6,6 @@
         ]
     },
     "globalcssjs-desc": "允许中央wiki上的全局CSS和JavaScript加载到所有已连接的wiki农场",
-    "tog-enableglobalcssjs": "启用全局用户CSS和JavaScript"
+    "globalcssjs-custom-js": "自定义JavaScript",
+    "globalcssjs-custom-css": "自定义CSS"
 }
