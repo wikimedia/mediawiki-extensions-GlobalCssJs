@@ -1,9 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Njardarlogar"
-        ]
-    },
-    "globalcssjs-desc": "Gjer det mogeleg å lasta global CSS og JS frå ein sentral wiki til alle wikiane i wikigruppa",
-    "tog-enableglobalcssjs": "Slå på global brukardefinert CSS og JavaScript"
+	"@metadata": {
+		"authors": [
+			"Njardarlogar"
+		]
+	},
+	"globalcssjs-desc": "Gjer det mogeleg å lasta global CSS og JS frå ein sentral wiki til alle wikiane i wikigruppa"
 }

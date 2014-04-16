@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Cedric31"
-        ]
-    },
-    "globalcssjs-desc": "Permet a totes los wikis connectats d'una bòria de wikis de cargar de fichièrs CSS e JavaScript dempuèi un wiki central",
-    "globalcssjs-custom-css-js": "CSS/JavaScript partejat per totes los wikis",
-    "globalcssjs-custom-js": "JavaScript personalizat",
-    "globalcssjs-custom-css": "CSS personalizat"
+	"@metadata": {
+		"authors": [
+			"Cedric31"
+		]
+	},
+	"globalcssjs-desc": "Permet a totes los wikis connectats d'una bòria de wikis de cargar de fichièrs CSS e JavaScript dempuèi un wiki central",
+	"globalcssjs-custom-css-js": "CSS/JavaScript partejat per totes los wikis",
+	"globalcssjs-custom-js": "JavaScript personalizat",
+	"globalcssjs-custom-css": "CSS personalizat"
 }

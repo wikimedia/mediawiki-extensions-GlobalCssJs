@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ciencia Al Poder",
-            "Fitoschido"
-        ]
-    },
-    "globalcssjs-desc": "Permite cargar CSS y JS en un wiki central para que éstos se carguen en todos los wikis conectados"
+	"@metadata": {
+		"authors": [
+			"Ciencia Al Poder",
+			"Fitoschido"
+		]
+	},
+	"globalcssjs-desc": "Permite cargar CSS y JS en un wiki central para que éstos se carguen en todos los wikis conectados"
 }

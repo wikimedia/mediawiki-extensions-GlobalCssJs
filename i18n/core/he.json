@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Yona b"
-        ]
-    },
-    "globalcssjs-desc": "מאפשר CSS ו־JavaScript מוויקי עיקרי להיטען בכל הוויקי המקושרים",
-    "globalcssjs-warning-js": "כל ה־JavaScript שנוספו בדף זה ייטענו בכל הוויקי שבו יש לך חשבון.",
-    "globalcssjs-warning-css": "כל ה־CSS שנוספו בדף זה ייטענו בכל הוויקי שבו יש לך חשבון."
+	"@metadata": {
+		"authors": [
+			"Yona b"
+		]
+	},
+	"globalcssjs-desc": "מאפשר CSS ו־JavaScript מוויקי עיקרי להיטען בכל הוויקי המקושרים",
+	"globalcssjs-warning-js": "כל ה־JavaScript שנוספו בדף זה ייטענו בכל הוויקי שבו יש לך חשבון.",
+	"globalcssjs-warning-css": "כל ה־CSS שנוספו בדף זה ייטענו בכל הוויקי שבו יש לך חשבון."
 }

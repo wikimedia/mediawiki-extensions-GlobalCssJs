@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Liuxinyu970226",
-            "Yfdyh000"
-        ]
-    },
-    "globalcssjs-desc": "允许中央wiki上的全局CSS和JavaScript加载到所有已连接的wiki农场",
-    "globalcssjs-custom-css-js": "为所有wiki分享CSS/JavaScript",
-    "globalcssjs-custom-js": "自定义JavaScript",
-    "globalcssjs-custom-css": "自定义CSS"
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226",
+			"Yfdyh000"
+		]
+	},
+	"globalcssjs-desc": "允许中央wiki上的全局CSS和JavaScript加载到所有已连接的wiki农场",
+	"globalcssjs-custom-css-js": "为所有wiki分享CSS/JavaScript",
+	"globalcssjs-custom-js": "自定义JavaScript",
+	"globalcssjs-custom-css": "自定义CSS"
 }

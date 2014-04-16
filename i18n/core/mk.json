@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bjankuloski06"
-        ]
-    },
-    "globalcssjs-desc": "Овозможува вчитување на CSS и JavaScript на централно вики за сите поврзани викија",
-    "globalcssjs-warning-js": "Тука поставениот JavaScript ќе се вчита на сите викија кајшто имате сметка.",
-    "globalcssjs-warning-css": "Тука постевениот CSS ќе се вчита на сите викија кајшто имате сметка.",
-    "globalcssjs-custom-css-js": "Заеднички CSS/JavaScript за сите викија",
-    "globalcssjs-custom-js": "Прилагоден JavaScript",
-    "globalcssjs-custom-css": "Прилагоден CSS"
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"globalcssjs-desc": "Овозможува вчитување на CSS и JavaScript на централно вики за сите поврзани викија",
+	"globalcssjs-warning-js": "Тука поставениот JavaScript ќе се вчита на сите викија кајшто имате сметка.",
+	"globalcssjs-warning-css": "Тука постевениот CSS ќе се вчита на сите викија кајшто имате сметка.",
+	"globalcssjs-custom-css-js": "Заеднички CSS/JavaScript за сите викија",
+	"globalcssjs-custom-js": "Прилагоден JavaScript",
+	"globalcssjs-custom-css": "Прилагоден CSS"
 }

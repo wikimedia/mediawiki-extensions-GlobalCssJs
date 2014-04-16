@@ -1,8 +1,7 @@
 {
-    "@metadata": {
-        "authors": [
-            "Chrumps"
-        ]
-    },
-    "tog-enableglobalcssjs": "Włącz CSS i JavaScript dla użytkownika globalnego"
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	}
 }

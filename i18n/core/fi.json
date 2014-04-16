@@ -1,8 +1,7 @@
 {
-    "@metadata": {
-        "authors": [
-            "Jack Phoenix"
-        ]
-    },
-    "tog-enableglobalcssjs": "Ota käyttöön käyttäjäkohtainen globaali CSS ja JS"
+	"@metadata": {
+		"authors": [
+			"Jack Phoenix"
+		]
+	}
 }

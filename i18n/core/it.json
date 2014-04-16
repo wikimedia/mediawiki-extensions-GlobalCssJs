@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Beta16"
-        ]
-    },
-    "globalcssjs-desc": "Permette a CSS e JavaScript su un wiki centrale di essere caricati in tutti i wiki collegati",
-    "globalcssjs-warning-js": "Qualsiasi JavaScript aggiunto a questa pagina verrà caricato su tutti gli wiki dove hai un'utenza.",
-    "globalcssjs-warning-css": "Qualsiasi CSS aggiunto a questa pagina verrà caricato su tutti gli wiki dove hai un'utenza."
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"globalcssjs-desc": "Permette a CSS e JavaScript su un wiki centrale di essere caricati in tutti i wiki collegati",
+	"globalcssjs-warning-js": "Qualsiasi JavaScript aggiunto a questa pagina verrà caricato su tutti gli wiki dove hai un'utenza.",
+	"globalcssjs-warning-css": "Qualsiasi CSS aggiunto a questa pagina verrà caricato su tutti gli wiki dove hai un'utenza."
 }

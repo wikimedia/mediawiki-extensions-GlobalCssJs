@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Lokal Profil",
-            "Tobulos1"
-        ]
-    },
-    "globalcssjs-desc": "Tillåter CSS och JavaScript på en central wiki att laddas för alla anslutna wikis"
+	"@metadata": {
+		"authors": [
+			"Lokal Profil",
+			"Tobulos1"
+		]
+	},
+	"globalcssjs-desc": "Tillåter CSS och JavaScript på en central wiki att laddas för alla anslutna wikis"
 }
