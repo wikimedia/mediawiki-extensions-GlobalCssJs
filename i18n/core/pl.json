@@ -3,5 +3,7 @@
 		"authors": [
 			"Chrumps"
 		]
-	}
+	},
+	"globalcssjs-custom-js": "Własny JavaScript",
+	"globalcssjs-custom-css": "Własny CSS"
 }
