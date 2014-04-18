@@ -5,5 +5,8 @@
 			"Fitoschido"
 		]
 	},
-	"globalcssjs-desc": "Permite cargar CSS y JS en un wiki central para que éstos se carguen en todos los wikis conectados"
+	"globalcssjs-desc": "Permite cargar CSS y JS en un wiki central para que éstos se carguen en todos los wikis conectados",
+	"globalcssjs-custom-css-js": "CSS/JavaScript compartido en todos los wikis",
+	"globalcssjs-custom-js": "JavaScript personalizado",
+	"globalcssjs-custom-css": "CSS personalizado"
 }
