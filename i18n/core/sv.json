@@ -2,8 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Lokal Profil",
-			"Tobulos1"
+			"Tobulos1",
+			"WikiPhoenix"
 		]
 	},
-	"globalcssjs-desc": "Tillåter CSS och JavaScript på en central wiki att laddas för alla anslutna wikis"
+	"globalcssjs-desc": "Tillåter CSS och JavaScript på en central wiki att laddas för alla anslutna wikis",
+	"globalcssjs-custom-css-js": "Delad CSS/JavaScript för alla wikis:",
+	"globalcssjs-custom-js": "Anpassat JavaScript",
+	"globalcssjs-custom-css": "Anpassat CSS"
 }
