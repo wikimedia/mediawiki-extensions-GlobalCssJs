@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cwlin0416"
+		]
+	},
+	"globalcssjs-custom-js": "自訂 JavaScript",
+	"globalcssjs-custom-css": "自訂 CSS"
+}
