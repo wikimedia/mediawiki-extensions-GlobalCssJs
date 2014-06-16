@@ -38,10 +38,12 @@ class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 
 		if ( $wgUseSiteJs ) {
 			$pages["MediaWiki:Global.js"] = array( 'type' => 'script' );
+			$pages['MediaWiki:Global-' . $context->getSkin() . '.js'] = array( 'type' => 'script' );
 		}
 
 		if ( $wgUseSiteCss ) {
 			$pages["MediaWiki:Global.css"] = array( 'type' => 'style' );
+			$pages['MediaWiki:Global-' . $context->getSkin() . '.css'] = array( 'type' => 'style' );
 		}
 
 		return $pages;
