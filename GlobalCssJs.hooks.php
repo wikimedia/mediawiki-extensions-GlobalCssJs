@@ -77,16 +77,16 @@ class GlobalCssJsHooks {
 	 * @return bool
 	 */
 	static function onEditPageshowEditForminitial( EditPage $editPage, OutputPage $output ) {
-		global $wgGlobalCssJsConfig;
+		global $wgGlobalCssJsConfig, $wgAllowUserJs, $wgAllowUserCss;
 		$user = $output->getUser();
 		if ( $wgGlobalCssJsConfig['wiki'] === wfWikiID() && $user->isLoggedIn()
 			&& $editPage->formtype == 'initial' && $editPage->isCssJsSubpage
 		) {
 			$title = $editPage->getTitle();
 			$name = $user->getName();
-			if ( $editPage->isJsSubpage && $title->getText() == $name . '/global.js' ) {
+			if ( $wgAllowUserJs && $editPage->isJsSubpage && $title->getText() == $name . '/global.js' ) {
 				$msg = 'globalcssjs-warning-js';
-			} elseif ( $editPage->isCssSubpage && $title->getText() == $name . '/global.css' ) {
+			} elseif ( $wgAllowUserCss && $editPage->isCssSubpage && $title->getText() == $name . '/global.css' ) {
 				$msg = 'globalcssjs-warning-css';
 			} else {
 				// CSS or JS page, but not a global one
