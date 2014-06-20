@@ -111,7 +111,7 @@ class GlobalCssJsHooks {
 		} else {
 			return WikiMap::makeForeignLink(
 				$wgGlobalCssJsConfig['wiki'],
-				$title->getPrefixedText(),
+				"User:" . $title->getText(), // bug 66873, don't use localized namespace
 				$message
 			);
 		}
