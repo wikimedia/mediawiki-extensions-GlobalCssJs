@@ -60,7 +60,7 @@ $wgExtensionFunctions[] = function () {
 	}
 };
 
-$wgHooks['BeforePageDisplay'][] = 'GlobalCssJsHooks::onBeforePageDisplay';
+$wgHooks['OutputPageScriptsForBottomQueue'][] = 'GlobalCssJsHooks::onOutputPageScriptsForBottomQueue';
 $wgHooks['ResourceLoaderRegisterModules'][] = 'GlobalCssJsHooks::onResourceLoaderRegisterModules';
 $wgHooks['EditPage::showEditForm:initial'][] = 'GlobalCssJsHooks::onEditPageshowEditForminitial';
 $wgHooks['GetPreferences'][] = 'GlobalCssJsHooks::onGetPreferences';
