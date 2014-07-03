@@ -1,10 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Andriykopanytsia"
+			"Andriykopanytsia",
+			"Ата"
 		]
 	},
 	"globalcssjs-desc": "Дозволяє використовувати CSS і JavaScript на центральному вікі-проекті, який буде завантажуватися для всіх підлеглих вікі-проектів.",
 	"globalcssjs-warning-js": "Будь-яка JavaScript, доданий на цю сторінку, буде завантажуватися на всіх вікі, де у вас є обліковий запис.",
-	"globalcssjs-warning-css": "Будь-який CSS, доданий на цю сторінку, буде завантажуватися на всіх вікі, де у вас є обліковий запис."
+	"globalcssjs-warning-css": "Будь-який CSS, доданий на цю сторінку, буде завантажуватися на всіх вікі, де у вас є обліковий запис.",
+	"globalcssjs-custom-css-js": "CSS/JavaScript, спільні для всіх вікі:",
+	"globalcssjs-custom-js": "Власний JavaScript",
+	"globalcssjs-custom-css": "Власний CSS"
 }
