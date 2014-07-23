@@ -8,7 +8,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'name' => 'Global CSS/JS',
 	'author' => array( 'Ryan Schmidt', 'Szymon Świerkosz', 'Kunal Mehta' ),
-	'version' => '3.1.0',
+	'version' => '3.2.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GlobalCssJs',
 	'descriptionmsg' => 'globalcssjs-desc',
 );
