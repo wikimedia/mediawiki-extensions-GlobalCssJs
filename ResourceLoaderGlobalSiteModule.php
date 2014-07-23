@@ -1,5 +1,7 @@
 <?php
 /**
+ * ResourceLoader module for global site customizations.
+ *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
@@ -21,8 +23,6 @@
 
 /**
  * Module for sitewide global customizations
- * This module does not provide any resources directly.
- * It instructs ResourceLoader to load a module from a remote site.
  */
 class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 
