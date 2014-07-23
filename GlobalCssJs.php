@@ -1,8 +1,8 @@
 <?php
 
 if( !defined( 'MEDIAWIKI' ) ) {
-    echo( "This is an extension to the MediaWiki software and cannot be used standalone" );
-    die;
+	echo( "This is an extension to the MediaWiki software and cannot be used standalone" );
+	die;
 }
 
 $wgExtensionCredits['other'][] = array(
@@ -20,17 +20,17 @@ $wgExtensionCredits['other'][] = array(
  * Administrators can put global code on MediaWiki:Global.js and .css
  *
  * Required properties:
- * 	'wiki' - name of the central wiki database
- * 	'source' - name of a ResourceLoader source pointing to the central wiki
+ *   'wiki' - name of the central wiki database
+ *   'source' - name of a ResourceLoader source pointing to the central wiki
  *
  * For example:
  * $wgGlobalCssJsConfig = array(
- *     'wiki' => 'metawiki',
- *     'source' => 'metawiki',
+ *   'wiki' => 'metawiki',
+ *   'source' => 'metawiki',
  * );
  * $wgResourceLoaderSources['metawiki'] = array(
- *     'apiScript' => '//meta.wikimedia.org/w/api.php',
- *     'loadScript' => '//meta.wikimedia.org/w/load.php',
+ *   'apiScript' => '//meta.wikimedia.org/w/api.php',
+ *   'loadScript' => '//meta.wikimedia.org/w/load.php',
  * );
  * @var array
  */
