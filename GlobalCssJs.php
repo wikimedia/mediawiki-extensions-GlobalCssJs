@@ -52,13 +52,16 @@ $wgAutoloadClasses['ResourceLoaderGlobalUserModule'] = __DIR__ . '/ResourceLoade
 $wgAutoloadClasses['GlobalCssJsHooks'] = __DIR__ . '/GlobalCssJs.hooks.php';
 $wgMessagesDirs['GlobalCssJs'] = __DIR__ . '/i18n/core';
 $wgExtensionMessagesFiles['GlobalCssJs'] = __DIR__ . '/GlobalCssJs.i18n.php';
-$wgExtensionFunctions[] = function () {
-	global $wgGlobalCssJsConfig, $wgUseGlobalSiteCssJs;
+
+$wgExtensionFunctions[] = 'efGlobalCssJs';
+function efGlobalCssJs() {
+	global $wgGlobalCssJsConfig, $wgUseGlobalSiteCssJs,
+		$wgMessagesDirs, $wgExtensionMessagesFiles;
 	if ( $wgGlobalCssJsConfig['wiki'] === wfWikiID() && $wgUseGlobalSiteCssJs ) {
 		$wgMessagesDirs['GlobalCssJsCentral'] = __DIR__ . '/i18n/central';
 		$wgExtensionMessagesFiles['GlobalCssJsCentral'] = __DIR__ . '/GlobalCssJs.central.i18n.php';
 	}
-};
+}
 
 $wgHooks['BeforePageDisplay'][] = 'GlobalCssJsHooks::onBeforePageDisplay';
 $wgHooks['ResourceLoaderRegisterModules'][] = 'GlobalCssJsHooks::onResourceLoaderRegisterModules';
