@@ -33,7 +33,12 @@ class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 	 * @return array
 	 */
 	protected function getPages( ResourceLoaderContext $context ) {
-		global $wgUseSiteCss, $wgUseSiteJs;
+		global $wgUseSiteCss, $wgUseSiteJs, $wgUseGlobalSiteCssJs;
+
+		if ( !$wgUseGlobalSiteCssJs ) {
+			return array();
+		}
+
 		$pages = array();
 
 		if ( $wgUseSiteJs ) {

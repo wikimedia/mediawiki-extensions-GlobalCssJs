@@ -41,16 +41,18 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 			return array();
 		}
 
-		// Get the normalized title of the user's user page
-		// Note this validates against the local site rather than
-		// the target site.
-		$userpageTitle = Title::makeTitleSafe( NS_USER, $username );
-
-		if ( !$userpageTitle instanceof Title ) {
+		// Note, this will validate the user's name against
+		// the local site rather than the target site
+		$user = User::newFromName( $username );
+		if ( !$user || !$user->getId() ) {
 			return array();
 		}
 
-		$userpage = $userpageTitle->getDBkey();
+		if ( !GlobalCssJsHooks::loadForUser( $user ) ) {
+			return array();
+		}
+
+		$userpage = $user->getUserPage()->getDBkey();
 		$pages = array();
 
 		if ( $wgAllowUserJs ) {

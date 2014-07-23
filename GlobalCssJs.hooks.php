@@ -3,29 +3,12 @@
 class GlobalCssJsHooks {
 
 	/**
-	 * @param &$out OutputPage
-	 * @param &$skin Skin
+	 * @param OutputPage $out
+	 * @param array $modules
 	 * @return bool
 	 */
-	static function onBeforePageDisplay( &$out, &$skin ) {
-		global $wgGlobalCssJsConfig, $wgUseGlobalSiteCssJs;
-
-		if ( $wgUseGlobalSiteCssJs ) {
-			// Global site modules are loaded for everyone, if enabled
-			$out->addModules( 'ext.globalCssJs.site' );
-		}
-
-		$user = $out->getUser();
-		// Only load user modules for logged in users
-		if ( $user->isAnon() ) {
-			return true;
-		}
-
-		// If we are on a different site, use a hook to allow other extensions
-		// like CentralAuth verify that the same account exists on both sites
-		if ( self::loadForUser( $user ) ) {
-			$out->addModules( 'ext.globalCssJs.user' );
-		}
+	static function onOutputPageScriptsForBottomQueue( OutputPage $out, array &$modules ) {
+		$modules = array_merge( $modules, array( 'ext.globalCssJs.user', 'ext.globalCssJs.site' ) );
 
 		return true;
 	}
