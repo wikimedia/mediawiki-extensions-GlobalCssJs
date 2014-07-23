@@ -21,7 +21,8 @@
  */
 
 /**
- * Base class for global modules
+ * Base class for global modules.
+ *
  * This module does not provide any resources directly.
  * It instructs ResourceLoader to load a module from a remote site.
  */
