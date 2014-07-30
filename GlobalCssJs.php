@@ -9,7 +9,7 @@ $wgExtensionCredits['other'][] = array(
 	'name' => 'Global CSS/JS',
 	'path' => __FILE__,
 	'author' => array( 'Ryan Schmidt', 'Szymon Świerkosz', 'Kunal Mehta' ),
-	'version' => '3.2.0',
+	'version' => '3.3.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GlobalCssJs',
 	'descriptionmsg' => 'globalcssjs-desc',
 );
