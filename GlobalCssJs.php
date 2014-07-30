@@ -51,6 +51,10 @@ $wgAutoloadClasses['ResourceLoaderGlobalModule'] = __DIR__ . '/ResourceLoaderGlo
 $wgAutoloadClasses['ResourceLoaderGlobalSiteModule'] = __DIR__ . '/ResourceLoaderGlobalSiteModule.php';
 $wgAutoloadClasses['ResourceLoaderGlobalUserModule'] = __DIR__ . '/ResourceLoaderGlobalUserModule.php';
 $wgAutoloadClasses['GlobalCssJsHooks'] = __DIR__ . '/GlobalCssJs.hooks.php';
+
+// Only for unit tests
+$wgAutoloadClasses['ResourceLoaderGlobalModuleTestCase'] = __DIR__ . '/tests/ResourceLoaderGlobalModuleTestCase.php';
+
 $wgMessagesDirs['GlobalCssJs'] = __DIR__ . '/i18n/core';
 $wgExtensionMessagesFiles['GlobalCssJs'] = __DIR__ . '/GlobalCssJs.i18n.php';
 
