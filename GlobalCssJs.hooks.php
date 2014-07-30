@@ -4,11 +4,11 @@ class GlobalCssJsHooks {
 
 	/**
 	 * @param OutputPage $out
-	 * @param array $modules
 	 * @return bool
 	 */
-	static function onOutputPageScriptsForBottomQueue( OutputPage $out, array &$modules ) {
-		$modules = array_merge( $modules, array( 'ext.globalCssJs.user', 'ext.globalCssJs.site' ) );
+	static function onBeforePageDisplay( OutputPage $out ) {
+		$out->addModuleStyles( array( 'ext.globalCssJs.user', 'ext.globalCssJs.site' ) );
+		$out->addModuleScripts( array( 'ext.globalCssJs.user', 'ext.globalCssJs.site' ) );
 
 		return true;
 	}
