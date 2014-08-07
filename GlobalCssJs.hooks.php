@@ -44,12 +44,10 @@ class GlobalCssJsHooks {
 		) + $wgGlobalCssJsConfig;
 		$resourceLoader->register( 'ext.globalCssJs.user', $user );
 
-		if ( $wgUseGlobalSiteCssJs ) {
-			$site = array(
-				'class' => 'ResourceLoaderGlobalSiteModule',
-			) + $wgGlobalCssJsConfig;
-			$resourceLoader->register( 'ext.globalCssJs.site', $site );
-		}
+		$site = array(
+			'class' => 'ResourceLoaderGlobalSiteModule',
+		) + $wgGlobalCssJsConfig;
+		$resourceLoader->register( 'ext.globalCssJs.site', $site );
 
 		return true;
 	}
