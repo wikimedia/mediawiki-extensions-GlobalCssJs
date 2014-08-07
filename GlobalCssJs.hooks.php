@@ -31,7 +31,7 @@ class GlobalCssJsHooks {
 	 * @return bool
 	 */
 	static function onResourceLoaderRegisterModules( &$resourceLoader ) {
-		global $wgGlobalCssJsConfig, $wgUseGlobalSiteCssJs;
+		global $wgGlobalCssJsConfig;
 
 		if ( $wgGlobalCssJsConfig['wiki'] === false || $wgGlobalCssJsConfig['source'] === false ) {
 			// If not configured properly, exit
