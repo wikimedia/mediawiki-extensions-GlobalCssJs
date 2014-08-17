@@ -10,5 +10,7 @@
 	"globalcssjs-warning-css": "Notice on top of edit window",
 	"globalcssjs-custom-css-js": "Help message next to links to a user's global.js/global.css pages",
 	"globalcssjs-custom-js": "Link text for link to a user's global.js page.\n{{Identical|Custom JavaScript}}",
-	"globalcssjs-custom-css": "Link text for a link to a user's global.css page.\n{{Identical|Custom CSS}}"
+	"globalcssjs-custom-css": "Link text for a link to a user's global.css page.\n{{Identical|Custom CSS}}",
+	"globalcssjs-delete-css": "Used as a deletion summary when deleting a user's CSS page",
+	"globalcssjs-delete-js": "Used as a deletion summary when deleting a user's JavaScript page"
 }
