@@ -5,7 +5,7 @@
 		]
 	},
 	"globalcssjs-desc": "接続されたすべてのウィキで読み込まれる、中央管理ウィキ上の CSS および JavaScript を使用できるようにする",
-	"globalcssjs-custom-css-js": "すべてのウィキに共通のCSSとJavaScript",
+	"globalcssjs-custom-css-js": "すべてのウィキに共通のCSSとJavaScript:",
 	"globalcssjs-custom-js": "カスタムJS",
 	"globalcssjs-custom-css": "カスタムCSS"
 }

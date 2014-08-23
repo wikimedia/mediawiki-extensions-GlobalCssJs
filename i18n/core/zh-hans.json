@@ -8,7 +8,7 @@
 	"globalcssjs-desc": "允许中央wiki上的全域CSS和JavaScript加载到所有已连接的wiki农场",
 	"globalcssjs-warning-js": "任何加入此页的JavaScript将在所有您拥有账户的wiki载入。",
 	"globalcssjs-warning-css": "任何加入此页的CSS将在所有您拥有账户的wiki载入。",
-	"globalcssjs-custom-css-js": "为所有wiki分享CSS/JavaScript",
+	"globalcssjs-custom-css-js": "为所有wiki分享的CSS/JavaScript：",
 	"globalcssjs-custom-js": "自定义JavaScript",
 	"globalcssjs-custom-css": "自定义CSS"
 }

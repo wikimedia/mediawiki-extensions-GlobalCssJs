@@ -8,7 +8,7 @@
 	"globalcssjs-desc": "Ermöglicht CSS und JavaScript auf einem zentralen Wiki, das für alle verbundenen Wikis geladen wird",
 	"globalcssjs-warning-js": "Jedes JavaScript auf dieser Seite wird auf allen Wikis geladen, auf denen du ein Benutzerkonto hast.",
 	"globalcssjs-warning-css": "Jedes CSS auf dieser Seite wird auf allen Wikis geladen, auf denen du ein Benutzerkonto hast.",
-	"globalcssjs-custom-css-js": "Geteiltes CSS/JavaScript für alle Wikis",
+	"globalcssjs-custom-css-js": "Geteiltes CSS/JavaScript für alle Wikis:",
 	"globalcssjs-custom-js": "Benutzerdefiniertes JavaScript",
 	"globalcssjs-custom-css": "Benutzerdefiniertes CSS"
 }

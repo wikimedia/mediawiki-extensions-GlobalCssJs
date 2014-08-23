@@ -9,7 +9,7 @@
 	"globalcssjs-desc": "Permite cargar CSS y JS en un wiki central para que éstos se carguen en todos los wikis conectados",
 	"globalcssjs-warning-js": "El código JavaScript que se añada a esta página se cargará en todos los wikis en los que tengas una cuenta.",
 	"globalcssjs-warning-css": "El código CSS que se añada a esta página se cargará en todos los wikis en los que tengas una cuenta.",
-	"globalcssjs-custom-css-js": "CSS/JavaScript compartido en todos los wikis",
+	"globalcssjs-custom-css-js": "CSS/JavaScript compartido en todos los wikis:",
 	"globalcssjs-custom-js": "JavaScript personalizado",
 	"globalcssjs-custom-css": "CSS personalizado"
 }
