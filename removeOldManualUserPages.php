@@ -12,6 +12,11 @@ require_once "$IP/maintenance/Maintenance.php";
  * has an account.
  */
 class RemoveOldManualUserPages extends Maintenance {
+	public function __construct() {
+		parent::__construct();
+		$this->mDescription = 'Remove reundant user script pages that import global.js and/or global.css';
+		$this->addOption( 'user', 'User name', true, true );
+	}
 
 	public function execute() {
 		$userName = $this->getOption( 'user' );
