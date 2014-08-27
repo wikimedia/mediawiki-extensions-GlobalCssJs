@@ -88,8 +88,22 @@ class RemoveOldManualUserPages extends Maintenance {
 		$this->output( "{$title->getPrefixedText()} was deleted.\n" );
 	}
 
-	public function checkCss( $text, $domain, $userName ) {
+	/**
+	 * Given a username, normalize and escape it to be
+	 * safely used in regex
+	 *
+	 * @param string $userName
+	 * @return string
+	 */
+	public function normalizeUserName( $userName ) {
 		$userName = preg_quote( $userName );
+		// Spaces can be represented as space, underscore, plus, or %20.
+		$userName = str_replace( ' ', '( |_|\+|%20)', $userName );
+		return $userName;
+	}
+
+	public function checkCss( $text, $domain, $userName ) {
+		$userName = $this->normalizeUserName( $userName );
 		preg_match( "/@import url\('(https?:)?\/\/$domain\/w\/index\.php\?title=User:$userName\/global\.css&action=raw&ctype=text\/css'\);/", $text, $matches );
 		return isset( $matches[0] ) ? $matches[0] === $text : false;
 	}
@@ -137,8 +151,8 @@ class RemoveOldManualUserPages extends Maintenance {
 
 	public function checkJs( $text, $domain, $userName ) {
 		$text = $this->stripComments( $text );
-		$userName = preg_quote( $userName );
-		preg_match( "/(mw\.loader\.load|importScriptURI)\s*\(\s*'(https?:)?\/\/$domain\/w\/index\.php\?title=User:$userName\/global\.js&action=raw&ctype=text\/javascript(&smaxage=\d*?)?(&maxage=\d*?)?'\s*\)\s*;?/", $text, $matches );
+		$userName = $this->normalizeUserName( $userName );
+		preg_match( "/(mw\.loader\.load|importScriptURI)\s*\(\s*('|\")(https?:)?\/\/$domain\/w\/index\.php\?title=User:$userName\/global\.js&action=raw&ctype=text\/javascript(&smaxage=\d*?)?(&maxage=\d*?)?('|\")\s*\)\s*;?/", $text, $matches );
 		return isset( $matches[0] ) ? $matches[0] === $text : false;
 	}
 
