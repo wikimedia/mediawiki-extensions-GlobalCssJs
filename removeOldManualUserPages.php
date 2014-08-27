@@ -12,13 +12,18 @@ require_once "$IP/maintenance/Maintenance.php";
  * has an account.
  */
 class RemoveOldManualUserPages extends Maintenance {
+
+	private $ignoreRevisionLimit;
+
 	public function __construct() {
 		parent::__construct();
 		$this->mDescription = 'Remove reundant user script pages that import global.js and/or global.css';
 		$this->addOption( 'user', 'User name', true, true );
+		$this->addOption( 'ignorerevisionlimit', 'Whether to ignore the 1 revision limit', false, false );
 	}
 
 	public function execute() {
+		$this->ignoreRevisionLimit = $this->hasOption( 'ignorerevisionlimit' );
 		$userName = $this->getOption( 'user' );
 		$user = User::newFromName( $userName );
 		if ( !class_exists( 'GlobalCssJsHooks' ) ) {
@@ -61,7 +66,7 @@ class RemoveOldManualUserPages extends Maintenance {
 
 
 		$rev = Revision::newFromTitle( $title );
-		if ( $title->getPreviousRevisionID( $rev->getId() ) !== false ) {
+		if ( !$this->ignoreRevisionLimit && $title->getPreviousRevisionID( $rev->getId() ) !== false ) {
 			$this->output( "{$title->getPrefixedText()} has more than one revision, skipping.\n" );
 			return false;
 		}
