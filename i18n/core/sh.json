@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kolega2357"
+		]
+	},
+	"globalcssjs-custom-css-js": "Zajednički CSS/JS za sve izglede (skinove):",
+	"globalcssjs-custom-js": "Prilagođeni JS",
+	"globalcssjs-custom-css": "Prilagođeni CSS"
+}

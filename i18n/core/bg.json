@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"StanProg"
+		]
+	},
+	"globalcssjs-custom-css-js": "Споделени настройки на CSS/JS за всички уикита:",
+	"globalcssjs-custom-js": "Личен JS",
+	"globalcssjs-custom-css": "Личен CSS"
+}

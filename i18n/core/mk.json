@@ -9,5 +9,7 @@
 	"globalcssjs-warning-css": "Тука постевениот CSS ќе се вчита на сите викија кајшто имате сметка.",
 	"globalcssjs-custom-css-js": "Заеднички CSS/JavaScript за сите викија:",
 	"globalcssjs-custom-js": "Прилагоден JavaScript",
-	"globalcssjs-custom-css": "Прилагоден CSS"
+	"globalcssjs-custom-css": "Прилагоден CSS",
+	"globalcssjs-delete-css": "Бришење на CSS-страница на барање на корисникот поради спроведување на [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Бришење на JavaScript-страница по барање на корисникот поради спроведување на [[mw:Help:Extension:GlobalCssJs]]"
 }

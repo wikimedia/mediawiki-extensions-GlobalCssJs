@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"زكريا"
+		]
+	},
+	"globalcssjs-desc": "شغل نصوص سي إس إس وجافاسكربت شخصية في جميع مواقع ويكيميديا انطلاقا من ويكي مركزي",
+	"globalcssjs-warning-js": "سيحمل أي جافاسكربت في هذه الصفحة لحسابك في جميع مشاريع ويكيميديا.",
+	"globalcssjs-warning-css": "سيحمل أي سي إس إس في هذه الصفحة لحسابك في جميع مشاريع ويكيميديا.",
+	"globalcssjs-custom-css-js": "سي إس إس وجافاسكربت لحسابك في جميع مشاريع ويكيميديا:",
+	"globalcssjs-custom-js": "جافاسكربت شخصي",
+	"globalcssjs-custom-css": "سي إس إس شخصي",
+	"globalcssjs-delete-css": "حذف صفحة سي إس إس بطلب من المستخدم نظرا لتشغيل [[mw:Help:Extension:GlobalCssJs|سي إس إس الشامل]]",
+	"globalcssjs-delete-js": "حذف صفحة جافاسكربت بطلب من المستخدم نظرا لتشغيل [[mw:Help:Extension:GlobalCssJs|جافاسكربت الشامل]]"
+}
