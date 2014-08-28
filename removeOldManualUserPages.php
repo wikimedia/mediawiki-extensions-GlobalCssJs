@@ -13,6 +13,9 @@ require_once "$IP/maintenance/Maintenance.php";
  */
 class RemoveOldManualUserPages extends Maintenance {
 
+	/**
+	 * @var bool
+	 */
 	private $ignoreRevisionLimit;
 
 	public function __construct() {
