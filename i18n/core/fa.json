@@ -6,5 +6,7 @@
 		]
 	},
 	"globalcssjs-desc": "اجازه دادن سی‌اس‌اس و جاوااسکریپت بر روی ویکی مرکزی برای بارگذاری شدن برای همهٔ ویکی‌های متصل شده",
-	"globalcssjs-custom-css-js": "سی‌اس‌اس/جاوااسکریپت مشترک برای همه ویکی‌ها:"
+	"globalcssjs-custom-css-js": "سی‌اس‌اس/جاوااسکریپت مشترک برای همه ویکی‌ها:",
+	"globalcssjs-delete-css": "حذف صفحه سی‌اس‌اس به درخواست کاربر به علت توسعه [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "حذف صفحه جاوااسکریپت به درخواست کاربر به علت توسعه [[mw:Help:Extension:GlobalCssJs]]"
 }

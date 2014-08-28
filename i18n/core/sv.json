@@ -11,5 +11,7 @@
 	"globalcssjs-warning-css": "All CSS som läggs till på denna sida kommer att laddas på alla wikis där du har ett konto.",
 	"globalcssjs-custom-css-js": "Delad CSS/JavaScript för alla wikis:",
 	"globalcssjs-custom-js": "Anpassat JavaScript",
-	"globalcssjs-custom-css": "Anpassat CSS"
+	"globalcssjs-custom-css": "Anpassat CSS",
+	"globalcssjs-delete-css": "Raderar CSS-sida på användarens begäran på grund av driftsättning av [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Raderar JavaScript-sida på användarens begäran på grund av driftsättning av [[mw:Help:Extension:GlobalCssJs]]"
 }
