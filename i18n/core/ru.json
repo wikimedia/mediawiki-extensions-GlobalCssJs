@@ -12,5 +12,7 @@
 	"globalcssjs-warning-css": "Любой CSS, добавленный на эту страницу, будет загружаться на всех вики, где у вас есть учётная запись.",
 	"globalcssjs-custom-css-js": "Общие CSS/JS для всех вики-проектов:",
 	"globalcssjs-custom-js": "Собственный JS",
-	"globalcssjs-custom-css": "Собственный CSS"
+	"globalcssjs-custom-css": "Собственный CSS",
+	"globalcssjs-delete-css": "Удаление CSS-страницы по запросу участника в связи с вводом [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Удаление JavaScript-страницы по запросу участника в связи с вводом [[mw:Help:Extension:GlobalCssJs]]"
 }
