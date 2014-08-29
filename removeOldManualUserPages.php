@@ -94,11 +94,20 @@ class RemoveOldManualUserPages extends Maintenance {
 	}
 
 	private function deletePage( Title $title, $reason ) {
+		global $wgUser;
 		$page = WikiPage::factory( $title );
-		$user = User::newFromName( 'GlobalCssJs migration script' );
+		$user = User::newFromName( 'Maintenance script' );
+		$user->addGroup( 'bot' );
+
+		// For hooks not using RequestContext (e.g. AbuseFilter)
+		$wgUser = $user;
 		$errors = array();
-		$page->doDeleteArticleReal( wfMessage( $reason )->inContentLanguage()->text(), false, 0, true, $errors, $user );
-		$this->output( "{$title->getPrefixedText()} was deleted.\n" );
+		$status = $page->doDeleteArticleReal( wfMessage( $reason )->inContentLanguage()->text(), false, 0, true, $errors, $user );
+		if ( $status->isGood() ) {
+			$this->output( "{$title->getPrefixedText()} was deleted.\n" );
+		} else {
+			$this->output( "{$title->getPrefixedText()} could not be deleted:\n" . $status->getWikiText() . "\n" );
+		}
 	}
 
 	/**
