@@ -4,5 +4,6 @@
 			"Leli Forte"
 		]
 	},
+	"globalcssjs-delete-css": "Qed titħassar il-paġna tas-CCS fuq it-talba tal-utent minħabba l-attivazzjoni tal-[[mw:Help:Extension:GlobalCssJs]]",
 	"globalcssjs-delete-js": "Qed titħassar il-paġna bil-JavaScript fuq it-talba tal-utent minħabba l-attivazzjoni tal-[[mw:Help:Extension:GlobalCssJs]]"
 }

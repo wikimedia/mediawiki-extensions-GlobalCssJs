@@ -1,7 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jack Phoenix"
+			"Jack Phoenix",
+			"Stryn"
 		]
-	}
+	},
+	"globalcssjs-warning-js": "Kaikki tämän sivun JavaScript-koodit ladataan kaikissa wikeissä, joissa sinulla on tunnus.",
+	"globalcssjs-warning-css": "Kaikki tämän sivun CSS-koodit ladataan kaikissa wikeissä, joissa sinulla on tunnus.",
+	"globalcssjs-custom-css-js": "Yhteinen CSS/JavaScript kaikkiin wikeihin:",
+	"globalcssjs-custom-js": "Käyttäjäkohtainen JavaScript-sivu",
+	"globalcssjs-custom-css": "Käyttäjäkohtainen CSS-tyylisivu",
+	"globalcssjs-delete-css": "Poistetaan CSS-sivu käyttäjän pyynnöstä [[mw:Help:Extension:GlobalCssJs|GlobalCssJs]]-laajennoksen vuoksi",
+	"globalcssjs-delete-js": "Poistetaan JavaScript-sivu käyttäjän pyynnöstä [[mw:Help:Extension:GlobalCssJs|GlobalCssJs]]-laajennoksen vuoksi"
 }

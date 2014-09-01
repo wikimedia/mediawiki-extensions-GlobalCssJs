@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Yona b",
-			"Amire80"
+			"Amire80",
+			"Guycn2"
 		]
 	},
 	"globalcssjs-desc": "מאפשר CSS ו־JavaScript מוויקי מרכזי להיטען בכל אתרי הוויקי המקושרים",
 	"globalcssjs-warning-js": "כל תסריטי ה־JavaScript שמתווספים לדף הזה ייטענו בכל אתרי הוויקי שבהם יש לך חשבון.",
 	"globalcssjs-warning-css": "כל סגנונות ה־CSS שמתווספים לדף הזה ייטענו בכל אתרי הוויקי שבהם יש לך חשבון.",
-	"globalcssjs-custom-css-js": "JavaScriptו־CSS שמשותף לכל אתרי הוויקי",
-	"globalcssjs-custom-js": "JavaScript מותאם",
-	"globalcssjs-custom-css": "CSS מותאם"
+	"globalcssjs-custom-css-js": "קובצי CSS/JavaScript משותפים לכל אתרי הוויקי:",
+	"globalcssjs-custom-js": "קובץ JavaScript מותאם אישית",
+	"globalcssjs-custom-css": "קובץ CSS מותאם אישית"
 }

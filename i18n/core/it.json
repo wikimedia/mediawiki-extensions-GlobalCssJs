@@ -10,5 +10,7 @@
 	"globalcssjs-warning-css": "Qualsiasi CSS aggiunto a questa pagina verrà caricato su tutti gli wiki dove hai un'utenza.",
 	"globalcssjs-custom-css-js": "CSS/JavaScript condiviso con tutte le wiki:",
 	"globalcssjs-custom-js": "JavaScript personalizzato",
-	"globalcssjs-custom-css": "CSS personalizzato"
+	"globalcssjs-custom-css": "CSS personalizzato",
+	"globalcssjs-delete-css": "Cancellazione della pagina CSS su richiesta dell'utente a causa della distribuzione di [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Cancellazione della pagina JavaScript su richiesta dell'utente a causa della distribuzione di [[mw:Help:Extension:GlobalCssJs]]"
 }
