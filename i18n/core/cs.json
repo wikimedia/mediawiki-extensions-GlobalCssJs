@@ -9,5 +9,7 @@
 	"globalcssjs-warning-css": "Libovolné CSS přidané na tuto stránku se bude načítat na všech wiki, na kterých máte účet.",
 	"globalcssjs-custom-css-js": "Sdílené CSS/JavaScript pro všechny wiki:",
 	"globalcssjs-custom-js": "Uživatelský JavaScript",
-	"globalcssjs-custom-css": "Uživatelské CSS"
+	"globalcssjs-custom-css": "Uživatelské CSS",
+	"globalcssjs-delete-css": "Smazání CSS stránky na žádost uživatele kvůli nasazení [[mw:Help:Extension:GlobalCssJs|rozšíření GlobalCssJs]]",
+	"globalcssjs-delete-js": "Smazání JavaScriptové stránky na žádost uživatele kvůli nasazení [[mw:Help:Extension:GlobalCssJs|rozšíření GlobalCssJs]]"
 }
