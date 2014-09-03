@@ -11,5 +11,7 @@
 	"globalcssjs-warning-css": "כל סגנונות ה־CSS שמתווספים לדף הזה ייטענו בכל אתרי הוויקי שבהם יש לך חשבון.",
 	"globalcssjs-custom-css-js": "קובצי CSS/JavaScript משותפים לכל אתרי הוויקי:",
 	"globalcssjs-custom-js": "קובץ JavaScript מותאם אישית",
-	"globalcssjs-custom-css": "קובץ CSS מותאם אישית"
+	"globalcssjs-custom-css": "קובץ CSS מותאם אישית",
+	"globalcssjs-delete-css": "מחיקת דף CSS בהתאם לבקשת המשתמש עקב פריסה של [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "מחיקת דף JavaScript בהתאם לבקשת המשתמש עקב פריסה של [[mw:Help:Extension:GlobalCssJs]]"
 }
