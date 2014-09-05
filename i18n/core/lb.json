@@ -8,5 +8,6 @@
 	"globalcssjs-warning-js": "All JavaScript deen op dës Säit derbäigesat gëtt, gëtt op all Wikie gelueden op deenen Dir e Benotzerkont hutt.",
 	"globalcssjs-custom-css-js": "Gemeinsamen CSS/JavaScript fir all Wikien:",
 	"globalcssjs-custom-js": "Benotzerdefinéierte JavaScript",
-	"globalcssjs-custom-css": "Benotzerdefinéierten CSS"
+	"globalcssjs-custom-css": "Benotzerdefinéierten CSS",
+	"globalcssjs-delete-js": "Läsche vun der JavaScript-Säit op Ufro vum Benotzer opgrond vun der Entwécklung vun [[mw:Help:Extension:GlobalCssJs]]"
 }
