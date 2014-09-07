@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"MaGa"
+		]
+	},
+	"globalcssjs-custom-css-js": "Dijeljeni CSS/JavaScript za sve wikije:",
+	"globalcssjs-custom-js": "Prilagođen JavaScript",
+	"globalcssjs-custom-css": "Prilagođen CSS"
+}

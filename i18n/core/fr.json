@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Ltrlg"
+			"Ltrlg",
+			"Automatik"
 		]
 	},
-	"globalcssjs-desc": "Permet à tous les wikis connectés d’une ferme de wikis de charger des fichiers CSS et JavaScript depuis un wiki central",
+	"globalcssjs-desc": "Permet à ce que les fichiers CSS et JavaScript d’un wiki central soient chargés depuis tous les wikis qui y sont connectés",
 	"globalcssjs-warning-js": "Tout JavaScript ajouté à cette page sera chargé sur tous les wikis sur lesquels vous avez un compte.",
 	"globalcssjs-warning-css": "Tout CSS ajouté à cette page sera chargé sur tous les wikis sur lesquels vous avez un compte.",
 	"globalcssjs-custom-css-js": "CSS/JavaScript partagé pour tous les wikis :",
