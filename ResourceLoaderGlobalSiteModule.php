@@ -33,7 +33,8 @@ class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 	 * @return array
 	 */
 	protected function getPages( ResourceLoaderContext $context ) {
-		global $wgUseSiteCss, $wgUseSiteJs, $wgUseGlobalSiteCssJs;
+		$config = $context->getResourceLoader()->getConfig();
+		global $wgUseGlobalSiteCssJs;
 
 		if ( !$wgUseGlobalSiteCssJs ) {
 			return array();
@@ -41,12 +42,12 @@ class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 
 		$pages = array();
 
-		if ( $wgUseSiteJs ) {
+		if ( $config->get( 'UseSiteJs' ) ) {
 			$pages["MediaWiki:Global.js"] = array( 'type' => 'script' );
 			$pages['MediaWiki:Global-' . $context->getSkin() . '.js'] = array( 'type' => 'script' );
 		}
 
-		if ( $wgUseSiteCss ) {
+		if ( $config->get( 'UseSiteCss' ) ) {
 			$pages["MediaWiki:Global.css"] = array( 'type' => 'style' );
 			$pages['MediaWiki:Global-' . $context->getSkin() . '.css'] = array( 'type' => 'style' );
 		}

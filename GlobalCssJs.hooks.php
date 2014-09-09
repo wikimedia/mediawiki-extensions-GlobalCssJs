@@ -58,16 +58,17 @@ class GlobalCssJsHooks {
 	 * @return bool
 	 */
 	static function onEditPageshowEditForminitial( EditPage $editPage, OutputPage $output ) {
-		global $wgGlobalCssJsConfig, $wgAllowUserJs, $wgAllowUserCss;
+		global $wgGlobalCssJsConfig;
+		$config = $output->getConfig();
 		$user = $output->getUser();
 		if ( $wgGlobalCssJsConfig['wiki'] === wfWikiID() && $user->isLoggedIn()
 			&& $editPage->formtype == 'initial' && $editPage->isCssJsSubpage
 		) {
 			$title = $editPage->getTitle();
 			$name = $user->getName();
-			if ( $wgAllowUserJs && $editPage->isJsSubpage && $title->getText() == $name . '/global.js' ) {
+			if ( $config->get( 'AllowUserJs' ) && $editPage->isJsSubpage && $title->getText() == $name . '/global.js' ) {
 				$msg = 'globalcssjs-warning-js';
-			} elseif ( $wgAllowUserCss && $editPage->isCssSubpage && $title->getText() == $name . '/global.css' ) {
+			} elseif ( $config->get( 'AllowUserCss' ) && $editPage->isCssSubpage && $title->getText() == $name . '/global.css' ) {
 				$msg = 'globalcssjs-warning-css';
 			} else {
 				// CSS or JS page, but not a global one
@@ -99,9 +100,11 @@ class GlobalCssJsHooks {
 	}
 
 	static function onGetPreferences( User $user, array &$prefs ) {
-		global $wgAllowUserCss, $wgAllowUserJs;
+		$ctx = RequestContext::getMain();
+		$allowUserCss = $ctx->getConfig()->get( 'AllowUserCss' );
+		$allowUserJs = $ctx->getConfig()->get( 'AllowUserJs' );
 
-		if ( !$wgAllowUserCss && !$wgAllowUserJs ) {
+		if ( !$allowUserCss && !$allowUserJs ) {
 			// No user CSS or JS allowed
 			return true;
 		}
@@ -110,14 +113,13 @@ class GlobalCssJsHooks {
 			// No global scripts for this user :(
 			return true;
 		}
-		$ctx = RequestContext::getMain();
 		$userName = $user->getName();
 		$linkTools = array();
-		if ( $wgAllowUserCss ) {
+		if ( $allowUserCss ) {
 			$cssPage = Title::makeTitleSafe( NS_USER, $userName . '/global.css' );
 			$linkTools[] = self::makeCentralLink( $cssPage, 'globalcssjs-custom-css' );
 		}
-		if ( $wgAllowUserJs ) {
+		if ( $allowUserJs ) {
 			$jsPage = Title::makeTitleSafe( NS_USER, $userName . '/global.js' );
 			$linkTools[] = self::makeCentralLink( $jsPage, 'globalcssjs-custom-js' );
 		}

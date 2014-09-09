@@ -34,7 +34,7 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 	 * @return array
 	 */
 	protected function getPages( ResourceLoaderContext $context ) {
-		global $wgAllowUserJs, $wgAllowUserCss;
+		$config = $context->getResourceLoader()->getConfig();
 		$username = $context->getUser();
 
 		if ( $username === null ) {
@@ -55,11 +55,11 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 		$userpage = $user->getUserPage()->getDBkey();
 		$pages = array();
 
-		if ( $wgAllowUserJs ) {
+		if ( $config->get( 'AllowUserJs' ) ) {
 			$pages["User:$userpage/global.js"] = array( 'type' => 'script' );
 		}
 
-		if ( $wgAllowUserCss ) {
+		if ( $config->get( 'AllowUserCss' ) ) {
 			$pages["User:$userpage/global.css"] = array( 'type' => 'style' );
 		}
 
