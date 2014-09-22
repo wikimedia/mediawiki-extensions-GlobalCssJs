@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"globalcssjs-warning-js": "Svaki javaskript postavljen ovde će biti učitan na svim vikijima gde imate nalog.",
+	"globalcssjs-warning-css": "Svaki CSS postavljen ovde će biti učitan na svim vikijima gde imate nalog.",
+	"globalcssjs-custom-css-js": "Deljeni CSS/javaskript za sve vikije:",
+	"globalcssjs-custom-js": "Prilagođeni javaskript",
+	"globalcssjs-custom-css": "Prilagođeni CSS",
+	"globalcssjs-delete-css": "Brisanje CSS stranice na osnovu zahteva zbog [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Brisanje javaskript stranice na osnovu zahteva zbog [[mw:Help:Extension:GlobalCssJs]]"
+}
