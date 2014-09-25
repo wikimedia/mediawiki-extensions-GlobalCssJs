@@ -12,7 +12,7 @@ class ResourceLoaderGlobalModuleTestCase extends MediaWikiTestCase {
 	 * @param string $skin
 	 * @return array
 	 */
-	public static function getDefaultGlobalSettings( $skin = 'vector' ) {
+	protected function getDefaultGlobalSettings( $skin = 'vector' ) {
 		return array(
 			'wgUseSiteCss' => true,
 			'wgUseSiteJs' => true,
@@ -22,7 +22,7 @@ class ResourceLoaderGlobalModuleTestCase extends MediaWikiTestCase {
 			// ResourceLoaderContext will fallback to $wgDefaultSkin, so we set it
 			// to an invalid skin to bypass some checks
 			'wgDefaultSkin' => $skin,
-			'wgGlobalCssJsConfig' => self::getFakeOptions(),
+			'wgGlobalCssJsConfig' => $this->getFakeOptions(),
 		);
 	}
 
@@ -32,7 +32,7 @@ class ResourceLoaderGlobalModuleTestCase extends MediaWikiTestCase {
 	 * @param array $options
 	 * @return ResourceLoaderContext
 	 */
-	public static function getContext( array $options ) {
+	protected function getContext( array $options ) {
 		$options += array(
 			'skin' => 'vector',
 			'user' => 'TestUser',
@@ -53,7 +53,7 @@ class ResourceLoaderGlobalModuleTestCase extends MediaWikiTestCase {
 		return new ResourceLoaderContext( new ResourceLoader, new FauxRequest( $query ) );
 	}
 
-	public static function getFakeOptions() {
+	protected function getFakeOptions() {
 		return array(
 			'wiki' => wfWikiID(), // Don't call GlobalCssJsHooks::loadForUser
 			'source' => 'fakesource',

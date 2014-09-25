@@ -88,11 +88,11 @@ class ResourceLoaderGlobalUserModuleTest extends ResourceLoaderGlobalModuleTestC
 	public function testGetPages( $configOverrides, $expectedPages, $user, $desc ) {
 		// First set default config options
 		$this->setMwGlobals( array_merge(
-			self::getDefaultGlobalSettings(),
+			$this->getDefaultGlobalSettings(),
 			$configOverrides
 		) );
-		$module = new ResourceLoaderGlobalUserModule( self::getFakeOptions() );
-		$context = self::getContext( array( 'user' => $user ) );
+		$module = new ResourceLoaderGlobalUserModule( $this->getFakeOptions() );
+		$context = $this->getContext( array( 'user' => $user ) );
 		$out = $module->getDefinitionSummary( $context );
 		$pages = array_keys( $out['pages'] );
 		$this->assertEquals( $expectedPages, $pages, $desc );

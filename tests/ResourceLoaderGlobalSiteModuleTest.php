@@ -66,11 +66,11 @@ class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestC
 	public function testGetPages( $configOverrides, $expectedPages, $skin, $desc ) {
 		// First set default config options
 		$this->setMwGlobals( array_merge(
-			self::getDefaultGlobalSettings( $skin ),
+			$this->getDefaultGlobalSettings( $skin ),
 			$configOverrides
 		) );
-		$module = new ResourceLoaderGlobalSiteModule( self::getFakeOptions() );
-		$context = self::getContext( array( 'skin' => $skin ) );
+		$module = new ResourceLoaderGlobalSiteModule( $this->getFakeOptions() );
+		$context = $this->getContext( array( 'skin' => $skin ) );
 		$out = $module->getDefinitionSummary( $context );
 		$pages = array_keys( $out['pages'] );
 		$this->assertEquals( $expectedPages, $pages, $desc );
