@@ -56,15 +56,13 @@ $wgAutoloadClasses['GlobalCssJsHooks'] = __DIR__ . '/GlobalCssJs.hooks.php';
 $wgAutoloadClasses['ResourceLoaderGlobalModuleTestCase'] = __DIR__ . '/tests/ResourceLoaderGlobalModuleTestCase.php';
 
 $wgMessagesDirs['GlobalCssJs'] = __DIR__ . '/i18n/core';
-$wgExtensionMessagesFiles['GlobalCssJs'] = __DIR__ . '/GlobalCssJs.i18n.php';
 
 $wgExtensionFunctions[] = 'efGlobalCssJs';
 function efGlobalCssJs() {
 	global $wgGlobalCssJsConfig, $wgUseGlobalSiteCssJs,
-		$wgMessagesDirs, $wgExtensionMessagesFiles;
+		$wgMessagesDirs;
 	if ( $wgGlobalCssJsConfig['wiki'] === wfWikiID() && $wgUseGlobalSiteCssJs ) {
 		$wgMessagesDirs['GlobalCssJsCentral'] = __DIR__ . '/i18n/central';
-		$wgExtensionMessagesFiles['GlobalCssJsCentral'] = __DIR__ . '/GlobalCssJs.central.i18n.php';
 	}
 }
 
