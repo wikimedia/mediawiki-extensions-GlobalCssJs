@@ -70,7 +70,7 @@ class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestC
 			$configOverrides
 		) );
 		$module = new ResourceLoaderGlobalSiteModule( self::getFakeOptions() );
-		$context = self::getContext( $skin );
+		$context = self::getContext( array( 'skin' => $skin ) );
 		$out = $module->getDefinitionSummary( $context );
 		$pages = array_keys( $out['pages'] );
 		$this->assertEquals( $expectedPages, $pages, $desc );

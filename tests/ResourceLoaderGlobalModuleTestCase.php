@@ -29,15 +29,19 @@ class ResourceLoaderGlobalModuleTestCase extends MediaWikiTestCase {
 	/**
 	 * Get a fake ResourceLoaderContext object for testing
 	 *
-	 * @param string $skin
+	 * @param array $options
 	 * @return ResourceLoaderContext
 	 */
-	public static function getContext( $skin = 'vector' ) {
+	public static function getContext( array $options ) {
+		$options += array(
+			'skin' => 'vector',
+			'user' => 'TestUser',
+		);
 		$query = ResourceLoader::makeLoaderQuery(
 			array(), // modules; irrelevant
 			'en',
-			$skin,
-			'TestUser',
+			$options['skin'],
+			$options['user'],
 			null, // version
 			false, // debug
 			ResourceLoaderModule::TYPE_COMBINED,
