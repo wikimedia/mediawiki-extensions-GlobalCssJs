@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dorgan"
+		]
+	},
+	"globalcssjs-custom-css-js": "Megosztott CSS/JS az összes wiki számára:",
+	"globalcssjs-custom-js": "saját JS",
+	"globalcssjs-custom-css": "saját CSS"
+}
