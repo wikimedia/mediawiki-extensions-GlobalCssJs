@@ -4,5 +4,7 @@
 			"Vitorvicentevalente"
 		]
 	},
-	"globalcssjs-custom-css-js": "CSS/JavaScript partilhado por todas as wikis:"
+	"globalcssjs-custom-css-js": "CSS/JavaScript partilhado por todas as wikis:",
+	"globalcssjs-custom-js": "JS personalizado",
+	"globalcssjs-custom-css": "CSS personalizada"
 }
