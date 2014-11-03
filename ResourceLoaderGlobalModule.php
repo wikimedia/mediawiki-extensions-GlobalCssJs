@@ -53,13 +53,13 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 	}
 
 	/**
-	 * @return DatabaseBase
+	 * @return IDatabase
 	 */
 	protected function getDB() {
 		if ( $this->wiki === wfWikiID() ) {
 			return wfGetDB( DB_SLAVE );
 		} else {
-			return wfGetDB( DB_SLAVE, array(), $this->wiki );
+			return wfGetLB( $this->wiki )->getConnectionRef( DB_SLAVE, array(), $this->wiki );
 		}
 	}
 
