@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vriullop"
+			"Vriullop",
+			"Alvaro Vidal-Abarca"
 		]
 	},
 	"globalcssjs-custom-css-js": "CSS/JS compartit per a tots els wikis:",
-	"globalcssjs-custom-js": "JS personalitzat",
+	"globalcssjs-custom-js": "JavaScript personalitzat",
 	"globalcssjs-custom-css": "CSS personalitzat"
 }
