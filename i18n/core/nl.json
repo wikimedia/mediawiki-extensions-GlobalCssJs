@@ -11,6 +11,6 @@
 	"globalcssjs-warning-js": "JavaScript die wordt toegevoegd aan deze pagina wordt geladen op alle wiki's waar u een gebruiker hebt.",
 	"globalcssjs-warning-css": "CSS die wordt toegevoegd aan deze pagina wordt geladen op alle wiki's waar u een gebruiker hebt.",
 	"globalcssjs-custom-css-js": "Gedeelde CSS/JavaScript voor alle wiki's:",
-	"globalcssjs-custom-js": "aangepaste JavaScript",
+	"globalcssjs-custom-js": "Aangepaste JavaScript",
 	"globalcssjs-custom-css": "aangepaste CSS"
 }
