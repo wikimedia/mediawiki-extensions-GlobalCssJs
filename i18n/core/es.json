@@ -3,7 +3,8 @@
 		"authors": [
 			"Ciencia Al Poder",
 			"Fitoschido",
-			"Macofe"
+			"Macofe",
+			"MarcoAurelio"
 		]
 	},
 	"globalcssjs-desc": "Permite cargar CSS y JS en un wiki central para que éstos se carguen en todos los wikis conectados",
@@ -11,5 +12,7 @@
 	"globalcssjs-warning-css": "El código CSS que se añada a esta página se cargará en todos los wikis en los que tengas una cuenta.",
 	"globalcssjs-custom-css-js": "CSS/JavaScript compartido en todos los wikis:",
 	"globalcssjs-custom-js": "JavaScript personalizado",
-	"globalcssjs-custom-css": "CSS personalizado"
+	"globalcssjs-custom-css": "CSS personalizado",
+	"globalcssjs-delete-css": "Borrando página CSS a petición del usuario en virtud del despliegue de la extensión [[mw:Help:Extension:GlobalCssJs|GlobalCssJs]]",
+	"globalcssjs-delete-js": "Borrando página de JavaScript a petición del usuario en virtud del despliegue de la extensión [[mw:Help:Extension:GlobalCssJs|GlobalCssJs]]"
 }

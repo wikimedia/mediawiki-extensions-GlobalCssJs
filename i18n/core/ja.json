@@ -1,11 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki"
+			"Shirayuki",
+			"Whym"
 		]
 	},
 	"globalcssjs-desc": "接続されたすべてのウィキで読み込まれる、中央管理ウィキ上の CSS および JavaScript を使用できるようにする",
+	"globalcssjs-warning-js": "このページに追加された JavaScript は、自分のアカウントがあるウィキすべてで読み込まれます。",
+	"globalcssjs-warning-css": "このページに追加された CSS は、自分のアカウントがあるウィキすべてで読み込まれます。",
 	"globalcssjs-custom-css-js": "すべてのウィキに共通のCSSとJavaScript:",
 	"globalcssjs-custom-js": "カスタムJS",
-	"globalcssjs-custom-css": "カスタムCSS"
+	"globalcssjs-custom-css": "カスタムCSS",
+	"globalcssjs-delete-css": "[[mw:Help:Extension:GlobalCssJs]]の導入に伴う本人の依頼により CSS ページを削除",
+	"globalcssjs-delete-js": "[[mw:Help:Extension:GlobalCssJs]]の導入に伴う本人の依頼により JavaScript ページを削除"
 }
