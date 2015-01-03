@@ -6,12 +6,14 @@ if( !defined( 'MEDIAWIKI' ) ) {
 }
 
 $wgExtensionCredits['other'][] = array(
-	'name' => 'Global CSS/JS',
+	'name' => 'GlobalCssJs',
+	'namemsg' => 'globalcssjs-name',
 	'path' => __FILE__,
 	'author' => array( 'Ryan Schmidt', 'Szymon Świerkosz', 'Kunal Mehta' ),
 	'version' => '3.3.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:GlobalCssJs',
 	'descriptionmsg' => 'globalcssjs-desc',
+	'license-name' => 'GPL-2.0+',
 );
 
 /**

@@ -5,6 +5,7 @@
 			"Shirayuki"
 		]
 	},
+	"globalcssjs-name": "Name of the GlobalCssJs MediaWiki extension",
 	"globalcssjs-desc": "{{desc|name=Global CSS/JS|url=https://www.mediawiki.org/wiki/Extension:GlobalCssJs}}",
 	"globalcssjs-warning-js": "Notice on top of edit window",
 	"globalcssjs-warning-css": "Notice on top of edit window",
