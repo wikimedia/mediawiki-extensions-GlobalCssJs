@@ -142,7 +142,7 @@ class GlobalCssJsHooks {
 	 * Load our unit tests
 	 */
 	public static function onUnitTestsList( array &$files ) {
-		$files += glob( __DIR__ . '/tests/*Test.php' );
+		$files = array_merge( $files, glob( __DIR__ . '/tests/*Test.php' ) );
 
 		return true;
 	}
