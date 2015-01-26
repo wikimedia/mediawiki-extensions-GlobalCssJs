@@ -33,14 +33,13 @@ class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 	 * @return array
 	 */
 	protected function getPages( ResourceLoaderContext $context ) {
-		$config = $context->getResourceLoader()->getConfig();
-		global $wgUseGlobalSiteCssJs;
-
-		if ( !$wgUseGlobalSiteCssJs ) {
+		if ( !ConfigFactory::getDefaultInstance()->makeConfig( 'globalcssjs' )->get( 'UseGlobalSiteCssJs' ) ) {
 			return array();
 		}
 
 		$pages = array();
+
+		$config = $context->getResourceLoader()->getConfig();
 
 		if ( $config->get( 'UseSiteJs' ) ) {
 			$pages["MediaWiki:Global.js"] = array( 'type' => 'script' );

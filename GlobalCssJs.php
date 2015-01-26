@@ -58,6 +58,7 @@ $wgAutoloadClasses['GlobalCssJsHooks'] = __DIR__ . '/GlobalCssJs.hooks.php';
 $wgAutoloadClasses['ResourceLoaderGlobalModuleTestCase'] = __DIR__ . '/tests/ResourceLoaderGlobalModuleTestCase.php';
 
 $wgMessagesDirs['GlobalCssJs'] = __DIR__ . '/i18n/core';
+$wgConfigRegistry['globalcssjs'] = 'GlobalVarConfig::newInstance';
 
 $wgExtensionFunctions[] = 'efGlobalCssJs';
 function efGlobalCssJs() {

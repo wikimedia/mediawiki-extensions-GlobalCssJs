@@ -2,6 +2,10 @@
 
 class GlobalCssJsHooks {
 
+	private static function getConfig() {
+		return ConfigFactory::getDefaultInstance()->makeConfig( 'globalcssjs' );
+	}
+
 	/**
 	 * @param OutputPage $out
 	 * @return bool
@@ -19,8 +23,8 @@ class GlobalCssJsHooks {
 	 * @return bool
 	 */
 	static function loadForUser( User $user ) {
-		global $wgGlobalCssJsConfig;
-		$wiki = $wgGlobalCssJsConfig['wiki'];
+		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
+		$wiki = $config['wiki'];
 		return $wiki === wfWikiID() || ( $wiki !== false ) &&
 			wfRunHooks( 'LoadGlobalCssJs', array( $user, $wiki, wfWikiID() ) );
 	}
@@ -31,9 +35,9 @@ class GlobalCssJsHooks {
 	 * @return bool
 	 */
 	static function onResourceLoaderRegisterModules( &$resourceLoader ) {
-		global $wgGlobalCssJsConfig;
+		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 
-		if ( $wgGlobalCssJsConfig['wiki'] === false || $wgGlobalCssJsConfig['source'] === false ) {
+		if ( $config['wiki'] === false || $config['source'] === false ) {
 			// If not configured properly, exit
 			wfDebugLog( 'GlobalCssJs', '$wgGlobalCssJsConfig has not been configured properly.' );
 			return true;
@@ -41,12 +45,12 @@ class GlobalCssJsHooks {
 
 		$user = array(
 			'class' => 'ResourceLoaderGlobalUserModule',
-		) + $wgGlobalCssJsConfig;
+		) + $config;
 		$resourceLoader->register( 'ext.globalCssJs.user', $user );
 
 		$site = array(
 			'class' => 'ResourceLoaderGlobalSiteModule',
-		) + $wgGlobalCssJsConfig;
+		) + $config;
 		$resourceLoader->register( 'ext.globalCssJs.site', $site );
 
 		return true;
@@ -58,10 +62,10 @@ class GlobalCssJsHooks {
 	 * @return bool
 	 */
 	static function onEditPageshowEditForminitial( EditPage $editPage, OutputPage $output ) {
-		global $wgGlobalCssJsConfig;
+		$gcssjsConfig = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$config = $output->getConfig();
 		$user = $output->getUser();
-		if ( $wgGlobalCssJsConfig['wiki'] === wfWikiID() && $user->isLoggedIn()
+		if ( $gcssjsConfig['wiki'] === wfWikiID() && $user->isLoggedIn()
 			&& $editPage->formtype == 'initial' && $editPage->isCssJsSubpage
 		) {
 			$title = $editPage->getTitle();
@@ -86,13 +90,13 @@ class GlobalCssJsHooks {
 	 * @return string HTMl link
 	 */
 	protected static function makeCentralLink( Title $title, $msg ) {
-		global $wgGlobalCssJsConfig;
+		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$message = wfMessage( $msg )->escaped();
-		if ( $wgGlobalCssJsConfig['wiki'] === wfWikiID() ) {
+		if ( $config['wiki'] === wfWikiID() ) {
 			return Linker::link( $title, $message );
 		} else {
 			return WikiMap::makeForeignLink(
-				$wgGlobalCssJsConfig['wiki'],
+				$config['wiki'],
 				"User:" . $title->getText(), // bug 66873, don't use localized namespace
 				$message
 			);
