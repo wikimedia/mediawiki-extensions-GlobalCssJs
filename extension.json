@@ -1,0 +1,56 @@
+{
+	"name": "GlobalCssJs",
+	"version": "3.3.0",
+	"author": [
+		"Ryan Schmidt",
+		"Szymon Świerkosz",
+		"Kunal Mehta"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:GlobalCssJs",
+	"descriptionmsg": "globalcssjs-desc",
+	"namemsg": "globalcssjs-name",
+	"license-name": "GPL-2.0+",
+	"type": "other",
+	"Hooks": {
+		"BeforePageDisplay": [
+			"GlobalCssJsHooks::onBeforePageDisplay"
+		],
+		"ResourceLoaderRegisterModules": [
+			"GlobalCssJsHooks::onResourceLoaderRegisterModules"
+		],
+		"EditPage::showEditForm:initial": [
+			"GlobalCssJsHooks::onEditPageshowEditForminitial"
+		],
+		"GetPreferences": [
+			"GlobalCssJsHooks::onGetPreferences"
+		],
+		"UnitTestsList": [
+			"GlobalCssJsHooks::onUnitTestsList"
+		]
+	},
+	"MessagesDirs": {
+		"GlobalCssJs": [
+			"i18n/core"
+		]
+	},
+	"config": {
+		"UseGlobalSiteCssJs": true,
+		"GlobalCssJsConfig": {
+			"wiki": false,
+			"source": false
+		}
+	},
+	"ExtensionFunctions": [
+		"GlobalCssJsHooks::onExtensionFunctions"
+	],
+	"AutoloadClasses": {
+		"ResourceLoaderGlobalModule": "ResourceLoaderGlobalModule.php",
+		"ResourceLoaderGlobalSiteModule": "ResourceLoaderGlobalSiteModule.php",
+		"ResourceLoaderGlobalUserModule": "ResourceLoaderGlobalUserModule.php",
+		"GlobalCssJsHooks": "GlobalCssJs.hooks.php",
+		"ResourceLoaderGlobalModuleTestCase": "tests/ResourceLoaderGlobalModuleTestCase.php"
+	},
+	"ConfigRegistry": {
+		"globalcssjs": "GlobalVarConfig::newInstance"
+	}
+}

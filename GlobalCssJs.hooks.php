@@ -7,6 +7,20 @@ class GlobalCssJsHooks {
 	}
 
 	/**
+	 * If site-wide JS/CSS is enabled, add MediaWiki:Global.js/css messages
+	 *
+	 * @todo This probably doesn't work on all setups and is hacky.
+	 */
+	public static function onExtensionFunctions() {
+		global $wgMessagesDirs;
+		$config = self::getConfig();
+		$rlConfig = $config->get( 'GlobalCssJsConfig' );
+		if ( $rlConfig['wiki'] === wfWikiID() && $config->get( 'UseGlobalSiteCssJs' ) ) {
+			$wgMessagesDirs['GlobalCssJsCentral'] = __DIR__ . '/i18n/central';
+		}
+	}
+
+	/**
 	 * @param OutputPage $out
 	 * @return bool
 	 */

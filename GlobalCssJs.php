@@ -60,14 +60,7 @@ $wgAutoloadClasses['ResourceLoaderGlobalModuleTestCase'] = __DIR__ . '/tests/Res
 $wgMessagesDirs['GlobalCssJs'] = __DIR__ . '/i18n/core';
 $wgConfigRegistry['globalcssjs'] = 'GlobalVarConfig::newInstance';
 
-$wgExtensionFunctions[] = 'efGlobalCssJs';
-function efGlobalCssJs() {
-	global $wgGlobalCssJsConfig, $wgUseGlobalSiteCssJs,
-		$wgMessagesDirs;
-	if ( $wgGlobalCssJsConfig['wiki'] === wfWikiID() && $wgUseGlobalSiteCssJs ) {
-		$wgMessagesDirs['GlobalCssJsCentral'] = __DIR__ . '/i18n/central';
-	}
-}
+$wgExtensionFunctions[] = 'GlobalCssJsHooks::onExtensionFunctions';
 
 $wgHooks['BeforePageDisplay'][] = 'GlobalCssJsHooks::onBeforePageDisplay';
 $wgHooks['ResourceLoaderRegisterModules'][] = 'GlobalCssJsHooks::onResourceLoaderRegisterModules';
