@@ -4,6 +4,8 @@
 			"Milicevic01"
 		]
 	},
+	"globalcssjs-name": "Глобални CSS/JS",
+	"globalcssjs-desc": "Омогућава да CSS и JavaScript на централном викију буду учитани на свим повезаним викијима",
 	"globalcssjs-warning-js": "Сваки јаваскрипт постављен овде ће бити учитан на свим викијима где имате налог.",
 	"globalcssjs-warning-css": "Сваки CSS постављен овде ће бити учитан на свим викијима где имате налог.",
 	"globalcssjs-custom-css-js": "Дељени CSS/јаваскрипт за све викије:",
