@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Otogi"
+		]
+	},
+	"globalcssjs-custom-css-js": "ზოგადი CSS/JavaScript ყველა ვიკისთვის:",
+	"globalcssjs-custom-js": "მომხმარებლის JavaScript",
+	"globalcssjs-custom-css": "მომხმარებლის CSS"
+}
