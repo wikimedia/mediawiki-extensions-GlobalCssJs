@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Servien"
+		]
+	},
+	"globalcssjs-custom-css-js": "Edeelden CSS/JavaScript veur alle wiki's:",
+	"globalcssjs-custom-js": "An-epasten JavaScript",
+	"globalcssjs-custom-css": "An-epasten CSS"
+}
