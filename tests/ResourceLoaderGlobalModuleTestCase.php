@@ -49,8 +49,8 @@ class ResourceLoaderGlobalModuleTestCase extends MediaWikiTestCase {
 			false, // handheld
 			array() // extra
 		);
-
-		return new ResourceLoaderContext( new ResourceLoader, new FauxRequest( $query ) );
+		$rl = new ResourceLoader( ConfigFactory::getDefaultInstance()->makeConfig( 'main' ) );
+		return new ResourceLoaderContext( $rl, new FauxRequest( $query ) );
 	}
 
 	protected function getFakeOptions() {
