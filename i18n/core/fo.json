@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"EileenSanda"
+		]
+	},
+	"globalcssjs-name": "Global CSS/JS",
+	"globalcssjs-desc": "Loyvir CSS og JavaScript á einari sentralari wiki at løðast fyri allar atknýttar wikiir",
+	"globalcssjs-warning-js": "Eitt hvørt JavaScript ið verður lagt afturat hesa síðuna verður løtt (loaded) á øllum wikium, har ið tú hevur eina konto.",
+	"globalcssjs-warning-css": "Eitt hvørt CSS ið verður lagt afturat hesa síðuna verður løtt (loaded) á øllum wikium, har ið tú hevur eina konto.",
+	"globalcssjs-custom-css-js": "Deild CSS/JavaScript fyri allar wikiir:",
+	"globalcssjs-custom-js": "Persónligt JavaScript",
+	"globalcssjs-custom-css": "Persónligt CSS",
+	"globalcssjs-delete-css": "Strikar CSS síðu eftir umbøn frá brúkara orsakað av íverkseta av [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Strikar JavaScript síðu eftir umbøn frá brúkara orsakað av íverkseta av [[mw:Help:Extension:GlobalCssJs]]"
+}
