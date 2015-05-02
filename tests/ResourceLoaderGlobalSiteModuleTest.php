@@ -71,8 +71,10 @@ class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestC
 		) );
 		$module = new ResourceLoaderGlobalSiteModule( $this->getFakeOptions() );
 		$context = $this->getContext( array( 'skin' => $skin ) );
-		$out = $module->getDefinitionSummary( $context );
-		$pages = array_keys( $out['pages'] );
+		$getPages = new ReflectionMethod( $module , 'getPages' );
+		$getPages->setAccessible( true );
+		$out = $getPages->invoke( $module, $context );
+		$pages = array_keys( $out );
 		$this->assertEquals( $expectedPages, $pages, $desc );
 	}
 }
