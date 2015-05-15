@@ -25,7 +25,7 @@ class GlobalCssJsHooks {
 	 * @return bool
 	 */
 	static function onBeforePageDisplay( OutputPage $out ) {
-		$out->addModuleStyles( array( 'ext.globalCssJs.user', 'ext.globalCssJs.site' ) );
+		$out->addModuleStyles( array( 'ext.globalCssJs.user.styles', 'ext.globalCssJs.site.styles' ) );
 		$out->addModuleScripts( array( 'ext.globalCssJs.user', 'ext.globalCssJs.site' ) );
 
 		return true;
@@ -57,15 +57,27 @@ class GlobalCssJsHooks {
 			return true;
 		}
 
-		$user = array(
-			'class' => 'ResourceLoaderGlobalUserModule',
+		$userJs = array(
+			'class' => 'ResourceLoaderGlobalUserJsModule',
 		) + $config;
-		$resourceLoader->register( 'ext.globalCssJs.user', $user );
+		$resourceLoader->register( 'ext.globalCssJs.user', $userJs );
 
-		$site = array(
-			'class' => 'ResourceLoaderGlobalSiteModule',
+		$userCss = array(
+			'position' => 'top',
+			'class' => 'ResourceLoaderGlobalUserCssModule',
 		) + $config;
-		$resourceLoader->register( 'ext.globalCssJs.site', $site );
+		$resourceLoader->register( 'ext.globalCssJs.user.styles', $userCss );
+
+		$siteJs = array(
+			'class' => 'ResourceLoaderGlobalSiteJsModule',
+		) + $config;
+		$resourceLoader->register( 'ext.globalCssJs.site', $siteJs );
+
+		$siteCss = array(
+			'position' => 'top',
+			'class' => 'ResourceLoaderGlobalSiteCssModule',
+		) + $config;
+		$resourceLoader->register( 'ext.globalCssJs.site.styles', $siteCss );
 
 		return true;
 	}
