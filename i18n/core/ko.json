@@ -8,6 +8,7 @@
 			"Revi"
 		]
 	},
+	"globalcssjs-name": "전역 CSS/JS",
 	"globalcssjs-desc": "전역 CSS 설정과 자바스크립트 설정을 중앙 위키와 연결된 모든 위키에서 불러올수 있도록 허용",
 	"globalcssjs-warning-js": "이 문서에 추가된 모든 자바스크립트는 당신이 계정을 가진 모든 위키에서 로드될 것입니다.",
 	"globalcssjs-warning-css": "이 문서에 추가된 CSS는 당신이 계정을 가진 모든 위키에서 로드 될 것입니다.",
