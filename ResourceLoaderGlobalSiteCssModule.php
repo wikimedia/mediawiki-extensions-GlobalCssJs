@@ -22,30 +22,19 @@
  */
 
 /**
- * Module for sitewide global customizations
+ * Module for sitewide global CSS customizations
  */
-abstract class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
+class ResourceLoaderGlobalSiteCssModule extends ResourceLoaderGlobalSiteModule {
+	protected function doGetPages( ResourceLoaderContext $context ) {
+		$pages = array();
 
-	protected $origin = self::ORIGIN_USER_SITEWIDE;
+		$config = $context->getResourceLoader()->getConfig();
 
-	/**
-	 * @param ResourceLoaderContext $context
-	 * @return array
-	 */
-	protected function getPages( ResourceLoaderContext $context ) {
-		if ( !ConfigFactory::getDefaultInstance()->makeConfig( 'globalcssjs' )->get( 'UseGlobalSiteCssJs' ) ) {
-			return array();
+		if ( $config->get( 'UseSiteCss' ) ) {
+			$pages["MediaWiki:Global.css"] = array( 'type' => 'style' );
+			$pages['MediaWiki:Global-' . $context->getSkin() . '.css'] = array( 'type' => 'style' );
 		}
 
-		return $this->doGetPages( $context );
-	}
-
-	abstract protected function doGetPages( ResourceLoaderContext $context );
-
-	/**
-	 * @return string
-	 */
-	public function getGroup() {
-		return 'site';
+		return $pages;
 	}
 }

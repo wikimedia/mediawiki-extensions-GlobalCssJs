@@ -17,81 +17,84 @@ class ResourceLoaderGlobalUserModuleTest extends ResourceLoaderGlobalModuleTestC
 		// format: array( array( config => value ), $expectedPages, $description )
 		return array(
 			array(
+				'ResourceLoaderGlobalUserCssModule',
 				array(),
 				array(),
 				'TestUser',
 				'With default settings, no pages are loaded'
 			),
 			array(
+				'ResourceLoaderGlobalUserJsModule',
 				array( 'wgAllowUserJs' => true ),
 				array(
 					'User:TestUser/global.js',
 				),
 				'TestUser',
-				'Only JS page is loaded if $wgAllowUserJs = true'
+				'JS page is loaded if $wgAllowUserJs = true'
 			),
 			array(
+				'ResourceLoaderGlobalUserCssModule',
 				array( 'wgAllowUserCss' => true ),
 				array(
 					'User:TestUser/global.css',
 				),
 				'TestUser',
-				'Only CSS page is loaded if $wgAllowUserCss = true'
+				'CSS page is loaded if $wgAllowUserCss = true'
 			),
 			array(
-				array( 'wgAllowUserCss' => true, 'wgAllowUserJs' => true ),
-				array( 'User:TestUser/global.js', 'User:TestUser/global.css' ),
-				'TestUser',
-				'2 global pages loaded if both $wgAllowUserCss and $wgAllowUserJs = true'
-			),
-			array(
+				'ResourceLoaderGlobalUserCssModule',
 				array( 'wgLanguageCode' => 'zh', 'wgAllowUserCss' => true, 'wgAllowUserJs' => true ),
-				array( 'User:TestUser/global.js', 'User:TestUser/global.css' ),
+				array( 'User:TestUser/global.css' ),
 				'TestUser',
 				'User: namespace used in page titles even if $wgLanguageCode != "en"'
 			),
 			array(
+				'ResourceLoaderGlobalUserJsModule',
 				array( 'wgGlobalCssJsConfig' => array( 'wiki' => false ) ),
 				array(),
 				'TestUser',
 				"If \$wgGlobalCssJsConfig['wiki'] = false, no pages are loaded",
 			),
 			array(
+				'ResourceLoaderGlobalUserCssModule',
 				array( 'wgAllowUserCss' => true, 'wgAllowUserJs' => true ),
 				array(),
 				null,
 				'No pages loaded if $username = null',
 			),
 			array(
+				'ResourceLoaderGlobalUserJsModule',
 				array( 'wgAllowUserCss' => true, 'wgAllowUserJs' => true ),
 				array(),
 				'[Invalid@Username]',
 				'No pages loaded if username is invalid',
 			),
 			array(
+				'ResourceLoaderGlobalUserCssModule',
 				array( 'wgAllowUserCss' => true, 'wgAllowUserJs' => true ),
 				array(),
 				'UserThatHopefullyDoesntExist12',
 				'No pages loaded if user doesnt exist',
-			),
+			)
 		);
 	}
 
 	/**
 	 * @covers ResourceLoaderGlobalUserModule::getPages
 	 * @dataProvider provideGetPages
+	 * @param $class
 	 * @param $configOverrides
 	 * @param $expectedPages
 	 * @param $user
 	 * @param $desc
 	 */
-	public function testGetPages( $configOverrides, $expectedPages, $user, $desc ) {
+	public function testGetPages( $class, $configOverrides, $expectedPages, $user, $desc ) {
 		// First set default config options
 		$this->setMwGlobals( array_merge(
 			$this->getDefaultGlobalSettings(),
 			$configOverrides
 		) );
-		$module = new ResourceLoaderGlobalUserModule( $this->getFakeOptions() );
+		$module = new $class( $this->getFakeOptions() );
 		$context = $this->getContext( array( 'user' => $user ) );
 		$getPages = new ReflectionMethod( $module , 'getPages' );
 		$getPages->setAccessible( true );

@@ -25,7 +25,7 @@
 /**
  * Module for user customizations - runs on all wikis
  */
-class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
+abstract class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 
 	protected $origin = self::ORIGIN_USER_INDIVIDUAL;
 
@@ -34,7 +34,6 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 	 * @return array
 	 */
 	protected function getPages( ResourceLoaderContext $context ) {
-		$config = $context->getResourceLoader()->getConfig();
 		$username = $context->getUser();
 
 		if ( $username === null ) {
@@ -53,18 +52,11 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 		}
 
 		$userpage = $user->getUserPage()->getDBkey();
-		$pages = array();
 
-		if ( $config->get( 'AllowUserJs' ) ) {
-			$pages["User:$userpage/global.js"] = array( 'type' => 'script' );
-		}
-
-		if ( $config->get( 'AllowUserCss' ) ) {
-			$pages["User:$userpage/global.css"] = array( 'type' => 'style' );
-		}
-
-		return $pages;
+		return $this->doGetPages( $context, $userpage );
 	}
+
+	abstract protected function doGetPages( ResourceLoaderContext $context, $userpage );
 
 	/**
 	 * @return string

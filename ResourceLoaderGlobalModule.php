@@ -40,9 +40,21 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 	 */
 	protected $source;
 
+	/** @var string Position on the page to load this module at */
+	protected $position = 'bottom';
+
 	public function __construct( $options ) {
-		$this->wiki = $options['wiki'];
-		$this->source = $options['source'];
+		foreach ( $options as $member => $option ) {
+			switch ( $member ) {
+				case 'position':
+					$this->isPositionDefined = true;
+					// fall through
+				case 'wiki':
+				case 'source':
+					$this->{$member} = (string)$option;
+					break;
+			}
+		}
 	}
 
 	/**
@@ -63,4 +75,7 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 		}
 	}
 
+	public function getPosition() {
+		return $this->position;
+	}
 }

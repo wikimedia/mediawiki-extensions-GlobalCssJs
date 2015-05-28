@@ -46,7 +46,11 @@
 	"AutoloadClasses": {
 		"ResourceLoaderGlobalModule": "ResourceLoaderGlobalModule.php",
 		"ResourceLoaderGlobalSiteModule": "ResourceLoaderGlobalSiteModule.php",
+		"ResourceLoaderGlobalSiteCssModule": "ResourceLoaderGlobalSiteCssModule.php",
+		"ResourceLoaderGlobalSiteJsModule": "ResourceLoaderGlobalSiteJsModule.php",
 		"ResourceLoaderGlobalUserModule": "ResourceLoaderGlobalUserModule.php",
+		"ResourceLoaderGlobalUserCssModule": "ResourceLoaderGlobalUserCssModule.php",
+		"ResourceLoaderGlobalUserJsModule": "ResourceLoaderGlobalUserJsModule.php",
 		"GlobalCssJsHooks": "GlobalCssJs.hooks.php",
 		"ResourceLoaderGlobalModuleTestCase": "tests/ResourceLoaderGlobalModuleTestCase.php"
 	},

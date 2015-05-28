@@ -1,6 +1,6 @@
 <?php
 /**
- * ResourceLoader module for global site customizations.
+ * ResourceLoader module for global user customizations.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,34 +18,23 @@
  * http://www.gnu.org/copyleft/gpl.html
  *
  * @file
+ * @author Szymon Świerkosz
  * @author Kunal Mehta
  */
 
 /**
- * Module for sitewide global customizations
+ * Module for user JS customizations - runs on all wikis
  */
-abstract class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
+class ResourceLoaderGlobalUserJsModule extends ResourceLoaderGlobalUserModule {
+	protected function doGetPages( ResourceLoaderContext $context, $userpage ) {
+		$pages = array();
 
-	protected $origin = self::ORIGIN_USER_SITEWIDE;
+		$config = $context->getResourceLoader()->getConfig();
 
-	/**
-	 * @param ResourceLoaderContext $context
-	 * @return array
-	 */
-	protected function getPages( ResourceLoaderContext $context ) {
-		if ( !ConfigFactory::getDefaultInstance()->makeConfig( 'globalcssjs' )->get( 'UseGlobalSiteCssJs' ) ) {
-			return array();
+		if ( $config->get( 'AllowUserJs' ) ) {
+			$pages["User:$userpage/global.js"] = array( 'type' => 'script' );
 		}
 
-		return $this->doGetPages( $context );
-	}
-
-	abstract protected function doGetPages( ResourceLoaderContext $context );
-
-	/**
-	 * @return string
-	 */
-	public function getGroup() {
-		return 'site';
+		return $pages;
 	}
 }
