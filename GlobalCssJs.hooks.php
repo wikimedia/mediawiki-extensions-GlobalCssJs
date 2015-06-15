@@ -40,7 +40,7 @@ class GlobalCssJsHooks {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$wiki = $config['wiki'];
 		return $wiki === wfWikiID() || ( $wiki !== false ) &&
-			wfRunHooks( 'LoadGlobalCssJs', array( $user, $wiki, wfWikiID() ) );
+			Hooks::run( 'LoadGlobalCssJs', array( $user, $wiki, wfWikiID() ) );
 	}
 
 	/**
