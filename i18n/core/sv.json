@@ -6,6 +6,7 @@
 			"WikiPhoenix"
 		]
 	},
+	"globalcssjs-name": "Global CSS/JS",
 	"globalcssjs-desc": "Tillåter CSS och JavaScript på en central wiki att laddas för alla anslutna wikis",
 	"globalcssjs-warning-js": "Alla JavaScript som läggs till på denna sida kommer att laddas på alla wikis där du har ett konto.",
 	"globalcssjs-warning-css": "All CSS som läggs till på denna sida kommer att laddas på alla wikis där du har ett konto.",
