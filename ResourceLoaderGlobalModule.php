@@ -43,6 +43,13 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 	/** @var string Position on the page to load this module at */
 	protected $position = 'bottom';
 
+	/**
+	 * Either 'style' or 'script'
+	 *
+	 * @var string
+	 */
+	protected $type;
+
 	public function __construct( $options ) {
 		foreach ( $options as $member => $option ) {
 			switch ( $member ) {
@@ -52,6 +59,12 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 				case 'wiki':
 				case 'source':
 					$this->{$member} = (string)$option;
+					break;
+				case 'type':
+					if ( $option !== 'style' && $option !== 'script' ) {
+						throw new InvalidArgumentException( "type must be either 'style' or 'script', not '$option'" );
+					}
+					$this->type = $option;
 					break;
 			}
 		}

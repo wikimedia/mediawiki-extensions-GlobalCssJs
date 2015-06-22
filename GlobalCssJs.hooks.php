@@ -58,24 +58,28 @@ class GlobalCssJsHooks {
 		}
 
 		$userJs = array(
-			'class' => 'ResourceLoaderGlobalUserJsModule',
+			'class' => 'ResourceLoaderGlobalUserModule',
+			'type' => 'script',
 		) + $config;
 		$resourceLoader->register( 'ext.globalCssJs.user', $userJs );
 
 		$userCss = array(
 			'position' => 'top',
-			'class' => 'ResourceLoaderGlobalUserCssModule',
+			'class' => 'ResourceLoaderGlobalUserModule',
+			'type' => 'style',
 		) + $config;
 		$resourceLoader->register( 'ext.globalCssJs.user.styles', $userCss );
 
 		$siteJs = array(
-			'class' => 'ResourceLoaderGlobalSiteJsModule',
+			'class' => 'ResourceLoaderGlobalSiteModule',
+			'type' => 'script',
 		) + $config;
 		$resourceLoader->register( 'ext.globalCssJs.site', $siteJs );
 
 		$siteCss = array(
 			'position' => 'top',
-			'class' => 'ResourceLoaderGlobalSiteCssModule',
+			'class' => 'ResourceLoaderGlobalSiteModule',
+			'type' => 'style',
 		) + $config;
 		$resourceLoader->register( 'ext.globalCssJs.site.styles', $siteCss );
 
