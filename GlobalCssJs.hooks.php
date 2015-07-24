@@ -120,10 +120,17 @@ class GlobalCssJsHooks {
 		$message = wfMessage( $msg )->escaped();
 		if ( $config['wiki'] === wfWikiID() ) {
 			return Linker::link( $title, $message );
+		} elseif ( isset( $config['baseurl'] ) && $config['baseurl'] !== false ) {
+			return Linker::makeExternalLink(
+				// bug 66873, don't use localized namespace
+				$config['baseurl'] . '/User:' .
+					htmlspecialchars( $title->getText(), ENT_QUOTES ),
+				$message
+			);
 		} else {
 			return WikiMap::makeForeignLink(
 				$config['wiki'],
-				"User:" . $title->getText(), // bug 66873, don't use localized namespace
+				'User:' . $title->getText(), // bug 66873, don't use localized namespace
 				$message
 			);
 		}

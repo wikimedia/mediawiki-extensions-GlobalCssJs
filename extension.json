@@ -36,6 +36,7 @@
 	"config": {
 		"UseGlobalSiteCssJs": true,
 		"GlobalCssJsConfig": {
+			"baseurl": false,
 			"wiki": false,
 			"source": false
 		}
