@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Quenhitran"
+			"Quenhitran",
+			"Minh Nguyen"
 		]
 	},
 	"globalcssjs-custom-css-js": "CSS/JavaScript chung cho mọi wiki:",
-	"globalcssjs-custom-js": "JavaScript tuỳ chọn",
-	"globalcssjs-custom-css": "CSS tuỳ chọn"
+	"globalcssjs-custom-js": "JavaScript tùy chọn",
+	"globalcssjs-custom-css": "CSS tùy chọn"
 }
