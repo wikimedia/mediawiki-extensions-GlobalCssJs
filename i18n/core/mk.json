@@ -8,7 +8,7 @@
 	"globalcssjs-desc": "Овозможува вчитување на CSS и JavaScript на централно вики за сите поврзани викија",
 	"globalcssjs-warning-js": "Тука поставениот JavaScript ќе се вчита на сите викија кајшто имате сметка.",
 	"globalcssjs-warning-css": "Тука постевениот CSS ќе се вчита на сите викија кајшто имате сметка.",
-	"globalcssjs-custom-css-js": "Заеднички CSS/JavaScript за сите викија:",
+	"globalcssjs-custom-css-js": "Заеднички CSS/JavaScript за сите викија ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|повеќе информации]]):",
 	"globalcssjs-custom-js": "Прилагоден JavaScript",
 	"globalcssjs-custom-css": "Прилагоден CSS",
 	"globalcssjs-delete-css": "Бришење на CSS-страница на барање на корисникот поради спроведување на [[mw:Help:Extension:GlobalCssJs]]",

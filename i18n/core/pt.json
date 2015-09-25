@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Jkb8"
 		]
 	},
-	"globalcssjs-custom-css-js": "CSS/JavaScript partilhado por todas as wikis:",
+	"globalcssjs-warning-js": "Qualquer JavaScript adicionado a esta página será carregada em todas as wikis onde você tem uma conta (ver [[mw:Help:Extension:GlobalCssJs|documentação]]).",
+	"globalcssjs-warning-css": "Qualquer CSS adicionado a esta página será carregada em todas as wikis onde você tem uma conta (ver [[mw:Help:Extension:GlobalCssJs|documentação]]).",
+	"globalcssjs-custom-css-js": "Partilha de CSS/JavaScript por todas as wikis:",
 	"globalcssjs-custom-js": "JS personalizado",
 	"globalcssjs-custom-css": "CSS personalizada"
 }
