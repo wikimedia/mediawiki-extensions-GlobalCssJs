@@ -4,7 +4,7 @@
 			"Xuacu"
 		]
 	},
-	"globalcssjs-name": "CSS/JS global",
+	"globalcssjs-extensionname": "CSS/JS global",
 	"globalcssjs-desc": "Permite cargar CSS y JavaScript d'una wiki central en toles wikis coneutaes",
 	"globalcssjs-warning-js": "Cualquier JavaScript que s'escriba nesta páxina cargaráse'n toles wikis nes que tenga una cuenta.",
 	"globalcssjs-warning-css": "Cualquier CSS que s'escriba nesta páxina cargaráse'n toles wikis nes que tenga una cuenta.",

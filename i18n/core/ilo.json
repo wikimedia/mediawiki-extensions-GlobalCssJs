@@ -4,7 +4,7 @@
 			"Lam-ang"
 		]
 	},
-	"globalcssjs-name": "Global CSS/JS",
+	"globalcssjs-extensionname": "Global CSS/JS",
 	"globalcssjs-desc": "Mangpalubos a maikarga ti CSS ken JavaScript iti sentral a wiki para kadagiti amin a naikapet a wiki",
 	"globalcssjs-warning-js": "Ti ania man a JavaScript a mainayon iti daytoy a panid ket maikarganto kadagiti amin a wiki nga adda iti pakabilangam.",
 	"globalcssjs-warning-css": "Ti ania man a CSS a mainayon iti daytoy a panid ket maikarganto kadagiti amin a wiki nga adda iti pakabilangam.",

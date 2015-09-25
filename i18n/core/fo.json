@@ -4,7 +4,7 @@
 			"EileenSanda"
 		]
 	},
-	"globalcssjs-name": "Global CSS/JS",
+	"globalcssjs-extensionname": "Global CSS/JS",
 	"globalcssjs-desc": "Loyvir CSS og JavaScript á einari sentralari wiki at løðast fyri allar atknýttar wikiir",
 	"globalcssjs-warning-js": "Eitt hvørt JavaScript ið verður lagt afturat hesa síðuna verður løtt (loaded) á øllum wikium, har ið tú hevur eina konto.",
 	"globalcssjs-warning-css": "Eitt hvørt CSS ið verður lagt afturat hesa síðuna verður løtt (loaded) á øllum wikium, har ið tú hevur eina konto.",

@@ -4,7 +4,7 @@
 			"Bjankuloski06"
 		]
 	},
-	"globalcssjs-name": "Гобален CSS/JS",
+	"globalcssjs-extensionname": "Гобален CSS/JS",
 	"globalcssjs-desc": "Овозможува вчитување на CSS и JavaScript на централно вики за сите поврзани викија",
 	"globalcssjs-warning-js": "Тука поставениот JavaScript ќе се вчита на сите викија кајшто имате сметка.",
 	"globalcssjs-warning-css": "Тука постевениот CSS ќе се вчита на сите викија кајшто имате сметка.",
