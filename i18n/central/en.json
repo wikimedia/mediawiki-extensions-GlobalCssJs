@@ -4,6 +4,6 @@
 			"Kunal Mehta"
 		]
 	},
-	"global.js": "/* Any JavaScript here will be loaded for all users on all wikis on every page load ([[:mw:Help:Extension:GlobalCssJs|help]]). */",
-	"global.css": "/* Any CSS here will be loaded for all users on on all wikis every page load ([[:mw:Help:Extension:GlobalCssJs|help]]). */"
+	"global.js": "/* Any JavaScript here will be loaded for all users on all wikis on every page load. See <https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs> */",
+	"global.css": "/* Any CSS here will be loaded for all users on on all wikis every page load. See <https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs> */"
 }
