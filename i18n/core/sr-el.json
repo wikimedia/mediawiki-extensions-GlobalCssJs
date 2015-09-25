@@ -4,7 +4,7 @@
 			"Milicevic01"
 		]
 	},
-	"globalcssjs-name": "Globalni CSS/JS",
+	"globalcssjs-extensionname": "Globalni CSS/JS",
 	"globalcssjs-desc": "Omogućava da CSS i JavaScript na centralnom vikiju budu učitani na svim povezanim vikijima",
 	"globalcssjs-warning-js": "Svaki javaskript postavljen ovde će biti učitan na svim vikijima gde imate nalog.",
 	"globalcssjs-warning-css": "Svaki CSS postavljen ovde će biti učitan na svim vikijima gde imate nalog.",

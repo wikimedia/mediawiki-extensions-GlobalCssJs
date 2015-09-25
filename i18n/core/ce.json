@@ -4,7 +4,7 @@
 			"Умар"
 		]
 	},
-	"globalcssjs-name": "Глобальни CSS/JS",
+	"globalcssjs-extensionname": "Глобальни CSS/JS",
 	"globalcssjs-desc": "Юкъара вики-проектехь йолу CSS а, JavaScript а лелаян йиш хуьлуьйту, массо цхьана йолу вики-проекташна чуйоккхуш.",
 	"globalcssjs-warning-js": "ХӀокху агӀона тӀетоьхна йолу муьлха JavaScript хьа дӀаяздар долу массо викиш чохь чуяьра ю.",
 	"globalcssjs-warning-css": "ХӀокху агӀона тӀетоьхна йолу муьлха CSS хьа дӀаяздар долу массо викиш чохь чуяьра ю.",

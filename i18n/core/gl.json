@@ -6,7 +6,7 @@
 			"Elisardojm"
 		]
 	},
-	"globalcssjs-name": "CSS/JS global",
+	"globalcssjs-extensionname": "CSS/JS global",
 	"globalcssjs-desc": "Permite a carga de estilos CSS e JavaScript desde un wiki central en todos os wikis conectados",
 	"globalcssjs-warning-js": "Calquera JavaScript que se engada a esta páxina afectará a todos os wikis nos que ten unha conta.",
 	"globalcssjs-warning-css": "Calquera CSS que se engada a esta páxina afectará a todos os wikis nos que ten unha conta.",

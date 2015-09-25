@@ -5,7 +5,7 @@
 			"Liuxinyu970226"
 		]
 	},
-	"globalcssjs-name": "全域 CSS/JS",
+	"globalcssjs-extensionname": "全域 CSS/JS",
 	"globalcssjs-desc": "允許在中央 Wiki 的 CSS 與 JavaScript 被所有連結的 Wiki 讀取",
 	"globalcssjs-warning-js": "任何在此頁面新增的 JavaScript 將會在您有帳號的所有 Wiki 讀取",
 	"globalcssjs-warning-css": "任何在此頁面新增的 CSS 將會在您有帳號的所有 Wiki 讀取",

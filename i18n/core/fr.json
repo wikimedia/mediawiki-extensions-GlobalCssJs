@@ -8,7 +8,7 @@
 			"Wladek92"
 		]
 	},
-	"globalcssjs-name": "CSS/JS global",
+	"globalcssjs-extensionname": "CSS/JS global",
 	"globalcssjs-desc": "Permet à ce que les fichiers CSS et JavaScript d’un wiki central soient chargés depuis tous les wikis qui y sont connectés",
 	"globalcssjs-warning-js": "Tout JavaScript ajouté à cette page sera chargé sur tous les wikis sur lesquels vous avez un compte.",
 	"globalcssjs-warning-css": "Tout CSS ajouté à cette page sera chargé sur tous les wikis sur lesquels vous avez un compte.",

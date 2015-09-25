@@ -4,7 +4,7 @@
 			"Pikne"
 		]
 	},
-	"globalcssjs-name": "Globaalne CSS/JS",
+	"globalcssjs-extensionname": "Globaalne CSS/JS",
 	"globalcssjs-desc": "Võimaldab laadida keskses vikis asuva kaskaadilaadistiku või JavaScripti kõigis ühendatud vikides.",
 	"globalcssjs-warning-js": "Siin asuv JavaScript laaditakse kõigis vikides, kus sul on konto.",
 	"globalcssjs-warning-css": "Siin asuv kaskaadilaadistik laaditakse kõigis vikides, kus sul on konto.",
