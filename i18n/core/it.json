@@ -7,8 +7,8 @@
 		]
 	},
 	"globalcssjs-desc": "Permette a CSS e JavaScript su un wiki centrale di essere caricati in tutti i wiki collegati",
-	"globalcssjs-warning-js": "Qualsiasi JavaScript aggiunto a questa pagina verrà caricato su tutti i wiki dove hai un'utenza.",
-	"globalcssjs-warning-css": "Qualsiasi CSS aggiunto a questa pagina verrà caricato su tutti i wiki dove hai un'utenza.",
+	"globalcssjs-warning-js": "Qualsiasi JavaScript aggiunto a questa pagina verrà caricato su tutti i wiki dove hai un'utenza (vedi [[mw:Help:Extension:GlobalCssJs|documentazione]]).",
+	"globalcssjs-warning-css": "Qualsiasi CSS aggiunto a questa pagina verrà caricato su tutti i wiki dove hai un'utenza (vedi [[mw:Help:Extension:GlobalCssJs|documentazione]]).",
 	"globalcssjs-custom-css-js": "CSS/JavaScript condiviso con tutti i wiki:",
 	"globalcssjs-custom-js": "JavaScript personalizzato",
 	"globalcssjs-custom-css": "CSS personalizzato",
