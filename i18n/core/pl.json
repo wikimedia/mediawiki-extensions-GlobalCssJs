@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
-			"Peter Bowman"
+			"Peter Bowman",
+			"Expert3222"
 		]
 	},
-	"globalcssjs-warning-js": "Każdy JavaScript dodany na tej stronie będzie uruchamiany na wszystkich wiki, na których masz konto (zobacz [[mw:Help:Extension:GlobalCssJs|dokumantację]]).",
+	"globalcssjs-warning-js": "Każdy JavaScript dodany na tej stronie będzie uruchamiany na wszystkich wiki, na których masz konto (zobacz [[mw:Help:Extension:GlobalCssJs|dokumentację]]).",
 	"globalcssjs-warning-css": "Każdy CSS dodany na tej stronie będzie uruchamiany na wszystkich wiki, na których masz konto (zobacz [[mw:Help:Extension:GlobalCssJs|dokumantację]]).",
 	"globalcssjs-custom-css-js": "Wspólne CSS/JavaScript dla wszystkich wiki:",
 	"globalcssjs-custom-js": "Własny JavaScript",
