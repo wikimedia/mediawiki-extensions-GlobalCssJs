@@ -35,19 +35,4 @@ class ResourceLoaderGlobalModuleTest extends MediaWikiTestCase {
 			),
 		);
 	}
-
-	/**
-	 * Verify that all style modules are setting an explicit position
-	 *
-	 * @covers ResourceLoaderGlobalModule::isPositionDefault
-	 */
-	public function testIsPositionDefault() {
-		$this->setMwGlobals(
-			'wgGlobalCssJsConfig',
-			array( 'wiki' => wfWikiID(), 'source' => 'fakesource' )
-		);
-		$rl = new ResourceLoader( ConfigFactory::getDefaultInstance()->makeConfig( 'main' ) );
-		$this->assertTrue( !$rl->getModule( 'ext.globalCssJs.user.styles' )->isPositionDefault() );
-		$this->assertTrue( !$rl->getModule( 'ext.globalCssJs.site.styles' )->isPositionDefault() );
-	}
 }
