@@ -27,7 +27,25 @@ class GlobalCssJsHooks {
 	static function onBeforePageDisplay( OutputPage $out ) {
 		$out->addModuleStyles( array( 'ext.globalCssJs.user.styles', 'ext.globalCssJs.site.styles' ) );
 		$out->addModuleScripts( array( 'ext.globalCssJs.user', 'ext.globalCssJs.site' ) );
+		// Add help link
+		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
+		if ( $config['wiki'] !== wfWikiID() ) {
+			return true;
+		}
 
+		$useSiteCssJs = self::getConfig()->get( 'UseGlobalSiteCssJs' );
+		$title = $out->getTitle();
+		$user = $out->getUser();
+		$name = $user->getName();
+		if ( $useSiteCssJs && $title->inNamespace( NS_MEDIAWIKI )
+			&& ( $title->getText() === 'Global.css' || $title->getText() === 'Global.js')
+		) {
+			$out->addHelpLink( 'Help:Extension:GlobalCssJs' );
+		} elseif ( $user->isLoggedIn() && $title->inNamespace( NS_USER )
+			&& ( $title->getText() === "$name/global.js" || $title->getText() === "$name/global.css" )
+		) {
+			$out->addHelpLink( 'Help:Extension:GlobalCssJs' );
+		}
 		return true;
 	}
 
