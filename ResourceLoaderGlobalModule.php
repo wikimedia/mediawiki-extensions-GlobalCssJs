@@ -53,11 +53,9 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 	public function __construct( $options ) {
 		foreach ( $options as $member => $option ) {
 			switch ( $member ) {
-				case 'position':
-					$this->isPositionDefined = true;
-					// fall through
 				case 'wiki':
 				case 'source':
+				case 'position':
 					$this->{$member} = (string)$option;
 					break;
 				case 'type':
