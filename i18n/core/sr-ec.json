@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Milicevic01"
+			"Milicevic01",
+			"Сербијана"
 		]
 	},
 	"globalcssjs-extensionname": "Глобални CSS/JS",
 	"globalcssjs-desc": "Омогућава да CSS и JavaScript на централном викију буду учитани на свим повезаним викијима",
 	"globalcssjs-warning-js": "Сваки јаваскрипт постављен овде ће бити учитан на свим викијима где имате налог (погледајте [[mw:Help:Extension:GlobalCssJs|документацију]]).",
 	"globalcssjs-warning-css": "Сваки CSS постављен овде ће бити учитан на свим викијима где имате налог (погледајте [[mw:Help:Extension:GlobalCssJs|документацију]]).",
-	"globalcssjs-custom-css-js": "Дељени CSS/јаваскрипт за све викије:",
+	"globalcssjs-custom-css-js": "Дељени CSS/Јаваскрипт за све викије:",
 	"globalcssjs-custom-js": "Прилагођени јаваскрипт",
 	"globalcssjs-custom-css": "Прилагођени CSS",
 	"globalcssjs-delete-css": "Брисање CSS странице на основу захтева због [[mw:Help:Extension:GlobalCssJs]]",
