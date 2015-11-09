@@ -98,7 +98,7 @@ class ResourceLoaderGlobalUserModuleTest extends ResourceLoaderGlobalModuleTestC
 			array( 'type' => $type ) + $this->getFakeOptions()
 		);
 		$context = $this->getContext( array( 'user' => $user ) );
-		$getPages = new ReflectionMethod( $module , 'getPages' );
+		$getPages = new ReflectionMethod( $module, 'getPages' );
 		$getPages->setAccessible( true );
 		$out = $getPages->invoke( $module, $context );
 		$pages = array_keys( $out );

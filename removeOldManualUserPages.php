@@ -67,7 +67,6 @@ class RemoveOldManualUserPages extends Maintenance {
 			return false;
 		}
 
-
 		$rev = Revision::newFromTitle( $title );
 		if ( !$this->ignoreRevisionLimit && $title->getPreviousRevisionID( $rev->getId() ) !== false ) {
 			$this->output( "{$title->getPrefixedText()} has more than one revision, skipping.\n" );
@@ -163,7 +162,7 @@ class RemoveOldManualUserPages extends Maintenance {
 		$new = array();
 		foreach ( $exploded as $line ) {
 			$trimmed = trim( $line );
-			if ( $trimmed !== '' && substr( $trimmed, 0, 2) !== '//' ) {
+			if ( $trimmed !== '' && substr( $trimmed, 0, 2 ) !== '//' ) {
 				$new[] = $line;
 			}
 		}
@@ -202,4 +201,4 @@ class RemoveOldManualUserPages extends Maintenance {
 }
 
 $maintClass = "RemoveOldManualUserPages";
-require_once( RUN_MAINTENANCE_IF_MAIN );
+require_once ( RUN_MAINTENANCE_IF_MAIN );

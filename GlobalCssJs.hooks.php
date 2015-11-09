@@ -38,7 +38,7 @@ class GlobalCssJsHooks {
 		$user = $out->getUser();
 		$name = $user->getName();
 		if ( $useSiteCssJs && $title->inNamespace( NS_MEDIAWIKI )
-			&& ( $title->getText() === 'Global.css' || $title->getText() === 'Global.js')
+			&& ( $title->getText() === 'Global.css' || $title->getText() === 'Global.js' )
 		) {
 			$out->addHelpLink( 'Help:Extension:GlobalCssJs' );
 		} elseif ( $user->isLoggedIn() && $title->inNamespace( NS_USER )

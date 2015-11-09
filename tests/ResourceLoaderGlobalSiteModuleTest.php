@@ -26,14 +26,14 @@ class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestC
 			),
 			array(
 				'style',
-				array( 'wgUseGlobalSiteCssJs' => false),
+				array( 'wgUseGlobalSiteCssJs' => false ),
 				array(),
 				'skinname',
 				'No CSS pages are loaded with $wgUseGlobalSiteCssJs = false'
 			),
 			array(
 				'script',
-				array( 'wgUseGlobalSiteCssJs' => false),
+				array( 'wgUseGlobalSiteCssJs' => false ),
 				array(),
 				'skinname',
 				'No JS pages are loaded with $wgUseGlobalSiteCssJs = false'
@@ -110,7 +110,7 @@ class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestC
 			array( 'type' => $type ) + $this->getFakeOptions()
 		);
 		$context = $this->getContext( array( 'skin' => $skin ) );
-		$getPages = new ReflectionMethod( $module , 'getPages' );
+		$getPages = new ReflectionMethod( $module, 'getPages' );
 		$getPages->setAccessible( true );
 		$out = $getPages->invoke( $module, $context );
 		$pages = array_keys( $out );

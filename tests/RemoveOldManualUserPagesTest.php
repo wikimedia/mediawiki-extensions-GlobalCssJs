@@ -130,7 +130,7 @@ class RemoveOldManualUserPagesTest extends MediaWikiTestCase {
 	 * @param string $userName to use
 	 * @param string $desc description of test case
 	 */
-	public function testCheckJs( $text, $expected, $userName, $desc) {
+	public function testCheckJs( $text, $expected, $userName, $desc ) {
 		$this->load();
 		$r = new RemoveOldManualUserPages();
 		$matched = $r->checkJs( $text, 'meta\.wikimedia\.org', $userName );
@@ -174,7 +174,7 @@ class RemoveOldManualUserPagesTest extends MediaWikiTestCase {
 	 * @param bool $expected should it match?
 	 * @param string $desc description of test case
 	 */
-	public function testCheckCss( $text, $expected, $desc) {
+	public function testCheckCss( $text, $expected, $desc ) {
 		$this->load();
 		$r = new RemoveOldManualUserPages();
 		$matched = $r->checkCss( $text, 'meta\.wikimedia\.org', 'UserName' );
