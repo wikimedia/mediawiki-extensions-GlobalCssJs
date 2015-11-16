@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Red Winged Duck"
+			"Red Winged Duck",
+			"Renessaince"
 		]
 	},
-	"globalcssjs-custom-css-js": "Агульны CSS/JavaScript для ўсіх вікі ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|болей зьвестак]]):",
+	"globalcssjs-custom-css-js": "Агульны CSS/JavaScript для ўсіх вікі:",
 	"globalcssjs-custom-js": "Індывідуальны JavaScript",
 	"globalcssjs-custom-css": "Індывідуальны CSS"
 }
