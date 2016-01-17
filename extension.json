@@ -11,6 +11,9 @@
 	"namemsg": "globalcssjs-extensionname",
 	"license-name": "GPL-2.0+",
 	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.27.0"
+	},
 	"Hooks": {
 		"BeforePageDisplay": [
 			"GlobalCssJsHooks::onBeforePageDisplay"

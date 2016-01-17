@@ -57,8 +57,15 @@ class GlobalCssJsHooks {
 	static function loadForUser( User $user ) {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$wiki = $config['wiki'];
-		return $wiki === wfWikiID() || ( $wiki !== false ) &&
-			Hooks::run( 'LoadGlobalCssJs', [ $user, $wiki, wfWikiID() ] );
+		if ( $wiki === wfWikiID() ) {
+			return true;
+		} elseif ( $wiki === false ) {
+			// Not configured, don't load anything
+			return false;
+		}
+
+		$lookup = CentralIdLookup::factory();
+		return $lookup->isAttached( $user ) && $lookup->isAttached( $user, $wiki );
 	}
 
 	/**
