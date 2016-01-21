@@ -92,7 +92,7 @@ class RemoveOldManualUserPages extends Maintenance {
 		return preg_quote( $parsed['host'] );
 	}
 
-	private function deletePage( Title $title, $reason ) {
+	private function deletePage( Title $title, $reason, $userName ) {
 		global $wgUser;
 		$page = WikiPage::factory( $title );
 		$user = User::newFromName( 'Maintenance script' );
@@ -101,7 +101,7 @@ class RemoveOldManualUserPages extends Maintenance {
 		// For hooks not using RequestContext (e.g. AbuseFilter)
 		$wgUser = $user;
 		$errors = array();
-		$status = $page->doDeleteArticleReal( wfMessage( $reason )->inContentLanguage()->text(), false, 0, true, $errors, $user );
+		$status = $page->doDeleteArticleReal( wfMessage( $reason, $userName )->inContentLanguage()->text(), false, 0, true, $errors, $user );
 		if ( $status->isGood() ) {
 			$this->output( "{$title->getPrefixedText()} was deleted.\n" );
 		} else {
@@ -147,7 +147,7 @@ class RemoveOldManualUserPages extends Maintenance {
 		}
 
 		// Delete!
-		$this->deletePage( $title, 'globalcssjs-delete-css' );
+		$this->deletePage( $title, 'globalcssjs-delete-css', $userName );
 	}
 
 	/**
@@ -195,7 +195,7 @@ class RemoveOldManualUserPages extends Maintenance {
 		}
 
 		// Delete!
-		$this->deletePage( $title, 'globalcssjs-delete-js' );
+		$this->deletePage( $title, 'globalcssjs-delete-js', $userName );
 	}
 
 }
