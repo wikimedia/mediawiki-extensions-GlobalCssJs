@@ -13,6 +13,6 @@
 	"globalcssjs-custom-css-js": "Gemeinsames CSS/JavaScript für alle Wikis:",
 	"globalcssjs-custom-js": "Benutzerdefiniertes JavaScript",
 	"globalcssjs-custom-css": "Benutzerdefiniertes CSS",
-	"globalcssjs-delete-css": "Löschung der CSS-Seite auf Benutzeranfrage aufgrund der Entwicklung von [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Löschung der JavaScript-Seite auf Benutzeranfrage aufgrund der Entwicklung von [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Löschung der CSS-Seite auf {{GENDER:$1|Benutzeranfrage}} aufgrund der Entwicklung von [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Löschung der JavaScript-Seite auf {{GENDER:$1|Benutzeranfrage}} aufgrund der Entwicklung von [[mw:Help:Extension:GlobalCssJs]]"
 }

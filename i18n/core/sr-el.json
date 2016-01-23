@@ -11,6 +11,6 @@
 	"globalcssjs-custom-css-js": "Deljeni CSS/javaskript za sve vikije:",
 	"globalcssjs-custom-js": "Prilagođeni javaskript",
 	"globalcssjs-custom-css": "Prilagođeni CSS",
-	"globalcssjs-delete-css": "Brisanje CSS stranice na osnovu zahteva zbog [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Brisanje javaskript stranice na osnovu zahteva zbog [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Brisanje CSS stranice {{GENDER:$1|na}} osnovu zahteva zbog [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Brisanje javaskript stranice {{GENDER:$1|na}} osnovu zahteva zbog [[mw:Help:Extension:GlobalCssJs]]"
 }

@@ -12,6 +12,6 @@
 	"globalcssjs-custom-css-js": "CSS/JavaScript condiviso con tutti i wiki:",
 	"globalcssjs-custom-js": "JavaScript personalizzato",
 	"globalcssjs-custom-css": "CSS personalizzato",
-	"globalcssjs-delete-css": "Cancellazione della pagina CSS su richiesta dell'utente a causa della distribuzione di [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Cancellazione della pagina JavaScript su richiesta dell'utente a causa della distribuzione di [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Cancellazione della pagina CSS su richiesta {{GENDER:$1|dell'utente}} a causa della distribuzione di [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Cancellazione della pagina JavaScript su richiesta {{GENDER:$1|dell'utente}} a causa della distribuzione di [[mw:Help:Extension:GlobalCssJs]]"
 }

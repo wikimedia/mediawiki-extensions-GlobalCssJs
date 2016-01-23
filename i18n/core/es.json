@@ -14,6 +14,6 @@
 	"globalcssjs-custom-css-js": "CSS/JavaScript compartido en todos los wikis:",
 	"globalcssjs-custom-js": "JavaScript personalizado",
 	"globalcssjs-custom-css": "CSS personalizado",
-	"globalcssjs-delete-css": "Se borra página CSS a petición del usuario en virtud del despliegue de la extensión [[mw:Help:Extension:GlobalCssJs|GlobalCssJs]]",
-	"globalcssjs-delete-js": "Se borra página de JavaScript a petición del usuario en virtud del despliegue de la extensión [[mw:Help:Extension:GlobalCssJs|GlobalCssJs]]"
+	"globalcssjs-delete-css": "Se borra página CSS a petición {{GENDER:$1|del usuario|de la usuaria}} en virtud del despliegue de la extensión [[mw:Help:Extension:GlobalCssJs|GlobalCssJs]]",
+	"globalcssjs-delete-js": "Se borra página de JavaScript a petición {{GENDER:$1|del usuario|de la usuaria}} en virtud del despliegue de la extensión [[mw:Help:Extension:GlobalCssJs|GlobalCssJs]]"
 }

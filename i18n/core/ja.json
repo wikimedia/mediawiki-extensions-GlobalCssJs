@@ -13,6 +13,6 @@
 	"globalcssjs-custom-css-js": "すべてのウィキに共通のCSSとJavaScript:",
 	"globalcssjs-custom-js": "カスタムJS",
 	"globalcssjs-custom-css": "カスタムCSS",
-	"globalcssjs-delete-css": "[[mw:Help:Extension:GlobalCssJs]]の導入に伴う本人の依頼により CSS ページを削除",
-	"globalcssjs-delete-js": "[[mw:Help:Extension:GlobalCssJs]]の導入に伴う本人の依頼により JavaScript ページを削除"
+	"globalcssjs-delete-css": "[[mw:Help:Extension:GlobalCssJs]]の導入に伴う{{GENDER:$1|本人}}の依頼により CSS ページを削除",
+	"globalcssjs-delete-js": "[[mw:Help:Extension:GlobalCssJs]]の導入に伴う{{GENDER:$1|本人}}の依頼により JavaScript ページを削除"
 }

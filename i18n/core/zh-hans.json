@@ -14,6 +14,6 @@
 	"globalcssjs-custom-css-js": "所有wiki共用的CSS/JavaScript：",
 	"globalcssjs-custom-js": "自定义JavaScript",
 	"globalcssjs-custom-css": "自定义CSS",
-	"globalcssjs-delete-css": "由于[[mw:Help:Extension:GlobalCssJs]]的部署，基于用户请求删除CSS页面",
-	"globalcssjs-delete-js": "由于[[mw:Help:Extension:GlobalCssJs]]的部署，基于用户请求删除JavaScript页面"
+	"globalcssjs-delete-css": "由于[[mw:Help:Extension:GlobalCssJs]]的部署，基于{{GENDER:$1|用户}}请求删除CSS页面",
+	"globalcssjs-delete-js": "由于[[mw:Help:Extension:GlobalCssJs]]的部署，基于{{GENDER:$1|用户}}请求删除JavaScript页面"
 }
