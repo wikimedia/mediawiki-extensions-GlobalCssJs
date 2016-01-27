@@ -11,11 +11,11 @@
 	},
 	"globalcssjs-extensionname": "Global CSS/JS",
 	"globalcssjs-desc": "Maakt het mogelijk om CSS en JavaScript op een centrale wiki op te slaan en die in alle aangesloten wiki's te gebruiken",
-	"globalcssjs-warning-js": "JavaScript die wordt toegevoegd aan deze pagina wordt geladen op alle wiki's waar u een gebruiker hebt.",
-	"globalcssjs-warning-css": "CSS die wordt toegevoegd aan deze pagina wordt geladen op alle wiki's waar u een gebruiker hebt.",
+	"globalcssjs-warning-js": "JavaScript die wordt toegevoegd aan deze pagina wordt geladen op alle wiki's waar u een account hebt (zie [[mw:Help:Extension:GlobalCssJs|documentatie]]).",
+	"globalcssjs-warning-css": "CSS die wordt toegevoegd aan deze pagina wordt geladen op alle wiki's waar u een account hebt (zie [[mw:Help:Extension:GlobalCssJs|documentatie]]).",
 	"globalcssjs-custom-css-js": "Gedeelde CSS/JavaScript voor alle wiki's:",
 	"globalcssjs-custom-js": "Aangepaste JavaScript",
 	"globalcssjs-custom-css": "Aangepaste CSS",
-	"globalcssjs-delete-css": "Het verwijderen van CSS-pagina op verzoek van de gebruiker te wijten aan de implementatie van de [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Het verwijderen van JavaScript-pagina op verzoek van de gebruiker te wijten aan de implementatie van de [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Het verwijderen van CSS-pagina op verzoek van de {{GENDER:$1|gebruiker}} te wijten aan de implementatie van de [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Het verwijderen van JavaScript-pagina op verzoek van de {{GENDER:$1|gebruiker}} te wijten aan de implementatie van de [[mw:Help:Extension:GlobalCssJs]]"
 }
