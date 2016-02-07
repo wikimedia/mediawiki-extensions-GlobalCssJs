@@ -13,6 +13,6 @@
 	"globalcssjs-custom-css-js": "Delad CSS/JavaScript för alla wikis:",
 	"globalcssjs-custom-js": "Personligt JavaScript",
 	"globalcssjs-custom-css": "Personlig CSS",
-	"globalcssjs-delete-css": "Raderar CSS-sida på användarens begäran på grund av driftsättning av [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Raderar JavaScript-sida på användarens begäran på grund av driftsättning av [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Raderar CSS-sida på {{GENDER:$1|användarens}} begäran på grund av driftsättning av [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Raderar JavaScript-sida på {{GENDER:$1|användarens}} begäran på grund av driftsättning av [[mw:Help:Extension:GlobalCssJs]]"
 }
