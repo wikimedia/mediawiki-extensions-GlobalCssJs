@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Teslaton"
+		]
+	},
+	"globalcssjs-custom-css-js": "Spoločné CSS/JS pre všetky wiki:",
+	"globalcssjs-custom-js": "Vlastný JS",
+	"globalcssjs-custom-css": "Vlastný CSS"
+}
