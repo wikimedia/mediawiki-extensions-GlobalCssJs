@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
-			"Ата"
+			"Ата",
+			"Piramidion"
 		]
 	},
 	"globalcssjs-extensionname": "Глобальні CSS/JS",
@@ -12,6 +13,6 @@
 	"globalcssjs-custom-css-js": "Спільні CSS/JavaScript для всіх вікі:",
 	"globalcssjs-custom-js": "Власний JavaScript",
 	"globalcssjs-custom-css": "Власний CSS",
-	"globalcssjs-delete-css": "Видалення сторінки CSS за запитом користувача через розгортання [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Видалення JavaScript сторінка за запитом користувача через розгортання [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Видалення сторінки CSS за запитом {{GENDER:$1|користувача|користувачки}} через розгортання [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Видалення сторінки JavaScript за запитом {{GENDER:$1|користувача|користувачки}} через розгортання [[mw:Help:Extension:GlobalCssJs]]"
 }
