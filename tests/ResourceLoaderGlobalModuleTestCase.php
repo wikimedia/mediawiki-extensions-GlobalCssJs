@@ -13,7 +13,7 @@ class ResourceLoaderGlobalModuleTestCase extends MediaWikiTestCase {
 	 * @return array
 	 */
 	protected function getDefaultGlobalSettings( $skin = 'vector' ) {
-		return array(
+		return [
 			'wgUseSiteCss' => true,
 			'wgUseSiteJs' => true,
 			'wgUseGlobalSiteCssJs' => true,
@@ -23,7 +23,7 @@ class ResourceLoaderGlobalModuleTestCase extends MediaWikiTestCase {
 			// to an invalid skin to bypass some checks
 			'wgDefaultSkin' => $skin,
 			'wgGlobalCssJsConfig' => $this->getFakeOptions(),
-		);
+		];
 	}
 
 	/**
@@ -33,12 +33,12 @@ class ResourceLoaderGlobalModuleTestCase extends MediaWikiTestCase {
 	 * @return ResourceLoaderContext
 	 */
 	protected function getContext( array $options ) {
-		$options += array(
+		$options += [
 			'skin' => 'vector',
 			'user' => 'TestUser',
-		);
+		];
 		$query = ResourceLoader::makeLoaderQuery(
-			array(), // modules; irrelevant
+			[], // modules; irrelevant
 			'en',
 			$options['skin'],
 			$options['user'],
@@ -47,17 +47,17 @@ class ResourceLoaderGlobalModuleTestCase extends MediaWikiTestCase {
 			ResourceLoaderModule::TYPE_COMBINED,
 			true, // printable
 			false, // handheld
-			array() // extra
+			[] // extra
 		);
 		$rl = new ResourceLoader( ConfigFactory::getDefaultInstance()->makeConfig( 'main' ) );
 		return new ResourceLoaderContext( $rl, new FauxRequest( $query ) );
 	}
 
 	protected function getFakeOptions() {
-		return array(
+		return [
 			'wiki' => wfWikiID(), // Don't call GlobalCssJsHooks::loadForUser
 			'source' => 'fakesource',
-		);
+		];
 	}
 
 }

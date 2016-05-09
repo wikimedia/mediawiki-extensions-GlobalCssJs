@@ -25,8 +25,8 @@ class GlobalCssJsHooks {
 	 * @return bool
 	 */
 	static function onBeforePageDisplay( OutputPage $out ) {
-		$out->addModuleStyles( array( 'ext.globalCssJs.user.styles', 'ext.globalCssJs.site.styles' ) );
-		$out->addModuleScripts( array( 'ext.globalCssJs.user', 'ext.globalCssJs.site' ) );
+		$out->addModuleStyles( [ 'ext.globalCssJs.user.styles', 'ext.globalCssJs.site.styles' ] );
+		$out->addModuleScripts( [ 'ext.globalCssJs.user', 'ext.globalCssJs.site' ] );
 		// Add help link
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 		if ( $config['wiki'] !== wfWikiID() ) {
@@ -58,7 +58,7 @@ class GlobalCssJsHooks {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$wiki = $config['wiki'];
 		return $wiki === wfWikiID() || ( $wiki !== false ) &&
-			Hooks::run( 'LoadGlobalCssJs', array( $user, $wiki, wfWikiID() ) );
+			Hooks::run( 'LoadGlobalCssJs', [ $user, $wiki, wfWikiID() ] );
 	}
 
 	/**
@@ -75,30 +75,30 @@ class GlobalCssJsHooks {
 			return true;
 		}
 
-		$userJs = array(
+		$userJs = [
 			'class' => ResourceLoaderGlobalUserModule::class,
 			'type' => 'script',
-		) + $config;
+		] + $config;
 		$resourceLoader->register( 'ext.globalCssJs.user', $userJs );
 
-		$userCss = array(
+		$userCss = [
 			'position' => 'top',
 			'class' => ResourceLoaderGlobalUserModule::class,
 			'type' => 'style',
-		) + $config;
+		] + $config;
 		$resourceLoader->register( 'ext.globalCssJs.user.styles', $userCss );
 
-		$siteJs = array(
+		$siteJs = [
 			'class' => ResourceLoaderGlobalSiteModule::class,
 			'type' => 'script',
-		) + $config;
+		] + $config;
 		$resourceLoader->register( 'ext.globalCssJs.site', $siteJs );
 
-		$siteCss = array(
+		$siteCss = [
 			'position' => 'top',
 			'class' => ResourceLoaderGlobalSiteModule::class,
 			'type' => 'style',
-		) + $config;
+		] + $config;
 		$resourceLoader->register( 'ext.globalCssJs.site.styles', $siteCss );
 
 		return true;
@@ -126,7 +126,7 @@ class GlobalCssJsHooks {
 				// CSS or JS page, but not a global one
 				return true;
 			}
-			$output->wrapWikiMsg( "<div id='mw-$msg'>\n$1\n</div>", array( $msg ) );
+			$output->wrapWikiMsg( "<div id='mw-$msg'>\n$1\n</div>", [ $msg ] );
 		}
 		return true;
 	}
@@ -173,7 +173,7 @@ class GlobalCssJsHooks {
 			return true;
 		}
 		$userName = $user->getName();
-		$linkTools = array();
+		$linkTools = [];
 		if ( $allowUserCss ) {
 			$cssPage = Title::makeTitleSafe( NS_USER, $userName . '/global.css' );
 			$linkTools[] = self::makeCentralLink( $cssPage, 'globalcssjs-custom-css' );
@@ -185,13 +185,13 @@ class GlobalCssJsHooks {
 
 		$prefs = wfArrayInsertAfter(
 			$prefs,
-			array( 'globalcssjs' => array(
+			[ 'globalcssjs' => [
 				'type' => 'info',
 				'raw' => 'true',
 				'default' => $ctx->getLanguage()->pipeList( $linkTools ),
 				'label-message' => 'globalcssjs-custom-css-js',
 				'section' => 'rendering/skin',
-			) ),
+			] ],
 			'commoncssjs'
 		);
 		return true;

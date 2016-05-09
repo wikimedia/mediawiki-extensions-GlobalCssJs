@@ -37,28 +37,28 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 		$username = $context->getUser();
 
 		if ( $username === null ) {
-			return array();
+			return [];
 		}
 
 		// Note, this will validate the user's name against
 		// the local site rather than the target site
 		$user = User::newFromName( $username );
 		if ( !$user || !$user->getId() ) {
-			return array();
+			return [];
 		}
 
 		if ( !GlobalCssJsHooks::loadForUser( $user ) ) {
-			return array();
+			return [];
 		}
 
 		$userpage = $user->getUserPage()->getDBkey();
 		$config = $context->getResourceLoader()->getConfig();
-		$pages = array();
+		$pages = [];
 
 		if ( $this->type === 'style' && $config->get( 'AllowUserCss' ) ) {
-			$pages["User:$userpage/global.css"] = array( 'type' => 'style' );
+			$pages["User:$userpage/global.css"] = [ 'type' => 'style' ];
 		} elseif ( $this->type === 'script' && $config->get( 'AllowUserJs' ) ) {
-			$pages["User:$userpage/global.js"] = array( 'type' => 'script' );
+			$pages["User:$userpage/global.js"] = [ 'type' => 'script' ];
 		}
 
 		return $pages;

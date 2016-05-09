@@ -7,32 +7,32 @@ class ResourceLoaderGlobalModuleTest extends MediaWikiTestCase {
 	 * @dataProvider provideGetSource
 	 */
 	public function testGetSource( $params, $expected ) {
-		$this->setMwGlobals( array(
+		$this->setMwGlobals( [
 			'wgDBname' => 'examplewiki',
 			'wgDBprefix' => '',
-		) );
+		] );
 
 		/** @var ResourceLoaderGlobalModule $module */
-		$module = $this->getMockForAbstractClass( 'ResourceLoaderGlobalModule', array( $params ) );
+		$module = $this->getMockForAbstractClass( 'ResourceLoaderGlobalModule', [ $params ] );
 		$this->assertEquals( $expected, $module->getSource() );
 	}
 
 	public static function provideGetSource() {
-		return array(
-			array(
-				array(
+		return [
+			[
+				[
 					'wiki' => 'blahwiki',
 					'source' => 'blahsource',
-				),
+				],
 				'blahsource',
-			),
-			array(
-				array(
+			],
+			[
+				[
 					'wiki' => 'examplewiki',
 					'source' => 'blahsource',
-				),
+				],
 				'local',
-			),
-		);
+			],
+		];
 	}
 }

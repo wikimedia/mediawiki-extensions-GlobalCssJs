@@ -100,7 +100,7 @@ class RemoveOldManualUserPages extends Maintenance {
 
 		// For hooks not using RequestContext (e.g. AbuseFilter)
 		$wgUser = $user;
-		$errors = array();
+		$errors = [];
 		$status = $page->doDeleteArticleReal( wfMessage( $reason, $userName )->inContentLanguage()->text(), false, 0, true, $errors, $user );
 		if ( $status->isGood() ) {
 			$this->output( "{$title->getPrefixedText()} was deleted.\n" );
@@ -159,7 +159,7 @@ class RemoveOldManualUserPages extends Maintenance {
 	 */
 	private function stripComments( $js ) {
 		$exploded = explode( "\n", $js );
-		$new = array();
+		$new = [];
 		foreach ( $exploded as $line ) {
 			$trimmed = trim( $line );
 			if ( $trimmed !== '' && substr( $trimmed, 0, 2 ) !== '//' ) {

@@ -5,90 +5,90 @@ class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestC
 	public static function provideGetPages() {
 
 		// format: array( $type, array( config => value ), $expectedPages, $skin, $description )
-		return array(
-			array(
+		return [
+			[
 				'style',
-				array(),
-				array(
+				[],
+				[
 					'MediaWiki:Global.css', 'MediaWiki:Global-skinname.css'
-				),
+				],
 				'skinname',
 				'With default settings, 2 CSS global pages are loaded'
-			),
-			array(
+			],
+			[
 				'script',
-				array(),
-				array(
+				[],
+				[
 					'MediaWiki:Global.js', 'MediaWiki:Global-skinname.js',
-				),
+				],
 				'skinname',
 				'With default settings, 2 JS global pages are loaded'
-			),
-			array(
+			],
+			[
 				'style',
-				array( 'wgUseGlobalSiteCssJs' => false ),
-				array(),
+				[ 'wgUseGlobalSiteCssJs' => false ],
+				[],
 				'skinname',
 				'No CSS pages are loaded with $wgUseGlobalSiteCssJs = false'
-			),
-			array(
+			],
+			[
 				'script',
-				array( 'wgUseGlobalSiteCssJs' => false ),
-				array(),
+				[ 'wgUseGlobalSiteCssJs' => false ],
+				[],
 				'skinname',
 				'No JS pages are loaded with $wgUseGlobalSiteCssJs = false'
-			),
-			array(
+			],
+			[
 				'script',
-				array( 'wgUseSiteCss' => false ),
-				array(
+				[ 'wgUseSiteCss' => false ],
+				[
 					'MediaWiki:Global.js', 'MediaWiki:Global-skinname.js',
-				),
+				],
 				'skinname',
 				'JS pages are loaded if $wgUseSiteCss = false'
-			),
-			array(
+			],
+			[
 				'style',
-				array( 'wgUseSiteJs' => false ),
-				array(
+				[ 'wgUseSiteJs' => false ],
+				[
 					'MediaWiki:Global.css', 'MediaWiki:Global-skinname.css',
-				),
+				],
 				'skinname',
 				'CSS pages are loaded if $wgUseSiteJs = false'
-			),
-			array(
+			],
+			[
 				'style',
-				array( 'wgUseSiteJs' => false, 'wgUseSiteCss' => false ),
-				array(),
+				[ 'wgUseSiteJs' => false, 'wgUseSiteCss' => false ],
+				[],
 				'skinname',
 				'No CSS pages loaded if $wgUseSiteJs and $wgUseSiteCss are false'
-			),
-			array(
+			],
+			[
 				'script',
-				array( 'wgUseSiteJs' => false, 'wgUseSiteCss' => false ),
-				array(),
+				[ 'wgUseSiteJs' => false, 'wgUseSiteCss' => false ],
+				[],
 				'skinname',
 				'No JS pages loaded if $wgUseSiteJs and $wgUseSiteCss are false'
-			),
-			array(
+			],
+			[
 				'style',
-				array(),
-				array(
+				[],
+				[
 					'MediaWiki:Global.css', 'MediaWiki:Global-monobook.css'
-				),
+				],
 				'monobook',
 				'Global-monobook.css pages are loaded if monobook is set as the skin'
-			),
-			array(
+			],
+			[
 				'script',
-				array(),
-				array(
+				[],
+				[
 					'MediaWiki:Global.js', 'MediaWiki:Global-monobook.js'
-				),
+				],
 				'monobook',
 				'Global-monobook.js pages are loaded if monobook is set as the skin'
-			),
-		);
+			],
+		];
 	}
 
 	/**
@@ -107,9 +107,9 @@ class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestC
 			$configOverrides
 		) );
 		$module = new ResourceLoaderGlobalSiteModule(
-			array( 'type' => $type ) + $this->getFakeOptions()
+			[ 'type' => $type ] + $this->getFakeOptions()
 		);
-		$context = $this->getContext( array( 'skin' => $skin ) );
+		$context = $this->getContext( [ 'skin' => $skin ] );
 		$getPages = new ReflectionMethod( $module, 'getPages' );
 		$getPages->setAccessible( true );
 		$out = $getPages->invoke( $module, $context );

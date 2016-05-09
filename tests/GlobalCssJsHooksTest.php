@@ -3,11 +3,11 @@
 class GlobalCssJsHooksTest extends MediaWikiTestCase {
 
 	public static function provideLoadForUser() {
-		return array(
-			array( false, false, 'Hook not called if "wiki" set to false' ),
-			array( 'wikiid', false, 'Hook not called if "wiki" set to wfWikiId()' ),
-			array( 'somewiki', true, 'Hook called if "wiki" set to "somewiki"' ),
-		);
+		return [
+			[ false, false, 'Hook not called if "wiki" set to false' ],
+			[ 'wikiid', false, 'Hook not called if "wiki" set to wfWikiId()' ],
+			[ 'somewiki', true, 'Hook called if "wiki" set to "somewiki"' ],
+		];
 	}
 
 	/**
@@ -18,21 +18,21 @@ class GlobalCssJsHooksTest extends MediaWikiTestCase {
 		$wiki = $wiki === 'wikiid' ? wfWikiID() : $wiki;
 		$us = $this;
 
-		$this->setMwGlobals( array(
-			'wgGlobalCssJsConfig' => array(
+		$this->setMwGlobals( [
+			'wgGlobalCssJsConfig' => [
 				'wiki' => $wiki,
 				'source' => 'fakesource'
-			),
-			'wgHooks' => array(
-				'LoadGlobalCssJs' => array(
+			],
+			'wgHooks' => [
+				'LoadGlobalCssJs' => [
 					function( $user, $wiki ) use ( $us, $assert, $desc ) {
 						// Check whether the hook was run, and whether we wanted it to be.
 						$us->assertTrue( $assert, $desc );
 						return true;
 					},
-				)
-			)
-		) );
+				]
+			]
+		] );
 
 		GlobalCssJsHooks::loadForUser( new User );
 
