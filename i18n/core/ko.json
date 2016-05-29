@@ -10,11 +10,11 @@
 	},
 	"globalcssjs-extensionname": "전역 CSS/JS",
 	"globalcssjs-desc": "전역 CSS 설정과 자바스크립트 설정을 중앙 위키와 연결된 모든 위키에서 불러올수 있도록 허용",
-	"globalcssjs-warning-js": "이 문서에 추가된 모든 자바스크립트는 당신이 계정을 가진 모든 위키에서 로드될 것입니다. ([[mw:Help:Extension:GlobalCssJS|설명문서]]를 참조하세요.)",
-	"globalcssjs-warning-css": "이 문서에 추가된 CSS는 당신이 계정을 가진 모든 위키에서 로드될 것입니다. ([[mw:Help:Extension:GlobalCssJS|설명문서]]를 참조하세요.)",
+	"globalcssjs-warning-js": "이 문서에 추가된 모든 자바스크립트는 당신이 계정을 가진 모든 위키에서 로드될 것입니다. ([[mw:Help:Extension:GlobalCssJs|설명문서]]를 참조하세요.)",
+	"globalcssjs-warning-css": "이 문서에 추가된 CSS는 당신이 계정을 가진 모든 위키에서 로드될 것입니다. ([[mw:Help:Extension:GlobalCssJs|설명문서]]를 참조하세요.)",
 	"globalcssjs-custom-css-js": "모든 위키에 공유된 CSS/자바스크립트:",
 	"globalcssjs-custom-js": "사용자 지정 자바스크립트",
 	"globalcssjs-custom-css": "사용자 CSS",
-	"globalcssjs-delete-css": "[[mw:Help:Extension:GlobalCssJs]]의 채용에 사용자 요청에 따라 CSS 문서를 삭제함",
-	"globalcssjs-delete-js": "[[mw:Help:Extension:GlobalCssJs]]의 채용에 사용자 요청에 따라 자바스크립트 문서를 삭제함"
+	"globalcssjs-delete-css": "[[mw:Help:Extension:GlobalCssJs]]의 채용으로 {{GENDER:$1|사용자}} 요청에 따라 CSS 문서를 삭제함",
+	"globalcssjs-delete-js": "[[mw:Help:Extension:GlobalCssJs]]의 채용으로 {{GENDER:$1|사용자}} 요청에 따라 자바스크립트 문서를 삭제함"
 }
