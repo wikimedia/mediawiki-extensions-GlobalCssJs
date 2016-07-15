@@ -11,6 +11,6 @@
 	"globalcssjs-custom-css-js": "Kõigi vikide ühine CSS/JavaScript:",
 	"globalcssjs-custom-js": "Kohandatud JavaScript",
 	"globalcssjs-custom-css": "Kohandatud CSS",
-	"globalcssjs-delete-css": "CCS-lehekülg kustutatud kasutaja palvel seoses tarkvaralisa [[mw:Help:Extension:GlobalCssJs|GlobalCssJs]] kasutuselevõtuga",
-	"globalcssjs-delete-js": "JavaScripti lehekülg kustutatud kasutaja palvel seoses tarkvaralisa [[mw:Help:Extension:GlobalCssJs|GlobalCssJs]] kasutuselevõtuga"
+	"globalcssjs-delete-css": "CCS-lehekülg kustutatud {{GENDER:$1|kasutaja}} palvel seoses tarkvaralisa [[mw:Help:Extension:GlobalCssJs|GlobalCssJs]] kasutuselevõtuga",
+	"globalcssjs-delete-js": "JavaScripti lehekülg kustutatud {{GENDER:$1|kasutaja}} palvel seoses tarkvaralisa [[mw:Help:Extension:GlobalCssJs|GlobalCssJs]] kasutuselevõtuga"
 }
