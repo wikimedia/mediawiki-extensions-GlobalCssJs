@@ -3,13 +3,16 @@
 		"authors": [
 			"Armin1392",
 			"Alirezaaa",
-			"Ebraminio"
+			"Ebraminio",
+			"Reza1615"
 		]
 	},
 	"globalcssjs-desc": "اجازه دادن سی‌اس‌اس و جاوااسکریپت بر روی ویکی مرکزی برای بارگذاری شدن برای همهٔ ویکی‌های متصل شده",
+	"globalcssjs-warning-js": "هر کدی که به این صفحه افزوده شود در همه ویکی‌هایی که حساب کاربری دارید بارگیری می‌شود.  (برای اطلاعات بیشتر [[mw:Help:Extension:GlobalCssJs|راهنما]] را مطالعه کنید)",
+	"globalcssjs-warning-css": "هر CSSی که به این صفحه افزوده شود در همه ویکی‌هایی که حساب کاربری دارید بارگیری می‌شود.  (برای اطلاعات بیشتر [[mw:Help:Extension:GlobalCssJs|راهنما]] را مطالعه کنید)",
 	"globalcssjs-custom-css-js": "سی‌اس‌اس/جاوااسکریپت مشترک برای همهٔ ویکی‌ها:",
 	"globalcssjs-custom-js": "جاوااسکریپت شخصی",
 	"globalcssjs-custom-css": "سی‌اس‌اس شخصی",
-	"globalcssjs-delete-css": "حذف صفحه سی‌اس‌اس به درخواست کاربر به علت توسعه [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "حذف صفحه جاوااسکریپت به درخواست کاربر به علت توسعه [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "حذف صفحه سی‌اس‌اس به درخواست  {{GENDER:$1|کاربر}} به علت توسعه [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "حذف صفحه جاوااسکریپت به درخواست  {{GENDER:$1|کاربر}} به علت توسعه [[mw:Help:Extension:GlobalCssJs]]"
 }
