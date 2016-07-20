@@ -44,10 +44,7 @@ class ResourceLoaderGlobalModuleTestCase extends MediaWikiTestCase {
 			$options['user'],
 			null, // version
 			false, // debug
-			ResourceLoaderModule::TYPE_COMBINED,
-			true, // printable
-			false, // handheld
-			[] // extra
+			ResourceLoaderModule::TYPE_COMBINED
 		);
 		$rl = new ResourceLoader( ConfigFactory::getDefaultInstance()->makeConfig( 'main' ) );
 		return new ResourceLoaderContext( $rl, new FauxRequest( $query ) );
