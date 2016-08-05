@@ -4,5 +4,7 @@
 			"Ильнар"
 		]
 	},
-	"globalcssjs-custom-css-js": "Бөтен вики-проектлар өчен гомуми CSS/JS:"
+	"globalcssjs-custom-css-js": "Бөтен вики-проектлар өчен гомуми CSS/JS:",
+	"globalcssjs-custom-js": "Шәхси JS",
+	"globalcssjs-custom-css": "Шәхси CSS"
 }
