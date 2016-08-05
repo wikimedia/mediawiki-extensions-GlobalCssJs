@@ -2,13 +2,6 @@
 
 class RemoveOldManualUserPagesTest extends MediaWikiTestCase {
 
-	/**
-	 * No autoloader for maintenance scripts
-	 */
-	private function load() {
-		require_once dirname( __DIR__ ) . '/removeOldManualUserPages.php';
-	}
-
 	public static function provideCheckJs() {
 		return [
 			[
@@ -131,7 +124,6 @@ class RemoveOldManualUserPagesTest extends MediaWikiTestCase {
 	 * @param string $desc description of test case
 	 */
 	public function testCheckJs( $text, $expected, $userName, $desc ) {
-		$this->load();
 		$r = new RemoveOldManualUserPages();
 		$matched = $r->checkJs( $text, 'meta\.wikimedia\.org', $userName );
 		$this->assertEquals( $expected, $matched, $desc );
@@ -175,7 +167,6 @@ class RemoveOldManualUserPagesTest extends MediaWikiTestCase {
 	 * @param string $desc description of test case
 	 */
 	public function testCheckCss( $text, $expected, $desc ) {
-		$this->load();
 		$r = new RemoveOldManualUserPages();
 		$matched = $r->checkCss( $text, 'meta\.wikimedia\.org', 'UserName' );
 		$this->assertEquals( $expected, $matched, $desc );
@@ -195,7 +186,6 @@ class RemoveOldManualUserPagesTest extends MediaWikiTestCase {
 	 * @dataProvider provideNormalizeUserName
 	 */
 	public function testNormalizeUserName( $name, $expected, $desc ) {
-		$this->load();
 		$r = new RemoveOldManualUserPages();
 		$this->assertEquals( $expected, $r->normalizeUserName( $name ), $desc );
 	}
