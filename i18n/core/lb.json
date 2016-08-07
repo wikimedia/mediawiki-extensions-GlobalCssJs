@@ -9,6 +9,6 @@
 	"globalcssjs-custom-css-js": "Gemeinsam CSS/JavaScript fir all Wikien:",
 	"globalcssjs-custom-js": "Benotzerdefinéierte JavaScript",
 	"globalcssjs-custom-css": "Benotzerdefinéierten CSS",
-	"globalcssjs-delete-css": "Läsche vun der CSS-Säit op Ufro vum Benotzer opgrond vun der Entwécklung vun [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-css": "Läsche vun der CSS-Säit op Ufro vum {{GENDER:$1|Benotzer}} opgrond vun der Entwécklung vun [[mw:Help:Extension:GlobalCssJs]]",
 	"globalcssjs-delete-js": "Läsche vun der JavaScript-Säit op Ufro vum  {{GENDER:$1|Benotzer}} opgrond vun der Entwécklung vun [[mw:Help:Extension:GlobalCssJs]]"
 }
