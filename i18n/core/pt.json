@@ -2,12 +2,16 @@
 	"@metadata": {
 		"authors": [
 			"Vitorvicentevalente",
-			"Jkb8"
+			"Jkb8",
+			"Hamilton Abreu"
 		]
 	},
-	"globalcssjs-warning-js": "Qualquer JavaScript adicionado a esta página será carregada em todas as wikis onde você tem uma conta (ver [[mw:Help:Extension:GlobalCssJs|documentação]]).",
-	"globalcssjs-warning-css": "Qualquer CSS adicionado a esta página será carregada em todas as wikis onde você tem uma conta (ver [[mw:Help:Extension:GlobalCssJs|documentação]]).",
+	"globalcssjs-desc": "Permite que o CSS e o código JavaScript de uma wiki central sejam carregados em todas as wikis a ela ligadas",
+	"globalcssjs-warning-js": "Qualquer JavaScript adicionado a esta página será carregado em todas as wikis onde tem uma conta (ver [[mw:Help:Extension:GlobalCssJs|documentação]]).",
+	"globalcssjs-warning-css": "Qualquer CSS adicionado a esta página será carregado em todas as wikis onde tem uma conta (ver [[mw:Help:Extension:GlobalCssJs|documentação]]).",
 	"globalcssjs-custom-css-js": "CSS/JavaScript partilhado por todas as wikis:",
-	"globalcssjs-custom-js": "JS personalizado",
-	"globalcssjs-custom-css": "CSS personalizada"
+	"globalcssjs-custom-js": "JavaScript personalizado",
+	"globalcssjs-custom-css": "CSS personalizado",
+	"globalcssjs-delete-css": "A eliminar página de CSS, a pedido de {{GENDER:$1|um utilizador|uma utilizadora}}, devido à implementação da extensão [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "A eliminar a página de JavaScript, a pedido de {{GENDER:$1|um utilizador|uma utilizadora}}, devido à implementação da extensão [[mw:Help:Extension:GlobalCssJs]]"
 }
