@@ -89,7 +89,6 @@ class GlobalCssJsHooks {
 		$resourceLoader->register( 'ext.globalCssJs.user', $userJs );
 
 		$userCss = [
-			'position' => 'top',
 			'class' => ResourceLoaderGlobalUserModule::class,
 			'type' => 'style',
 		] + $config;
@@ -102,7 +101,6 @@ class GlobalCssJsHooks {
 		$resourceLoader->register( 'ext.globalCssJs.site', $siteJs );
 
 		$siteCss = [
-			'position' => 'top',
 			'class' => ResourceLoaderGlobalSiteModule::class,
 			'type' => 'style',
 		] + $config;
