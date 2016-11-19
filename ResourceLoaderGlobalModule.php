@@ -40,9 +40,6 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 	 */
 	protected $source;
 
-	/** @var string Position on the page to load this module at */
-	protected $position = 'bottom';
-
 	/**
 	 * Either 'style' or 'script'
 	 *
@@ -55,7 +52,6 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 			switch ( $member ) {
 				case 'wiki':
 				case 'source':
-				case 'position':
 					$this->{$member} = (string)$option;
 					break;
 				case 'type':
@@ -84,9 +80,5 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 		} else {
 			return wfGetLB( $this->wiki )->getConnectionRef( DB_SLAVE, [], $this->wiki );
 		}
-	}
-
-	public function getPosition() {
-		return $this->position;
 	}
 }
