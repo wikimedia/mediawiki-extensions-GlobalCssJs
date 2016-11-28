@@ -5,6 +5,7 @@
 			"Minh Nguyen"
 		]
 	},
+	"globalcssjs-desc": "Cho phép mọi wiki liên kết tải CSS và JavaScript từ một wiki trung ương",
 	"globalcssjs-custom-css-js": "CSS/JavaScript chung cho mọi wiki:",
 	"globalcssjs-custom-js": "JavaScript tùy chọn",
 	"globalcssjs-custom-css": "CSS tùy chọn"
