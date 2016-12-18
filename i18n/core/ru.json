@@ -4,14 +4,15 @@
 			"Kaganer",
 			"Okras",
 			"Saint Johann",
-			"Nirovulf"
+			"Nirovulf",
+			"Kareyac"
 		]
 	},
 	"globalcssjs-extensionname": "Глобальные CSS/JS",
 	"globalcssjs-desc": "Позволяет использовать CSS и JavaScript, находящиеся в центральном вики-проекте, для загрузки во все связанные вики-проекты.",
+	"globalcssjs-custom-css-js": "Общие CSS/JavaScript для всех вики-проектов[[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|подробнее]]:",
 	"globalcssjs-warning-js": "Любой JavaScript, добавленный на эту страницу, будет загружаться на всех вики, где у вас есть учётная запись (см.[[mw:Help:Extension:GlobalCssJs|документацию]]).",
 	"globalcssjs-warning-css": "Любой CSS, добавленный на эту страницу, будет загружаться во всех вики, где у вас есть учётная запись (см. [[mw:Help:Extension:GlobalCssJs|документацию]]).",
-	"globalcssjs-custom-css-js": "Общие CSS/JavaScript для всех вики-проектов:",
 	"globalcssjs-custom-js": "Собственный JS",
 	"globalcssjs-custom-css": "Собственный CSS",
 	"globalcssjs-delete-css": "Удаление CSS-страницы по запросу {{GENDER:$1|участника}} в связи с вводом [[mw:Help:Extension:GlobalCssJs]]",
