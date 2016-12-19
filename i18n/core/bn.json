@@ -6,9 +6,9 @@
 		]
 	},
 	"globalcssjs-extensionname": "বৈশ্বিক CSS/JS",
+	"globalcssjs-custom-css-js": "সব উইকির জন্য শেয়ারকৃত সিএসএস/জাভাস্ক্রিপ্ট ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|আরো তথ্য]]):",
 	"globalcssjs-warning-js": "কোন জাভাস্ক্রিপ্ট এই পাতায় যোগ করা হলে তা সব উইকিতে লোড হবে যেখানে আপনার অ্যাকাউন্ট আছে ([[mw:Help:Extension:GlobalCssJs|নথি]] দেখুন)",
 	"globalcssjs-warning-css": "কোন সিএসএস এই পাতায় যোগ করা হলে তা সব উইকিতে লোড হবে যেখানে আপনার অ্যাকাউন্ট আছে ([[mw:Help:Extension:GlobalCssJs|নথি]] দেখুন)।",
-	"globalcssjs-custom-css-js": "সব উইকির জন্য শেয়ারকৃত সিএসএস/জাভাস্ক্রিপ্ট:",
 	"globalcssjs-custom-js": "স্বনির্ধারিত জাভাস্ক্রিপ্ট",
 	"globalcssjs-custom-css": "স্বনির্ধারিত CSS"
 }
