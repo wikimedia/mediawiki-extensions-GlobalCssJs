@@ -6,7 +6,7 @@
 	},
 	"globalcssjs-extensionname": "Globaalne CSS/JS",
 	"globalcssjs-desc": "Võimaldab laadida keskses vikis asuva kaskaadilaadistiku või JavaScripti kõigis ühendatud vikides.",
-	"globalcssjs-custom-css-js": "Kõigi vikide ühine CSS/JavaScript:",
+	"globalcssjs-custom-css-js": "Kõigi vikide ühine CSS/JavaScript ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|lisateave]]):",
 	"globalcssjs-warning-js": "Siin asuv JavaScript laaditakse kõigis vikides, kus sul on konto (vaata [[mw:Help:Extension:GlobalCssJs|dokumentatsiooni]]).",
 	"globalcssjs-warning-css": "Siin asuv kaskaadilaadistik laaditakse kõigis vikides, kus sul on konto (vaata [[mw:Help:Extension:GlobalCssJs|dokumentatsiooni]]).",
 	"globalcssjs-custom-js": "kohandatud JavaScript",

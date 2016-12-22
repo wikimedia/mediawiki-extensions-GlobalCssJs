@@ -4,14 +4,15 @@
 			"Ciencia Al Poder",
 			"Fitoschido",
 			"Macofe",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"Peter Bowman"
 		]
 	},
 	"globalcssjs-extensionname": "CSS/JS global",
 	"globalcssjs-desc": "Permite cargar CSS y JavaScript en un wiki central para que éstos se carguen en todos los wikis conectados",
+	"globalcssjs-custom-css-js": "CSS/JavaScript compartido en todos los wikis ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|más información]]):",
 	"globalcssjs-warning-js": "El código JavaScript que se añada a esta página se cargará en todos los wikis en los que tengas una cuenta (consulta la [[mw:Help:Extension:GlobalCssJs|documentación]]).",
 	"globalcssjs-warning-css": "El código CSS que se añada a esta página se cargará en todos los wikis en los que tengas una cuenta (consulta la [[mw:Help:Extension:GlobalCssJs|documentación]]).",
-	"globalcssjs-custom-css-js": "CSS/JavaScript compartido en todos los wikis:",
 	"globalcssjs-custom-js": "JavaScript personalizado",
 	"globalcssjs-custom-css": "CSS personalizado",
 	"globalcssjs-delete-css": "Se borra página CSS a petición {{GENDER:$1|del usuario|de la usuaria}} en virtud del despliegue de la extensión [[mw:Help:Extension:GlobalCssJs|GlobalCssJs]]",
