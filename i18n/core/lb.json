@@ -5,8 +5,8 @@
 		]
 	},
 	"globalcssjs-desc": "Erlaabt et datt CSS a JavaScript vun enger zentraler Wiki fir all verbonne Wikie geluede ginn",
+	"globalcssjs-custom-css-js": "Gemeinsam CSS/JavaScript fir all Wikien([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|méi Informatiounen]]):",
 	"globalcssjs-warning-js": "All JavaScript deen op dës Säit derbäigesat gëtt, gëtt op all Wikie gelueden op deenen Dir e Benotzerkont hutt (kuckt d'[[mw:Help:Extension:GlobalCssJs|Dokumentatioun]]).",
-	"globalcssjs-custom-css-js": "Gemeinsam CSS/JavaScript fir all Wikien:",
 	"globalcssjs-custom-js": "Benotzerdefinéierte JavaScript",
 	"globalcssjs-custom-css": "Benotzerdefinéierten CSS",
 	"globalcssjs-delete-css": "Läsche vun der CSS-Säit op Ufro vum {{GENDER:$1|Benotzer}} opgrond vun der Entwécklung vun [[mw:Help:Extension:GlobalCssJs]]",
