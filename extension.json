@@ -41,6 +41,10 @@
 			"source": false
 		}
 	},
+	"VisualEditorPreloadModules": [
+		"ext.globalCssJs.site",
+		"ext.globalCssJs.user"
+	],
 	"ExtensionFunctions": [
 		"GlobalCssJsHooks::onExtensionFunctions"
 	],
