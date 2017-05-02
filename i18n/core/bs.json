@@ -4,7 +4,7 @@
 			"Srdjan m"
 		]
 	},
-	"globalcssjs-custom-css-js": "Dijeljeni CSS/JavaScript za sve wikije:",
+	"globalcssjs-custom-css-js": "Dijeljeni CSS/JavaScript za sve wikije ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|detaljnije]]):",
 	"globalcssjs-custom-js": "Prilagođeni JavaScript",
 	"globalcssjs-custom-css": "Prilagođeni CSS"
 }
