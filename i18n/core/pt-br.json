@@ -3,8 +3,10 @@
 		"authors": [
 			"Helder.wiki",
 			"He7d3r",
-			"Iagocds"
+			"Iagocds",
+			"Felipe L. Ewald"
 		]
 	},
-	"globalcssjs-custom-css-js": "CSS/JavaScript compartilhado por todas as wikis\n([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|more information]]):"
+	"globalcssjs-custom-css-js": "CSS/JavaScript compartilhado por todas as wikis\n([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|more information]]):",
+	"globalcssjs-custom-css": "CSS personalizado"
 }
