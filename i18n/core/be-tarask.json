@@ -8,6 +8,7 @@
 	"globalcssjs-desc": "Дазваляе загружаць CSS і JavaScript з цэнтральнай вікі ва ўсе злучаныя вікі-праекты",
 	"globalcssjs-custom-css-js": "Агульны CSS/JavaScript для ўсіх вікі ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|больш інфармацыі]]):",
 	"globalcssjs-warning-js": "Любы JavaScript, дададзены на гэтую старонку, будзе загружаны ва ўсе вікі, дзе вы маеце рахунак (глядзіце [[mw:Help:Extension:GlobalCssJs|дакумэнтацыю]]).",
+	"globalcssjs-warning-css": "Любы CSS, дададзены на гэтую старонку, будзе загружаны ва ўсе вікі, дзе вы маеце рахунак (глядзіце [[mw:Help:Extension:GlobalCssJs|дакумэнтацыю]]).",
 	"globalcssjs-custom-js": "Індывідуальны JavaScript",
 	"globalcssjs-custom-css": "Індывідуальны CSS"
 }
