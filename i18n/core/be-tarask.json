@@ -11,5 +11,6 @@
 	"globalcssjs-warning-css": "Любы CSS, дададзены на гэтую старонку, будзе загружаны ва ўсе вікі, дзе вы маеце рахунак (глядзіце [[mw:Help:Extension:GlobalCssJs|дакумэнтацыю]]).",
 	"globalcssjs-custom-js": "Індывідуальны JavaScript",
 	"globalcssjs-custom-css": "Індывідуальны CSS",
-	"globalcssjs-delete-css": "Выдаленьне CSS-старонкі на запыт {{GENDER:$1|удзельніка|удзельніцы}} з прычыны ўсталяваньня [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Выдаленьне CSS-старонкі на запыт {{GENDER:$1|удзельніка|удзельніцы}} з прычыны ўсталяваньня [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Выдаленьне JavaScript-старонкі на запыт {{GENDER:$1|удзельніка|удзельніцы}} з прычыны ўсталяваньня [[mw:Help:Extension:GlobalCssJs]]"
 }
