@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"NoiX180"
+		]
+	},
+	"globalcssjs-desc": "Ngenakaké CSS lan JavaScript ing wiki punjer kapurih bisané kamot ing kabèh wiki sing nggayut",
+	"globalcssjs-custom-css-js": "CSS/JavaScript barengan kanggo kabèh wiki ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|katerangan candhaké]]):",
+	"globalcssjs-warning-js": "Sembarang JavaScript sing ditambahaké ing kaca iki bakal dimot ing kabèh wiki sing ana akuné panjenengan (delengen [[mw:Help:Extension:GlobalCssJs|dhokumèntasiné]]).",
+	"globalcssjs-warning-css": "Sembarang CSS sing ditambahaké ing kaca iki bakal dimot ing kabèh wiki sing ana akuné panjenengan (delengen [[mw:Help:Extension:GlobalCssJs|dhokumèntasiné]]).",
+	"globalcssjs-custom-js": "JavaScript Mirunggan",
+	"globalcssjs-custom-css": "CSS Mirunggan",
+	"globalcssjs-delete-css": "Mbusak kaca CSS adhedhasar panyuwuné {{GENDER:$1|panganggo}} amarga pangecaké [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Mbusak kaca JavaScript adhedhasar panyuwuné {{GENDER:$1|panganggo}} amarga pangecaké [[mw:Help:Extension:GlobalCssJs]]"
+}
