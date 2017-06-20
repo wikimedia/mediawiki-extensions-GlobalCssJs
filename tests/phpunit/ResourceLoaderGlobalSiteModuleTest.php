@@ -3,7 +3,6 @@
 class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestCase {
 
 	public static function provideGetPages() {
-
 		// format: array( $type, array( config => value ), $expectedPages, $skin, $description )
 		return [
 			[

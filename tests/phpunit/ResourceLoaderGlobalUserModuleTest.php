@@ -13,7 +13,6 @@ class ResourceLoaderGlobalUserModuleTest extends ResourceLoaderGlobalModuleTestC
 	}
 
 	public static function provideGetPages() {
-
 		// format: array( $type, array( config => value ), $expectedPages, $description )
 		return [
 			[
