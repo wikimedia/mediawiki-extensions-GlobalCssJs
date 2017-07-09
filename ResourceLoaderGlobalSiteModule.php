@@ -33,7 +33,9 @@ class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 	 * @return array
 	 */
 	protected function getPages( ResourceLoaderContext $context ) {
-		if ( !ConfigFactory::getDefaultInstance()->makeConfig( 'globalcssjs' )->get( 'UseGlobalSiteCssJs' ) ) {
+		if ( !ConfigFactory::getDefaultInstance()
+			->makeConfig( 'globalcssjs' )->get( 'UseGlobalSiteCssJs' )
+		) {
 			return [];
 		}
 

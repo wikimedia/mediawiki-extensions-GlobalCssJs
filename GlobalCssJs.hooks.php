@@ -123,9 +123,13 @@ class GlobalCssJsHooks {
 		) {
 			$title = $editPage->getTitle();
 			$name = $user->getName();
-			if ( $config->get( 'AllowUserJs' ) && $editPage->isJsSubpage && $title->getText() == $name . '/global.js' ) {
+			if ( $config->get( 'AllowUserJs' ) && $editPage->isJsSubpage &&
+				$title->getText() == $name . '/global.js'
+			) {
 				$msg = 'globalcssjs-warning-js';
-			} elseif ( $config->get( 'AllowUserCss' ) && $editPage->isCssSubpage && $title->getText() == $name . '/global.css' ) {
+			} elseif ( $config->get( 'AllowUserCss' ) && $editPage->isCssSubpage &&
+				$title->getText() == $name . '/global.css'
+			) {
 				$msg = 'globalcssjs-warning-css';
 			} else {
 				// CSS or JS page, but not a global one

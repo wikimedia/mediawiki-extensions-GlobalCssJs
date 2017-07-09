@@ -56,7 +56,9 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 					break;
 				case 'type':
 					if ( $option !== 'style' && $option !== 'script' ) {
-						throw new InvalidArgumentException( "type must be either 'style' or 'script', not '$option'" );
+						throw new InvalidArgumentException(
+							"type must be either 'style' or 'script', not '$option'"
+						);
 					}
 					$this->type = $option;
 					break;

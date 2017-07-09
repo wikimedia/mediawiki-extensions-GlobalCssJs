@@ -20,9 +20,11 @@ class RemoveOldManualUserPages extends Maintenance {
 
 	public function __construct() {
 		parent::__construct();
-		$this->mDescription = 'Remove reundant user script pages that import global.js and/or global.css';
+		$this->mDescription = 'Remove reundant user script pages that ' .
+			'import global.js and/or global.css';
 		$this->addOption( 'user', 'User name', true, true );
-		$this->addOption( 'ignorerevisionlimit', 'Whether to ignore the 1 revision limit', false, false );
+		$this->addOption( 'ignorerevisionlimit',
+			'Whether to ignore the 1 revision limit', false, false );
 	}
 
 	public function execute() {
@@ -68,7 +70,9 @@ class RemoveOldManualUserPages extends Maintenance {
 		}
 
 		$rev = Revision::newFromTitle( $title );
-		if ( !$this->ignoreRevisionLimit && $title->getPreviousRevisionID( $rev->getId() ) !== false ) {
+		if ( !$this->ignoreRevisionLimit &&
+			$title->getPreviousRevisionID( $rev->getId() ) !== false
+		) {
 			$this->output( "{$title->getPrefixedText()} has more than one revision, skipping.\n" );
 			return false;
 		}
@@ -101,11 +105,15 @@ class RemoveOldManualUserPages extends Maintenance {
 		// For hooks not using RequestContext (e.g. AbuseFilter)
 		$wgUser = $user;
 		$errors = [];
-		$status = $page->doDeleteArticleReal( wfMessage( $reason, $userName )->inContentLanguage()->text(), false, 0, true, $errors, $user );
+		$status = $page->doDeleteArticleReal(
+			wfMessage( $reason, $userName )->inContentLanguage()->text(),
+			false, 0, true, $errors, $user
+		);
 		if ( $status->isGood() ) {
 			$this->output( "{$title->getPrefixedText()} was deleted.\n" );
 		} else {
-			$this->output( "{$title->getPrefixedText()} could not be deleted:\n" . $status->getWikiText() . "\n" );
+			$this->output( "{$title->getPrefixedText()} could not be deleted:\n" .
+				$status->getWikiText() . "\n" );
 		}
 	}
 
@@ -125,7 +133,8 @@ class RemoveOldManualUserPages extends Maintenance {
 
 	public function checkCss( $text, $domain, $userName ) {
 		$userName = $this->normalizeUserName( $userName );
-		preg_match( "/@import url\('(https?:)?\/\/$domain\/w\/index\.php\?title=User:$userName\/global\.css&action=raw&ctype=text\/css'\);/", $text, $matches );
+		preg_match( "/@import url\('(https?:)?\/\/$domain\/w\/index\.php\?title=User:$userName" .
+			"\/global\.css&action=raw&ctype=text\/css'\);/", $text, $matches );
 		return isset( $matches[0] ) ? $matches[0] === $text : false;
 	}
 
@@ -142,7 +151,8 @@ class RemoveOldManualUserPages extends Maintenance {
 		$text = trim( $content->getNativeData() );
 		$domain = $this->getCentralWikiDomain();
 		if ( !$this->checkCss( $text, $domain, $userName ) ) {
-			$this->output( "{$title->getPrefixedText()} did not match the specified regular expression. Skipping.\n" );
+			$this->output( "{$title->getPrefixedText()} did not match the specified regular " .
+				"expression. Skipping.\n" );
 			return;
 		}
 
@@ -173,7 +183,9 @@ class RemoveOldManualUserPages extends Maintenance {
 	public function checkJs( $text, $domain, $userName ) {
 		$text = $this->stripComments( $text );
 		$userName = $this->normalizeUserName( $userName );
-		preg_match( "/(mw\.loader\.load|importScriptURI)\s*\(\s*('|\")(https?:)?\/\/$domain\/w\/index\.php\?title=User:$userName\/global\.js&action=raw&ctype=text\/javascript(&smaxage=\d*?)?(&maxage=\d*?)?('|\")\s*\)\s*;?/", $text, $matches );
+		preg_match( "/(mw\.loader\.load|importScriptURI)\s*\(\s*('|\")(https?:)?\/\/$domain" .
+			"\/w\/index\.php\?title=User:$userName\/global\.js&action=raw&ctype=text\/javascript" .
+			"(&smaxage=\d*?)?(&maxage=\d*?)?('|\")\s*\)\s*;?/", $text, $matches );
 		return isset( $matches[0] ) ? $matches[0] === $text : false;
 	}
 
@@ -190,7 +202,8 @@ class RemoveOldManualUserPages extends Maintenance {
 		$text = trim( $content->getNativeData() );
 		$domain = $this->getCentralWikiDomain();
 		if ( !$this->checkJs( $text, $domain, $userName ) ) {
-			$this->output( "{$title->getPrefixedText()} did not match the specified regular expression. Skipping.\n" );
+			$this->output( "{$title->getPrefixedText()} did not match the specified regular " .
+				"expression. Skipping.\n" );
 			return;
 		}
 
