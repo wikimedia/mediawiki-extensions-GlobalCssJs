@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"MokaAkashiyaPT"
+		]
+	},
+	"globalcssjs-custom-css-js": "CSS/JavaScript partilhado por todas las wikis ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|mais anformaçon]]):",
+	"globalcssjs-custom-js": "JavaScript personalizado",
+	"globalcssjs-custom-css": "CSS personalizado"
+}
