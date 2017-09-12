@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Milicevic01"
+			"Milicevic01",
+			"Obsuser"
 		]
 	},
 	"globalcssjs-extensionname": "Globalni CSS/JS",
 	"globalcssjs-desc": "Omogućava da CSS i JavaScript na centralnom vikiju budu učitani na svim povezanim vikijima",
+	"globalcssjs-custom-css-js": "Deljeni CSS/javaskript za sve vikije ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|više]]):",
 	"globalcssjs-warning-js": "Svaki javaskript postavljen ovde će biti učitan na svim vikijima gde imate nalog (pogledajte [[mw:Help:Extension:GlobalCssJs|dokumentaciju]]).",
 	"globalcssjs-warning-css": "Svaki CSS postavljen ovde će biti učitan na svim vikijima gde imate nalog (pogledajte [[mw:Help:Extension:GlobalCssJs|dokumentaciju]]).",
-	"globalcssjs-custom-css-js": "Deljeni CSS/javaskript za sve vikije:",
 	"globalcssjs-custom-js": "Prilagođeni javaskript",
 	"globalcssjs-custom-css": "Prilagođeni CSS",
 	"globalcssjs-delete-css": "Brisanje CSS stranice {{GENDER:$1|na}} osnovu zahteva zbog [[mw:Help:Extension:GlobalCssJs]]",
