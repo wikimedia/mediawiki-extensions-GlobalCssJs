@@ -118,16 +118,17 @@ class GlobalCssJsHooks {
 		$gcssjsConfig = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$config = $output->getConfig();
 		$user = $output->getUser();
+		$title = $editPage->getTitle();
 		if ( $gcssjsConfig['wiki'] === wfWikiID() && $user->isLoggedIn()
-			&& $editPage->formtype == 'initial' && $editPage->isCssJsSubpage
+			&& $editPage->formtype == 'initial' && $title->isCssJsSubpage()
 		) {
 			$title = $editPage->getTitle();
 			$name = $user->getName();
-			if ( $config->get( 'AllowUserJs' ) && $editPage->isJsSubpage &&
+			if ( $config->get( 'AllowUserJs' ) && $title->isJsSubpage() &&
 				$title->getText() == $name . '/global.js'
 			) {
 				$msg = 'globalcssjs-warning-js';
-			} elseif ( $config->get( 'AllowUserCss' ) && $editPage->isCssSubpage &&
+			} elseif ( $config->get( 'AllowUserCss' ) && $title->isCssSubpage() &&
 				$title->getText() == $name . '/global.css'
 			) {
 				$msg = 'globalcssjs-warning-css';
