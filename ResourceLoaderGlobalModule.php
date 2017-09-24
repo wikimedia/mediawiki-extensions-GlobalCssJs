@@ -78,9 +78,9 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 	 */
 	protected function getDB() {
 		if ( $this->wiki === wfWikiID() ) {
-			return wfGetDB( DB_SLAVE );
+			return wfGetDB( DB_REPLICA );
 		} else {
-			return wfGetLB( $this->wiki )->getLazyConnectionRef( DB_SLAVE, [], $this->wiki );
+			return wfGetLB( $this->wiki )->getLazyConnectionRef( DB_REPLICA, [], $this->wiki );
 		}
 	}
 }
