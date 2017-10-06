@@ -70,7 +70,7 @@ class GlobalCssJsHooks {
 
 	/**
 	 * Registers a global user module.
-	 * @param ResourceLoader $resourceLoader
+	 * @param ResourceLoader &$resourceLoader
 	 * @return bool
 	 */
 	static function onResourceLoaderRegisterModules( &$resourceLoader ) {
