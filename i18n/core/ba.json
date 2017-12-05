@@ -5,9 +5,9 @@
 		]
 	},
 	"globalcssjs-desc": "Бәйләнгән бөтөн вики-проекттарға өҫтәү өсөн үҙәк вики-проекттағы CSS һәм JavaScript ҡулланырға мөмкинлек бирә",
+	"globalcssjs-custom-css-js": "Бөтөн вики-проекттар өсөн дөйөм CSS/JavaScript:",
 	"globalcssjs-warning-js": "Был биткә өҫтәлгән һәр JavaScript һеҙҙә иҫәп яҙмаһы булған бөтөн викиларға ла өҫтәлә (ҡара.[[mw:Help:Extension:GlobalCssJs|документацияны]]).",
 	"globalcssjs-warning-css": "Был биткә өҫтәлгән CSS һеҙҙә иҫәп яҙмаһы булған бөтөн викиларға ла өҫтәлә(ҡара [[mw:Help:Extension:GlobalCssJs|документацияны]]).",
-	"globalcssjs-custom-css-js": "Бөтөн вики-проекттар өсөн дөйөм CSS/JavaScript:",
 	"globalcssjs-custom-js": "Шәхси JS",
 	"globalcssjs-custom-css": "Шәхси CSS",
 	"globalcssjs-delete-css": "[[mw:Help:Extension:GlobalCssJs]] индерелеү сәбәпле, {{GENDER:$1|ҡатнашыусының}} һорауы буйынса CSS-битте юйыу",

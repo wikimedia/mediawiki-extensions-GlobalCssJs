@@ -7,9 +7,9 @@
 		]
 	},
 	"globalcssjs-desc": "מאפשר CSS ו־JavaScript מוויקי מרכזי להיטען בכל אתרי הוויקי המקושרים",
+	"globalcssjs-custom-css-js": "קובצי CSS/JavaScript משותפים לכל אתרי הוויקי:",
 	"globalcssjs-warning-js": "כל תסריטי ה־JavaScript בדף הזה ייטענו בכל אתרי הוויקי שיש לכם חשבון בהם (ראו [[mw:Help:Extension:GlobalCssJs|מידע נוסף]]).",
 	"globalcssjs-warning-css": "כל גיליונות ה־CSS בדף הזה ייטענו בכל אתרי הוויקי שיש לך חשבון בהם (ראו [[mw:Help:Extension:GlobalCssJs|מידע נוסף]]).",
-	"globalcssjs-custom-css-js": "קובצי CSS/JavaScript משותפים לכל אתרי הוויקי:",
 	"globalcssjs-custom-js": "קובץ JavaScript מותאם אישית",
 	"globalcssjs-custom-css": "קובץ CSS מותאם אישית",
 	"globalcssjs-delete-css": "מחיקת דף CSS בהתאם לבקשת ה{{GENDER:$1|משתמש|משתמשת}} עקב פריסה של [[mw:Help:Extension:GlobalCssJs]]",
