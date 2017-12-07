@@ -6,7 +6,8 @@
 			"Automatik",
 			"0x010C",
 			"Wladek92",
-			"Orlodrim"
+			"Orlodrim",
+			"Urhixidur"
 		]
 	},
 	"globalcssjs-extensionname": "CSS/JS global",
@@ -16,6 +17,6 @@
 	"globalcssjs-warning-css": "Tout CSS ajouté à cette page sera chargé sur tous les wikis sur lesquels vous avez un compte (voir la [[mw:Help:Extension:GlobalCssJs|documentation]]).",
 	"globalcssjs-custom-js": "JavaScript personnalisé",
 	"globalcssjs-custom-css": "CSS personnalisé",
-	"globalcssjs-delete-css": "Suppression de la page CSS sur demande de l’{{GENDER:$1|utilisateur}} suite au déploiement de [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Suppression de la page JavaScript sur demande de l'{{GENDER:$1|utilisateur}} suite au déploiement de [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Suppression de la page CSS sur demande de l’utilisat{{GENDER:$1|eur|rice}} suite au déploiement de [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Suppression de la page JavaScript sur demande de l’utilisat{{GENDER:$1|eur|rice}} suite au déploiement de [[mw:Help:Extension:GlobalCssJs]]"
 }
