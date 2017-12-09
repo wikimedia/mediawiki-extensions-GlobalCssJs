@@ -54,7 +54,7 @@
 		"ResourceLoaderGlobalUserModule": "ResourceLoaderGlobalUserModule.php",
 		"GlobalCssJsHooks": "GlobalCssJs.hooks.php",
 		"ResourceLoaderGlobalModuleTestCase": "tests/phpunit/ResourceLoaderGlobalModuleTestCase.php",
-		"RemoveOldManualUserPages": "removeOldManualUserPages.php"
+		"RemoveOldManualUserPages": "maintenance/removeOldManualUserPages.php"
 	},
 	"ConfigRegistry": {
 		"globalcssjs": "GlobalVarConfig::newInstance"
