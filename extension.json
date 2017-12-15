@@ -52,7 +52,7 @@
 		"ResourceLoaderGlobalModule": "ResourceLoaderGlobalModule.php",
 		"ResourceLoaderGlobalSiteModule": "ResourceLoaderGlobalSiteModule.php",
 		"ResourceLoaderGlobalUserModule": "ResourceLoaderGlobalUserModule.php",
-		"GlobalCssJsHooks": "GlobalCssJs.hooks.php",
+		"GlobalCssJsHooks": "GlobalCssJsHooks.php",
 		"ResourceLoaderGlobalModuleTestCase": "tests/phpunit/ResourceLoaderGlobalModuleTestCase.php",
 		"RemoveOldManualUserPages": "maintenance/removeOldManualUserPages.php"
 	},
