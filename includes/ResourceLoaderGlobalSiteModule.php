@@ -21,6 +21,11 @@
  * @author Kunal Mehta
  */
 
+namespace MediaWiki\GlobalCssJs;
+
+use ConfigFactory;
+use ResourceLoaderContext;
+
 /**
  * Module for sitewide global customizations
  */

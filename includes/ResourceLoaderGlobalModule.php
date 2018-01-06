@@ -20,6 +20,12 @@
  * @author Kunal Mehta
  */
 
+namespace MediaWiki\GlobalCssJs;
+
+use IDatabase;
+use InvalidArgumentException;
+use ResourceLoaderWikiModule;
+
 /**
  * Base class for global modules.
  *
