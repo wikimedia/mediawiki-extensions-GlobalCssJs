@@ -1,5 +1,14 @@
 <?php
 
+namespace MediaWiki\GlobalCssJs\Test;
+
+use ConfigFactory;
+use FauxRequest;
+use MediaWikiTestCase;
+use ResourceLoader;
+use ResourceLoaderContext;
+use ResourceLoaderModule;
+
 /**
  * Helper class to provide some useful functions when testing
  * subclasses of ResourceLoaderGlobalModule
@@ -52,7 +61,7 @@ class ResourceLoaderGlobalModuleTestCase extends MediaWikiTestCase {
 
 	protected function getFakeOptions() {
 		return [
-			'wiki' => wfWikiID(), // Don't call GlobalCssJsHooks::loadForUser
+			'wiki' => wfWikiID(), // Don't call Hooks::loadForUser
 			'source' => 'fakesource',
 		];
 	}

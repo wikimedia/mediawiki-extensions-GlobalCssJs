@@ -1,5 +1,10 @@
 <?php
 
+namespace MediaWiki\GlobalCssJs\Test;
+
+use MediaWiki\GlobalCssJs\ResourceLoaderGlobalSiteModule;
+use ReflectionMethod;
+
 class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestCase {
 
 	public static function provideGetPages() {
@@ -91,7 +96,7 @@ class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestC
 	}
 
 	/**
-	 * @covers ResourceLoaderGlobalSiteModule::getPages
+	 * @covers \MediaWiki\GlobalCssJs\ResourceLoaderGlobalSiteModule::getPages
 	 * @dataProvider provideGetPages
 	 * @param $type
 	 * @param $configOverrides

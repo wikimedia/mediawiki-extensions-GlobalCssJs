@@ -1,5 +1,18 @@
 <?php
 
+namespace MediaWiki\GlobalCssJs;
+
+use CssContent;
+use JavaScriptContent;
+use LinkBatch;
+use Maintenance;
+use ResourceLoader;
+use Revision;
+use Skin;
+use Title;
+use User;
+use WikiPage;
+
 $IP = getenv( 'MW_INSTALL_PATH' );
 if ( $IP === false ) {
 	$IP = __DIR__ . '/../../..';
@@ -25,17 +38,15 @@ class RemoveOldManualUserPages extends Maintenance {
 		$this->addOption( 'user', 'User name', true, true );
 		$this->addOption( 'ignorerevisionlimit',
 			'Whether to ignore the 1 revision limit', false, false );
+		$this->requireExtension( 'GlobalCssJs' );
 	}
 
 	public function execute() {
 		$this->ignoreRevisionLimit = $this->hasOption( 'ignorerevisionlimit' );
 		$userName = $this->getOption( 'user' );
 		$user = User::newFromName( $userName );
-		if ( !class_exists( 'GlobalCssJsHooks' ) ) {
-			$this->error( 'The GlobalCssJs extension is not enabled on this wiki.', 1 );
-		}
 
-		if ( !$user->getId() || !GlobalCssJsHooks::loadForUser( $user ) ) {
+		if ( !$user->getId() || !Hooks::loadForUser( $user ) ) {
 			$this->output( "$userName does not load global modules on this wiki.\n" );
 			return;
 		}
@@ -213,5 +224,5 @@ class RemoveOldManualUserPages extends Maintenance {
 
 }
 
-$maintClass = "RemoveOldManualUserPages";
+$maintClass = RemoveOldManualUserPages::class;
 require_once RUN_MAINTENANCE_IF_MAIN;

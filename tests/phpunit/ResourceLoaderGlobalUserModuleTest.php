@@ -1,5 +1,11 @@
 <?php
 
+namespace MediaWiki\GlobalCssJs\Test;
+
+use MediaWiki\GlobalCssJs\ResourceLoaderGlobalUserModule;
+use ReflectionMethod;
+use User;
+
 /**
  * @group Database
  */
@@ -79,7 +85,7 @@ class ResourceLoaderGlobalUserModuleTest extends ResourceLoaderGlobalModuleTestC
 	}
 
 	/**
-	 * @covers ResourceLoaderGlobalUserModule::getPages
+	 * @covers \MediaWiki\GlobalCssJs\ResourceLoaderGlobalUserModule::getPages
 	 * @dataProvider provideGetPages
 	 * @param $type
 	 * @param $configOverrides

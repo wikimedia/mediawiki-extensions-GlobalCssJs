@@ -1,5 +1,12 @@
 <?php
 
+namespace MediaWiki\GlobalCssJs\Test;
+
+use MediaWiki\GlobalCssJs\RemoveOldManualUserPages;
+use MediaWikiTestCase;
+
+require_once __DIR__ . '/../../maintenance/removeOldManualUserPages.php';
+
 class RemoveOldManualUserPagesTest extends MediaWikiTestCase {
 
 	public static function provideCheckJs() {
@@ -134,7 +141,7 @@ class RemoveOldManualUserPagesTest extends MediaWikiTestCase {
 	}
 
 	/**
-	 * @covers RemoveOldManualUserPages::checkJs
+	 * @covers \MediaWiki\GlobalCssJs\RemoveOldManualUserPages::checkJs
 	 * @dataProvider provideCheckJs
 	 * @param string $text page content
 	 * @param bool $expected should it match?
@@ -183,7 +190,7 @@ class RemoveOldManualUserPagesTest extends MediaWikiTestCase {
 	}
 
 	/**
-	 * @covers RemoveOldManualUserPages::checkCss
+	 * @covers \MediaWiki\GlobalCssJs\RemoveOldManualUserPages::checkCss
 	 * @dataProvider provideCheckCss
 	 * @param string $text page content
 	 * @param bool $expected should it match?
@@ -221,7 +228,7 @@ class RemoveOldManualUserPagesTest extends MediaWikiTestCase {
 	}
 
 	/**
-	 * @covers RemoveOldManualUserPages::normalizeUserName
+	 * @covers \MediaWiki\GlobalCssJs\RemoveOldManualUserPages::normalizeUserName
 	 * @dataProvider provideNormalizeUserName
 	 */
 	public function testNormalizeUserName( $name, $expected, $desc ) {

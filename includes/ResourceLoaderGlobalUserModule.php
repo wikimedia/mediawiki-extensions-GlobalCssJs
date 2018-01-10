@@ -22,6 +22,11 @@
  * @author Kunal Mehta
  */
 
+namespace MediaWiki\GlobalCssJs;
+
+use ResourceLoaderContext;
+use User;
+
 /**
  * Module for user customizations - runs on all wikis
  */
@@ -47,7 +52,7 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 			return [];
 		}
 
-		if ( !GlobalCssJsHooks::loadForUser( $user ) ) {
+		if ( !Hooks::loadForUser( $user ) ) {
 			return [];
 		}
 

@@ -1,6 +1,19 @@
 <?php
 
-class GlobalCssJsHooks {
+namespace MediaWiki\GlobalCssJs;
+
+use CentralIdLookup;
+use ConfigFactory;
+use EditPage;
+use Linker;
+use OutputPage;
+use RequestContext;
+use ResourceLoader;
+use Title;
+use User;
+use WikiMap;
+
+class Hooks {
 
 	private static function getConfig() {
 		return ConfigFactory::getDefaultInstance()->makeConfig( 'globalcssjs' );

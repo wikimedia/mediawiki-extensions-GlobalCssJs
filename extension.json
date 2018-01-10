@@ -1,6 +1,6 @@
 {
 	"name": "GlobalCssJs",
-	"version": "3.3.0",
+	"version": "3.4.0",
 	"author": [
 		"Ryan Schmidt",
 		"Szymon Świerkosz",
@@ -12,21 +12,13 @@
 	"license-name": "GPL-2.0+",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.27.0"
+		"MediaWiki": ">= 1.31.0"
 	},
 	"Hooks": {
-		"BeforePageDisplay": [
-			"GlobalCssJsHooks::onBeforePageDisplay"
-		],
-		"ResourceLoaderRegisterModules": [
-			"GlobalCssJsHooks::onResourceLoaderRegisterModules"
-		],
-		"EditPage::showEditForm:initial": [
-			"GlobalCssJsHooks::onEditPageshowEditForminitial"
-		],
-		"GetPreferences": [
-			"GlobalCssJsHooks::onGetPreferences"
-		]
+		"BeforePageDisplay": "MediaWiki\\GlobalCssJs\\Hooks::onBeforePageDisplay",
+		"ResourceLoaderRegisterModules": "MediaWiki\\GlobalCssJs\\Hooks::onResourceLoaderRegisterModules",
+		"EditPage::showEditForm:initial": "MediaWiki\\GlobalCssJs\\Hooks::onEditPageshowEditForminitial",
+		"GetPreferences": "MediaWiki\\GlobalCssJs\\Hooks::onGetPreferences"
 	},
 	"MessagesDirs": {
 		"GlobalCssJs": [
@@ -46,15 +38,13 @@
 		"ext.globalCssJs.user"
 	],
 	"ExtensionFunctions": [
-		"GlobalCssJsHooks::onExtensionFunctions"
+		"MediaWiki\\GlobalCssJs\\Hooks::onExtensionFunctions"
 	],
+	"AutoloadNamespaces": {
+		"MediaWiki\\GlobalCssJs\\": "includes/"
+	},
 	"AutoloadClasses": {
-		"ResourceLoaderGlobalModule": "ResourceLoaderGlobalModule.php",
-		"ResourceLoaderGlobalSiteModule": "ResourceLoaderGlobalSiteModule.php",
-		"ResourceLoaderGlobalUserModule": "ResourceLoaderGlobalUserModule.php",
-		"GlobalCssJsHooks": "GlobalCssJsHooks.php",
-		"ResourceLoaderGlobalModuleTestCase": "tests/phpunit/ResourceLoaderGlobalModuleTestCase.php",
-		"RemoveOldManualUserPages": "maintenance/removeOldManualUserPages.php"
+		"MediaWiki\\GlobalCssJs\\Test\\ResourceLoaderGlobalModuleTestCase": "tests/phpunit/ResourceLoaderGlobalModuleTestCase.php"
 	},
 	"ConfigRegistry": {
 		"globalcssjs": "GlobalVarConfig::newInstance"
