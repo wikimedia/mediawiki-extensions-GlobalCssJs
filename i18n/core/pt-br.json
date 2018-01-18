@@ -5,9 +5,16 @@
 			"He7d3r",
 			"Iagocds",
 			"Felipe L. Ewald",
-			"Opraco"
+			"Opraco",
+			"Eduardo Addad de Oliveira"
 		]
 	},
+	"globalcssjs-desc": "Permite que o CSS e o código JavaScript de uma wiki central sejam carregados em todas as wikis a ela ligadas",
 	"globalcssjs-custom-css-js": "CSS/JavaScript compartilhado por todas as wikis\n([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|mais informações]]):",
-	"globalcssjs-custom-css": "CSS personalizado"
+	"globalcssjs-warning-js": "Qualquer JavaScript adicionado a esta página será carregado em todas as wikis onde tem uma conta (ver [[mw:Help:Extension:GlobalCssJs|documentação]]).",
+	"globalcssjs-warning-css": "Qualquer CSS adicionado a esta página será carregado em todas as wikis onde tem uma conta (ver [[mw:Help:Extension:GlobalCssJs|documentação]]).",
+	"globalcssjs-custom-js": "JS personalizado",
+	"globalcssjs-custom-css": "CSS personalizado",
+	"globalcssjs-delete-css": "A eliminar página de CSS, a pedido de {{GENDER:$1|um utilizador|uma utilizadora}}, devido à implementação da extensão [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "A eliminar a página de JavaScript, a pedido de {{GENDER:$1|um utilizador|uma utilizadora}}, devido à implementação da extensão [[mw:Help:Extension:GlobalCssJs]]"
 }
