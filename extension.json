@@ -9,7 +9,7 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:GlobalCssJs",
 	"descriptionmsg": "globalcssjs-desc",
 	"namemsg": "globalcssjs-extensionname",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
 		"MediaWiki": ">= 1.31.0"
