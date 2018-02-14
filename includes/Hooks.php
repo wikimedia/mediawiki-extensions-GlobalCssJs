@@ -152,15 +152,15 @@ class Hooks {
 		$user = $output->getUser();
 		$title = $editPage->getTitle();
 		if ( $gcssjsConfig['wiki'] === wfWikiID() && $user->isLoggedIn()
-			&& $editPage->formtype == 'initial' && $title->isCssJsSubpage()
+			&& $editPage->formtype == 'initial' && $title->isUserConfigPage()
 		) {
 			$title = $editPage->getTitle();
 			$name = $user->getName();
-			if ( $config->get( 'AllowUserJs' ) && $title->isJsSubpage() &&
+			if ( $config->get( 'AllowUserJs' ) && $title->isUserJsConfigPage() &&
 				$title->getText() == $name . '/global.js'
 			) {
 				$msg = 'globalcssjs-warning-js';
-			} elseif ( $config->get( 'AllowUserCss' ) && $title->isCssSubpage() &&
+			} elseif ( $config->get( 'AllowUserCss' ) && $title->isUserCssConfigPage() &&
 				$title->getText() == $name . '/global.css'
 			) {
 				$msg = 'globalcssjs-warning-css';
