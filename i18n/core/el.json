@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Geraki"
+		]
+	},
+	"globalcssjs-custom-css-js": "Κοινά CSS/JavaScript για όλα τα wiki ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|περισσότερες πληροφορίες]]):",
+	"globalcssjs-warning-js": "Κάθε JavaScript που προστίθεται σε αυτήν τη σελίδα θα φορτωθεί σε όλα τα wiki όπου έχετε λογαριασμό (δείτε την [[mw:Help:Extension:GlobalCssJs|τεκμηρίωση]]).",
+	"globalcssjs-warning-css": "Κάθε CSS που προστίθεται σε αυτήν τη σελίδα θα φορτωθεί σε όλα τα wiki όπου έχετε λογαριασμό (δείτε την [[mw:Help:Extension:GlobalCssJs|τεκμηρίωση]]).",
+	"globalcssjs-custom-js": "Προσαρμοσμένη JavaScript",
+	"globalcssjs-custom-css": "Προσαρμοσμένο CSS",
+	"globalcssjs-delete-css": "Διαγραφή σελίδας CSS με αίτημα {{GENDER:$1|του|της}} $1 λόγω της ανάπτυξης του [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Διαγραφή σελίδας JavaScript με αίτημα {{GENDER:$1|του|της}} $1 λόγω της ανάπτυξης του [[mw:Help:Extension:GlobalCssJs]]"
+}
