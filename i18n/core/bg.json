@@ -5,7 +5,7 @@
 			"Vodnokon4e"
 		]
 	},
-	"globalcssjs-custom-css-js": "Споделени настройки на CSS/JS за всички уикита:",
+	"globalcssjs-custom-css-js": "Споделени настройки на CSS/JS за всички уикита ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|повече информация]]):",
 	"globalcssjs-custom-js": "Личен JS",
 	"globalcssjs-custom-css": "Личен CSS",
 	"globalcssjs-delete-css": "Премахване на CSS страница по заявка на {{GENDER:$1|потребител}}, във връзка с въвеждането на [[mw:Help:Extension:GlobalCssJs]]",
