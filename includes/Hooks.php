@@ -39,7 +39,10 @@ class Hooks {
 	}
 
 	/**
-	 * If site-wide JS/CSS is enabled, add MediaWiki:Global.js/css messages
+	 * Handler for wgExtensionFunctions.
+	 *
+	 * If site-wide global CSS/JS is enabled, load the stubs for those
+	 * gadget pages (implemented as interface messages).
 	 *
 	 * @todo This probably doesn't work on all setups and is hacky.
 	 */
@@ -53,16 +56,18 @@ class Hooks {
 	}
 
 	/**
+	 * Handler for BeforePageDisplay hook.
+	 *
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
 	 * @param OutputPage $out
-	 * @return bool
 	 */
-	static function onBeforePageDisplay( OutputPage $out ) {
+	public static function onBeforePageDisplay( OutputPage $out ) {
 		$out->addModuleStyles( [ 'ext.globalCssJs.user.styles', 'ext.globalCssJs.site.styles' ] );
 		$out->addModuleScripts( [ 'ext.globalCssJs.user', 'ext.globalCssJs.site' ] );
 		// Add help link
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 		if ( $config['wiki'] !== wfWikiID() ) {
-			return true;
+			return;
 		}
 
 		$useSiteCssJs = self::getConfig()->get( 'UseGlobalSiteCssJs' );
@@ -78,15 +83,15 @@ class Hooks {
 		) {
 			$out->addHelpLink( 'Help:Extension:GlobalCssJs' );
 		}
-		return true;
 	}
 
 	/**
 	 * Given a user, should we load scripts for them?
+	 *
 	 * @param User $user
 	 * @return bool
 	 */
-	static function loadForUser( User $user ) {
+	public static function loadForUser( User $user ) {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$wiki = $config['wiki'];
 		if ( $wiki === wfWikiID() ) {
@@ -101,17 +106,18 @@ class Hooks {
 	}
 
 	/**
-	 * Registers a global user module.
+	 * Handler for ResourceLoaderRegisterModules hook.
+	 *
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ResourceLoaderRegisterModules
 	 * @param ResourceLoader &$resourceLoader
-	 * @return bool
 	 */
-	static function onResourceLoaderRegisterModules( &$resourceLoader ) {
+	public static function onResourceLoaderRegisterModules( &$resourceLoader ) {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 
 		if ( $config['wiki'] === false || $config['source'] === false ) {
 			// If not configured properly, exit
 			wfDebugLog( 'GlobalCssJs', '$wgGlobalCssJsConfig has not been configured properly.' );
-			return true;
+			return;
 		}
 
 		$userJs = [
@@ -137,14 +143,14 @@ class Hooks {
 			'type' => 'style',
 		] + $config;
 		$resourceLoader->register( 'ext.globalCssJs.site.styles', $siteCss );
-
-		return true;
 	}
 
 	/**
+	 * Handler for 'EditPage::showEditForm:initial' hook.
+	 *
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/EditPage::showEditForm:initial
 	 * @param EditPage $editPage
 	 * @param OutputPage $output
-	 * @return bool
 	 */
 	static function onEditPageshowEditForminitial( EditPage $editPage, OutputPage $output ) {
 		$gcssjsConfig = self::getConfig()->get( 'GlobalCssJsConfig' );
@@ -166,15 +172,15 @@ class Hooks {
 				$msg = 'globalcssjs-warning-css';
 			} else {
 				// CSS or JS page, but not a global one
-				return true;
+				return;
 			}
 			$output->wrapWikiMsg( "<div id='mw-$msg'>\n$1\n</div>", [ $msg ] );
 		}
-		return true;
 	}
 
 	/**
-	 * Convenince function to make a link to page that might be on another site
+	 * Convenince function to make a link to page that might be on another site.
+	 *
 	 * @param Title $title
 	 * @param string $msg message key
 	 * @return string HTMl link
@@ -200,19 +206,26 @@ class Hooks {
 		}
 	}
 
-	static function onGetPreferences( User $user, array &$prefs ) {
+	/**
+	 * Handler for GetPreferences hook.
+	 *
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/GetPreferences
+	 * @param User $user
+	 * @param array &$prefs
+	 */
+	public static function onGetPreferences( User $user, array &$prefs ) {
 		$ctx = RequestContext::getMain();
 		$allowUserCss = $ctx->getConfig()->get( 'AllowUserCss' );
 		$allowUserJs = $ctx->getConfig()->get( 'AllowUserJs' );
 
 		if ( !$allowUserCss && !$allowUserJs ) {
 			// No user CSS or JS allowed
-			return true;
+			return;
 		}
 
 		if ( !self::loadForUser( $user ) ) {
 			// No global scripts for this user :(
-			return true;
+			return;
 		}
 		$userName = $user->getName();
 		$linkTools = [];
@@ -236,6 +249,5 @@ class Hooks {
 			] ],
 			'commoncssjs'
 		);
-		return true;
 	}
 }
