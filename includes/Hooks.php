@@ -63,7 +63,7 @@ class Hooks {
 	 */
 	public static function onBeforePageDisplay( OutputPage $out ) {
 		$out->addModuleStyles( [ 'ext.globalCssJs.user.styles', 'ext.globalCssJs.site.styles' ] );
-		$out->addModuleScripts( [ 'ext.globalCssJs.user', 'ext.globalCssJs.site' ] );
+		$out->addModules( [ 'ext.globalCssJs.user', 'ext.globalCssJs.site' ] );
 		// Add help link
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 		if ( $config['wiki'] !== wfWikiID() ) {
