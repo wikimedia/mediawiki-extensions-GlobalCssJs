@@ -3,7 +3,8 @@
 		"authors": [
 			"Milicevic01",
 			"Сербијана",
-			"Obsuser"
+			"Obsuser",
+			"Acamicamacaraca"
 		]
 	},
 	"globalcssjs-extensionname": "Глобални CSS/JS",
@@ -11,8 +12,8 @@
 	"globalcssjs-custom-css-js": "Дељени CSS/Јаваскрипт за све викије ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|више]]):",
 	"globalcssjs-warning-js": "Сваки јаваскрипт постављен овде ће бити учитан на свим викијима где имате налог (погледајте [[mw:Help:Extension:GlobalCssJs|документацију]]).",
 	"globalcssjs-warning-css": "Сваки CSS постављен овде ће бити учитан на свим викијима где имате налог (погледајте [[mw:Help:Extension:GlobalCssJs|документацију]]).",
-	"globalcssjs-custom-js": "Прилагођени јаваскрипт",
-	"globalcssjs-custom-css": "Прилагођени CSS",
+	"globalcssjs-custom-js": "прилагођени јаваскрипт",
+	"globalcssjs-custom-css": "прилагођени CSS",
 	"globalcssjs-delete-css": "Брисање CSS странице {{GENDER:$1|на}} основу захтева због [[mw:Help:Extension:GlobalCssJs]]",
 	"globalcssjs-delete-js": "Брисање јаваскрипт странице {{GENDER:$1|на}} основу захтева због [[mw:Help:Extension:GlobalCssJs]]"
 }
