@@ -22,7 +22,7 @@
 
 namespace MediaWiki\GlobalCssJs;
 
-use IDatabase;
+use Wikimedia\Rdbms\IDatabase;
 use InvalidArgumentException;
 use ResourceLoaderWikiModule;
 
