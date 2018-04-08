@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Artsiom91"
+		]
+	},
+	"globalcssjs-custom-css-js": "Агульныя CSS/JavaScript для ўсіх вікі-праектаў ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|падрабязней]]):",
+	"globalcssjs-custom-js": "Уласны JavaScript",
+	"globalcssjs-custom-css": "Уласны CSS"
+}
