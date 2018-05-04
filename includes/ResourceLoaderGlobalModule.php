@@ -22,6 +22,7 @@
 
 namespace MediaWiki\GlobalCssJs;
 
+use MediaWiki\MediaWikiServices;
 use Wikimedia\Rdbms\IDatabase;
 use InvalidArgumentException;
 use ResourceLoaderWikiModule;
@@ -83,10 +84,13 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 	 * @return IDatabase
 	 */
 	protected function getDB() {
+		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 		if ( $this->wiki === wfWikiID() ) {
-			return wfGetDB( DB_REPLICA );
+			$lb = $lbFactory->getMainLB();
+			return $lb->getConnection( DB_REPLICA );
 		} else {
-			return wfGetLB( $this->wiki )->getLazyConnectionRef( DB_REPLICA, [], $this->wiki );
+			$lb = $lbFactory->getMainLB( $this->wiki );
+			return $lb->getLazyConnectionRef( DB_REPLICA, [], $this->wiki );
 		}
 	}
 }
