@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Adam-Yourist"
+		]
+	},
+	"globalcssjs-custom-css-js": "Юкъара йола CSS/JavaScript массайолча вики-проекташта ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|ма дарра]]):",
+	"globalcssjs-custom-js": "Доалахь йола JS",
+	"globalcssjs-custom-css": "Доалахь йола CSS"
+}
