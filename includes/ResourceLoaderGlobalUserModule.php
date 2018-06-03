@@ -25,7 +25,6 @@
 namespace MediaWiki\GlobalCssJs;
 
 use ResourceLoaderContext;
-use User;
 
 /**
  * Module for user customizations - runs on all wikis
@@ -39,16 +38,11 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 	 * @return array
 	 */
 	protected function getPages( ResourceLoaderContext $context ) {
-		$username = $context->getUser();
-
-		if ( $username === null ) {
-			return [];
-		}
-
-		// Note, this will validate the user's name against
-		// the local site rather than the target site
-		$user = User::newFromName( $username );
-		if ( !$user || !$user->getId() ) {
+		// Note: When computing meta data on a local wiki (not the central wiki),
+		// this will produce a User object based on the local database, not the
+		// foreign/central wiki. Use this object very carefully.
+		$user = $context->getUserObj();
+		if ( $user->isAnon() ) {
 			return [];
 		}
 
@@ -60,6 +54,10 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 		$config = $context->getResourceLoader()->getConfig();
 		$pages = [];
 
+		// Note: This uses the canonical namespace prefix to ensure the same array
+		// being returned on both the local and remote wiki. This matters because
+		// this method informs getVersionHash() which is used by the browser in the
+		// request URI for the central wiki, where it should match its version hash.
 		if ( $this->type === 'style' && $config->get( 'AllowUserCss' ) ) {
 			$pages["User:$userpage/global.css"] = [ 'type' => 'style' ];
 		} elseif ( $this->type === 'script' && $config->get( 'AllowUserJs' ) ) {
