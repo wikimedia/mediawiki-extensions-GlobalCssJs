@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Janezdrilc"
+		]
+	},
+	"globalcssjs-custom-css-js": "Skupni CSS/JavaScript za vse wikije ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|več informacij]]):",
+	"globalcssjs-custom-js": "JavaScript po meri",
+	"globalcssjs-custom-css": "CSS po meri"
+}
