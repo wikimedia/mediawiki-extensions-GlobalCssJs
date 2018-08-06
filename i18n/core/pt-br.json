@@ -10,6 +10,7 @@
 			"TheEduGobi"
 		]
 	},
+	"globalcssjs-extensionname": "CSS/JS global",
 	"globalcssjs-desc": "Permite que o CSS e o código JavaScript de uma wiki central sejam carregados em todas as wikis a ela ligadas",
 	"globalcssjs-custom-css-js": "CSS/JavaScript compartilhado por todas as wikis\n([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|mais informações]]):",
 	"globalcssjs-warning-js": "Qualquer JavaScript adicionado a esta página será carregado em todas as wikis onde tem uma conta (ver [[mw:Help:Extension:GlobalCssJs|documentação]]).",
