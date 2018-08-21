@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mavrikant"
+			"Mavrikant",
+			"TmY e12"
 		]
 	},
-	"globalcssjs-custom-css-js": "Tüm vikiler için paylaşılan CSS/Javascipt:"
+	"globalcssjs-custom-css-js": "Tüm vikiler için paylaşılan CSS/Javascipt:",
+	"globalcssjs-custom-js": "Özel JavaScript",
+	"globalcssjs-custom-css": "Özel CSS"
 }

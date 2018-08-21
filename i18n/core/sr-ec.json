@@ -10,7 +10,7 @@
 	},
 	"globalcssjs-extensionname": "Глобални CSS/JS",
 	"globalcssjs-desc": "Омогућава да CSS и JavaScript на централном викију буду учитани на свим повезаним викијима",
-	"globalcssjs-custom-css-js": "Дељени CSS/јаваскрипт за све викије ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|више]]):",
+	"globalcssjs-custom-css-js": "Дељени CSS/Јаваскрипт за све викије ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|више]]):",
 	"globalcssjs-warning-js": "Сваки јаваскрипт постављен овде ће бити учитан на свим викијима где имате налог (погледајте [[mw:Help:Extension:GlobalCssJs|документацију]]).",
 	"globalcssjs-warning-css": "Сваки CSS постављен овде ће бити учитан на свим викијима где имате налог (погледајте [[mw:Help:Extension:GlobalCssJs|документацију]]).",
 	"globalcssjs-custom-js": "прилагођени јаваскрипт",
