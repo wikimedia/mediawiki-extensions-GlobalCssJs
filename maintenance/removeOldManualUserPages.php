@@ -137,7 +137,7 @@ class RemoveOldManualUserPages extends Maintenance {
 		$errors = [];
 		$status = $page->doDeleteArticleReal(
 			wfMessage( $reason, $userName )->inContentLanguage()->text(),
-			false, 0, true, $errors, $user
+			false, 0, true, $errors, $user, [], 'delete', true
 		);
 		if ( $status->isGood() ) {
 			$this->output( "{$title->getPrefixedText()} was deleted.\n" );
