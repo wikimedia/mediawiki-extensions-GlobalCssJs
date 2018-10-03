@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"globalcssjs-custom-js": "JavaScript personalizzate",
+	"globalcssjs-custom-css": "CSS personalizzate"
+}
