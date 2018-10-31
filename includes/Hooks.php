@@ -152,7 +152,7 @@ class Hooks {
 	 * @param EditPage $editPage
 	 * @param OutputPage $output
 	 */
-	static function onEditPageshowEditForminitial( EditPage $editPage, OutputPage $output ) {
+	public static function onEditPageshowEditForminitial( EditPage $editPage, OutputPage $output ) {
 		$gcssjsConfig = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$config = $output->getConfig();
 		$user = $output->getUser();
