@@ -6,7 +6,7 @@
 	},
 	"globalcssjs-extensionname": "Гобален CSS/JS",
 	"globalcssjs-desc": "Овозможува вчитување на CSS и JavaScript на централно вики за сите поврзани викија",
-	"globalcssjs-custom-css-js": "Заеднички CSS/JavaScript за сите викија:",
+	"globalcssjs-custom-css-js": "Заеднички CSS/JavaScript за сите викија\n([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|повеќе информации]]):",
 	"globalcssjs-warning-js": "Тука поставениот JavaScript ќе се вчита на сите викија кајшто имате сметка (погл. [[mw:Help:Extension:GlobalCssJs|документацијата]]).",
 	"globalcssjs-warning-css": "Тука постевениот CSS ќе се вчита на сите викија кајшто имате сметка (погл. [[mw:Help:Extension:GlobalCssJs|документацијата]]).",
 	"globalcssjs-custom-js": "Прилагоден JavaScript",
