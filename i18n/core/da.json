@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Weblars"
+		]
+	},
+	"globalcssjs-custom-css-js": "Fælles CSS/JavaScript for alle wikier ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|mere information]]):",
+	"globalcssjs-custom-js": "Personlig JavaScript",
+	"globalcssjs-custom-css": "Personlig CSS"
+}
