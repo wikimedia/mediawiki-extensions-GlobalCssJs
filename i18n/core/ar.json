@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"زكريا",
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
+	"globalcssjs-extensionname": "CSS/JS العالمي",
 	"globalcssjs-desc": "شغل نصوص سي إس إس وجافاسكربت شخصية في جميع مواقع ويكيميديا انطلاقا من ويكي مركزي",
 	"globalcssjs-custom-css-js": "سي إس إس وجافاسكربت لحسابك في جميع مشاريع ويكيميديا [[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|مزيد من المعلومات]]:",
 	"globalcssjs-warning-js": "سيحمل أي جافاسكربت في هذه الصفحة لحسابك في جميع مشاريع ويكيميديا  (انظر [[mw:Help:Extension:GlobalCssJs|التوثيق]]).",
