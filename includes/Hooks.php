@@ -96,7 +96,8 @@ class Hooks {
 		$wiki = $config['wiki'];
 		if ( $wiki === wfWikiID() ) {
 			return true;
-		} elseif ( $wiki === false ) {
+		}
+		if ( $wiki === false ) {
 			// Not configured, don't load anything
 			return false;
 		}
@@ -115,8 +116,7 @@ class Hooks {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 
 		if ( $config['wiki'] === false || $config['source'] === false ) {
-			// If not configured properly, exit
-			wfDebugLog( 'GlobalCssJs', '$wgGlobalCssJsConfig has not been configured properly.' );
+			// Not configured yet, don't register any modules.
 			return;
 		}
 
