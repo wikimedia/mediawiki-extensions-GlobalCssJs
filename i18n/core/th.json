@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aefgh39622"
+		]
+	},
+	"globalcssjs-desc": "อนุญาตให้โหลด CSS และจาวาสคริปต์บนวิกิกลางได้ในทุกวิกิที่เชื่อมโยง",
+	"globalcssjs-custom-css-js": "CSS/จาวาสคริปต์ที่ใช้ร่วมกันสำหรับทุกวิกิ ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|ข้อมูลเพิ่มเติม]]):",
+	"globalcssjs-warning-js": "จาวาสคริปต์ใดๆ ที่คุณเพิ่มลงในหน้านี้จะถูกโหลดบนทุกกวิกิที่คุณสมัครบัญชีไว้ (ดู [[mw:Help:Extension:GlobalCssJs|คู่มือการใช้งาน]])",
+	"globalcssjs-warning-css": "CSS ใดๆ ที่คุณเพิ่มลงในหน้านี้จะถูกโหลดบนทุกกวิกิที่คุณสมัครบัญชีไว้ (ดู [[mw:Help:Extension:GlobalCssJs|คู่มือการใช้งาน]])",
+	"globalcssjs-custom-js": "จาวาสคริปต์กำหนดเอง",
+	"globalcssjs-custom-css": "CSS กำหนดเอง",
+	"globalcssjs-delete-css": "ลบหน้า CSS ตามคำขอของผู้ใช้เนื่องจากมีการปรับใช้ [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "ลบหน้าจาวาสคริปต์ตามคำขอของผู้ใช้เนื่องจากมีการปรับใช้ [[mw:Help:Extension:GlobalCssJs]]"
+}
