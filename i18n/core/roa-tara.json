@@ -4,6 +4,12 @@
 			"Joetaras"
 		]
 	},
+	"globalcssjs-desc": "Permette a CSS e JavaScript sus a 'na uicchi cendrale de essere carecate jndr'à tutte le uicchi collegate",
+	"globalcssjs-custom-css-js": "CSS/JavaScript condivise cu tutte le uicchi ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|cchiù 'mbormaziune]]):",
+	"globalcssjs-warning-js": "Ogne JavaScript aggiunde a sta pàgene avène carecate sus a tutte le uicchi addò tìne 'n'utende ('ndruche 'a [[mw:Help:Extension:GlobalCssJs|documendazione]]).",
+	"globalcssjs-warning-css": "Ogne CSS aggiunde a sta pàgene avène carecate sus a tutte le uicchi addò tìne 'n'utende ('ndruche 'a [[mw:Help:Extension:GlobalCssJs|documendazione]]).",
 	"globalcssjs-custom-js": "JavaScript personalizzate",
-	"globalcssjs-custom-css": "CSS personalizzate"
+	"globalcssjs-custom-css": "CSS personalizzate",
+	"globalcssjs-delete-css": "Scangellazione d'a pàgene CSS sus 'na richieste {{GENDER:$1|de l'utende}} pe colpe d'a destribbuzione de [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Scangellazione d'a pàgene JavaScript sus 'na richieste {{GENDER:$1|de l'utende}} pe colpe d'a destribbuzione de [[mw:Help:Extension:GlobalCssJs]]"
 }
