@@ -3,9 +3,12 @@
 namespace MediaWiki\GlobalCssJs\Test;
 
 use MediaWiki\GlobalCssJs\ResourceLoaderGlobalSiteModule;
+use HashConfig;
 use ReflectionMethod;
 
-class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestCase {
+class ResourceLoaderGlobalSiteModuleTest extends \PHPUnit\Framework\TestCase {
+	use \MediaWikiCoversValidator;
+	use ResourceLoaderGlobalModuleTestTrait;
 
 	public static function provideGetPages() {
 		// format: array( $type, array( config => value ), $expectedPages, $skin, $description )
@@ -30,21 +33,21 @@ class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestC
 			],
 			[
 				'style',
-				[ 'wgUseGlobalSiteCssJs' => false ],
+				[ 'UseGlobalSiteCssJs' => false ],
 				[],
 				'skinname',
 				'No CSS pages are loaded with $wgUseGlobalSiteCssJs = false'
 			],
 			[
 				'script',
-				[ 'wgUseGlobalSiteCssJs' => false ],
+				[ 'UseGlobalSiteCssJs' => false ],
 				[],
 				'skinname',
 				'No JS pages are loaded with $wgUseGlobalSiteCssJs = false'
 			],
 			[
 				'script',
-				[ 'wgUseSiteCss' => false ],
+				[ 'UseSiteCss' => false ],
 				[
 					'MediaWiki:Global.js', 'MediaWiki:Global-skinname.js',
 				],
@@ -53,7 +56,7 @@ class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestC
 			],
 			[
 				'style',
-				[ 'wgUseSiteJs' => false ],
+				[ 'UseSiteJs' => false ],
 				[
 					'MediaWiki:Global.css', 'MediaWiki:Global-skinname.css',
 				],
@@ -62,14 +65,14 @@ class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestC
 			],
 			[
 				'style',
-				[ 'wgUseSiteJs' => false, 'wgUseSiteCss' => false ],
+				[ 'UseSiteJs' => false, 'UseSiteCss' => false ],
 				[],
 				'skinname',
 				'No CSS pages loaded if $wgUseSiteJs and $wgUseSiteCss are false'
 			],
 			[
 				'script',
-				[ 'wgUseSiteJs' => false, 'wgUseSiteCss' => false ],
+				[ 'UseSiteJs' => false, 'UseSiteCss' => false ],
 				[],
 				'skinname',
 				'No JS pages loaded if $wgUseSiteJs and $wgUseSiteCss are false'
@@ -105,15 +108,15 @@ class ResourceLoaderGlobalSiteModuleTest extends ResourceLoaderGlobalModuleTestC
 	 * @param $desc
 	 */
 	public function testGetPages( $type, $configOverrides, $expectedPages, $skin, $desc ) {
-		// First set default config options
-		$this->setMwGlobals( array_merge(
-			$this->getDefaultGlobalSettings( $skin ),
-			$configOverrides
-		) );
 		$module = new ResourceLoaderGlobalSiteModule(
 			[ 'type' => $type ] + $this->getFakeOptions()
 		);
-		$context = $this->getContext( [ 'skin' => $skin ] );
+		$module->setConfig( new HashConfig( array_merge(
+			$this->getTestSettings(),
+			$configOverrides
+		) ) );
+		$context = $this->makeContext( [ 'skin' => $skin, 'user' => null ] );
+
 		$getPages = new ReflectionMethod( $module, 'getPages' );
 		$getPages->setAccessible( true );
 		$out = $getPages->invoke( $module, $context );

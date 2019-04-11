@@ -44,7 +44,7 @@
 		"MediaWiki\\GlobalCssJs\\": "includes/"
 	},
 	"AutoloadClasses": {
-		"MediaWiki\\GlobalCssJs\\Test\\ResourceLoaderGlobalModuleTestCase": "tests/phpunit/ResourceLoaderGlobalModuleTestCase.php"
+		"MediaWiki\\GlobalCssJs\\Test\\ResourceLoaderGlobalModuleTestTrait": "tests/phpunit/ResourceLoaderGlobalModuleTestTrait.php"
 	},
 	"ConfigRegistry": {
 		"globalcssjs": "GlobalVarConfig::newInstance"

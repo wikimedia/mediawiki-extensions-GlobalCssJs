@@ -51,7 +51,7 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 		}
 
 		$userpage = $user->getUserPage()->getDBkey();
-		$config = $context->getResourceLoader()->getConfig();
+		$config = $this->getConfig();
 		$pages = [];
 
 		// Note: This uses the canonical namespace prefix to ensure the same array

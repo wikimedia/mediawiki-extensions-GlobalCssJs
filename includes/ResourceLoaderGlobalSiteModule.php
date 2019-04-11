@@ -23,7 +23,6 @@
 
 namespace MediaWiki\GlobalCssJs;
 
-use ConfigFactory;
 use ResourceLoaderContext;
 
 /**
@@ -38,13 +37,11 @@ class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 	 * @return array
 	 */
 	protected function getPages( ResourceLoaderContext $context ) {
-		if ( !ConfigFactory::getDefaultInstance()
-			->makeConfig( 'globalcssjs' )->get( 'UseGlobalSiteCssJs' )
-		) {
+		$config = $this->getConfig();
+		if ( !$config->get( 'UseGlobalSiteCssJs' ) ) {
 			return [];
 		}
 
-		$config = $context->getResourceLoader()->getConfig();
 		$pages = [];
 
 		if ( $this->type === 'style' && $config->get( 'UseSiteCss' ) ) {
