@@ -184,6 +184,7 @@ class Hooks {
 	 * @param Title $title
 	 * @param string $msg message key
 	 * @return string HTMl link
+	 * @suppress SecurityCheck-DoubleEscaped phan false positive
 	 */
 	protected static function makeCentralLink( Title $title, $msg ) {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
