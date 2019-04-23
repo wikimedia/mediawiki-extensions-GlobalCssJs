@@ -6,12 +6,13 @@
 			"Mar(c)",
 			"Sjoerddebruin",
 			"Servien",
-			"Esketti"
+			"Esketti",
+			"Mainframe98"
 		]
 	},
 	"globalcssjs-extensionname": "Global CSS/JS",
 	"globalcssjs-desc": "Maakt het mogelijk om CSS en JavaScript op een centrale wiki op te slaan en die in alle aangesloten wiki's te gebruiken",
-	"globalcssjs-custom-css-js": "Gedeelde CSS/JavaScript voor alle wiki's:",
+	"globalcssjs-custom-css-js": "Gedeelde CSS/JavaScript voor alle wiki's ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|meer informatie]]):",
 	"globalcssjs-warning-js": "JavaScript die wordt toegevoegd aan deze pagina wordt geladen op alle wiki's waar u een account hebt (zie [[mw:Help:Extension:GlobalCssJs|documentatie]]).",
 	"globalcssjs-warning-css": "CSS die wordt toegevoegd aan deze pagina wordt geladen op alle wiki's waar u een account hebt (zie [[mw:Help:Extension:GlobalCssJs|documentatie]]).",
 	"globalcssjs-custom-js": "Aangepast JavaScript",
