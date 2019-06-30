@@ -1,10 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kolega2357"
+			"Kolega2357",
+			"Vlad5250"
 		]
 	},
-	"globalcssjs-custom-css-js": "Zajednički CSS/JS za sve izglede (skinove):",
+	"globalcssjs-desc": "Omogućava učitavanje CSSa i JavaScripta na centralnom wikiju za sve povezane wikije",
+	"globalcssjs-custom-css-js": "Zajednički CSS/JavaScript za sve wikije ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|više informacija]]):",
+	"globalcssjs-warning-js": "Svaki JavaScript postavljen ovde će biti učitan na svim vikijima gdje imate račun (pogl. [[mw:Help:Extension:GlobalCssJs|dokumentaciju]]).",
+	"globalcssjs-warning-css": "Svaki CSS postevljen ovde će biti učitan na svim vikijima gdje imate račun (pogl. [[mw:Help:Extension:GlobalCssJs|dokumentaciju]]).",
 	"globalcssjs-custom-js": "Prilagođeni JS",
-	"globalcssjs-custom-css": "Prilagođeni CSS"
+	"globalcssjs-custom-css": "Prilagođeni CSS",
+	"globalcssjs-delete-css": "Brisanje CSS-stranice na zahtjevu {{GENDER:$1|korisnika}} zbog realizacije [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Brisanje JavaScript-stranice na zahtjevu {{GENDER:$1|korisnika}} zbog realizacije [[mw:Help:Extension:GlobalCssJs]]"
 }
