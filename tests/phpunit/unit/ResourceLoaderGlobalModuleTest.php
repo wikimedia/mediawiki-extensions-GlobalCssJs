@@ -3,27 +3,27 @@
 namespace MediaWiki\GlobalCssJs\Test;
 
 use MediaWiki\GlobalCssJs\ResourceLoaderGlobalModule;
+use PHPUnit\Framework\MockObject\MockObject;
 
 /**
  * @covers \MediaWiki\GlobalCssJs\ResourceLoaderGlobalModule
  * @dataProvider provideGetSource
  */
-class ResourceLoaderGlobalModuleTest extends \MediaWikiTestCase {
+class ResourceLoaderGlobalModuleTest extends \MediaWikiUnitTestCase {
 
 	/**
 	 * @dataProvider provideGetSource
 	 */
 	public function testGetSource( $params, $expected ) {
-		$this->setMwGlobals( [
-			'wgDBname' => 'examplewiki',
-			'wgDBprefix' => '',
-		] );
-
-		/** @var ResourceLoaderGlobalModule $module */
-		$module = $this->getMockForAbstractClass(
-			ResourceLoaderGlobalModule::class,
-			[ $params ]
-		);
+		/** @var MockObject|ResourceLoaderGlobalModule $module */
+		$module = $this->getMockBuilder(
+			ResourceLoaderGlobalModule::class
+		)->setConstructorArgs( [ $params ] )
+			->setMethods( [ 'wfWikiID' ] )
+			->getMockForAbstractClass();
+		$module->expects( $this->any() )
+			->method( 'wfWikiID' )
+			->willReturn( 'examplewiki' );
 		$this->assertSame( $expected, $module->getSource(), 'source' );
 	}
 

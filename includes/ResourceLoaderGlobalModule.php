@@ -77,7 +77,14 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 	 * @return string
 	 */
 	public function getSource() {
-		return wfWikiID() === $this->wiki ? 'local' : $this->source;
+		return $this->wfWikiID() === $this->wiki ? 'local' : $this->source;
+	}
+
+	/**
+	 * @return string
+	 */
+	protected function wfWikiID() {
+		return wfWikiID();
 	}
 
 	/**
@@ -85,7 +92,7 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 	 */
 	protected function getDB() {
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-		if ( $this->wiki === wfWikiID() ) {
+		if ( $this->wiki === $this->wfWikiID() ) {
 			$lb = $lbFactory->getMainLB();
 			return $lb->getConnection( DB_REPLICA );
 		} else {
