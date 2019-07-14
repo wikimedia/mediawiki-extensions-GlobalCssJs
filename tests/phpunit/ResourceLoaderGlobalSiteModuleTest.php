@@ -121,4 +121,9 @@ class ResourceLoaderGlobalSiteModuleTest extends \PHPUnit\Framework\TestCase {
 		$pages = array_keys( $out );
 		$this->assertEquals( $expectedPages, $pages, 'page names' );
 	}
+
+	public function testGroup() {
+		$module = new ResourceLoaderGlobalSiteModule( [] );
+		$this->assertInternalType( 'string', $module->getGroup(), 'group' );
+	}
 }
