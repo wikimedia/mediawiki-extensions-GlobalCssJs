@@ -3,12 +3,14 @@
 namespace MediaWiki\GlobalCssJs\Test;
 
 use MediaWiki\GlobalCssJs\ResourceLoaderGlobalModule;
-use MediaWikiTestCase;
 
-class ResourceLoaderGlobalModuleTest extends MediaWikiTestCase {
+/**
+ * @covers \MediaWiki\GlobalCssJs\ResourceLoaderGlobalModule
+ * @dataProvider provideGetSource
+ */
+class ResourceLoaderGlobalModuleTest extends \MediaWikiTestCase {
 
 	/**
-	 * @covers \MediaWiki\GlobalCssJs\ResourceLoaderGlobalModule::getSource
 	 * @dataProvider provideGetSource
 	 */
 	public function testGetSource( $params, $expected ) {
@@ -22,19 +24,19 @@ class ResourceLoaderGlobalModuleTest extends MediaWikiTestCase {
 			ResourceLoaderGlobalModule::class,
 			[ $params ]
 		);
-		$this->assertEquals( $expected, $module->getSource() );
+		$this->assertSame( $expected, $module->getSource(), 'source' );
 	}
 
 	public static function provideGetSource() {
 		return [
-			[
+			'foreign wiki' => [
 				[
 					'wiki' => 'blahwiki',
 					'source' => 'blahsource',
 				],
 				'blahsource',
 			],
-			[
+			'same wiki' => [
 				[
 					'wiki' => 'examplewiki',
 					'source' => 'blahsource',
