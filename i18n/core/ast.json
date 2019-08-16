@@ -6,11 +6,11 @@
 	},
 	"globalcssjs-extensionname": "CSS/JS global",
 	"globalcssjs-desc": "Permite cargar CSS y JavaScript d'una wiki central en toles wikis coneutaes",
-	"globalcssjs-custom-css-js": "CSS/JavaScript compartíu en toles wikis:",
+	"globalcssjs-custom-css-js": "CSS/JavaScript compartíu en toles wikis ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|más información]]):",
 	"globalcssjs-warning-js": "Cualquier JavaScript que s'escriba nesta páxina cargaráse'n toles wikis nes que tengas cuenta (consulta la [[mw:Help:Extension:GlobalCssJs|documentación]]).",
 	"globalcssjs-warning-css": "Cualquier CSS que s'escriba nesta páxina cargaráse'n toles wikis nes que tengas cuenta (consulta la [[mw:Help:Extension:GlobalCssJs|documentación]]).",
 	"globalcssjs-custom-js": "JavaScript personalizáu",
 	"globalcssjs-custom-css": "CSS personalizáu",
-	"globalcssjs-delete-css": "Desaniciando páxina CSS a pidimientu d'usuariu pol desendolcu de [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Desaniciando páxina JavaScript a pidimientu d'usuariu pol desendolcu de [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Desaniciando páxina CSS a pidimientu del {{GENDER:$1|usuariu}} pol desendolcu de [[mw:Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Desaniciando páxina JavaScript a pidimientu del {{GENDER:$1|usuariu}} pol desendolcu de [[mw:Help:Extension:GlobalCssJs]]"
 }
