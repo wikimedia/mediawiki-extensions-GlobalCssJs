@@ -52,8 +52,8 @@ class RemoveOldManualUserPages extends Maintenance {
 
 	public function __construct() {
 		parent::__construct();
-		$this->mDescription = 'Remove redundant user script pages that ' .
-			'import global.js and/or global.css';
+		$this->addDescription( 'Remove redundant user script pages that ' .
+			'import global.js and/or global.css' );
 		$this->addOption( 'user', 'User name', true, true );
 		$this->addOption( 'ignorerevisionlimit',
 			'Whether to ignore the 1 revision limit', false, false );
