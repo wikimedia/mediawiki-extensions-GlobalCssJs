@@ -40,6 +40,7 @@ class ResourceLoaderGlobalUserModuleIntegrationTest extends \MediaWikiTestCase {
 			$moduleConfig
 		) ) );
 		$this->setMwGlobals( $siteConfig );
+		$this->registerInConfigFactory();
 
 		$context = $this->makeContext( [ 'user' => $user ] );
 		$getPages = new ReflectionMethod( $module, 'getPages' );
