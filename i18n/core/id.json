@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ilham151096"
+			"Ilham151096",
+			"Iwan Novirion"
 		]
 	},
-	"globalcssjs-custom-css-js": "CSS/JavaScript berbagi untuk semua wiki:"
+	"globalcssjs-custom-css-js": "CSS/JS berbagi untuk semua wiki:",
+	"globalcssjs-custom-js": "JS pribadi",
+	"globalcssjs-custom-css": "CSS pribadi"
 }
