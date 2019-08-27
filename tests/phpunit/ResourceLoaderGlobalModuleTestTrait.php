@@ -3,6 +3,7 @@
 namespace MediaWiki\GlobalCssJs\Test;
 
 use HashConfig;
+use MediaWiki\MediaWikiServices;
 use ResourceLoaderContext;
 use Title;
 use User;
@@ -18,19 +19,15 @@ trait ResourceLoaderGlobalModuleTestTrait {
 	public function setUp() {
 		parent::setUp();
 
-		$factory = \ConfigFactory::getDefaultInstance();
-		$this->old = $factory->makeConfig( 'globalcssjs' );
+		$this->registerInConfigFactory();
+	}
 
+	protected function registerInConfigFactory() {
 		// Hacky stub so that Hooks::loadForUser is satisfied.
-		$factory->register(
+		MediaWikiServices::getInstance()->getConfigFactory()->register(
 			'globalcssjs',
 			new HashConfig( [ 'GlobalCssJsConfig' => $this->getFakeOptions() ] )
 		);
-	}
-
-	public function tearDown() {
-		\ConfigFactory::getDefaultInstance()->register( 'globalcssjs', $this->old );
-		parent::tearDown();
 	}
 
 	/**
