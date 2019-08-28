@@ -5,7 +5,7 @@
 			"Iwan Novirion"
 		]
 	},
-	"globalcssjs-custom-css-js": "CSS/JS berbagi untuk semua wiki:",
+	"globalcssjs-custom-css-js": "CSS/JS berbagi untuk semua wiki ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|informasi lebih lanjut]]):",
 	"globalcssjs-custom-js": "JS pribadi",
 	"globalcssjs-custom-css": "CSS pribadi"
 }
