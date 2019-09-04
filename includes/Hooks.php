@@ -62,26 +62,27 @@ class Hooks {
 	 * @param OutputPage $out
 	 */
 	public static function onBeforePageDisplay( OutputPage $out ) {
+		$config = self::getConfig();
+
 		$out->addModuleStyles( [ 'ext.globalCssJs.user.styles', 'ext.globalCssJs.site.styles' ] );
 		$out->addModules( [ 'ext.globalCssJs.user', 'ext.globalCssJs.site' ] );
-		// Add help link
-		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
-		if ( $config['wiki'] !== wfWikiID() ) {
-			return;
-		}
 
-		$useSiteCssJs = self::getConfig()->get( 'UseGlobalSiteCssJs' );
-		$title = $out->getTitle();
-		$user = $out->getUser();
-		$name = $user->getName();
-		if ( $useSiteCssJs && $title->inNamespace( NS_MEDIAWIKI )
-			&& ( $title->getText() === 'Global.css' || $title->getText() === 'Global.js' )
-		) {
-			$out->addHelpLink( 'Help:Extension:GlobalCssJs' );
-		} elseif ( $user->isLoggedIn() && $title->inNamespace( NS_USER )
-			&& ( $title->getText() === "$name/global.js" || $title->getText() === "$name/global.css" )
-		) {
-			$out->addHelpLink( 'Help:Extension:GlobalCssJs' );
+		// Add help link
+		$rlConfig = $config->get( 'GlobalCssJsConfig' );
+		if ( $rlConfig['wiki'] === wfWikiID() ) {
+			$useSiteCssJs = $config->get( 'UseGlobalSiteCssJs' );
+			$title = $out->getTitle();
+			$user = $out->getUser();
+			$name = $user->getName();
+			if ( $useSiteCssJs && $title->inNamespace( NS_MEDIAWIKI )
+				&& ( $title->getText() === 'Global.css' || $title->getText() === 'Global.js' )
+			) {
+				$out->addHelpLink( 'Help:Extension:GlobalCssJs' );
+			} elseif ( $user->isLoggedIn() && $title->inNamespace( NS_USER )
+				&& ( $title->getText() === "$name/global.js" || $title->getText() === "$name/global.css" )
+			) {
+				$out->addHelpLink( 'Help:Extension:GlobalCssJs' );
+			}
 		}
 	}
 
