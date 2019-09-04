@@ -63,14 +63,18 @@ class Hooks {
 	 */
 	public static function onBeforePageDisplay( OutputPage $out ) {
 		$config = self::getConfig();
+		$useSiteCssJs = $config->get( 'UseGlobalSiteCssJs' );
 
-		$out->addModuleStyles( [ 'ext.globalCssJs.user.styles', 'ext.globalCssJs.site.styles' ] );
-		$out->addModules( [ 'ext.globalCssJs.user', 'ext.globalCssJs.site' ] );
+		$out->addModuleStyles( [ 'ext.globalCssJs.user.styles' ] );
+		$out->addModules( [ 'ext.globalCssJs.user' ] );
+		if ( $useSiteCssJs ) {
+			$out->addModuleStyles( [ 'ext.globalCssJs.site.styles' ] );
+			$out->addModules( [ 'ext.globalCssJs.site' ] );
+		}
 
 		// Add help link
 		$rlConfig = $config->get( 'GlobalCssJsConfig' );
 		if ( $rlConfig['wiki'] === wfWikiID() ) {
-			$useSiteCssJs = $config->get( 'UseGlobalSiteCssJs' );
 			$title = $out->getTitle();
 			$user = $out->getUser();
 			$name = $user->getName();
@@ -133,17 +137,19 @@ class Hooks {
 		] + $config;
 		$resourceLoader->register( 'ext.globalCssJs.user.styles', $userCss );
 
-		$siteJs = [
-			'class' => ResourceLoaderGlobalSiteModule::class,
-			'type' => 'script',
-		] + $config;
-		$resourceLoader->register( 'ext.globalCssJs.site', $siteJs );
+		if ( self::getConfig()->get( 'UseGlobalSiteCssJs' ) ) {
+			$siteJs = [
+				'class' => ResourceLoaderGlobalSiteModule::class,
+				'type' => 'script',
+			] + $config;
+			$resourceLoader->register( 'ext.globalCssJs.site', $siteJs );
 
-		$siteCss = [
-			'class' => ResourceLoaderGlobalSiteModule::class,
-			'type' => 'style',
-		] + $config;
-		$resourceLoader->register( 'ext.globalCssJs.site.styles', $siteCss );
+			$siteCss = [
+				'class' => ResourceLoaderGlobalSiteModule::class,
+				'type' => 'style',
+			] + $config;
+			$resourceLoader->register( 'ext.globalCssJs.site.styles', $siteCss );
+		}
 	}
 
 	/**
