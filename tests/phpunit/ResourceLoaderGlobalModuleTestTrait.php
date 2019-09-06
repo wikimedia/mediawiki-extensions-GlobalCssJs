@@ -14,8 +14,6 @@ use User;
 trait ResourceLoaderGlobalModuleTestTrait {
 	use \PHPUnit4And6Compat;
 
-	private $old;
-
 	public function setUp() {
 		parent::setUp();
 

@@ -9,7 +9,7 @@ use ReflectionMethod;
 /**
  * @covers \MediaWiki\GlobalCssJs\ResourceLoaderGlobalSiteModule
  */
-class ResourceLoaderGlobalSiteModuleTest extends \PHPUnit\Framework\TestCase {
+class ResourceLoaderGlobalSiteModuleTest extends \MediaWikiIntegrationTestCase {
 	use \MediaWikiCoversValidator;
 	use ResourceLoaderGlobalModuleTestTrait;
 

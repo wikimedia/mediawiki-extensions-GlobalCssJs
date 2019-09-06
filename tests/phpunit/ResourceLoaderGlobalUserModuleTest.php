@@ -7,7 +7,7 @@ use HashConfig;
 use ReflectionMethod;
 use User;
 
-class ResourceLoaderGlobalUserModuleTest extends \PHPUnit\Framework\TestCase {
+class ResourceLoaderGlobalUserModuleTest extends \MediaWikiIntegrationTestCase {
 	use \MediaWikiCoversValidator;
 	use ResourceLoaderGlobalModuleTestTrait;
 
