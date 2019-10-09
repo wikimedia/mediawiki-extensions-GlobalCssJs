@@ -12,8 +12,6 @@ use User;
  * Helper class for testing subclasses of ResourceLoaderGlobalModule
  */
 trait ResourceLoaderGlobalModuleTestTrait {
-	use \PHPUnit4And6Compat;
-
 	public function setUp() {
 		parent::setUp();
 

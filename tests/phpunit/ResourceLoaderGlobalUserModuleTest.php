@@ -8,7 +8,6 @@ use ReflectionMethod;
 use User;
 
 class ResourceLoaderGlobalUserModuleTest extends \MediaWikiIntegrationTestCase {
-	use \MediaWikiCoversValidator;
 	use ResourceLoaderGlobalModuleTestTrait;
 
 	public static function provideGetPages() {

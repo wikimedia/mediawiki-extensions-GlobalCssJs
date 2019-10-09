@@ -10,7 +10,6 @@ use ReflectionMethod;
  * @covers \MediaWiki\GlobalCssJs\ResourceLoaderGlobalSiteModule
  */
 class ResourceLoaderGlobalSiteModuleTest extends \MediaWikiIntegrationTestCase {
-	use \MediaWikiCoversValidator;
 	use ResourceLoaderGlobalModuleTestTrait;
 
 	public static function provideGetPages() {
