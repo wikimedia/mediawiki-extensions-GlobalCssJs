@@ -12,7 +12,7 @@ use User;
  * Helper class for testing subclasses of ResourceLoaderGlobalModule
  */
 trait ResourceLoaderGlobalModuleTestTrait {
-	public function setUp() {
+	public function setUp() : void {
 		parent::setUp();
 
 		$this->registerInConfigFactory();
