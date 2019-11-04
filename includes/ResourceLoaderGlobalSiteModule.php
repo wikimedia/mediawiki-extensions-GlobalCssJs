@@ -47,6 +47,7 @@ class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 		if ( $this->type === 'style' && $config->get( 'UseSiteCss' ) ) {
 			$pages["MediaWiki:Global.css"] = [ 'type' => 'style' ];
 			$pages['MediaWiki:Global-' . $context->getSkin() . '.css'] = [ 'type' => 'style' ];
+			// @phan-suppress-next-line PhanImpossibleTypeComparison
 		} elseif ( $this->type === 'script' && $config->get( 'UseSiteJs' ) ) {
 			$pages["MediaWiki:Global.js"] = [ 'type' => 'script' ];
 			$pages['MediaWiki:Global-' . $context->getSkin() . '.js'] = [ 'type' => 'script' ];
