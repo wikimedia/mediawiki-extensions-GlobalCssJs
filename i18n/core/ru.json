@@ -6,12 +6,13 @@
 			"Saint Johann",
 			"Nirovulf",
 			"Kareyac",
-			"Ping08"
+			"Ping08",
+			"Smigles"
 		]
 	},
 	"globalcssjs-extensionname": "Глобальные CSS/JS",
 	"globalcssjs-desc": "Позволяет использовать CSS и JavaScript, находящиеся в центральном вики-проекте, для загрузки во все связанные вики-проекты.",
-	"globalcssjs-custom-css-js": "Общие CSS/JavaScript для всех вики-проектов ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|подробнее]]):",
+	"globalcssjs-custom-css-js": "Общие CSS и JavaScript для всех вики-проектов ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|подробнее]]):",
 	"globalcssjs-warning-js": "Любой JavaScript, добавленный на эту страницу, будет загружаться на всех вики, где у вас есть учётная запись (см.[[mw:Help:Extension:GlobalCssJs|документацию]]).",
 	"globalcssjs-warning-css": "Любой CSS, добавленный на эту страницу, будет загружаться во всех вики, где у вас есть учётная запись (см. [[mw:Help:Extension:GlobalCssJs|документацию]]).",
 	"globalcssjs-custom-js": "Собственный JS",
