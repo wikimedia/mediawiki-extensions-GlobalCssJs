@@ -3,10 +3,16 @@
 		"authors": [
 			"Mavrikant",
 			"TmY e12",
-			"ToprakM"
+			"ToprakM",
+			"BaRaN6161 TURK"
 		]
 	},
-	"globalcssjs-custom-css-js": "Tüm vikiler için paylaşılan CSS/Javascipt:",
+	"globalcssjs-desc": "Tüm bağlı wikiler için merkezi bir wikide CSS ve JavaScript yüklenmesine izin verir",
+	"globalcssjs-custom-css-js": "Tüm wikiler için paylaşılan CSS/JavaScript ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|daha fazla bilgi]]):",
+	"globalcssjs-warning-js": "Bu sayfaya eklenen herhangi bir JavaScript, hesabın olduğu tüm wikilere yüklenecektir ([[mw:Help:Extension:GlobalCssJs|belgeyi]] bakınız).",
+	"globalcssjs-warning-css": "Bu sayfaya eklenen herhangi bir CSS, hesabınız olan tüm wikilere yüklenecektir ([[mw:Help:Extension:GlobalCssJs|belgeyi]] bakınız).",
 	"globalcssjs-custom-js": "Özel JavaScript",
-	"globalcssjs-custom-css": "Özel CSS"
+	"globalcssjs-custom-css": "Özel CSS",
+	"globalcssjs-delete-css": "[[mw:Help:Extension:GlobalCssJs]] konuşlandırması nedeniyle {{GENDER:$1|kullanıcı}} isteğindeki CSS sayfasını silme",
+	"globalcssjs-delete-js": "[[mw:Help:Extension:GlobalCssJs]] konuşlandırması nedeniyle {{GENDER: $1|kullanıcı}} isteğindeki JavaScript sayfasını silme"
 }
