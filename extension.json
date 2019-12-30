@@ -43,7 +43,7 @@
 	"AutoloadNamespaces": {
 		"MediaWiki\\GlobalCssJs\\": "includes/"
 	},
-	"AutoloadClasses": {
+	"TestAutoloadClasses": {
 		"MediaWiki\\GlobalCssJs\\Test\\ResourceLoaderGlobalModuleTestTrait": "tests/phpunit/ResourceLoaderGlobalModuleTestTrait.php"
 	},
 	"ConfigRegistry": {
