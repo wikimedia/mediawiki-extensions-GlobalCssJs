@@ -2,8 +2,8 @@
 
 namespace MediaWiki\GlobalCssJs\Test;
 
-use MediaWiki\GlobalCssJs\ResourceLoaderGlobalUserModule;
 use HashConfig;
+use MediaWiki\GlobalCssJs\ResourceLoaderGlobalUserModule;
 use ReflectionMethod;
 use User;
 

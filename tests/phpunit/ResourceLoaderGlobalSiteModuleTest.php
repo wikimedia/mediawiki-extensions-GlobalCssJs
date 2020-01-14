@@ -2,8 +2,8 @@
 
 namespace MediaWiki\GlobalCssJs\Test;
 
-use MediaWiki\GlobalCssJs\ResourceLoaderGlobalSiteModule;
 use HashConfig;
+use MediaWiki\GlobalCssJs\ResourceLoaderGlobalSiteModule;
 use ReflectionMethod;
 
 /**
@@ -123,6 +123,6 @@ class ResourceLoaderGlobalSiteModuleTest extends \MediaWikiIntegrationTestCase {
 
 	public function testGroup() {
 		$module = new ResourceLoaderGlobalSiteModule( [] );
-		$this->assertInternalType( 'string', $module->getGroup(), 'group' );
+		$this->assertIsString( $module->getGroup(), 'group' );
 	}
 }

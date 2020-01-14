@@ -22,10 +22,10 @@
 
 namespace MediaWiki\GlobalCssJs;
 
-use MediaWiki\MediaWikiServices;
-use Wikimedia\Rdbms\IDatabase;
 use InvalidArgumentException;
+use MediaWiki\MediaWikiServices;
 use ResourceLoaderWikiModule;
+use Wikimedia\Rdbms\IDatabase;
 
 /**
  * Base class for global modules.
