@@ -6,7 +6,7 @@
 		]
 	},
 	"globalcssjs-desc": "Umožňuje na všetkých prepojených wiki načítať CSS a JavaScript z centrálnej wiki",
-	"globalcssjs-custom-css-js": "Spoločné CSS/JS pre všetky wiki:",
+	"globalcssjs-custom-css-js": "Spoločné CSS/JS pre všetky wiki ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|viac informácií]]):",
 	"globalcssjs-custom-js": "Vlastný JS",
 	"globalcssjs-custom-css": "Vlastný CSS"
 }
