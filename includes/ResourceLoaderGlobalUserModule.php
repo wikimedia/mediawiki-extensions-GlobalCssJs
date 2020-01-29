@@ -60,7 +60,6 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 		// request URI for the central wiki, where it should match its version hash.
 		if ( $this->type === 'style' && $config->get( 'AllowUserCss' ) ) {
 			$pages["User:$userpage/global.css"] = [ 'type' => 'style' ];
-			// @phan-suppress-next-line PhanSuspiciousValueComparison
 		} elseif ( $this->type === 'script' && $config->get( 'AllowUserJs' ) ) {
 			$pages["User:$userpage/global.js"] = [ 'type' => 'script' ];
 		}
