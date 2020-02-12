@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Calak",
-			"Asoxor"
+			"Asoxor",
+			"ئارام بکر"
 		]
 	},
-	"globalcssjs-custom-css-js": "SS/JavaScriptی ھاوبەش بۆ ھەموو ویکییەکان:",
+	"globalcssjs-custom-css-js": "سی ئێس ئێس/جاڤاسکریپتی ھاوبەش بۆ ھەموو ویکییەکان ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|زانیاریی زیاتر]]):",
 	"globalcssjs-custom-js": "جاڤاسکریپتی دڵخواز",
 	"globalcssjs-custom-css": "CSSی دڵخواز"
 }
