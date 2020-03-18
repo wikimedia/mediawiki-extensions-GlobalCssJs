@@ -25,8 +25,10 @@ use CssContent;
 use JavaScriptContent;
 use LinkBatch;
 use Maintenance;
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\SlotRecord;
+use MediaWiki\Storage\RevisionRecord;
 use ResourceLoader;
-use Revision;
 use Skin;
 use Title;
 use User;
@@ -91,7 +93,7 @@ class RemoveOldManualUserPages extends Maintenance {
 	 * Generic checks to see if we should work on a title.
 	 *
 	 * @param Title $title
-	 * @return Revision|bool
+	 * @return RevisionRecord|bool
 	 */
 	private function checkTitle( Title $title ) {
 		if ( !$title->exists() ) {
@@ -99,10 +101,9 @@ class RemoveOldManualUserPages extends Maintenance {
 			return false;
 		}
 
-		$rev = Revision::newFromTitle( $title );
-		if ( !$this->ignoreRevisionLimit &&
-			$title->getPreviousRevisionID( $rev->getId() ) !== false
-		) {
+		$revisionLookup = MediaWikiServices::getInstance()->getRevisionLookup();
+		$rev = $revisionLookup->getRevisionByTitle( $title );
+		if ( !$this->ignoreRevisionLimit && $revisionLookup->getPreviousRevision( $rev ) ) {
 			$this->output( "{$title->getPrefixedText()} has more than one revision, skipping.\n" );
 			return false;
 		}
@@ -177,7 +178,7 @@ class RemoveOldManualUserPages extends Maintenance {
 		}
 
 		/** @var CssContent $content */
-		$content = $rev->getContent();
+		$content = $rev->getContent( SlotRecord::MAIN );
 		$text = trim( $content->getNativeData() );
 		$domain = $this->getCentralWikiDomain();
 		if ( !$this->checkCss( $text, $domain, $userName ) ) {
@@ -228,7 +229,7 @@ class RemoveOldManualUserPages extends Maintenance {
 		}
 
 		/** @var JavaScriptContent $content */
-		$content = $rev->getContent();
+		$content = $rev->getContent( SlotRecord::MAIN );
 		$text = trim( $content->getNativeData() );
 		$domain = $this->getCentralWikiDomain();
 		if ( !$this->checkJs( $text, $domain, $userName ) ) {
