@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"01miki10",
 			"Jack Phoenix",
-			"Stryn",
-			"01miki10"
+			"Stryn"
 		]
 	},
 	"globalcssjs-desc": "Mahdollistaa keskuswikin CSS:n ja JavaScriptin lataamisen kaikkiin yhdistettyihin wikeihin",

@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente",
+			"Hamilton Abreu",
 			"Jkb8",
-			"Hamilton Abreu"
+			"Vitorvicentevalente"
 		]
 	},
 	"globalcssjs-desc": "Permite que o CSS e o código JavaScript de uma wiki central sejam carregados em todas as wikis a ela ligadas",

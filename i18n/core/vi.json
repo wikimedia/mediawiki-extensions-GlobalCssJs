@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Quenhitran",
-			"Minh Nguyen"
+			"Minh Nguyen",
+			"Quenhitran"
 		]
 	},
 	"globalcssjs-desc": "Cho phép mọi wiki liên kết tải CSS và JavaScript từ một wiki trung ương",

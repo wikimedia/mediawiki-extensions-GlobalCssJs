@@ -1,13 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"0x010C",
+			"Automatik",
 			"Gomoko",
 			"Ltrlg",
-			"Automatik",
-			"0x010C",
-			"Wladek92",
 			"Orlodrim",
-			"Urhixidur"
+			"Urhixidur",
+			"Wladek92"
 		]
 	},
 	"globalcssjs-extensionname": "CSS/JS global",

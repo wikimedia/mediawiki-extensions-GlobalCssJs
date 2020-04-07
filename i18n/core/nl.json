@@ -2,12 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Breghtje",
-			"Siebrand",
-			"Mar(c)",
-			"Sjoerddebruin",
-			"Servien",
 			"Esketti",
-			"Mainframe98"
+			"Mainframe98",
+			"Mar(c)",
+			"Servien",
+			"Siebrand",
+			"Sjoerddebruin"
 		]
 	},
 	"globalcssjs-extensionname": "Global CSS/JS",

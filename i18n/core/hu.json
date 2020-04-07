@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dorgan",
-			"Bináris"
+			"Bináris",
+			"Dorgan"
 		]
 	},
 	"globalcssjs-desc": "Lehetővé teszi egy központi wikiben tárolt CSS és JavaScript használatát az összes kapcsolt wikin",

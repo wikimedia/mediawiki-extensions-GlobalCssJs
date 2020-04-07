@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"BaRaN6161 TURK",
 			"Mavrikant",
 			"TmY e12",
-			"ToprakM",
-			"BaRaN6161 TURK"
+			"ToprakM"
 		]
 	},
 	"globalcssjs-desc": "Tüm bağlı wikiler için merkezi bir wikide CSS ve JavaScript yüklenmesine izin verir",
