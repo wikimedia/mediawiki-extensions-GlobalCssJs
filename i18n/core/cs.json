@@ -8,10 +8,10 @@
 	},
 	"globalcssjs-desc": "Umožňuje na všech propojených wiki načítat CSS a JavaScript z ústřední wiki",
 	"globalcssjs-custom-css-js": "Sdílené CSS/JavaScript pro všechny wiki:",
-	"globalcssjs-warning-js": "Libovolný JavaScript přidaný na tuto stránku se bude načítat na všech wiki, na kterých máte účet (viz [[mw:Help:Extension:GlobalCssJs|dokumentaci]]).",
-	"globalcssjs-warning-css": "Libovolné CSS přidané na tuto stránku se bude načítat na všech wiki, na kterých máte účet (viz [[mw:Help:Extension:GlobalCssJs|dokumentaci]]).",
+	"globalcssjs-warning-js": "Libovolný JavaScript přidaný na tuto stránku se bude načítat na všech wiki, na kterých máte účet (viz [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentaci]]).",
+	"globalcssjs-warning-css": "Libovolné CSS přidané na tuto stránku se bude načítat na všech wiki, na kterých máte účet (viz [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentaci]]).",
 	"globalcssjs-custom-js": "Uživatelský JavaScript",
 	"globalcssjs-custom-css": "Uživatelské CSS",
-	"globalcssjs-delete-css": "Smazání CSS stránky na žádost {{GENDER:$1|uživatele|uživatelky}} kvůli nasazení [[mw:Help:Extension:GlobalCssJs|rozšíření GlobalCssJs]]",
-	"globalcssjs-delete-js": "Smazání JavaScriptové stránky na žádost {{GENDER:$1|uživatele|uživatelky}} kvůli nasazení [[mw:Help:Extension:GlobalCssJs|rozšíření GlobalCssJs]]"
+	"globalcssjs-delete-css": "Smazání CSS stránky na žádost {{GENDER:$1|uživatele|uživatelky}} kvůli nasazení [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|rozšíření GlobalCssJs]]",
+	"globalcssjs-delete-js": "Smazání JavaScriptové stránky na žádost {{GENDER:$1|uživatele|uživatelky}} kvůli nasazení [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|rozšíření GlobalCssJs]]"
 }

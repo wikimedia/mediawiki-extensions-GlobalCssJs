@@ -4,15 +4,16 @@
 			"Chrumps",
 			"Expert3222",
 			"Peter Bowman",
+			"Rail",
 			"Woytecr"
 		]
 	},
 	"globalcssjs-desc": "Umożliwia ładowanie CSS i JavaScript z centralnej wiki na wszystkie powiązane wiki",
 	"globalcssjs-custom-css-js": "Wspólne CSS/JavaScript dla wszystkich wiki ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|więcej informacji]]):",
-	"globalcssjs-warning-js": "Każdy JavaScript dodany na tej stronie będzie uruchamiany na wszystkich wiki, na których masz konto (zobacz [[mw:Help:Extension:GlobalCssJs|dokumentację]]).",
-	"globalcssjs-warning-css": "Każdy CSS dodany na tej stronie będzie uruchamiany na wszystkich wiki, na których masz konto (zobacz [[mw:Help:Extension:GlobalCssJs|dokumantację]]).",
+	"globalcssjs-warning-js": "Każdy JavaScript dodany na tej stronie będzie uruchamiany na wszystkich wiki, na których masz konto (zobacz [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentację]]).",
+	"globalcssjs-warning-css": "Każdy CSS dodany na tej stronie będzie uruchamiany na wszystkich wiki, na których masz konto (zobacz [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumantację]]).",
 	"globalcssjs-custom-js": "własny JavaScript",
 	"globalcssjs-custom-css": "własny CSS",
-	"globalcssjs-delete-css": "Usunięcie strony CSS na żądanie {{GENDER:$1|użytkownika|użytkowniczki}} wskutek wdrożenia [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Usunięcie strony JS na żądanie {{GENDER:$1|użytkownika|użytkowniczki}} wskutek wdrożenia [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Usunięcie strony CSS na żądanie {{GENDER:$1|użytkownika|użytkowniczki}} wskutek wdrożenia [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|GlobalCssJs]]",
+	"globalcssjs-delete-js": "Usunięcie strony JS na żądanie {{GENDER:$1|użytkownika|użytkowniczki}} wskutek wdrożenia [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|GlobalCssJs]]"
 }

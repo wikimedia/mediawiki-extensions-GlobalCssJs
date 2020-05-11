@@ -9,10 +9,10 @@
 	"globalcssjs-extensionname": "CSS/JS العالمي",
 	"globalcssjs-desc": "شغل نصوص سي إس إس وجافاسكربت شخصية في جميع مواقع ويكيميديا انطلاقا من ويكي مركزي",
 	"globalcssjs-custom-css-js": "سي إس إس وجافاسكربت لحسابك في جميع مشاريع ويكيميديا [[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|مزيد من المعلومات]]:",
-	"globalcssjs-warning-js": "سيحمل أي جافاسكربت في هذه الصفحة لحسابك في جميع مشاريع ويكيميديا  (انظر [[mw:Help:Extension:GlobalCssJs|التوثيق]]).",
-	"globalcssjs-warning-css": "سيحمل أي سي إس إس في هذه الصفحة لحسابك في جميع مشاريع ويكيميديا.(انظر [[mw:Help:Extension:GlobalCssJs|التوثيق]])",
+	"globalcssjs-warning-js": "سيحمل أي جافاسكربت في هذه الصفحة لحسابك في جميع مشاريع ويكيميديا  (انظر [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|التوثيق]]).",
+	"globalcssjs-warning-css": "سيحمل أي سي إس إس في هذه الصفحة لحسابك في جميع مشاريع ويكيميديا.(انظر [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|التوثيق]])",
 	"globalcssjs-custom-js": "جافاسكربت شخصي",
 	"globalcssjs-custom-css": "سي إس إس شخصي",
-	"globalcssjs-delete-css": "حذف صفحة سي إس إس بطلب من {{GENDER:$1|المستخدم}} نظرا لتشغيل [[mw:Help:Extension:GlobalCssJs|سي إس إس العالمي]]",
-	"globalcssjs-delete-js": "حذف صفحة جافاسكربت بطلب من {{GENDER:$1|المستخدم}} نظرا لتشغيل [[mw:Help:Extension:GlobalCssJs|جافاسكربت العالمي]]"
+	"globalcssjs-delete-css": "حذف صفحة سي إس إس بطلب من {{GENDER:$1|المستخدم}} نظرا لتشغيل [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|سي إس إس العالمي]]",
+	"globalcssjs-delete-js": "حذف صفحة جافاسكربت بطلب من {{GENDER:$1|المستخدم}} نظرا لتشغيل [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|جافاسكربت العالمي]]"
 }

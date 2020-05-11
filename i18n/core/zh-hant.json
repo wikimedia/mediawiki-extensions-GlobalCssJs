@@ -10,10 +10,10 @@
 	"globalcssjs-extensionname": "全域 CSS/JS",
 	"globalcssjs-desc": "允許在中央 Wiki 的 CSS 與 JavaScript 被所有連結的 Wiki 讀取",
 	"globalcssjs-custom-css-js": "與所有 wiki 共用 CSS/JavaScript（[[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|更多資訊]]）：",
-	"globalcssjs-warning-js": "任何在此頁面新增的 JavaScript 將會在您有帳號的所有 Wiki 讀取（[[mw:Help:Extension:GlobalCssJs|文件]]）。",
-	"globalcssjs-warning-css": "任何在此頁面新增的 CSS 將會在您有帳號的所有 Wiki 讀取（[[mw:Help:Extension:GlobalCssJs|文件]]）。",
+	"globalcssjs-warning-js": "任何在此頁面新增的 JavaScript 將會在您有帳號的所有 Wiki 裡載入（[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|文件]]）。",
+	"globalcssjs-warning-css": "任何在此頁面新增的 CSS 將會在您有帳號的所有 Wiki 裡載入（[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|文件]]）。",
 	"globalcssjs-custom-js": "自訂 JavaScript",
 	"globalcssjs-custom-css": "自訂 CSS",
-	"globalcssjs-delete-css": "由於佈署 [[mw:Help:Extension:GlobalCssJs]] 緣故，基於 {{GENDER:$1|使用者}} 的請求刪除 CSS 頁面",
-	"globalcssjs-delete-js": "由於佈署 [[mw:Help:Extension:GlobalCssJs]] 緣故，基於 {{GENDER:$1|使用者}} 的請求刪除 JavaScript 頁面"
+	"globalcssjs-delete-css": "由於佈署 [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]] 緣故，根據{{GENDER:$1|使用者}}的請求刪除 CSS 頁面",
+	"globalcssjs-delete-js": "由於佈署 [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]] 緣故，根據{{GENDER:$1|使用者}}的請求刪除 JavaScript 頁面"
 }

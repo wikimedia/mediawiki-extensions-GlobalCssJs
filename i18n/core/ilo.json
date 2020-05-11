@@ -7,10 +7,10 @@
 	"globalcssjs-extensionname": "Global CSS/JS",
 	"globalcssjs-desc": "Mangipalubos a maikarga ti CSS ken JavaScript iti sentral a wiki para kadagiti amin a naikapet a wiki",
 	"globalcssjs-custom-css-js": "Bingay a CSS/JavaScript para kadagiti amin a wiki:",
-	"globalcssjs-warning-js": "Ti ania man a JavaScript a mainayon iti daytoy a panid ket maikarganto kadagiti amin a wiki nga addaan iti pakabilangam (kitaen ti [[mw:Help:Extension:GlobalCssJs|dokumentasion]]).",
-	"globalcssjs-warning-css": "Ti ania man a CSS a mainayon iti daytoy a panid ket maikarganto kadagiti amin a wiki nga addaan iti pakabilangam (kitaen ti [[mw:Help:Extension:GlobalCssJs|dokumentasion]]).",
+	"globalcssjs-warning-js": "Ti ania man a JavaScript a mainayon iti daytoy a panid ket maikarganto kadagiti amin a wiki nga addaan iti pakabilangam (kitaen ti [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentasion]]).",
+	"globalcssjs-warning-css": "Ti ania man a CSS a mainayon iti daytoy a panid ket maikarganto kadagiti amin a wiki nga addaan iti pakabilangam (kitaen ti [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentasion]]).",
 	"globalcssjs-custom-js": "Naiduma a JavaScript",
 	"globalcssjs-custom-css": "Naiduma a CSS",
-	"globalcssjs-delete-css": "Kiniddaw ti agar-aramat nga ikkaten ti panid ti CSS gapu ti pannakaisayangkat ti [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Kiniddaw ti agar-aramat nga ikkaten ti panid ti JavaScript gapu ti pannakaisayangkat ti [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Kiniddaw ti agar-aramat nga ikkaten ti panid ti CSS gapu ti pannakaisayangkat ti [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Kiniddaw ti agar-aramat nga ikkaten ti panid ti JavaScript gapu ti pannakaisayangkat ti [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
 }

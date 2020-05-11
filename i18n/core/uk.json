@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
+			"Movses",
 			"Piramidion",
 			"Ата"
 		]
@@ -9,10 +10,10 @@
 	"globalcssjs-extensionname": "Глобальні CSS/JS",
 	"globalcssjs-desc": "Дозволяє використовувати CSS і JavaScript на центральному вікі-проекті, який буде завантажуватися для всіх підлеглих вікі-проектів.",
 	"globalcssjs-custom-css-js": "Спільні CSS/JavaScript для всіх вікі ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|більше інформації]]):",
-	"globalcssjs-warning-js": "Будь-який JavaScript, доданий на цю сторінку, буде завантажуватися на всіх вікі, де у Вас є обліковий запис (див. [[mw:Help:Extension:GlobalCssJs|документацію]]).",
-	"globalcssjs-warning-css": "Будь-який CSS, доданий на цю сторінку, буде завантажуватися на всіх вікі, де у Вас є обліковий запис (див. [[mw:Help:Extension:GlobalCssJs|документацію]]).",
+	"globalcssjs-warning-js": "Будь-який JavaScript, доданий на цю сторінку, буде завантажуватися на всіх вікі, де у Вас є обліковий запис (див. [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацію]]).",
+	"globalcssjs-warning-css": "Будь-який CSS, доданий на цю сторінку, буде завантажуватися на всіх вікі, де у Вас є обліковий запис (див. [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацію]]).",
 	"globalcssjs-custom-js": "Власний JavaScript",
 	"globalcssjs-custom-css": "Власний CSS",
-	"globalcssjs-delete-css": "Видалення сторінки CSS за запитом {{GENDER:$1|користувача|користувачки}} через розгортання [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Видалення сторінки JavaScript за запитом {{GENDER:$1|користувача|користувачки}} через розгортання [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Видалення сторінки CSS за запитом {{GENDER:$1|користувача|користувачки}} через розгортання [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Видалення сторінки JavaScript за запитом {{GENDER:$1|користувача|користувачки}} через розгортання [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
 }

@@ -6,10 +6,10 @@
 	},
 	"globalcssjs-desc": "Lar CSS og JavaScript på en sentral wiki lastes på alle tilkoblede wikier",
 	"globalcssjs-custom-css-js": "Delt CSS/JavaScript for alle wikier ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|mer informasjon]]):",
-	"globalcssjs-warning-js": "JavaScript som legges til på denne siden vil lastes på alle wikier der du har en konto (se [[mw:Help:Extension:GlobalCssJs|dokumentasjonen]]).",
-	"globalcssjs-warning-css": "All CSS som legges til på denne siden vil lastes på alle wikier der du har en konto (se [[mw:Help:Extension:GlobalCssJs|dokumentasjonen]]).",
+	"globalcssjs-warning-js": "JavaScript som legges til på denne siden vil lastes på alle wikier der du har en konto (se [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentasjonen]]).",
+	"globalcssjs-warning-css": "All CSS som legges til på denne siden vil lastes på alle wikier der du har en konto (se [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentasjonen]]).",
 	"globalcssjs-custom-js": "Egendefinert JavaScript",
 	"globalcssjs-custom-css": "Egendefinert CSS",
-	"globalcssjs-delete-css": "Sletter CSS-side på {{GENDER:$1|brukerens}} forespørsel på grunn av igangsetting av [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Sletter JavaScript-side på {{GENDER:$1|brukerens}} forespørsel på grunn av igangsetting av [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Sletter CSS-side på {{GENDER:$1|brukerens}} forespørsel på grunn av igangsetting av [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Sletter JavaScript-side på {{GENDER:$1|brukerens}} forespørsel på grunn av igangsetting av [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
 }

@@ -7,10 +7,10 @@
 	"globalcssjs-extensionname": "ആഗോള സി.എസ്.എസ്./ജെ.എസ്.",
 	"globalcssjs-desc": "കേന്ദ്രവിക്കിയിലെ സി.എസ്.എസും, ജാവാസ്ക്രിപ്റ്റും എല്ലാ ബന്ധപ്പെട്ട വിക്കികളിലും എടുക്കാൻ അനുവദിക്കുന്നു",
 	"globalcssjs-custom-css-js": "എല്ലാ വിക്കികൾക്കുമായി പങ്ക് വെയ്ക്കപ്പെട്ട സി.എസ്.എസ്./ജെ.എസ്. ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|കൂടുതൽ വിവരങ്ങൾ]]):",
-	"globalcssjs-warning-js": "ഈ താളിൽ ചേർക്കുന്ന ജാവാസ്ക്രിപ്റ്റ് താങ്കൾക്ക് അംഗത്വമുള്ള എല്ലാ വിക്കികളിലും എടുക്കപ്പെടുന്നതായിരിക്കും ([[mw:Help:Extension:GlobalCssJs|വിവരണം]] കാണുക).",
-	"globalcssjs-warning-css": "ഈ താളിൽ ചേർക്കുന്ന സി.എസ്.എസ്. താങ്കൾക്ക് അംഗത്വമുള്ള എല്ലാ വിക്കികളിലും എടുക്കപ്പെടുന്നതായിരിക്കും ([[mw:Help:Extension:GlobalCssJs|വിവരണം]] കാണുക).",
+	"globalcssjs-warning-js": "ഈ താളിൽ ചേർക്കുന്ന ജാവാസ്ക്രിപ്റ്റ് താങ്കൾക്ക് അംഗത്വമുള്ള എല്ലാ വിക്കികളിലും എടുക്കപ്പെടുന്നതായിരിക്കും ([[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|വിവരണം]] കാണുക).",
+	"globalcssjs-warning-css": "ഈ താളിൽ ചേർക്കുന്ന സി.എസ്.എസ്. താങ്കൾക്ക് അംഗത്വമുള്ള എല്ലാ വിക്കികളിലും എടുക്കപ്പെടുന്നതായിരിക്കും ([[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|വിവരണം]] കാണുക).",
 	"globalcssjs-custom-js": "സ്വന്തം ജാവാസ്ക്രിപ്റ്റ്",
 	"globalcssjs-custom-css": "സ്വന്തം സി.എസ്.എസ്.",
-	"globalcssjs-delete-css": "[[mw:Help:Extension:GlobalCssJs]] ഡിപ്ലോയ് ചെയ്തിട്ടുള്ളതിനാൽ {{GENDER:$1|ഉപയോക്താവിന്റെ}} അഭ്യർത്ഥന പ്രകാരം സി.എസ്.എസ്. താൾ മായ്ക്കുന്നു",
-	"globalcssjs-delete-js": "[[mw:Help:Extension:GlobalCssJs]] ഡിപ്ലോയ് ചെയ്തിട്ടുള്ളതിനാൽ {{GENDER:$1|ഉപയോക്താവിന്റെ}} അഭ്യർത്ഥന പ്രകാരം ജാവാസ്ക്രിപ്റ്റ് താൾ മായ്ക്കുന്നു"
+	"globalcssjs-delete-css": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] ഡിപ്ലോയ് ചെയ്തിട്ടുള്ളതിനാൽ {{GENDER:$1|ഉപയോക്താവിന്റെ}} അഭ്യർത്ഥന പ്രകാരം സി.എസ്.എസ്. താൾ മായ്ക്കുന്നു",
+	"globalcssjs-delete-js": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] ഡിപ്ലോയ് ചെയ്തിട്ടുള്ളതിനാൽ {{GENDER:$1|ഉപയോക്താവിന്റെ}} അഭ്യർത്ഥന പ്രകാരം ജാവാസ്ക്രിപ്റ്റ് താൾ മായ്ക്കുന്നു"
 }

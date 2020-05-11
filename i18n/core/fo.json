@@ -11,6 +11,6 @@
 	"globalcssjs-warning-css": "Eitt hvørt CSS ið verður lagt afturat hesa síðuna verður løtt (loaded) á øllum wikium, har ið tú hevur eina konto.",
 	"globalcssjs-custom-js": "Persónligt JavaScript",
 	"globalcssjs-custom-css": "Persónligt CSS",
-	"globalcssjs-delete-css": "Strikar CSS síðu eftir umbøn frá brúkara orsakað av íverkseta av [[mw:Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Strikar JavaScript síðu eftir umbøn frá brúkara orsakað av íverkseta av [[mw:Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Strikar CSS síðu eftir umbøn frá brúkara orsakað av íverkseta av [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Strikar JavaScript síðu eftir umbøn frá brúkara orsakað av íverkseta av [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
 }
