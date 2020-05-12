@@ -26,17 +26,25 @@
 		]
 	},
 	"config": {
-		"UseGlobalSiteCssJs": true,
+		"UseGlobalSiteCssJs": {
+			"value": true
+		},
 		"GlobalCssJsConfig": {
-			"baseurl": false,
-			"wiki": false,
-			"source": false
+			"value": {
+				"baseurl": false,
+				"wiki": false,
+				"source": false
+			}
 		}
 	},
-	"VisualEditorPreloadModules": [
-		"ext.globalCssJs.site",
-		"ext.globalCssJs.user"
-	],
+	"attributes": {
+		"VisualEditor": {
+			"PreloadModules": [
+				"ext.globalCssJs.site",
+				"ext.globalCssJs.user"
+			]
+		}
+	},
 	"ExtensionFunctions": [
 		"MediaWiki\\GlobalCssJs\\Hooks::onExtensionFunctions"
 	],
@@ -49,5 +57,5 @@
 	"ConfigRegistry": {
 		"globalcssjs": "GlobalVarConfig::newInstance"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
