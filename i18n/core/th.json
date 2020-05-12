@@ -12,5 +12,5 @@
 	"globalcssjs-custom-js": "จาวาสคริปต์กำหนดเอง",
 	"globalcssjs-custom-css": "CSS กำหนดเอง",
 	"globalcssjs-delete-css": "ลบหน้า CSS ตามคำขอของ{{GENDER:$1|ผู้ใช้}}เนื่องจากมีการปรับใช้ [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "ลบหน้าจาวาสคริปต์ตามคำขอของผู้ใช้เนื่องจากมีการปรับใช้ [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-js": "ลบหน้าจาวาสคริปต์ตามคำขอของ{{GENDER:$1|ผู้ใช้}}เนื่องจากมีการปรับใช้ [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
 }
