@@ -10,6 +10,6 @@
 	"globalcssjs-warning-css": "Ogne CSS aggiunde a sta pàgene avène carecate sus a tutte le uicchi addò tìne 'n'utende ('ndruche 'a [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documendazione]]).",
 	"globalcssjs-custom-js": "JavaScript personalizzate",
 	"globalcssjs-custom-css": "CSS personalizzate",
-	"globalcssjs-delete-css": "Scangellazione d'a pàgene CSS sus 'na richieste {{GENDER:$1|de l'utende}} pe colpe d'a destribbuzione de [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Scangellazione d'a pàgene JavaScript sus 'na richieste {{GENDER:$1|de l'utende}} pe colpe d'a destribbuzione de [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Scangellazione d'a pàgene CSS sus 'na richieste {{GENDER:$1|de l'utende}} pe colpe d'a destribbuzione de [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Scangellazione d'a pàgene JavaScript sus 'na richieste {{GENDER:$1|de l'utende}} pe colpe d'a destribbuzione de [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
 }

@@ -4,5 +4,7 @@
 			"Papuass"
 		]
 	},
+	"globalcssjs-custom-css-js": "Kopīgs CSS/JavaScript visās vikivietnēs ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|vairāk informacijas]]):",
+	"globalcssjs-custom-js": "Pielāgots JavaScript",
 	"globalcssjs-custom-css": "Pielāgots CSS"
 }
