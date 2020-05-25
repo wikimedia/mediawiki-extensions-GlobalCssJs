@@ -8,7 +8,7 @@
 		]
 	},
 	"globalcssjs-desc": "Tüm bağlı wikiler için merkezi bir wikide CSS ve JavaScript yüklenmesine izin verir",
-	"globalcssjs-custom-css-js": "Tüm wikiler için paylaşılan CSS/JavaScript ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|daha fazla bilgi]]):",
+	"globalcssjs-custom-css-js": "Tüm vikiler için paylaşılan CSS/JavaScript ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|daha fazla bilgi]]):",
 	"globalcssjs-warning-js": "Bu sayfaya eklenen herhangi bir JavaScript, hesabın olduğu tüm vikilere yüklenecektir ([[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|belgeyi]] bakınız).",
 	"globalcssjs-warning-css": "Bu sayfaya eklenen herhangi bir CSS, hesabınız olan tüm vikilere yüklenecektir ([[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|belgeyi]] bakınız).",
 	"globalcssjs-custom-js": "Özel JavaScript",
