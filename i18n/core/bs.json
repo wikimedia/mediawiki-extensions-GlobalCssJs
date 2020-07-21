@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Srdjan m"
+			"Srdjan m",
+			"Srđan"
 		]
 	},
 	"globalcssjs-custom-css-js": "Dijeljeni CSS/JavaScript za sve wikije ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|detaljnije]]):",
