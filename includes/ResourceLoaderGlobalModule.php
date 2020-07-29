@@ -36,6 +36,13 @@ use Wikimedia\Rdbms\IDatabase;
 abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 
 	/**
+	 * Load on both desktop and mobile (T259047, T138727)
+	 *
+	 * @var string[]
+	 */
+	protected $targets = [ 'desktop', 'mobile' ];
+
+	/**
 	 * name of global wiki database
 	 * @var string
 	 */
