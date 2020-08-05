@@ -29,7 +29,6 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Storage\RevisionRecord;
 use ResourceLoader;
-use Skin;
 use Title;
 use User;
 use WikiPage;
@@ -71,8 +70,8 @@ class RemoveOldManualUserPages extends Maintenance {
 			$this->output( "$userName does not load global modules on this wiki.\n" );
 			return;
 		}
-
-		$skins = array_keys( Skin::getAllowedSkins() );
+		$skinFactory = MediaWikiServices::getInstance()->getSkinFactory();
+		$skins = array_keys( $skinFactory->getAllowedSkins() );
 		$skins[] = 'common';
 
 		// Batch look up the existence of pages
