@@ -2,17 +2,15 @@
 	"root": true,
 	"extends": [
 		"wikimedia/client",
-		"wikimedia/jquery"
+		"wikimedia/jquery",
+		"wikimedia/mediawiki"
 	],
 	"globals": {
 		"ve": true,
 		"VisualEditorSupportCheck": false,
-		"OO": false,
 		"unicodeJS": false,
 		"RangeFix": false,
-		"Papa": false,
-		"mw": false,
-		"require": false
+		"Papa": false
 	},
 	"rules": {
 		"no-jquery/no-hide": "error",
