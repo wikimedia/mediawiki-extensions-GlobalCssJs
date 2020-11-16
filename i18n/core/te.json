@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arjunaraoc"
+		]
+	},
+	"globalcssjs-desc": "కేంద్ర వికీలోని CSS, జావాస్క్రిప్ట్ లను అనుసంధానమైన అన్ని వికీలలో వాడుటకు అనుమతించు",
+	"globalcssjs-custom-css-js": "అన్ని వికీలలో వాడే  CSS/జావాస్క్రిప్ట్ ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|మరింత సమాచారం]]):",
+	"globalcssjs-warning-js": "ఈ పేజీలో చేర్చే జావాస్క్రిప్ట్  మీ ఖాతాగల అన్ని వికీలలో వాడబడుతుంది. (see[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentation]]).",
+	"globalcssjs-warning-css": "ఈ పేజీలో చేర్చే CSS  మీ ఖాతాగల అన్ని వికీలలో వాడబడుతుంది. (see[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentation]]).",
+	"globalcssjs-custom-js": "వ్యక్తిగత జావాస్క్రిప్ట్",
+	"globalcssjs-custom-css": "వ్యక్తిగత CSS",
+	"globalcssjs-delete-css": " [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]] వాడుతున్నందున  {{GENDER:$1|user}} పై   CSS పేజీ   తొలగించుటకు అభ్యర్ధన",
+	"globalcssjs-delete-js": " [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]] వాడుతున్నందున  {{GENDER:$1|user}} పై   జావాస్క్రిప్ట్ పేజీ   తొలగించుటకు అభ్యర్ధన"
+}
