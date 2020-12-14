@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Alvaro Vidal-Abarca",
+			"Mguix",
 			"Vriullop"
 		]
 	},
-	"globalcssjs-custom-css-js": "CSS/JS compartit per a tots els wikis:",
+	"globalcssjs-custom-css-js": "CSS/JavaScript compartit per a tots els wikis\n[[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|més informació]]",
 	"globalcssjs-custom-js": "JavaScript personalitzat",
 	"globalcssjs-custom-css": "CSS personalitzat"
 }
