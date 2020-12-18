@@ -82,7 +82,7 @@ class Hooks {
 				&& ( $title->getText() === 'Global.css' || $title->getText() === 'Global.js' )
 			) {
 				$out->addHelpLink( 'Help:Extension:GlobalCssJs' );
-			} elseif ( $user->isLoggedIn() && $title->inNamespace( NS_USER )
+			} elseif ( $user->isRegistered() && $title->inNamespace( NS_USER )
 				&& ( $title->getText() === "$name/global.js" || $title->getText() === "$name/global.css" )
 			) {
 				$out->addHelpLink( 'Help:Extension:GlobalCssJs' );
@@ -164,7 +164,7 @@ class Hooks {
 		$config = $output->getConfig();
 		$user = $output->getUser();
 		$title = $editPage->getTitle();
-		if ( $gcssjsConfig['wiki'] === wfWikiID() && $user->isLoggedIn()
+		if ( $gcssjsConfig['wiki'] === wfWikiID() && $user->isRegistered()
 			&& $editPage->formtype == 'initial' && $title->isUserConfigPage()
 		) {
 			$title = $editPage->getTitle();
