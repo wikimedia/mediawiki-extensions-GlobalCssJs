@@ -4,5 +4,8 @@
 			"Njardarlogar"
 		]
 	},
-	"globalcssjs-desc": "Gjer det mogeleg å lasta global CSS og JS frå ein sentral wiki til alle wikiane i wikigruppa"
+	"globalcssjs-desc": "Gjer det mogeleg å lasta global CSS og JS frå ein sentral wiki til alle wikiane i wikigruppa",
+	"globalcssjs-custom-css-js": "Delt CSS/JavaScript for alle wikiar ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|meir informasjon]]):",
+	"globalcssjs-custom-js": "Eigendefinert JavaScript",
+	"globalcssjs-custom-css": "Eigendefinert CSS"
 }
