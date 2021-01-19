@@ -30,6 +30,7 @@ use ResourceLoaderContext;
  */
 class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 
+	/** @inheritDoc */
 	protected $origin = self::ORIGIN_USER_SITEWIDE;
 
 	/**

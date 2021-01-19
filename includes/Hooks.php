@@ -34,6 +34,9 @@ use WikiMap;
 
 class Hooks {
 
+	/**
+	 * @return \Config
+	 */
 	private static function getConfig() {
 		return ConfigFactory::getDefaultInstance()->makeConfig( 'globalcssjs' );
 	}

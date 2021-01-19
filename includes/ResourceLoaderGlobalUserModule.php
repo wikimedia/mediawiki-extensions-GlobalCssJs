@@ -31,6 +31,7 @@ use ResourceLoaderContext;
  */
 class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 
+	/** @inheritDoc */
 	protected $origin = self::ORIGIN_USER_INDIVIDUAL;
 
 	/**

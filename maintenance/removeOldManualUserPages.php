@@ -126,6 +126,11 @@ class RemoveOldManualUserPages extends Maintenance {
 		return preg_quote( $parsed['host'] );
 	}
 
+	/**
+	 * @param Title $title
+	 * @param string $reason
+	 * @param string $userName
+	 */
 	private function deletePage( Title $title, $reason, $userName ) {
 		global $wgUser;
 		$page = WikiPage::factory( $title );
@@ -161,6 +166,12 @@ class RemoveOldManualUserPages extends Maintenance {
 		return $userName;
 	}
 
+	/**
+	 * @param string $text
+	 * @param string $domain
+	 * @param string $userName
+	 * @return bool
+	 */
 	public function checkCss( $text, $domain, $userName ) {
 		$userName = $this->normalizeUserName( $userName );
 		preg_match( "/@import url\('(https?:)?\/\/$domain\/w\/index\.php\?title=User:$userName" .
@@ -168,6 +179,10 @@ class RemoveOldManualUserPages extends Maintenance {
 		return isset( $matches[0] ) ? $matches[0] === $text : false;
 	}
 
+	/**
+	 * @param User $user
+	 * @param string $skin
+	 */
 	private function removeCSS( User $user, $skin ) {
 		$userName = $user->getName();
 		$title = $user->getUserPage()->getSubpage( $skin . '.css' );
@@ -210,6 +225,12 @@ class RemoveOldManualUserPages extends Maintenance {
 		return implode( '\n', $new );
 	}
 
+	/**
+	 * @param string $text
+	 * @param string $domain
+	 * @param string $userName
+	 * @return bool
+	 */
 	public function checkJs( $text, $domain, $userName ) {
 		$text = $this->stripComments( $text );
 		$userName = $this->normalizeUserName( $userName );
@@ -219,6 +240,10 @@ class RemoveOldManualUserPages extends Maintenance {
 		return isset( $matches[0] ) ? $matches[0] === $text : false;
 	}
 
+	/**
+	 * @param User $user
+	 * @param string $skin
+	 */
 	private function removeJS( User $user, $skin ) {
 		$userName = $user->getName();
 		$title = $user->getUserPage()->getSubpage( $skin . '.js' );

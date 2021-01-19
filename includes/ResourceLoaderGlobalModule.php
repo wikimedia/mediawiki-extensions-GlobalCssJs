@@ -61,6 +61,7 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 	 */
 	protected $type;
 
+	/** @inheritDoc */
 	public function __construct( $options ) {
 		foreach ( $options as $member => $option ) {
 			switch ( $member ) {

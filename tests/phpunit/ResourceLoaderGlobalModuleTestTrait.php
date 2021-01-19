@@ -64,6 +64,9 @@ trait ResourceLoaderGlobalModuleTestTrait {
 		return $context;
 	}
 
+	/**
+	 * @return array
+	 */
 	protected function getFakeOptions() {
 		return [
 			'wiki' => wfWikiID(), // Satisfy Hooks::loadForUser

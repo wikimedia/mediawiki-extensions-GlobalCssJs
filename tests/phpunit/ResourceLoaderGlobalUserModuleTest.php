@@ -5,7 +5,6 @@ namespace MediaWiki\GlobalCssJs\Test;
 use HashConfig;
 use MediaWiki\GlobalCssJs\ResourceLoaderGlobalUserModule;
 use ReflectionMethod;
-use User;
 
 class ResourceLoaderGlobalUserModuleTest extends \MediaWikiIntegrationTestCase {
 	use ResourceLoaderGlobalModuleTestTrait;
@@ -72,11 +71,6 @@ class ResourceLoaderGlobalUserModuleTest extends \MediaWikiIntegrationTestCase {
 	/**
 	 * @covers \MediaWiki\GlobalCssJs\ResourceLoaderGlobalUserModule::getPages
 	 * @dataProvider provideGetPages
-	 * @param $type
-	 * @param $configOverrides
-	 * @param $expectedPages
-	 * @param $user
-	 * @param $desc
 	 */
 	public function testGetPages( $type, $configOverrides, $expectedPages, $user, $desc ) {
 		$module = new ResourceLoaderGlobalUserModule(
