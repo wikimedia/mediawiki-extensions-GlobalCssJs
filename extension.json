@@ -45,9 +45,6 @@
 			]
 		}
 	},
-	"ExtensionFunctions": [
-		"MediaWiki\\GlobalCssJs\\Hooks::onExtensionFunctions"
-	],
 	"AutoloadNamespaces": {
 		"MediaWiki\\GlobalCssJs\\": "includes/"
 	},

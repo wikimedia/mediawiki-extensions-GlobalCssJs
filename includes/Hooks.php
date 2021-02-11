@@ -42,23 +42,6 @@ class Hooks {
 	}
 
 	/**
-	 * Handler for wgExtensionFunctions.
-	 *
-	 * If site-wide global CSS/JS is enabled, load the stubs for those
-	 * gadget pages (implemented as interface messages).
-	 *
-	 * @todo This probably doesn't work on all setups and is hacky.
-	 */
-	public static function onExtensionFunctions() {
-		global $wgMessagesDirs;
-		$config = self::getConfig();
-		$rlConfig = $config->get( 'GlobalCssJsConfig' );
-		if ( $rlConfig['wiki'] === wfWikiID() && $config->get( 'UseGlobalSiteCssJs' ) ) {
-			$wgMessagesDirs['GlobalCssJsCentral'] = __DIR__ . '/i18n/central';
-		}
-	}
-
-	/**
 	 * Handler for BeforePageDisplay hook.
 	 *
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
