@@ -118,7 +118,7 @@ class RemoveOldManualUserPages extends Maintenance {
 	 */
 	private function getCentralWikiDomain() {
 		global $wgGlobalCssJsConfig;
-		$rl = new ResourceLoader;
+		$rl = new ResourceLoader( MediaWikiServices::getInstance()->getMainConfig() );
 		$sources = $rl->getSources();
 		// Use api.php instead of load.php because it's more likely to be on the same domain
 		$api = $sources[$wgGlobalCssJsConfig['source']]['apiScript'];
