@@ -19,7 +19,7 @@ class ResourceLoaderGlobalModuleTest extends \MediaWikiUnitTestCase {
 		$module = $this->getMockBuilder(
 			ResourceLoaderGlobalModule::class
 		)->setConstructorArgs( [ $params ] )
-			->setMethods( [ 'wfWikiID' ] )
+			->onlyMethods( [ 'wfWikiID' ] )
 			->getMockForAbstractClass();
 		$module->expects( $this->any() )
 			->method( 'wfWikiID' )
