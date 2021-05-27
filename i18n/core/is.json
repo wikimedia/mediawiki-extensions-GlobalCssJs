@@ -1,8 +1,0 @@
-{
-	"@metadata": {
-		"authors": [
-			"Snævar"
-		]
-	},
-	"globalcssjs-delete-js": "Eyði JavaScript síðu að beiðni {{GENDER:$1|notanda}} vegna innsetningu [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
-}
