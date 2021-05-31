@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Bináris",
-			"Dorgan"
+			"Dorgan",
+			"Tacsipacsi"
 		]
 	},
 	"globalcssjs-desc": "Lehetővé teszi egy központi wikiben tárolt CSS és JavaScript használatát az összes kapcsolt wikin",
-	"globalcssjs-custom-css-js": "Megosztott CSS/JS az összes wiki számára:",
+	"globalcssjs-custom-css-js": "Megosztott CSS/JS az összes wiki számára ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|további információk]]):",
 	"globalcssjs-custom-js": "saját JS",
 	"globalcssjs-custom-css": "saját CSS"
 }
