@@ -31,7 +31,6 @@ use MediaWiki\Storage\RevisionRecord;
 use ResourceLoader;
 use Title;
 use User;
-use WikiPage;
 
 $IP = getenv( 'MW_INSTALL_PATH' );
 if ( $IP === false ) {
@@ -132,14 +131,18 @@ class RemoveOldManualUserPages extends Maintenance {
 	 * @param string $userName
 	 */
 	private function deletePage( Title $title, $reason, $userName ) {
+		// phpcs:ignore MediaWiki.Usage.DeprecatedGlobalVariables.Deprecated$wgUser
 		global $wgUser;
-		$page = WikiPage::factory( $title );
-		$user = User::newFromName( 'Maintenance script' );
-		$user->addGroup( 'bot' );
+		$services = MediaWikiServices::getInstance();
+		$page = $services->getWikiPageFactory()->newFromTitle( $title );
+		$user = $services->getUserFactory()->newFromName( 'Maintenance script' );
+		'@phan-var \MediaWiki\User\UserIdentity $user';
+		$services->getUserGroupManager()->addUserToGroup( $user, 'bot' );
 
 		// For hooks not using RequestContext (e.g. AbuseFilter)
 		$wgUser = $user;
 		$errors = [];
+		'@phan-var \MediaWiki\User\UserIdentity $user';
 		$status = $page->doDeleteArticleReal(
 			wfMessage( $reason, $userName )->inContentLanguage()->text(),
 			$user, false, true, $errors, null, [], 'delete', true
