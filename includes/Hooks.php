@@ -21,10 +21,11 @@
 
 namespace MediaWiki\GlobalCssJs;
 
-use CentralIdLookup;
 use ConfigFactory;
 use EditPage;
 use Linker;
+use MediaWiki\MediaWikiServices;
+use MediaWiki\User\UserIdentity;
 use OutputPage;
 use RequestContext;
 use ResourceLoader;
@@ -79,10 +80,10 @@ class Hooks {
 	/**
 	 * Given a user, should we load scripts for them?
 	 *
-	 * @param User $user
+	 * @param UserIdentity $user
 	 * @return bool
 	 */
-	public static function loadForUser( User $user ) {
+	public static function loadForUser( UserIdentity $user ) {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$wiki = $config['wiki'];
 		if ( $wiki === wfWikiID() ) {
@@ -93,7 +94,9 @@ class Hooks {
 			return false;
 		}
 
-		$lookup = CentralIdLookup::factory();
+		$lookup = MediaWikiServices::getInstance()
+			->getCentralIdLookupFactory()
+			->getLookup();
 		return $lookup->isAttached( $user ) && $lookup->isAttached( $user, $wiki );
 	}
 
