@@ -4,15 +4,16 @@
 			"Alirezaaa",
 			"Armin1392",
 			"Ebraminio",
+			"Jeeputer",
 			"Reza1615"
 		]
 	},
 	"globalcssjs-desc": "اجازه دادن سی‌اس‌اس و جاوااسکریپت بر روی ویکی مرکزی برای بارگذاری شدن برای همهٔ ویکی‌های متصل شده",
-	"globalcssjs-custom-css-js": "سی‌اس‌اس/جاوااسکریپت مشترک برای همهٔ ویکی‌ها:",
-	"globalcssjs-warning-js": "هر کدی که به این صفحه افزوده شود در همه ویکی‌هایی که حساب کاربری دارید بارگیری می‌شود.  (برای اطلاعات بیشتر [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|راهنما]] را مطالعه کنید)",
-	"globalcssjs-warning-css": "هر CSSی که به این صفحه افزوده شود در همه ویکی‌هایی که حساب کاربری دارید بارگیری می‌شود.  (برای اطلاعات بیشتر [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|راهنما]] را مطالعه کنید)",
+	"globalcssjs-custom-css-js": "سی‌اس‌اس/جاوااسکریپت مشترک برای همهٔ ویکی‌ها\n([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|اطلاعات بیشتر]]):",
+	"globalcssjs-warning-js": "هر کدی که به این صفحه افزوده شود در همه ویکی‌هایی که در آن‌ها حساب کاربری دارید بارگیری می‌شود. (برای اطلاعات بیشتر [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|راهنما]] را مطالعه کنید)",
+	"globalcssjs-warning-css": "هر شیوه‌نامه‌ای که به این صفحه افزوده شود در همهٔ ویکی‌هایی که در آن‌ها حساب کاربری دارید بارگیری می‌شود.  (برای اطلاعات بیشتر [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|راهنما]] را مطالعه کنید)",
 	"globalcssjs-custom-js": "جاوااسکریپت شخصی",
 	"globalcssjs-custom-css": "سی‌اس‌اس شخصی",
-	"globalcssjs-delete-css": "حذف صفحه سی‌اس‌اس به درخواست  {{GENDER:$1|کاربر}} به علت توسعه [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "حذف صفحه جاوااسکریپت به درخواست  {{GENDER:$1|کاربر}} به علت توسعه [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "حذف صفحهٔ سی‌اس‌اس به درخواست  {{GENDER:$1|کاربر}} به علت استقرار [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|جاوااسکریپت و سی‌اس‌اس سراسری]]",
+	"globalcssjs-delete-js": "حذف صفحهٔ جاوااسکریپت به درخواست  {{GENDER:$1|کاربر}} به علت استقرار [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|جاوااسکریپت و سی‌اس‌اس سراسری]]"
 }
