@@ -6,7 +6,7 @@ use HashConfig;
 use MediaWiki\GlobalCssJs\ResourceLoaderGlobalUserModule;
 use ReflectionMethod;
 
-class ResourceLoaderGlobalUserModuleIntegrationTest extends \MediaWikiTestCase {
+class ResourceLoaderGlobalUserModuleIntegrationTest extends \MediaWikiIntegrationTestCase {
 	use ResourceLoaderGlobalModuleTestTrait;
 
 	public function provideGetPages() {

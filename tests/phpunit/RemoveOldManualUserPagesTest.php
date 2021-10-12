@@ -3,11 +3,11 @@
 namespace MediaWiki\GlobalCssJs\Test;
 
 use MediaWiki\GlobalCssJs\RemoveOldManualUserPages;
-use MediaWikiTestCase;
+use MediaWikiIntegrationTestCase;
 
 require_once __DIR__ . '/../../maintenance/removeOldManualUserPages.php';
 
-class RemoveOldManualUserPagesTest extends MediaWikiTestCase {
+class RemoveOldManualUserPagesTest extends MediaWikiIntegrationTestCase {
 
 	public static function provideCheckJs() {
 		return [
