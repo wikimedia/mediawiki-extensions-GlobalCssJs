@@ -28,7 +28,6 @@ use Maintenance;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Revision\SlotRecord;
 use MediaWiki\Storage\RevisionRecord;
-use ResourceLoader;
 use Title;
 use User;
 
@@ -110,14 +109,13 @@ class RemoveOldManualUserPages extends Maintenance {
 	}
 
 	/**
-	 * Returns the domain name of the central wiki
-	 * escaped to use in a regex.
+	 * Returns the domain name of the central wiki escaped to use in a regex.
 	 *
 	 * @return string
 	 */
 	private function getCentralWikiDomain() {
 		global $wgGlobalCssJsConfig;
-		$rl = new ResourceLoader( MediaWikiServices::getInstance()->getMainConfig() );
+		$rl = MediaWikiServices::getInstance()->getResourceLoader();
 		$sources = $rl->getSources();
 		// Use api.php instead of load.php because it's more likely to be on the same domain
 		$api = $sources[$wgGlobalCssJsConfig['source']]['apiScript'];
