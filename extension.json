@@ -14,11 +14,16 @@
 	"requires": {
 		"MediaWiki": ">= 1.37.0"
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\GlobalCssJs\\Hooks"
+		}
+	},
 	"Hooks": {
-		"BeforePageDisplay": "MediaWiki\\GlobalCssJs\\Hooks::onBeforePageDisplay",
-		"ResourceLoaderRegisterModules": "MediaWiki\\GlobalCssJs\\Hooks::onResourceLoaderRegisterModules",
-		"EditPage::showEditForm:initial": "MediaWiki\\GlobalCssJs\\Hooks::onEditPageshowEditForminitial",
-		"GetPreferences": "MediaWiki\\GlobalCssJs\\Hooks::onGetPreferences"
+		"BeforePageDisplay": "main",
+		"ResourceLoaderRegisterModules": "main",
+		"EditPage::showEditForm:initial": "main",
+		"GetPreferences": "main"
 	},
 	"MessagesDirs": {
 		"GlobalCssJs": [

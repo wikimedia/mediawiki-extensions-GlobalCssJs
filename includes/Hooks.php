@@ -21,24 +21,36 @@
 
 namespace MediaWiki\GlobalCssJs;
 
+use Config;
 use ConfigFactory;
 use EditPage;
 use Linker;
+use MediaWiki\Hook\BeforePageDisplayHook;
+use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Preferences\Hook\GetPreferencesHook;
+use MediaWiki\ResourceLoader\Hook\ResourceLoaderRegisterModulesHook;
 use MediaWiki\User\UserIdentity;
 use OutputPage;
 use RequestContext;
 use ResourceLoader;
+use Skin;
 use Title;
 use User;
 use WikiMap;
 
-class Hooks {
+//phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
+class Hooks implements
+	BeforePageDisplayHook,
+	ResourceLoaderRegisterModulesHook,
+	EditPage__showEditForm_initialHook,
+	GetPreferencesHook
+{
 
 	/**
-	 * @return \Config
+	 * @return Config
 	 */
-	private static function getConfig() {
+	private static function getConfig(): Config {
 		return ConfigFactory::getDefaultInstance()->makeConfig( 'globalcssjs' );
 	}
 
@@ -47,8 +59,9 @@ class Hooks {
 	 *
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
 	 * @param OutputPage $out
+	 * @param Skin $skin
 	 */
-	public static function onBeforePageDisplay( OutputPage $out ) {
+	public function onBeforePageDisplay( $out, $skin ): void {
 		$config = self::getConfig();
 		$useSiteCssJs = $config->get( 'UseGlobalSiteCssJs' );
 
@@ -83,7 +96,7 @@ class Hooks {
 	 * @param UserIdentity $user
 	 * @return bool
 	 */
-	public static function loadForUser( UserIdentity $user ) {
+	public static function loadForUser( UserIdentity $user ): bool {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$wiki = $config['wiki'];
 		if ( $wiki === WikiMap::getCurrentWikiId() ) {
@@ -104,9 +117,9 @@ class Hooks {
 	 * Handler for ResourceLoaderRegisterModules hook.
 	 *
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ResourceLoaderRegisterModules
-	 * @param ResourceLoader &$resourceLoader
+	 * @param ResourceLoader $resourceLoader
 	 */
-	public static function onResourceLoaderRegisterModules( &$resourceLoader ) {
+	public function onResourceLoaderRegisterModules( ResourceLoader $resourceLoader ): void {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 
 		if ( $config['wiki'] === false || $config['source'] === false ) {
@@ -148,7 +161,7 @@ class Hooks {
 	 * @param EditPage $editPage
 	 * @param OutputPage $output
 	 */
-	public static function onEditPageshowEditForminitial( EditPage $editPage, OutputPage $output ) {
+	public function onEditPage__showEditForm_initial( $editPage, $output ) {
 		$gcssjsConfig = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$config = $output->getConfig();
 		$user = $output->getUser();
@@ -182,7 +195,7 @@ class Hooks {
 	 * @return string HTMl link
 	 * @suppress SecurityCheck-DoubleEscaped phan false positive
 	 */
-	protected static function makeCentralLink( Title $title, $msg ) {
+	protected static function makeCentralLink( Title $title, string $msg ): string {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$message = wfMessage( $msg )->escaped();
 		if ( $config['wiki'] === WikiMap::getCurrentWikiId() ) {
@@ -210,7 +223,7 @@ class Hooks {
 	 * @param User $user
 	 * @param array &$prefs
 	 */
-	public static function onGetPreferences( User $user, array &$prefs ) {
+	public function onGetPreferences( $user, &$prefs ) {
 		$ctx = RequestContext::getMain();
 		$allowUserCss = $ctx->getConfig()->get( 'AllowUserCss' );
 		$allowUserJs = $ctx->getConfig()->get( 'AllowUserJs' );
