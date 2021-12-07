@@ -7,7 +7,7 @@
 		]
 	},
 	"globalcssjs-desc": "Mahdollistaa keskuswikin CSS:n ja JavaScriptin lataamisen kaikkiin yhdistettyihin wikeihin",
-	"globalcssjs-custom-css-js": "Yhteinen CSS/JavaScript kaikkiin wikeihin:",
+	"globalcssjs-custom-css-js": "Yhteinen CSS/JavaScript kaikkiin wikeihin ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|lisätietoja]]):",
 	"globalcssjs-warning-js": "Kaikki tämän sivun JavaScript-koodit ladataan kaikissa wikeissä, joissa sinulla on tunnus. (katso [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|ohjeet]])",
 	"globalcssjs-warning-css": "Kaikki tämän sivun CSS-koodit ladataan kaikissa wikeissä, joissa sinulla on tunnus. (katso [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|ohjeet]])",
 	"globalcssjs-custom-js": "Käyttäjäkohtainen JavaScript-sivu",

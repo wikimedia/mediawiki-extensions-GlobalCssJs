@@ -5,12 +5,12 @@
 		]
 	},
 	"globalcssjs-extensionname": "Глобалан CSS/JS",
-	"globalcssjs-desc": "Юкъара вики-проектехь йолу CSS а, JavaScript а лелаян йиш хуьлуьйту, массо цхьана йолу вики-проекташна чуйоккхуш.",
-	"globalcssjs-custom-css-js": "Юкъара CSS/JS массо вики-проекташна",
-	"globalcssjs-warning-js": "ХӀокху агӀона тӀетоьхна йолу муьлха JavaScript хьа дӀаяздар долу массо викиш чохь чуяьра ю.",
-	"globalcssjs-warning-css": "ХӀокху агӀона тӀетоьхна йолу муьлха CSS хьа дӀаяздар долу массо викиш чохь чуяьра ю.",
+	"globalcssjs-desc": "Йукъара вики-проектехь йолу CSS а, JavaScript а лелайан йиш хуьлуьйту, массо цхьана йолу вики-проекташна чуйоккхуш.",
+	"globalcssjs-custom-css-js": "Йукъара CSS/JS массо вики-проекташна",
+	"globalcssjs-warning-js": "ХӀокху агӀонан тӀетоьхна йолу муьлха JavaScript хьа дӀайаздар долу массо викиш чохь чуйаьра йу.",
+	"globalcssjs-warning-css": "ХӀокху агӀонан тӀетоьхна йолу муьлха CSS хьа дӀайаздар долу массо викиш чохь чуйаьра йу.",
 	"globalcssjs-custom-js": "Долахь йолу JS",
 	"globalcssjs-custom-css": "Долахь йолу CSS",
-	"globalcssjs-delete-css": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] юкъаялор бахьнехь декъашхочун дехарца CSS-агӀо дӀаяккхар",
-	"globalcssjs-delete-js": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] юкъаялор бахьнехь декъашхочун дехарца JavaScript-агӀо дӀаяккхар"
+	"globalcssjs-delete-css": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] йукъайалор бахьнехь декъашхочун дехарца CSS-агӀо дӀайаккхар",
+	"globalcssjs-delete-js": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] йукъайалор бахьнехь декъашхочун дехарца JavaScript-агӀо дӀайаккхар"
 }
