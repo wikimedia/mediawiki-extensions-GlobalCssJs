@@ -8,7 +8,8 @@
 			"Pacha Tchernof",
 			"Ping08",
 			"Saint Johann",
-			"Smigles"
+			"Smigles",
+			"Megakott"
 		]
 	},
 	"globalcssjs-extensionname": "Глобальные CSS/JS",
@@ -19,5 +20,5 @@
 	"globalcssjs-custom-js": "Собственный JS",
 	"globalcssjs-custom-css": "Собственный CSS",
 	"globalcssjs-delete-css": "Удаление CSS-страницы по запросу {{GENDER:$1|участника}} в связи с вводом [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Удаление JavaScript-страницы по запросу {{GENDER:$1|участника}} в связи с вводом [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-js": "Удаление JavaScript-страницы по запросу {{GENDER:$1|участника|участницы}} в связи с вводом [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
 }

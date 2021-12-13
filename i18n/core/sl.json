@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Janezdrilc"
+			"Janezdrilc",
+			"Eleassar"
 		]
 	},
-	"globalcssjs-custom-css-js": "Skupni CSS/JavaScript za vse wikije ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|več informacij]]):",
+	"globalcssjs-custom-css-js": "Skupni CSS/JavaScript za vse vikije ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|več o tem]]):",
 	"globalcssjs-custom-js": "JavaScript po meri",
 	"globalcssjs-custom-css": "CSS po meri"
 }

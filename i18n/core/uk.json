@@ -4,11 +4,12 @@
 			"Andriykopanytsia",
 			"Movses",
 			"Piramidion",
-			"Ата"
+			"Ата",
+			"DDPAT"
 		]
 	},
 	"globalcssjs-extensionname": "Глобальні CSS/JS",
-	"globalcssjs-desc": "Дозволяє використовувати CSS і JavaScript на центральному вікі-проекті, який буде завантажуватися для всіх підлеглих вікі-проектів.",
+	"globalcssjs-desc": "Дозволяє використовувати CSS і JavaScript на центральному вікі-проєкті, який буде завантажуватися для всіх підлеглих вікі-проєктах.",
 	"globalcssjs-custom-css-js": "Спільні CSS/JavaScript для всіх вікі ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|більше інформації]]):",
 	"globalcssjs-warning-js": "Будь-який JavaScript, доданий на цю сторінку, буде завантажуватися на всіх вікі, де у Вас є обліковий запис (див. [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацію]]).",
 	"globalcssjs-warning-css": "Будь-який CSS, доданий на цю сторінку, буде завантажуватися на всіх вікі, де у Вас є обліковий запис (див. [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацію]]).",

@@ -5,16 +5,18 @@
 			"Fitoschido",
 			"Macofe",
 			"MarcoAurelio",
-			"Peter Bowman"
+			"Peter Bowman",
+			"DDPAT",
+			"Jakeukalane"
 		]
 	},
 	"globalcssjs-extensionname": "CSS/JS global",
-	"globalcssjs-desc": "Permite cargar CSS y JavaScript en un wiki central para que éstos se carguen en todos los wikis conectados",
-	"globalcssjs-custom-css-js": "CSS/JavaScript compartido en todos los wikis ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|más información]]):",
-	"globalcssjs-warning-js": "El código JavaScript que se añada a esta página se cargará en todos los wikis en los que tengas una cuenta (consulta la [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentación]]).",
-	"globalcssjs-warning-css": "El código CSS que se añada a esta página se cargará en todos los wikis en los que tengas una cuenta (consulta la [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentación]]).",
+	"globalcssjs-desc": "Permite cargar CSS y JavaScript en una wiki central para que éstos se carguen en todas las wikis conectadas",
+	"globalcssjs-custom-css-js": "CSS/JavaScript compartido en todas las wikis ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|más información]]):",
+	"globalcssjs-warning-js": "El código JavaScript que se añada a esta página se cargará en todas las wikis en las que tengas una cuenta (consulta la [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentación]]).",
+	"globalcssjs-warning-css": "El código CSS que se añada a esta página se cargará en todas las wikis en los que tengas una cuenta (consulta la [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentación]]).",
 	"globalcssjs-custom-js": "JavaScript personalizado",
 	"globalcssjs-custom-css": "CSS personalizado",
 	"globalcssjs-delete-css": "Se borra página CSS a petición {{GENDER:$1|del usuario|de la usuaria}} en virtud del despliegue de la extensión [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|GlobalCssJs]]",
-	"globalcssjs-delete-js": "Se borra página de JavaScript a petición {{GENDER:$1|del usuario|de la usuaria}} en virtud del despliegue de la extensión [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|GlobalCssJs]]"
+	"globalcssjs-delete-js": "Se borra página de JavaScript a petición {{GENDER:$1|del usuario|de la usuaria}} en virtud del despliegue de la extensión [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
 }
