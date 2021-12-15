@@ -4,10 +4,11 @@
 			"Cwlin0416",
 			"Kly",
 			"LNDDYL",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Winston Sung"
 		]
 	},
-	"globalcssjs-extensionname": "全域 CSS/JS",
+	"globalcssjs-extensionname": "全域CSS/JS（Global CSS/JS）",
 	"globalcssjs-desc": "允許在中央 Wiki 的 CSS 與 JavaScript 被所有連結的 Wiki 讀取",
 	"globalcssjs-custom-css-js": "與所有 wiki 共用 CSS/JavaScript（[[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|更多資訊]]）：",
 	"globalcssjs-warning-js": "任何在此頁面新增的 JavaScript 將會在您有帳號的所有 Wiki 裡載入（[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|文件]]）。",
