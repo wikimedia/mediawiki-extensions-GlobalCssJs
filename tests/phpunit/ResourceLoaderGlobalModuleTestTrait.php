@@ -7,6 +7,7 @@ use MediaWiki\MediaWikiServices;
 use ResourceLoaderContext;
 use Title;
 use User;
+use WikiMap;
 
 /**
  * Helper class for testing subclasses of ResourceLoaderGlobalModule
@@ -69,7 +70,7 @@ trait ResourceLoaderGlobalModuleTestTrait {
 	 */
 	protected function getFakeOptions() {
 		return [
-			'wiki' => wfWikiID(), // Satisfy Hooks::loadForUser
+			'wiki' => WikiMap::getCurrentWikiId(), // Satisfy Hooks::loadForUser
 			'source' => 'fakesource',
 		];
 	}

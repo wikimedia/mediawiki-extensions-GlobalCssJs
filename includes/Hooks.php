@@ -61,7 +61,7 @@ class Hooks {
 
 		// Add help link
 		$rlConfig = $config->get( 'GlobalCssJsConfig' );
-		if ( $rlConfig['wiki'] === wfWikiID() ) {
+		if ( $rlConfig['wiki'] === WikiMap::getCurrentWikiId() ) {
 			$title = $out->getTitle();
 			$user = $out->getUser();
 			$name = $user->getName();
@@ -86,7 +86,7 @@ class Hooks {
 	public static function loadForUser( UserIdentity $user ) {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$wiki = $config['wiki'];
-		if ( $wiki === wfWikiID() ) {
+		if ( $wiki === WikiMap::getCurrentWikiId() ) {
 			return true;
 		}
 		if ( $wiki === false ) {
@@ -153,7 +153,7 @@ class Hooks {
 		$config = $output->getConfig();
 		$user = $output->getUser();
 		$title = $editPage->getTitle();
-		if ( $gcssjsConfig['wiki'] === wfWikiID() && $user->isRegistered()
+		if ( $gcssjsConfig['wiki'] === WikiMap::getCurrentWikiId() && $user->isRegistered()
 			&& $editPage->formtype == 'initial' && $title->isUserConfigPage()
 		) {
 			$title = $editPage->getTitle();
@@ -185,7 +185,7 @@ class Hooks {
 	protected static function makeCentralLink( Title $title, $msg ) {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 		$message = wfMessage( $msg )->escaped();
-		if ( $config['wiki'] === wfWikiID() ) {
+		if ( $config['wiki'] === WikiMap::getCurrentWikiId() ) {
 			return Linker::link( $title, $message );
 		} elseif ( isset( $config['baseurl'] ) && $config['baseurl'] !== false ) {
 			return Linker::makeExternalLink(

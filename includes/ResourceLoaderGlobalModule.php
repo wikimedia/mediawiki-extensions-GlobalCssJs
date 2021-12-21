@@ -25,6 +25,7 @@ namespace MediaWiki\GlobalCssJs;
 use InvalidArgumentException;
 use MediaWiki\MediaWikiServices;
 use ResourceLoaderWikiModule;
+use WikiMap;
 use Wikimedia\Rdbms\IDatabase;
 
 /**
@@ -85,14 +86,14 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 	 * @return string
 	 */
 	public function getSource() {
-		return $this->wfWikiID() === $this->wiki ? 'local' : $this->source;
+		return $this->getCurrentWikiId() === $this->wiki ? 'local' : $this->source;
 	}
 
 	/**
 	 * @return string
 	 */
-	protected function wfWikiID() {
-		return wfWikiID();
+	protected function getCurrentWikiId() {
+		return WikiMap::getCurrentWikiId();
 	}
 
 	/**
@@ -100,7 +101,7 @@ abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
 	 */
 	protected function getDB() {
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
-		if ( $this->wiki === $this->wfWikiID() ) {
+		if ( $this->wiki === $this->getCurrentWikiId() ) {
 			$lb = $lbFactory->getMainLB();
 			return $lb->getConnection( DB_REPLICA );
 		} else {
