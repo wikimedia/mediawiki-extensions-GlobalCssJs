@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"ThisIsACreeper0101"
+		]
+	},
+	"globalcssjs-extensionname": "ग्लोबल CSS/JS",
+	"globalcssjs-desc": "केंद्रीय विकि के CSS और जावास्क्रिप्ट को सभी जुड़े हुए विकियों पर लोड किया जा सकता है",
+	"globalcssjs-custom-css-js": "सभी विकियों के लिए शेयर्ड CSS/जावास्क्रिप्ट ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|अधिक जानकारी]]):"
+}
