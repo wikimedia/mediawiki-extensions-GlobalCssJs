@@ -26,8 +26,8 @@ use JavaScriptContent;
 use LinkBatch;
 use Maintenance;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\Revision\SlotRecord;
-use MediaWiki\Storage\RevisionRecord;
 use Title;
 use User;
 
