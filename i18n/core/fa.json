@@ -5,13 +5,14 @@
 			"Armin1392",
 			"Ebraminio",
 			"Jeeputer",
-			"Reza1615"
+			"Reza1615",
+			"Beginneruser"
 		]
 	},
 	"globalcssjs-desc": "اجازه دادن سی‌اس‌اس و جاوااسکریپت بر روی ویکی مرکزی برای بارگذاری شدن برای همهٔ ویکی‌های متصل شده",
 	"globalcssjs-custom-css-js": "سی‌اس‌اس/جاوااسکریپت مشترک برای همهٔ ویکی‌ها\n([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|اطلاعات بیشتر]]):",
-	"globalcssjs-warning-js": "هر کدی که به این صفحه افزوده شود در همه ویکی‌هایی که در آن‌ها حساب کاربری دارید بارگیری می‌شود. (برای اطلاعات بیشتر [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|راهنما]] را مطالعه کنید)",
-	"globalcssjs-warning-css": "هر شیوه‌نامه‌ای که به این صفحه افزوده شود در همهٔ ویکی‌هایی که در آن‌ها حساب کاربری دارید بارگیری می‌شود.  (برای اطلاعات بیشتر [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|راهنما]] را مطالعه کنید)",
+	"globalcssjs-warning-js": "هر JavaScript که به این صفحه افزوده شود در همه ویکی‌هایی که در آن‌ها حساب دارید بارگیری می‌شود ([[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|مستندات]] را ببینید).",
+	"globalcssjs-warning-css": "هر CSS که به این صفحه افزوده شود در همهٔ ویکی‌هایی که در آن‌ها حساب دارید بارگیری می‌شود ([[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|مستندات]] را ببینید).",
 	"globalcssjs-custom-js": "جاوااسکریپت شخصی",
 	"globalcssjs-custom-css": "سی‌اس‌اس شخصی",
 	"globalcssjs-delete-css": "حذف صفحهٔ سی‌اس‌اس به درخواست  {{GENDER:$1|کاربر}} به علت استقرار [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|جاوااسکریپت و سی‌اس‌اس سراسری]]",
