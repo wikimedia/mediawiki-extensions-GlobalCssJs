@@ -11,6 +11,6 @@
 	"globalcssjs-warning-css": "ХӀокху агӀонан тӀетоьхна йолу муьлха CSS хьа дӀайаздар долу массо викиш чохь чуйаьра йу.",
 	"globalcssjs-custom-js": "Долахь йолу JS",
 	"globalcssjs-custom-css": "Долахь йолу CSS",
-	"globalcssjs-delete-css": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] йукъайалор бахьнехь декъашхочун дехарца CSS-агӀо дӀайаккхар",
-	"globalcssjs-delete-js": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] йукъайалор бахьнехь декъашхочун дехарца JavaScript-агӀо дӀайаккхар"
+	"globalcssjs-delete-css": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] йукъайалор бахьнехь {{GENDER:$1|декъашхочун дехарца}} CSS-агӀо дӀайаккхар",
+	"globalcssjs-delete-js": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] йукъайалор бахьнехь {{GENDER:$1|декъашхочун дехарца}} JavaScript-агӀо дӀайаккхар"
 }
