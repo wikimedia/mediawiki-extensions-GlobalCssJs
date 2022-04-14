@@ -4,7 +4,11 @@
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingDocumentationPrivate" />
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingDocumentationProtected" />
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingDocumentationPublic" />
+		<exclude name="MediaWiki.Commenting.FunctionComment.NoParamType" />
+		<exclude name="MediaWiki.Commenting.PropertyDocumentation.MissingDocumentationProtected" />
+		<exclude name="MediaWiki.PHPUnit.SetMethods.SetMethods" />
 		<exclude name="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment.NewLineComment" />
+		<exclude name="PSR12.Functions.ReturnTypeDeclaration.SpaceBeforeColon" />
 	</rule>
 	<file>.</file>
 	<arg name="extensions" value="php" />
