@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mehtab ahmed"
+		]
+	},
+	"globalcssjs-extensionname": "عالمج سي.ايس.ايس/جَي.ايس",
+	"globalcssjs-desc": "ڪنھن مرڪزي وڪي تي سڀني ڳنڍيل وڪيِن لاءِ سي.ايس.ايس ۽ جاوااسڪرپٽ کي لوڊ ڪرڻ جي اجازت ڏي ٿو",
+	"globalcssjs-custom-css-js": "سڀني وڪيِن لاءِ ونڊيل سي.ايس.ايس/جاوااسڪرپٽ ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|وڌيڪ معلومات]]):",
+	"globalcssjs-warning-js": "ھن صفحي ۾ وڌل ڪابہ جاوااسڪرپٽ سڀني وڪيِن تي لاٿي ويندي جتي توھان جو کاتو آھي ([[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|دستاويزسازي]] ڏسو).",
+	"globalcssjs-warning-css": "ھن صفحي ۾ وڌل ڪابہ سي.ايس.ايس سڀني وڪيِن تي لاٿي ويندي جتي توھان جو کاتو آھي ([[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|دستاويزسازي]] ڏسو).",
+	"globalcssjs-custom-js": "ڪسٽم جاوااسڪرپٽ",
+	"globalcssjs-custom-css": "ڪسٽم سي.ايس.ايس",
+	"globalcssjs-delete-css": "{{GENDER:$1|واپرائيندڙ}} جي درخواست تي سي.ايس.ايس صفحي کي ڊاھيو پيو وڃي ڇو تہ [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]] لڳائي وئي آھي",
+	"globalcssjs-delete-js": "{{GENDER:$1|واپرائيندڙ}} جي درخواست تي جاوااسڪرپٽ صفحي کي ڊاھيو پيو وڃي ڇو تہ [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]] لڳائي وئي آھي"
+}
