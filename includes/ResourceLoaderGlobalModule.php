@@ -24,7 +24,7 @@ namespace MediaWiki\GlobalCssJs;
 
 use InvalidArgumentException;
 use MediaWiki\MediaWikiServices;
-use ResourceLoaderWikiModule;
+use MediaWiki\ResourceLoader\WikiModule;
 use WikiMap;
 use Wikimedia\Rdbms\IDatabase;
 
@@ -34,7 +34,7 @@ use Wikimedia\Rdbms\IDatabase;
  * This module does not provide any resources directly.
  * It instructs ResourceLoader to load a module from a remote site.
  */
-abstract class ResourceLoaderGlobalModule extends ResourceLoaderWikiModule {
+abstract class ResourceLoaderGlobalModule extends WikiModule {
 
 	/**
 	 * Load on both desktop and mobile (T259047, T138727)

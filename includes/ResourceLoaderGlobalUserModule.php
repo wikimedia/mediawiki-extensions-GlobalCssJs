@@ -24,7 +24,7 @@
 
 namespace MediaWiki\GlobalCssJs;
 
-use ResourceLoaderContext;
+use MediaWiki\ResourceLoader\Context;
 
 /**
  * Module for user customizations - runs on all wikis
@@ -35,10 +35,10 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 	protected $origin = self::ORIGIN_USER_INDIVIDUAL;
 
 	/**
-	 * @param ResourceLoaderContext $context
+	 * @param Context $context
 	 * @return array
 	 */
-	protected function getPages( ResourceLoaderContext $context ) {
+	protected function getPages( Context $context ) {
 		// Note: When computing meta data on a local wiki (not the central wiki),
 		// this will produce a User object based on the local database, not the
 		// foreign/central wiki. Use this object very carefully.
