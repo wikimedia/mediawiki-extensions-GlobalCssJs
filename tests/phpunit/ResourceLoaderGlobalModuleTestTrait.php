@@ -4,7 +4,7 @@ namespace MediaWiki\GlobalCssJs\Test;
 
 use HashConfig;
 use MediaWiki\MediaWikiServices;
-use ResourceLoaderContext;
+use MediaWiki\ResourceLoader\Context;
 use Title;
 use User;
 use WikiMap;
@@ -42,13 +42,13 @@ trait ResourceLoaderGlobalModuleTestTrait {
 	}
 
 	/**
-	 * Get a fake ResourceLoaderContext object for testing.
+	 * Get a fake ResourceLoader Context object for testing.
 	 *
 	 * @param array $options
-	 * @return ResourceLoaderContext
+	 * @return Context
 	 */
 	protected function makeContext( array $options ) {
-		$context = $this->createMock( ResourceLoaderContext::class );
+		$context = $this->createMock( Context::class );
 		$context->method( 'getSkin' )->willReturn( $options['skin'] ?? 'vector' );
 		$context->method( 'getUser' )->willReturn( $options['user'] );
 		if ( $options['user'] === 'TestUser' ) {

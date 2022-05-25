@@ -23,7 +23,7 @@
 
 namespace MediaWiki\GlobalCssJs;
 
-use ResourceLoaderContext;
+use MediaWiki\ResourceLoader\Context;
 
 /**
  * Module for sitewide global customizations
@@ -34,10 +34,10 @@ class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 	protected $origin = self::ORIGIN_USER_SITEWIDE;
 
 	/**
-	 * @param ResourceLoaderContext $context
+	 * @param Context $context
 	 * @return array
 	 */
-	protected function getPages( ResourceLoaderContext $context ) {
+	protected function getPages( Context $context ) {
 		$config = $this->getConfig();
 		if ( !$config->get( 'UseGlobalSiteCssJs' ) ) {
 			return [];
