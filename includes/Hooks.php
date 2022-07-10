@@ -197,21 +197,21 @@ class Hooks implements
 	 */
 	protected static function makeCentralLink( Title $title, string $msg ): string {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
-		$message = wfMessage( $msg )->escaped();
+		$message = wfMessage( $msg );
 		if ( $config['wiki'] === WikiMap::getCurrentWikiId() ) {
-			return Linker::link( $title, $message );
+			return MediaWikiServices::getInstance()->getLinkRenderer()->makeLink( $title, $message->text() );
 		} elseif ( isset( $config['baseurl'] ) && $config['baseurl'] !== false ) {
 			return Linker::makeExternalLink(
 				// bug 66873, don't use localized namespace
 				$config['baseurl'] . '/User:' .
 					htmlspecialchars( $title->getText(), ENT_QUOTES ),
-				$message
+				$message->escaped()
 			);
 		} else {
 			return WikiMap::makeForeignLink(
 				$config['wiki'],
 				'User:' . $title->getText(), // bug 66873, don't use localized namespace
-				$message
+				$message->escaped()
 			);
 		}
 	}
