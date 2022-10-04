@@ -5,6 +5,7 @@
 			"Janezdrilc"
 		]
 	},
+	"globalcssjs-desc": "Omogoča, da se CSS in JavaScript v osrednjem vikiju naložita za vse povezane vikije.",
 	"globalcssjs-custom-css-js": "Skupni CSS/JavaScript za vse vikije ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|več o tem]]):",
 	"globalcssjs-custom-js": "JavaScript po meri",
 	"globalcssjs-custom-css": "CSS po meri"
