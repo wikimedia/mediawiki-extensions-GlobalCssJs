@@ -5,7 +5,8 @@
 			"BadDog",
 			"Milicevic01",
 			"Obsuser",
-			"Сербијана"
+			"Сербијана",
+			"Kizule"
 		]
 	},
 	"globalcssjs-extensionname": "Глобални CSS/JS",
@@ -15,6 +16,6 @@
 	"globalcssjs-warning-css": "Сваки CSS постављен овде ће бити учитан на свим викијима где имате налог (погледајте [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацију]]).",
 	"globalcssjs-custom-js": "прилагођени JavaScript",
 	"globalcssjs-custom-css": "прилагођени CSS",
-	"globalcssjs-delete-css": "Брисање CSS странице {{GENDER:$1|на}} основу захтева због [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Брисање јаваскрипт странице {{GENDER:$1|на}} основу захтева због [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Брисање CSS странице {{GENDER:$1|на}} основу захтева због [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Брисање јаваскрипт странице {{GENDER:$1|на}} основу захтева због [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
 }
