@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Balyozxane"
+		]
+	},
+	"globalcssjs-extensionname": "CSS/JS-a global",
+	"globalcssjs-desc": "Destûrê dide CSS û JavaScript-a li ser wîkiya navendî ku ji bo hemû wîkiyên girêdayî werin barkirin",
+	"globalcssjs-custom-css-js": "CSS/JavaScripta parvekirî ji bo hemû wîkiyan: ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|agahiyên zêdetir]]):",
+	"globalcssjs-warning-js": "Her JavaScriptê ku li vê rûpelê were zêdekirin dê li ser hemû wîkiyên ku hesabê we lê heye were barkirin (binêre [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|belgekirinê]]).",
+	"globalcssjs-warning-css": "Her CSSê ku li vê rûpelê were zêdekirin dê li ser hemû wîkiyên ku hesabê we lê heye were barkirin (binêre [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|belgekirinê]]).",
+	"globalcssjs-custom-js": "JavaScripta şexsî",
+	"globalcssjs-custom-css": "CSSa şexsî",
+	"globalcssjs-delete-css": "Jêbirina rûpela CSSê ya li ser daxwaza {{GENDER:$1|bikarhêner}} ji ber bicihkirina [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Jêbirina rûpela JavaScriptê ya li ser daxwaza {{GENDER:$1|bikarhêner}} ji ber bicihkirina [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
+}
