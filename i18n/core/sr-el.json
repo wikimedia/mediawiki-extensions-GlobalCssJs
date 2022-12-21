@@ -7,11 +7,11 @@
 	},
 	"globalcssjs-extensionname": "Globalni CSS/JS",
 	"globalcssjs-desc": "Omogućava da CSS i JavaScript na centralnom vikiju budu učitani na svim povezanim vikijima",
-	"globalcssjs-custom-css-js": "Deljeni CSS/javaskript za sve vikije ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|više]]):",
+	"globalcssjs-custom-css-js": "Deljeni CSS/JavaScript za sve vikije ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|više informacija]]):",
 	"globalcssjs-warning-js": "Svaki javaskript postavljen ovde će biti učitan na svim vikijima gde imate nalog (pogledajte [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentaciju]]).",
 	"globalcssjs-warning-css": "Svaki CSS postavljen ovde će biti učitan na svim vikijima gde imate nalog (pogledajte [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentaciju]]).",
-	"globalcssjs-custom-js": "Prilagođeni javaskript",
-	"globalcssjs-custom-css": "Prilagođeni CSS",
-	"globalcssjs-delete-css": "Brisanje CSS stranice {{GENDER:$1|na}} osnovu zahteva zbog [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Brisanje javaskript stranice {{GENDER:$1|na}} osnovu zahteva zbog [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
+	"globalcssjs-custom-js": "prilagođeni JavaScript",
+	"globalcssjs-custom-css": "prilagođeni CSS",
+	"globalcssjs-delete-css": "Brisanje CSS stranice {{GENDER:$1|na}} osnovu zahteva zbog [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "Brisanje javaskript stranice {{GENDER:$1|na}} osnovu zahteva zbog [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
 }
