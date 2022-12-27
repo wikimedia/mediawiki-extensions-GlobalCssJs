@@ -22,7 +22,6 @@
 namespace MediaWiki\GlobalCssJs;
 
 use Config;
-use ConfigFactory;
 use EditPage;
 use Linker;
 use MediaWiki\Hook\BeforePageDisplayHook;
@@ -51,7 +50,7 @@ class Hooks implements
 	 * @return Config
 	 */
 	private static function getConfig(): Config {
-		return ConfigFactory::getDefaultInstance()->makeConfig( 'globalcssjs' );
+		return MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'globalcssjs' );
 	}
 
 	/**
