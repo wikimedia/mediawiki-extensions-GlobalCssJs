@@ -2,11 +2,17 @@
 	"@metadata": {
 		"authors": [
 			"Minh Nguyen",
-			"Quenhitran"
+			"Quenhitran",
+			"Tryvix1509"
 		]
 	},
+	"globalcssjs-extensionname": "CSS/JS toàn cục",
 	"globalcssjs-desc": "Cho phép mọi wiki liên kết tải CSS và JavaScript từ một wiki trung ương",
-	"globalcssjs-custom-css-js": "CSS/JavaScript chung cho mọi wiki:",
+	"globalcssjs-custom-css-js": "CSS/JavaScript chung cho mọi wiki ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|thêm thông tin]]):",
+	"globalcssjs-warning-js": "Mọi kịch bản JavaScript được thêm vào trang này sẽ được tải trên tất cả các wiki nơi bạn có tài khoản (xem [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|tài liệu]]).",
+	"globalcssjs-warning-css": "Mọi mã CSS được thêm vào trang này sẽ được tải trên tất cả các wiki nơi bạn có tài khoản (xem [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|tài liệu]]).",
 	"globalcssjs-custom-js": "JavaScript tùy chọn",
-	"globalcssjs-custom-css": "CSS tùy chọn"
+	"globalcssjs-custom-css": "CSS tùy chọn",
+	"globalcssjs-delete-css": "Đang xóa trang CSS theo yêu cầu {{GENDER:$1|thành viên}} yêu cầu do triển khai [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|phần mở rộng GlobalCssJs]]",
+	"globalcssjs-delete-js": "Đang xóa trang JavaScript theo yêu cầu {{GENDER:$1|thành viên}} yêu cầu do triển khai [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|phần mở rộng GlobalCssJs]]"
 }
