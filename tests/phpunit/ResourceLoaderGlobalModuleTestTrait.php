@@ -5,9 +5,9 @@ namespace MediaWiki\GlobalCssJs\Test;
 use HashConfig;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\ResourceLoader\Context;
+use MediaWiki\WikiMap\WikiMap;
 use Title;
 use User;
-use WikiMap;
 
 /**
  * Helper class for testing subclasses of ResourceLoaderGlobalModule

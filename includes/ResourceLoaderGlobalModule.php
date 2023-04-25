@@ -25,7 +25,7 @@ namespace MediaWiki\GlobalCssJs;
 use InvalidArgumentException;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\ResourceLoader\WikiModule;
-use WikiMap;
+use MediaWiki\WikiMap\WikiMap;
 use Wikimedia\Rdbms\IDatabase;
 
 /**
