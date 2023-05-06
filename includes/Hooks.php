@@ -22,8 +22,8 @@
 namespace MediaWiki\GlobalCssJs;
 
 use Config;
-use EditPage;
 use Linker;
+use MediaWiki\EditPage\EditPage;
 use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\MediaWikiServices;
