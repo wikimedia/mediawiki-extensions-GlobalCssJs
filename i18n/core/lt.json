@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Zygimantus"
+			"Zygimantus",
+			"Nokeoo"
 		]
 	},
-	"globalcssjs-custom-css-js": "Bendras CSS/JS visoms viki:"
+	"globalcssjs-custom-css-js": "Bendras CSS/JS visoms viki:",
+	"globalcssjs-custom-js": "Tinkintas JavaScript",
+	"globalcssjs-custom-css": "Tinkintas CSS"
 }
