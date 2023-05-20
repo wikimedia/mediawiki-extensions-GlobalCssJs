@@ -9,7 +9,7 @@ use ReflectionMethod;
 class ResourceLoaderGlobalUserModuleIntegrationTest extends \MediaWikiIntegrationTestCase {
 	use ResourceLoaderGlobalModuleTestTrait;
 
-	public function provideGetPages() {
+	public static function provideGetPages() {
 		return [
 			'User: namespace used in page titles even if $wgLanguageCode != "en"' => [
 				'style',

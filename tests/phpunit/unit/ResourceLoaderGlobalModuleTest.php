@@ -7,7 +7,6 @@ use PHPUnit\Framework\MockObject\MockObject;
 
 /**
  * @covers \MediaWiki\GlobalCssJs\ResourceLoaderGlobalModule
- * @dataProvider provideGetSource
  */
 class ResourceLoaderGlobalModuleTest extends \MediaWikiUnitTestCase {
 
