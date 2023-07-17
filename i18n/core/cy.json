@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Afalau"
+		]
+	},
+	"globalcssjs-custom-css-js": "CSS / JavaScript ar gyfer pob wici ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|mwy o wybodaeth]]):",
+	"globalcssjs-custom-js": "JavaScript wedi'i addasu",
+	"globalcssjs-custom-css": "CSS wedi'i addasu"
+}
