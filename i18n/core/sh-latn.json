@@ -1,8 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kolega2357",
-			"Vlad5250"
+			"Winston Sung"
 		]
 	},
 	"globalcssjs-desc": "Omogućava učitavanje CSSa i JavaScripta na centralnom wikiju za sve povezane wikije",
