@@ -106,7 +106,7 @@ abstract class ResourceLoaderGlobalModule extends WikiModule {
 			return $lb->getConnection( DB_REPLICA );
 		} else {
 			$lb = $lbFactory->getMainLB( $this->wiki );
-			return $lb->getConnectionRef( DB_REPLICA, [], $this->wiki );
+			return $lb->getConnection( DB_REPLICA, [], $this->wiki );
 		}
 	}
 }
