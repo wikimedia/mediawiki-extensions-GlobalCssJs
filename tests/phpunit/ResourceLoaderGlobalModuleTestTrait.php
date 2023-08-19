@@ -5,8 +5,8 @@ namespace MediaWiki\GlobalCssJs\Test;
 use HashConfig;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\ResourceLoader\Context;
+use MediaWiki\Title\Title;
 use MediaWiki\WikiMap\WikiMap;
-use Title;
 use User;
 
 /**

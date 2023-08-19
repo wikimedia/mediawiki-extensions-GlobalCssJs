@@ -30,12 +30,12 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\ResourceLoader\Hook\ResourceLoaderRegisterModulesHook;
 use MediaWiki\ResourceLoader\ResourceLoader;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
 use OutputPage;
 use RequestContext;
 use Skin;
-use Title;
 use User;
 
 //phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
