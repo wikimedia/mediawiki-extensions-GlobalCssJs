@@ -1,15 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Айбикә"
+			"Айбикә",
+			"З. ӘЙЛЕ"
 		]
 	},
 	"globalcssjs-desc": "Бәйләнгән бөтөн вики-проекттарға өҫтәү өсөн үҙәк вики-проекттағы CSS һәм JavaScript ҡулланырға мөмкинлек бирә",
-	"globalcssjs-custom-css-js": "Бөтөн вики-проекттар өсөн дөйөм CSS/JavaScript:",
-	"globalcssjs-warning-js": "Был биткә өҫтәлгән һәр JavaScript һеҙҙә иҫәп яҙмаһы булған бөтөн викиларға ла өҫтәлә (ҡара.[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацияны]]).",
-	"globalcssjs-warning-css": "Был биткә өҫтәлгән CSS һеҙҙә иҫәп яҙмаһы булған бөтөн викиларға ла өҫтәлә(ҡара [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацияны]]).",
+	"globalcssjs-custom-css-js": "Бөтөн вики-проекттар өсөн дөйөм CSS/JavaScript: ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|өҫтәмә мәғлүмәт]]):",
+	"globalcssjs-warning-js": "Был биткә өҫтәлгән һәр JavaScript иҫәп яҙмағыҙ булған бөтөн викиҙарға ла йөкләнә ([[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацияны]] ҡара).",
+	"globalcssjs-warning-css": "Был биткә өҫтәлгән CSS иҫәп яҙмағыҙ булған бөтөн викиҙарға ла йөкләнә ([[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацияны]] ҡара).",
 	"globalcssjs-custom-js": "Шәхси JS",
 	"globalcssjs-custom-css": "Шәхси CSS",
-	"globalcssjs-delete-css": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] индерелеү сәбәпле, {{GENDER:$1|ҡатнашыусының}} һорауы буйынса CSS-битте юйыу",
-	"globalcssjs-delete-js": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] индерелеү сәбәпле, {{GENDER:$1|ҡатнашыусының}}һорауы буйынса JavaScript-битте юйыу"
+	"globalcssjs-delete-css": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] индерелеү сәбәпле, {{GENDER:$1|ҡатнашыусының}} һорауы буйынса CSS-битен юйыу",
+	"globalcssjs-delete-js": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] индерелеү сәбәпле, {{GENDER:$1|ҡатнашыусының}} һорауы буйынса JavaScript-битен юйыу"
 }
