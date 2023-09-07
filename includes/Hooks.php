@@ -232,6 +232,12 @@ class Hooks implements
 			return;
 		}
 
+		$safeMode = MediaWikiServices::getInstance()->getUserOptionsLookup()->getOption( $user, 'forcesafemode' );
+		if ( $safeMode ) {
+			// Safe mode is enabled
+			return;
+		}
+
 		if ( !self::loadForUser( $user ) ) {
 			// No global scripts for this user :(
 			return;
