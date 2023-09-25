@@ -5,11 +5,11 @@
 			"З. ӘЙЛЕ"
 		]
 	},
-	"globalcssjs-desc": "Бәйләнгән бөтөн вики-проекттарға өҫтәү өсөн үҙәк вики-проекттағы CSS һәм JavaScript ҡулланырға мөмкинлек бирә",
+	"globalcssjs-desc": "Төп вики-проекттағы CSS һәм JavaScript ҡушымталарын барлыҡ бәйле вики-проекттарға өҫтәү һәм ҡулланыу мөмкинлеге бирә",
 	"globalcssjs-custom-css-js": "Бөтөн вики-проекттар өсөн дөйөм CSS/JavaScript: ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|өҫтәмә мәғлүмәт]]):",
 	"globalcssjs-warning-js": "Был биткә өҫтәлгән һәр JavaScript иҫәп яҙмағыҙ булған бөтөн викиҙарға ла йөкләнә ([[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацияны]] ҡара).",
 	"globalcssjs-warning-css": "Был биткә өҫтәлгән CSS иҫәп яҙмағыҙ булған бөтөн викиҙарға ла йөкләнә ([[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацияны]] ҡара).",
-	"globalcssjs-custom-js": "Шәхси JS",
+	"globalcssjs-custom-js": "Шәхси JavaScript",
 	"globalcssjs-custom-css": "Шәхси CSS",
 	"globalcssjs-delete-css": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] индерелеү сәбәпле, {{GENDER:$1|ҡатнашыусының}} һорауы буйынса CSS-битен юйыу",
 	"globalcssjs-delete-js": "[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]] индерелеү сәбәпле, {{GENDER:$1|ҡатнашыусының}} һорауы буйынса JavaScript-битен юйыу"
