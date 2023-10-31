@@ -54,6 +54,16 @@ class Hooks implements
 	}
 
 	/**
+	 * Helper function for checking whether the extension has been configured correctly.
+	 *
+	 * @param array $config
+	 * @return bool
+	 */
+	private static function isConfiguredCorrectly( $config ) {
+		return !( $config['wiki'] === false || $config['source'] === false );
+	}
+
+	/**
 	 * Handler for BeforePageDisplay hook.
 	 *
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
@@ -63,6 +73,12 @@ class Hooks implements
 	public function onBeforePageDisplay( $out, $skin ): void {
 		$config = self::getConfig();
 		$useSiteCssJs = $config->get( 'UseGlobalSiteCssJs' );
+		$globalCssJsConfig = $config->get( 'GlobalCssJsConfig' );
+
+		if ( !self::isConfiguredCorrectly( $globalCssJsConfig ) ) {
+			// Not configured yet, don't register any modules.
+			return;
+		}
 
 		$out->addModuleStyles( [ 'ext.globalCssJs.user.styles' ] );
 		$out->addModules( [ 'ext.globalCssJs.user' ] );
@@ -121,7 +137,7 @@ class Hooks implements
 	public function onResourceLoaderRegisterModules( ResourceLoader $resourceLoader ): void {
 		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
 
-		if ( $config['wiki'] === false || $config['source'] === false ) {
+		if ( !self::isConfiguredCorrectly( $config ) ) {
 			// Not configured yet, don't register any modules.
 			return;
 		}
