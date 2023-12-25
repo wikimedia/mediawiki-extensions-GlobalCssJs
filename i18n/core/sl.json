@@ -12,6 +12,6 @@
 	"globalcssjs-warning-css": "Kateri koli CSS, dodan na to stran, se bo naložil v vseh vikijih, v katerih imate račun (glejte [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentacijo]]).",
 	"globalcssjs-custom-js": "JavaScript po meri",
 	"globalcssjs-custom-css": "CSS po meri",
-	"globalcssjs-delete-css": "brisanje strani CSS na prošnjo {{GENDER:$1|uporabnika|uporabnice|uporabnika/ce}} zaradi uvedbe [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "brisanje strani JavaScript na prošnjo {{GENDER:$1|uporabnika|uporabnice|uporabnika/ce}} zaradi uvedbe [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "brisanje strani CSS na prošnjo {{GENDER:$1|uporabnika|uporabnice|uporabnika_ce}} zaradi uvedbe [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
+	"globalcssjs-delete-js": "brisanje strani JavaScript na prošnjo {{GENDER:$1|uporabnika|uporabnice|uporabnika_ce}} zaradi uvedbe [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
 }
