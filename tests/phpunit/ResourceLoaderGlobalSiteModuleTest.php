@@ -2,7 +2,7 @@
 
 namespace MediaWiki\GlobalCssJs\Test;
 
-use HashConfig;
+use MediaWiki\Config\HashConfig;
 use MediaWiki\GlobalCssJs\ResourceLoaderGlobalSiteModule;
 use ReflectionMethod;
 

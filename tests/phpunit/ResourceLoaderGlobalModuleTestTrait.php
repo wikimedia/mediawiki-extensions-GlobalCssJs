@@ -2,12 +2,12 @@
 
 namespace MediaWiki\GlobalCssJs\Test;
 
-use HashConfig;
+use MediaWiki\Config\HashConfig;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\ResourceLoader\Context;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use MediaWiki\WikiMap\WikiMap;
-use User;
 
 /**
  * Helper class for testing subclasses of ResourceLoaderGlobalModule
