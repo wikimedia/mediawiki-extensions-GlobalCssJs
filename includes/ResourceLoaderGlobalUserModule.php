@@ -40,10 +40,10 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 	 */
 	protected function getPages( Context $context ) {
 		// Note: When computing meta data on a local wiki (not the central wiki),
-		// this will produce a User object based on the local database, not the
+		// this will produce a UserIdentity object based on the local database, not the
 		// foreign/central wiki. Use this object very carefully.
-		$user = $context->getUserObj();
-		if ( $user->isAnon() ) {
+		$user = $context->getUserIdentity();
+		if ( !$user || !$user->isRegistered() ) {
 			return [];
 		}
 
@@ -51,7 +51,7 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 			return [];
 		}
 
-		$userpage = $user->getUserPage()->getDBkey();
+		$userpage = strtr( $user->getName(), ' ', '_' );
 		$config = $this->getConfig();
 		$pages = [];
 

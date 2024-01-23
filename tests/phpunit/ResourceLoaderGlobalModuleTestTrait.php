@@ -5,8 +5,7 @@ namespace MediaWiki\GlobalCssJs\Test;
 use MediaWiki\Config\HashConfig;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\ResourceLoader\Context;
-use MediaWiki\Title\Title;
-use MediaWiki\User\User;
+use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
 
 /**
@@ -53,13 +52,13 @@ trait ResourceLoaderGlobalModuleTestTrait {
 		$context->method( 'getUser' )->willReturn( $options['user'] );
 		if ( $options['user'] === 'TestUser' ) {
 			// Logged-in
-			$user = $this->createMock( User::class );
-			$user->method( 'isAnon' )->willReturn( false );
-			$user->method( 'getUserPage' )->willReturn( Title::makeTitle( NS_USER, 'TestUser' ) );
-			$context->method( 'getUserObj' )->willReturn( $user );
+			$user = $this->createMock( UserIdentity::class );
+			$user->method( 'isRegistered' )->willReturn( true );
+			$user->method( 'getName' )->willReturn( 'TestUser' );
+			$context->method( 'getUserIdentity' )->willReturn( $user );
 		} else {
 			// Anon
-			$context->method( 'getUserObj' )->willReturn( new User );
+			$context->method( 'getUserIdentity' )->willReturn( null );
 		}
 		$context->method( 'getLanguage' )->willReturn( 'en' );
 		return $context;
