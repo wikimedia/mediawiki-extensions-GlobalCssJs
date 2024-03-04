@@ -24,6 +24,7 @@
 
 namespace MediaWiki\GlobalCssJs;
 
+use MediaWiki\MediaWikiServices;
 use MediaWiki\ResourceLoader\Context;
 
 /**
@@ -43,7 +44,8 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 		// this will produce a UserIdentity object based on the local database, not the
 		// foreign/central wiki. Use this object very carefully.
 		$user = $context->getUserIdentity();
-		if ( !$user || !$user->isRegistered() ) {
+		$tempUserConfig = MediaWikiServices::getInstance()->getTempUserConfig();
+		if ( !$user || !$user->isRegistered() || $tempUserConfig->isTempName( $user->getName() ) ) {
 			return [];
 		}
 
