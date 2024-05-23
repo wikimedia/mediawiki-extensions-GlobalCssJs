@@ -7,11 +7,11 @@
 	},
 	"globalcssjs-extensionname": "Global CSS/JS",
 	"globalcssjs-desc": "Allows CSS and JavaScript on a central wiki to be loaded for all connected wikis",
-	"globalcssjs-custom-css-js": "Shared CSS/JavaScript for all wikis ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|more information]]):",
-	"globalcssjs-warning-js": "Any JavaScript added to this page will be loaded on all wikis where you have an account (see [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentation]]).",
-	"globalcssjs-warning-css": "Any CSS added to this page will be loaded on all wikis where you have an account (see [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentation]]).",
+	"globalcssjs-custom-css-js": "Shared CSS/JavaScript for all wikis ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs more information]):",
+	"globalcssjs-warning-js": "Any JavaScript added to this page will be loaded on all wikis where you have an account (see [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs documentation]).",
+	"globalcssjs-warning-css": "Any CSS added to this page will be loaded on all wikis where you have an account (see [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs documentation]).",
 	"globalcssjs-custom-js": "Custom JavaScript",
 	"globalcssjs-custom-css": "Custom CSS",
-	"globalcssjs-delete-css": "Deleting CSS page on {{GENDER:$1|user}} request due to deployment of [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Deleting JavaScript page on {{GENDER:$1|user}} request due to deployment of [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Deleting CSS page on {{GENDER:$1|user}} request due to deployment of [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]",
+	"globalcssjs-delete-js": "Deleting JavaScript page on {{GENDER:$1|user}} request due to deployment of [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]"
 }
