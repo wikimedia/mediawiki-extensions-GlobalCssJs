@@ -8,11 +8,11 @@
 	},
 	"globalcssjs-extensionname": "Globales CSS/JS",
 	"globalcssjs-desc": "Ermöglicht CSS und JavaScript auf einem zentralen Wiki, das für alle verbundenen Wikis geladen wird",
-	"globalcssjs-custom-css-js": "Gemeinsames CSS/JavaScript für alle Wikis ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|weitere Informationen]]):",
-	"globalcssjs-warning-js": "Jedes JavaScript auf dieser Seite wird auf allen Wikis geladen, auf denen du ein Benutzerkonto hast (siehe die [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Dokumentation]]).",
-	"globalcssjs-warning-css": "Jedes CSS auf dieser Seite wird auf allen Wikis geladen, auf denen du ein Benutzerkonto hast (siehe die [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Dokumentation]]).",
+	"globalcssjs-custom-css-js": "Gemeinsames CSS/JavaScript für alle Wikis ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs weitere Informationen]):",
+	"globalcssjs-warning-js": "Jedes JavaScript auf dieser Seite wird auf allen Wikis geladen, auf denen du ein Benutzerkonto hast (siehe die [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Dokumentation]).",
+	"globalcssjs-warning-css": "Jedes CSS auf dieser Seite wird auf allen Wikis geladen, auf denen du ein Benutzerkonto hast (siehe die [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Dokumentation]).",
 	"globalcssjs-custom-js": "Benutzerdefiniertes JavaScript",
 	"globalcssjs-custom-css": "Benutzerdefiniertes CSS",
-	"globalcssjs-delete-css": "Löschung der CSS-Seite auf {{GENDER:$1|Benutzeranfrage}} aufgrund der Entwicklung von [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Löschung der JavaScript-Seite auf {{GENDER:$1|Benutzeranfrage}} aufgrund der Entwicklung von [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Löschung der CSS-Seite auf {{GENDER:$1|Benutzeranfrage}} aufgrund der Entwicklung von[https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]",
+	"globalcssjs-delete-js": "Löschung der JavaScript-Seite auf {{GENDER:$1|Benutzeranfrage}} aufgrund der Entwicklung von [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]"
 }
