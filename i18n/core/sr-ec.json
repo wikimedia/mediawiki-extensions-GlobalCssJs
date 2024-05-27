@@ -11,11 +11,11 @@
 	},
 	"globalcssjs-extensionname": "Глобални CSS/JS",
 	"globalcssjs-desc": "Омогућава да CSS и JavaScript на централном викију буду учитани на свим повезаним викијима",
-	"globalcssjs-custom-css-js": "Дељени CSS/JavaScript за све викије ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|више информација]]):",
-	"globalcssjs-warning-js": "Сваки јаваскрипт постављен овде ће бити учитан на свим викијима где имате налог (погледајте [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацију]]).",
-	"globalcssjs-warning-css": "Сваки CSS постављен овде ће бити учитан на свим викијима где имате налог (погледајте [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацију]]).",
+	"globalcssjs-custom-css-js": "Дељени CSS/JavaScript за све викије ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs више информација]):",
+	"globalcssjs-warning-js": "Сваки јаваскрипт постављен овде ће бити учитан на свим викијима где имате налог (погледајте [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs документацију]).",
+	"globalcssjs-warning-css": "Сваки CSS постављен овде ће бити учитан на свим викијима где имате налог (погледајте [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs документацију]).",
 	"globalcssjs-custom-js": "прилагођени JavaScript",
 	"globalcssjs-custom-css": "прилагођени CSS",
-	"globalcssjs-delete-css": "Брисање CSS странице {{GENDER:$1|на}} основу захтева због [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Брисање јаваскрипт странице {{GENDER:$1|на}} основу захтева због [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Брисање CSS странице {{GENDER:$1|на}} основу захтева због [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]",
+	"globalcssjs-delete-js": "Брисање JavaScript странице {{GENDER:$1|на}} основу захтева због [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]"
 }

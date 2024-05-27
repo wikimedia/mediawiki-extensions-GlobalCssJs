@@ -5,6 +5,7 @@
 			"Esketti",
 			"Mainframe98",
 			"Mar(c)",
+			"McDutchie",
 			"Servien",
 			"Siebrand",
 			"Sjoerddebruin"
@@ -12,11 +13,11 @@
 	},
 	"globalcssjs-extensionname": "Global CSS/JS",
 	"globalcssjs-desc": "Maakt het mogelijk om CSS en JavaScript op een centrale wiki op te slaan en die in alle aangesloten wiki's te gebruiken",
-	"globalcssjs-custom-css-js": "Gedeelde CSS/JavaScript voor alle wiki's ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|meer informatie]]):",
-	"globalcssjs-warning-js": "JavaScript die wordt toegevoegd aan deze pagina wordt geladen op alle wiki's waar u een account hebt (zie [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentatie]]).",
-	"globalcssjs-warning-css": "CSS die wordt toegevoegd aan deze pagina wordt geladen op alle wiki's waar u een account hebt (zie [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentatie]]).",
+	"globalcssjs-custom-css-js": "Gedeelde CSS/JavaScript voor alle wiki’s ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs meer informatie]):",
+	"globalcssjs-warning-js": "Alle JavaScript-code die aan deze pagina wordt toegevoegd, wordt geladen op alle wiki’s waar {{#FORMAL:je|u}} een account hebt (zie de [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs documentatie]).",
+	"globalcssjs-warning-css": "Alle CSS-code die aan deze pagina wordt toegevoegd, wordt geladen op alle wiki’s waar {{#FORMAL:je|u}} een account hebt (zie de [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs documentatie]).",
 	"globalcssjs-custom-js": "Aangepast JavaScript",
 	"globalcssjs-custom-css": "Aangepaste CSS",
-	"globalcssjs-delete-css": "Het verwijderen van CSS-pagina op verzoek van de {{GENDER:$1|gebruiker}} te wijten aan de implementatie van de [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Het verwijderen van JavaScript-pagina op verzoek van de {{GENDER:$1|gebruiker}} te wijten aan de implementatie van de [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "De CSS-pagina wordt op gebruikersverzoek verwijderd vanwege de ingebruikname van de uitbreiding [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs GlobalCssJs]{{GENDER:$1|}}",
+	"globalcssjs-delete-js": "De JavaScript-pagina wordt op gebruikersverzoek verwijderd vanwege de ingebruikname van de uitbreiding [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs GlobalCssJs]{{GENDER:$1|}}"
 }

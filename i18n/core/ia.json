@@ -5,11 +5,11 @@
 		]
 	},
 	"globalcssjs-desc": "Permitte que CSS e JavaScript sur un wiki central se carga in tote le wikis connectite",
-	"globalcssjs-custom-css-js": "CSS/JavaScript condividite pro tote le wikis ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|plus information]]):",
-	"globalcssjs-warning-js": "Omne JavaScript addite a iste pagina essera cargate sur tote le wikis ubi tu ha un conto (vide le [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentation]]).",
-	"globalcssjs-warning-css": "Omne CSS addite a iste pagina essera cargate sur tote le wikis ubi tu ha un conto (vide le [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentation]]).",
+	"globalcssjs-custom-css-js": "CSS/JavaScript condividite pro tote le wikis ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs plus information]):",
+	"globalcssjs-warning-js": "Omne JavaScript addite a iste pagina essera cargate sur tote le wikis ubi tu ha un conto (vide le [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs documentation]).",
+	"globalcssjs-warning-css": "Omne CSS addite a iste pagina essera cargate sur tote le wikis ubi tu ha un conto (vide le [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs documentation]).",
 	"globalcssjs-custom-js": "JavaScript personalisate",
 	"globalcssjs-custom-css": "CSS personalisate",
-	"globalcssjs-delete-css": "Deletion de un pagina CSS sur demanda del {{GENDER:$1|usator}} debite al installation del extension [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|GlobalCssJs]]",
-	"globalcssjs-delete-js": "Deletion de un pagina JavaScript sur demanda del {{GENDER:$1|usator}} debite al installation del extension [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|GlobalCssJs]]"
+	"globalcssjs-delete-css": "Deletion de un pagina CSS sur demanda del {{GENDER:$1|usator}} debite al installation del extension [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs GlobalCssJs]",
+	"globalcssjs-delete-js": "Deletion de un pagina JavaScript sur demanda del {{GENDER:$1|usator}} debite al installation del extension [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs GlobalCssJs]"
 }
