@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Duolaimi",
+			"GuoPC",
 			"Liuxinyu970226",
 			"Stang",
 			"Yfdyh000",
@@ -10,11 +11,11 @@
 	},
 	"globalcssjs-extensionname": "全域CSS/JS",
 	"globalcssjs-desc": "允许中央wiki上的全域CSS和JavaScript加载到所有已连接的wiki",
-	"globalcssjs-custom-css-js": "所有wiki共用的CSS/JavaScript（[[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|更多信息]]）：",
-	"globalcssjs-warning-js": "任何加入此页的JavaScript将在所有您拥有账户的wiki加载（参见[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|文档]]）。",
-	"globalcssjs-warning-css": "任何加入此页的CSS将在所有您拥有账户的wiki加载（参见[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|文档]]）。",
+	"globalcssjs-custom-css-js": "所有wiki共用的CSS/JavaScript（[https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs 更多信息]）：",
+	"globalcssjs-warning-js": "任何加入此页的JavaScript将在所有您拥有账户的wiki加载（参见[https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs 文档]）。",
+	"globalcssjs-warning-css": "任何加入此页的CSS将在所有您拥有账户的wiki加载（参见[https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs 文档]）。",
 	"globalcssjs-custom-js": "自定义JavaScript",
 	"globalcssjs-custom-css": "自定义CSS",
-	"globalcssjs-delete-css": "由于[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]的部署，基于{{GENDER:$1|用户}}请求删除CSS页面",
-	"globalcssjs-delete-js": "由于[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]的部署，基于{{GENDER:$1|用户}}请求删除JavaScript页面"
+	"globalcssjs-delete-css": "由于[https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs 帮助:扩展:GlobalCssJs]的部署，基于{{GENDER:$1|用户}}请求删除CSS页面",
+	"globalcssjs-delete-js": "由于[https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs 帮助:扩展:GlobalCssJs]的部署，基于{{GENDER:$1|用户}}请求删除JavaScript页面"
 }
