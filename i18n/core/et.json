@@ -6,11 +6,11 @@
 	},
 	"globalcssjs-extensionname": "Globaalne CSS/JS",
 	"globalcssjs-desc": "Võimaldab laadida keskses vikis asuva kaskaadilaadistiku või JavaScripti kõigis ühendatud vikides.",
-	"globalcssjs-custom-css-js": "Kõigi vikide ühine CSS/JavaScript ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|lisateave]]):",
-	"globalcssjs-warning-js": "Siin asuv JavaScript laaditakse kõigis vikides, kus sul on konto (vaata [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentatsiooni]]).",
-	"globalcssjs-warning-css": "Siin asuv kaskaadilaadistik laaditakse kõigis vikides, kus sul on konto (vaata [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentatsiooni]]).",
+	"globalcssjs-custom-css-js": "Kõigi vikide ühine CSS/JavaScript ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs lisateave]):",
+	"globalcssjs-warning-js": "Siin asuv JavaScript laaditakse kõigis vikides, kus sul on konto (vaata [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs dokumentatsiooni]).",
+	"globalcssjs-warning-css": "Siin asuv kaskaadilaadistik laaditakse kõigis vikides, kus sul on konto (vaata [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs dokumentatsiooni]).",
 	"globalcssjs-custom-js": "kohandatud JavaScript",
 	"globalcssjs-custom-css": "kohandatud CSS",
-	"globalcssjs-delete-css": "CCS-lehekülg kustutatud {{GENDER:$1|kasutaja}} palvel seoses tarkvaralisa [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|GlobalCssJs]] kasutuselevõtuga",
-	"globalcssjs-delete-js": "JavaScripti lehekülg kustutatud {{GENDER:$1|kasutaja}} palvel seoses tarkvaralisa [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|GlobalCssJs]] kasutuselevõtuga"
+	"globalcssjs-delete-css": "CCS-lehekülg kustutatud {{GENDER:$1|kasutaja}} palvel seoses tarkvaralisa [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs GlobalCssJs] kasutuselevõtuga",
+	"globalcssjs-delete-js": "JavaScripti lehekülg kustutatud {{GENDER:$1|kasutaja}} palvel seoses tarkvaralisa [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs GlobalCssJs] kasutuselevõtuga"
 }
