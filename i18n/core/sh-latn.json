@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"BadDog",
 			"Winston Sung"
 		]
 	},
 	"globalcssjs-desc": "Omogućava učitavanje CSSa i JavaScripta na centralnom wikiju za sve povezane wikije",
-	"globalcssjs-custom-css-js": "Zajednički CSS/JavaScript za sve wikije ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|više informacija]]):",
+	"globalcssjs-custom-css-js": "Zajednički CSS/JavaScript za sve projekte ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs detaljnije]):",
 	"globalcssjs-warning-js": "Svaki JavaScript postavljen ovde će biti učitan na svim vikijima gdje imate račun (pogl. [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentaciju]]).",
 	"globalcssjs-warning-css": "Svaki CSS postevljen ovde će biti učitan na svim vikijima gdje imate račun (pogl. [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentaciju]]).",
 	"globalcssjs-custom-js": "Prilagođeni JavaScript",
