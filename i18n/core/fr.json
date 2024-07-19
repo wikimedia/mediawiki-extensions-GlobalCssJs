@@ -5,6 +5,7 @@
 			"Automatik",
 			"Gomoko",
 			"Ltrlg",
+			"MacOS Weed",
 			"Orlodrim",
 			"Urhixidur",
 			"Verdy p",
@@ -19,5 +20,5 @@
 	"globalcssjs-custom-js": "JavaScript personnalisé",
 	"globalcssjs-custom-css": "CSS personnalisé",
 	"globalcssjs-delete-css": "Suppression de la page CSS sur demande de l’utilisat{{GENDER:$1|eur|rice}} suite au déploiement de l’[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|extension GlobalCssJs]]",
-	"globalcssjs-delete-js": "Suppression de la page JavaScript à la demande de l’utilisat{{GENDER:$1|eur|rice}} suite au déploiement de l’[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|extension GlobalCssJs]]"
+	"globalcssjs-delete-js": "Suppression de la page JavaScript à la demande de l’utilisat{{GENDER:$1|eur|rice}} suite au déploiement de l’[https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs extension GlobalCssJs]"
 }
