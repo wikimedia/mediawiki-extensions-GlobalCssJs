@@ -97,7 +97,7 @@ class Hooks implements
 				&& ( $title->getText() === 'Global.css' || $title->getText() === 'Global.js' )
 			) {
 				$out->addHelpLink( 'Help:Extension:GlobalCssJs' );
-			} elseif ( $user->isRegistered() && $title->inNamespace( NS_USER )
+			} elseif ( $user->isNamed() && $title->inNamespace( NS_USER )
 				&& ( $title->getText() === "$name/global.js" || $title->getText() === "$name/global.css" )
 			) {
 				$out->addHelpLink( 'Help:Extension:GlobalCssJs' );
@@ -181,7 +181,7 @@ class Hooks implements
 		$config = $output->getConfig();
 		$user = $output->getUser();
 		$title = $editPage->getTitle();
-		if ( $gcssjsConfig['wiki'] === WikiMap::getCurrentWikiId() && $user->isRegistered()
+		if ( $gcssjsConfig['wiki'] === WikiMap::getCurrentWikiId() && $user->isNamed()
 			&& $editPage->formtype == 'initial' && $title->isUserConfigPage()
 		) {
 			$title = $editPage->getTitle();
