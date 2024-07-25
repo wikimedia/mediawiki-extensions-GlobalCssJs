@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"IJzeren Jan"
+		]
+	},
+	"globalcssjs-desc": "Umožnjaje včityvanje CSS’a i JavaScript’a v jednoj centralnoj viki vo vsih povezanyh viki",
+	"globalcssjs-custom-css-js": "Obči CSS/JavaScript za vse viki ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs veče informacij]):",
+	"globalcssjs-warning-js": "Kakykoli JavaScript dodany k tutoj stranice bude včitany vo vsih viki, kde vy imajete koristničsko konto (gledite [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs dokumentaciju]).",
+	"globalcssjs-warning-css": "Kakykoli CSS dodany k tutoj stranice bude včitany vo vsih viki, kde vy imajete koristničsko konto (gledite [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs dokumentaciju]).",
+	"globalcssjs-custom-js": "Vlastny JavaScript",
+	"globalcssjs-custom-css": "Vlastny CSS",
+	"globalcssjs-delete-css": "Odstranjenje CSS-stranice na prosbu {{GENDER:$1|koristnika|koristnice}} v svezi s vvedenjem [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]",
+	"globalcssjs-delete-js": "Odstranjenje JavaScript-stranice na prosbu {{GENDER:$1|koristnika|koristnice}} v svezi s vvedenjem [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]"
+}
