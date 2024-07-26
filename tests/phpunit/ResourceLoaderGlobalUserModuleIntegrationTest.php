@@ -4,6 +4,7 @@ namespace MediaWiki\GlobalCssJs\Test;
 
 use MediaWiki\Config\HashConfig;
 use MediaWiki\GlobalCssJs\ResourceLoaderGlobalUserModule;
+use MediaWiki\MainConfigNames;
 use ReflectionMethod;
 
 class ResourceLoaderGlobalUserModuleIntegrationTest extends \MediaWikiIntegrationTestCase {
@@ -13,8 +14,8 @@ class ResourceLoaderGlobalUserModuleIntegrationTest extends \MediaWikiIntegratio
 		return [
 			'User: namespace used in page titles even if $wgLanguageCode != "en"' => [
 				'style',
-				[ 'AllowUserCss' => true, 'AllowUserJs' => true ],
-				[ 'wgLanguageCode' => 'zh' ],
+				[ MainConfigNames::AllowUserCss => true, MainConfigNames::AllowUserJs => true ],
+				[ MainConfigNames::LanguageCode => 'zh' ],
 				[ 'User:TestUser/global.css' ],
 				'TestUser'
 			]
@@ -39,7 +40,7 @@ class ResourceLoaderGlobalUserModuleIntegrationTest extends \MediaWikiIntegratio
 			$this->getTestSettings(),
 			$moduleConfig
 		) ) );
-		$this->setMwGlobals( $siteConfig );
+		$this->overrideConfigValues( $siteConfig );
 		$this->registerInConfigFactory();
 
 		$context = $this->makeContext( [ 'user' => $user ] );
