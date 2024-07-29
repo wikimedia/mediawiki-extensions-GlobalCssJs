@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"IJzeren Jan"
+		]
+	},
+	"globalcssjs-desc": "Umožnjaje včityvanje CSS’a i JavaScript’a v jednoj centralnoj viki vo vsih povezanyh viki",
+	"globalcssjs-custom-js": "Vlastny JavaScript",
+	"globalcssjs-custom-css": "Vlastny CSS"
+}
