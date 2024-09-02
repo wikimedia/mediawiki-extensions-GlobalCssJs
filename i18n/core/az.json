@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Nemoralis",
 			"Toghrul Rahimli",
 			"Wertuose"
 		]
 	},
-	"globalcssjs-custom-css-js": "Bütün viki-layihələr üçün ortaq CSS/JavaScript ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|ətraflı]]):",
+	"globalcssjs-custom-css-js": "Bütün viki-layihələr üçün ortaq CSS/JavaScript ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs ətraflı]):",
 	"globalcssjs-custom-js": "Xüsusi JavaScript",
 	"globalcssjs-custom-css": "Xüsusi CSS"
 }
