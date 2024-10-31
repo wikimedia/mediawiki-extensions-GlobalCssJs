@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"BadDog"
 		]
 	},
 	"globalcssjs-desc": "Omogućava učitavanje CSSa i JavaScripta na centralnom wikiju za sve povezane wikije",
