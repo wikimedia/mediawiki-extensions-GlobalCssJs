@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ilham151096",
-			"Iwan Novirion"
+			"Iwan Novirion",
+			"Ezagren"
 		]
 	},
 	"globalcssjs-custom-css-js": "CSS/JS berbagi untuk semua wiki ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|informasi lebih lanjut]]):",
