@@ -225,7 +225,8 @@ class Hooks implements
 		} else {
 			return WikiMap::makeForeignLink(
 				$config['wiki'],
-				'User:' . $title->getText(), // bug 66873, don't use localized namespace
+				// bug 66873, don't use localized namespace
+				'User:' . $title->getText(),
 				$message->escaped()
 			);
 		}

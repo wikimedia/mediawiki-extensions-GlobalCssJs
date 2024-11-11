@@ -69,7 +69,8 @@ trait ResourceLoaderGlobalModuleTestTrait {
 	 */
 	protected function getFakeOptions() {
 		return [
-			'wiki' => WikiMap::getCurrentWikiId(), // Satisfy Hooks::loadForUser
+			// Satisfy Hooks::loadForUser
+			'wiki' => WikiMap::getCurrentWikiId(),
 			'source' => 'fakesource',
 		];
 	}
