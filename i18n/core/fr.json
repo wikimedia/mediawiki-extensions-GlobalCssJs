@@ -9,16 +9,17 @@
 			"Orlodrim",
 			"Urhixidur",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Mahabarata"
 		]
 	},
 	"globalcssjs-extensionname": "CSS/JS global",
 	"globalcssjs-desc": "Permet aux fichiers CSS et JavaScript d’un wiki central d’être chargés sur tous les wikis qui y sont connectés",
-	"globalcssjs-custom-css-js": "CSS/JavaScript partagé pour tous les wikis ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|plus d’informations]]) :",
-	"globalcssjs-warning-js": "Tout code JavaScript ajouté à cette page sera chargé sur tous les wikis où vous avez un compte (voir la [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentation]]).",
-	"globalcssjs-warning-css": "Tout CSS ajouté à cette page sera chargé sur tous les wikis où vous avez un compte (voir la [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentation]]).",
+	"globalcssjs-custom-css-js": "CSS/JavaScript partagé pour tous les wikis ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs plus d’informations]) :",
+	"globalcssjs-warning-js": "Tout code JavaScript ajouté à cette page sera chargé sur tous les wikis où vous avez un compte (voir la [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs documentation]).",
+	"globalcssjs-warning-css": "Tout CSS ajouté à cette page sera chargé sur tous les wikis où vous avez un compte (voir la [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs documentation]).",
 	"globalcssjs-custom-js": "JavaScript personnalisé",
 	"globalcssjs-custom-css": "CSS personnalisé",
-	"globalcssjs-delete-css": "Suppression de la page CSS sur demande de l’utilisat{{GENDER:$1|eur|rice}} suite au déploiement de l’[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|extension GlobalCssJs]]",
+	"globalcssjs-delete-css": "Suppression de la page CSS sur demande de l’utilisat{{GENDER:$1|eur|rice}} suite au déploiement de [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]",
 	"globalcssjs-delete-js": "Suppression de la page JavaScript à la demande de l’utilisat{{GENDER:$1|eur|rice}} suite au déploiement de l’[https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs extension GlobalCssJs]"
 }
