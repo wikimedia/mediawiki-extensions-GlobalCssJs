@@ -6,7 +6,10 @@
 			"Wertuose"
 		]
 	},
+	"globalcssjs-desc": "Mərkəzi vikidə CSS və JavaScript-in bütün əlaqəli vikilər üçün yüklənməsinə imkan verir",
 	"globalcssjs-custom-css-js": "Bütün viki-layihələr üçün ortaq CSS/JavaScript ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs ətraflı]):",
+	"globalcssjs-warning-js": "Bu səhifəyə əlavə edilən JavaScript kodu sizin hesabınızın olduğu bütün vikilərə yüklənəcək ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs sənədləşdirməyə bax]).",
+	"globalcssjs-warning-css": "Bu səhifəyə əlavə edilən CSS kodu sizin hesabınızın olduğu bütün vikilərə yüklənəcək ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs sənədləşdirməyə bax]).",
 	"globalcssjs-custom-js": "Xüsusi JavaScript",
 	"globalcssjs-custom-css": "Xüsusi CSS"
 }
