@@ -8,11 +8,11 @@
 	},
 	"globalcssjs-extensionname": "CSS/JS global",
 	"globalcssjs-desc": "Permite a carga de estilos CSS e JavaScript desde un wiki central en todos os wikis conectados",
-	"globalcssjs-custom-css-js": "CSS/JavaScript compartido por todos os wikis ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|more information]]):",
-	"globalcssjs-warning-js": "Calquera JavaScript que se engada a esta páxina afectará a todos os wikis nos que ten unha conta (consulte a [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentación]])",
-	"globalcssjs-warning-css": "Calquera CSS que se engada a esta páxina afectará a todos os wikis nos que ten unha conta(consulte a  [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|documentación]]).",
+	"globalcssjs-custom-css-js": "CSS/JavaScript compartido por todos os wikis ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs máis información]):",
+	"globalcssjs-warning-js": "Calquera JavaScript que se engada a esta páxina afectará a todos os wikis nos que teñas unha conta (consulta a [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs documentación]).",
+	"globalcssjs-warning-css": "Calquera CSS que se engada a esta páxina afectará a todos os wikis nos que teñas unha conta (consulta a [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs documentación]).",
 	"globalcssjs-custom-js": "JavaScript personalizado",
 	"globalcssjs-custom-css": "CSS personalizado",
-	"globalcssjs-delete-css": "Bórrase a páxina de CSS a petición {{GENDER:$1|do usuario|da usuaria}} trala posta en funcionamento de [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Bórrase a páxina de JavaScript a petición {{GENDER:$1|do usuario|da usuaria}} trala posta en funcionamento de [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Bórrase a páxina de CSS a petición {{GENDER:$1|do usuario|da usuaria}} trala posta en funcionamento de [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]",
+	"globalcssjs-delete-js": "Bórrase a páxina de JavaScript a petición {{GENDER:$1|do usuario|da usuaria}} trala posta en funcionamento de [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]"
 }
