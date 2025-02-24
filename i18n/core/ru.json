@@ -9,14 +9,15 @@
 			"Pacha Tchernof",
 			"Ping08",
 			"Saint Johann",
-			"Smigles"
+			"Smigles",
+			"Yurina Tatiana"
 		]
 	},
 	"globalcssjs-extensionname": "Глобальные CSS/JS",
 	"globalcssjs-desc": "Позволяет использовать CSS и JavaScript, находящиеся в центральном вики-проекте, для загрузки во все связанные вики-проекты.",
-	"globalcssjs-custom-css-js": "Общие CSS и JavaScript для всех вики-проектов ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|подробнее]]):",
-	"globalcssjs-warning-js": "Любой JavaScript, добавленный на эту страницу, будет загружаться на всех вики, где у вас есть учётная запись (см.[[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацию]]).",
-	"globalcssjs-warning-css": "Любой CSS, добавленный на эту страницу, будет загружаться во всех вики, где у вас есть учётная запись (см. [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|документацию]]).",
+	"globalcssjs-custom-css-js": "Общие CSS и JavaScript для всех вики-проектов ([https\n://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs подробнее]):",
+	"globalcssjs-warning-js": "Любой JavaScript, добавленный на эту страницу, будет загружаться на всех вики, где у вас есть учётная запись (см.[https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs документацию]).",
+	"globalcssjs-warning-css": "Любой CSS, добавленный на эту страницу, будет загружаться во всех вики, где у вас есть учётная запись (см. [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs документацию]).",
 	"globalcssjs-custom-js": "Собственный JavaScript",
 	"globalcssjs-custom-css": "Собственный CSS",
 	"globalcssjs-delete-css": "Удаление CSS-страницы по запросу {{GENDER:$1|участника}} в связи с вводом [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
