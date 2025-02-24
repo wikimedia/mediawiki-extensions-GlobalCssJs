@@ -6,12 +6,12 @@
 			"Ekminarin"
 		]
 	},
-	"globalcssjs-desc": "อนุญาตให้โหลด CSS และจาวาสคริปต์บนวิกิกลางได้ในทุกวิกิที่เชื่อมโยง",
+	"globalcssjs-desc": "อนุญาตให้โหลดซีเอสเอสและจาวาสคริปต์บนวิกิกลางได้ในทุกวิกิที่เชื่อมโยง",
 	"globalcssjs-custom-css-js": "CSS/จาวาสคริปต์ที่ใช้ร่วมกันสำหรับทุกวิกิ ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|ข้อมูลเพิ่มเติม]]):",
 	"globalcssjs-warning-js": "จาวาสคริปต์ใดๆ ที่คุณเพิ่มลงในหน้านี้จะถูกโหลดบนทุกกวิกิที่คุณสมัครบัญชีไว้ (ดู [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|คู่มือการใช้งาน]])",
 	"globalcssjs-warning-css": "CSS ใด ๆ ที่คุณเพิ่มลงในหน้านี้จะถูกโหลดบนทุกกวิกิที่คุณลงทะเบียนไว้ (ดู [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|คู่มือการใช้งาน]])",
 	"globalcssjs-custom-js": "จาวาสคริปต์กำหนดเอง",
-	"globalcssjs-custom-css": "CSS กำหนดเอง",
+	"globalcssjs-custom-css": "ซีเอสเอสกำหนดเอง",
 	"globalcssjs-delete-css": "ลบหน้า CSS ตามคำขอของ{{GENDER:$1|ผู้ใช้}}เนื่องจากมีการปรับใช้ [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
 	"globalcssjs-delete-js": "ลบหน้าจาวาสคริปต์ตามคำขอของ{{GENDER:$1|ผู้ใช้}}เนื่องจากมีการปรับใช้ [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]"
 }
