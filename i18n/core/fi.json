@@ -3,15 +3,16 @@
 		"authors": [
 			"01miki10",
 			"Jack Phoenix",
-			"Stryn"
+			"Stryn",
+			"Samoasambia"
 		]
 	},
 	"globalcssjs-desc": "Mahdollistaa keskuswikin CSS:n ja JavaScriptin lataamisen kaikkiin yhdistettyihin wikeihin",
-	"globalcssjs-custom-css-js": "Yhteinen CSS/JavaScript kaikkiin wikeihin ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|lisätietoja]]):",
-	"globalcssjs-warning-js": "Kaikki tämän sivun JavaScript-koodit ladataan kaikissa wikeissä, joissa sinulla on tunnus. (katso [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|ohjeet]])",
-	"globalcssjs-warning-css": "Kaikki tämän sivun CSS-koodit ladataan kaikissa wikeissä, joissa sinulla on tunnus. (katso [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|ohjeet]])",
+	"globalcssjs-custom-css-js": "Yhteinen CSS/JavaScript kaikkiin wikeihin ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs lisätietoja]):",
+	"globalcssjs-warning-js": "Kaikki tämän sivun JavaScript-koodit ladataan kaikissa wikeissä, joissa sinulla on tunnus. (katso [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs ohjeet])",
+	"globalcssjs-warning-css": "Kaikki tämän sivun CSS-koodit ladataan kaikissa wikeissä, joissa sinulla on tunnus. (katso [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs ohjeet])",
 	"globalcssjs-custom-js": "Käyttäjäkohtainen JavaScript-sivu",
 	"globalcssjs-custom-css": "Käyttäjäkohtainen CSS-tyylisivu",
-	"globalcssjs-delete-css": "Poistetaan CSS-sivu {{GENDER:$1|käyttäjän}} pyynnöstä [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|GlobalCssJs]]-laajennuksen vuoksi",
-	"globalcssjs-delete-js": "Poistetaan JavaScript-sivu {{GENDER:$1|käyttäjän}} pyynnöstä [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|GlobalCssJs]]-laajennuksen vuoksi"
+	"globalcssjs-delete-css": "Poistetaan CSS-sivu {{GENDER:$1|käyttäjän}} pyynnöstä [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs GlobalCssJs]-laajennuksen vuoksi",
+	"globalcssjs-delete-js": "Poistetaan JavaScript-sivu {{GENDER:$1|käyttäjän}} pyynnöstä [https\n://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs GlobalCssJs]-laajennuksen vuoksi"
 }
