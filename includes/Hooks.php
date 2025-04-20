@@ -32,11 +32,11 @@ use MediaWiki\Output\OutputPage;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\ResourceLoader\Hook\ResourceLoaderRegisterModulesHook;
 use MediaWiki\ResourceLoader\ResourceLoader;
+use MediaWiki\Skin\Skin;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
-use Skin;
 
 //phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
 class Hooks implements
