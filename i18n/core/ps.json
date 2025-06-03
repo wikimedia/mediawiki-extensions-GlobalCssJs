@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
-	"globalcssjs-custom-css-js": "د ټولو ويکي گانو لپاره شريک شوی CSS/جاواسکرېپټ:",
+	"globalcssjs-custom-css-js": "د ټولو ويکي گانو لپاره شريک شوی سي‌اېس‌اېس/جاواسکريپټ age/Help:Extension:GlobalCssJs more information]):",
 	"globalcssjs-custom-css": "دوديزه سي اس اس"
 }
