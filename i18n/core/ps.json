@@ -5,6 +5,13 @@
 			"شاه زمان پټان"
 		]
 	},
+	"globalcssjs-extensionname": "ټوليز سي‌اېس‌اېس/جی‌اېس",
+	"globalcssjs-desc": "په مرکزي ويکي کې سي‌اېس‌اېس او جاواسکيريپټ ته اجازه ورکوي، چې د ټولو نښلول شويو ويکي‌‌گانو لپاره بار شي",
 	"globalcssjs-custom-css-js": "د ټولو ويکي گانو لپاره شريک شوی سي‌اېس‌اېس/جاواسکريپټ ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs نور مالومات]):",
-	"globalcssjs-custom-css": "دوديزه سي‌اېس‌اېس"
+	"globalcssjs-warning-js": "هر هغه جاواسکريپټ چې په دې مخ کې ورگډېږي هغه به په ټولو هغه ويکي‌‌گانو کې بار شي چېرې چې تاسو گڼون لرئ ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs لاسوند] وگورئ).",
+	"globalcssjs-warning-css": "هر هغه سي‌اېس‌اېس چې په دې مخ کې ورگډېږي هغه به په ټولو هغه ويکي‌‌گانو کې بار شي چېرې چې تاسو گڼون لرئ ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs لاسوند] وگورئ).",
+	"globalcssjs-custom-js": "دوديزه جاواسکريپټ",
+	"globalcssjs-custom-css": "دوديزه سي‌اېس‌اېس",
+	"globalcssjs-delete-css": "د [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs] ځای پرځای کولو له امله د {{GENDER:$1|کارن}} په غوښتنه د سي‌اېس‌اېس مخ ړنگول.",
+	"globalcssjs-delete-js": "د [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs] ځای پرځای کولو له امله د {{GENDER:$1|کارن}} په غوښتنه د جاواسکريپټ مخ ړنگول."
 }
