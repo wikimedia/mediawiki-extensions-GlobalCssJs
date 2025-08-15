@@ -57,7 +57,7 @@
 		"MediaWiki\\GlobalCssJs\\Test\\ResourceLoaderGlobalModuleTestTrait": "tests/phpunit/ResourceLoaderGlobalModuleTestTrait.php"
 	},
 	"ConfigRegistry": {
-		"globalcssjs": "GlobalVarConfig::newInstance"
+		"globalcssjs": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
 	},
 	"manifest_version": 2
 }
