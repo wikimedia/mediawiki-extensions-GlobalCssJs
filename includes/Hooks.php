@@ -38,7 +38,6 @@ use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
 
-//phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
 class Hooks implements
 	BeforePageDisplayHook,
 	ResourceLoaderRegisterModulesHook,
