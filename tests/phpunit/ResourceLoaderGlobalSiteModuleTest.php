@@ -115,7 +115,6 @@ class ResourceLoaderGlobalSiteModuleTest extends \MediaWikiIntegrationTestCase {
 		$context = $this->makeContext( [ 'skin' => $skin, 'user' => null ] );
 
 		$getPages = new ReflectionMethod( $module, 'getPages' );
-		$getPages->setAccessible( true );
 		$out = $getPages->invoke( $module, $context );
 		$pages = array_keys( $out );
 		$this->assertEquals( $expectedPages, $pages, 'page names' );

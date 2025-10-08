@@ -83,7 +83,6 @@ class ResourceLoaderGlobalUserModuleTest extends \MediaWikiIntegrationTestCase {
 		$context = $this->makeContext( [ 'user' => $user ] );
 
 		$getPages = new ReflectionMethod( $module, 'getPages' );
-		$getPages->setAccessible( true );
 		$out = $getPages->invoke( $module, $context );
 		$pages = array_keys( $out );
 		$this->assertEquals( $expectedPages, $pages, $desc );
