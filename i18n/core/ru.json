@@ -11,7 +11,8 @@
 			"Saint Johann",
 			"Smigles",
 			"Stjn",
-			"Yurina Tatiana"
+			"Yurina Tatiana",
+			"Vonavy"
 		]
 	},
 	"globalcssjs-extensionname": "Глобальные CSS/JS",
@@ -21,6 +22,6 @@
 	"globalcssjs-warning-css": "Любой CSS, добавленный на эту страницу, будет загружаться во всех вики, где у вас есть учётная запись (см. [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs документацию]).",
 	"globalcssjs-custom-js": "Собственный JavaScript",
 	"globalcssjs-custom-css": "Собственный CSS",
-	"globalcssjs-delete-css": "Удаление CSS-страницы по запросу {{GENDER:$1|участника}} в связи с вводом [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Удаление JavaScript-страницы по запросу {{GENDER:$1|участника|участницы}} в связи с вводом [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Удаление CSS-страницы по запросу {{GENDER:$1|участника|участницы}} в связи с вводом [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]",
+	"globalcssjs-delete-js": "Удаление JavaScript-страницы по запросу {{GENDER:$1|участника|участницы}} в связи с вводом [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]"
 }
