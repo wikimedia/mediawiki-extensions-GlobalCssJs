@@ -23,6 +23,7 @@
 
 namespace MediaWiki\GlobalCssJs;
 
+use MediaWiki\MainConfigNames;
 use MediaWiki\ResourceLoader\Context;
 
 /**
@@ -45,10 +46,10 @@ class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 
 		$pages = [];
 
-		if ( $this->type === 'style' && $config->get( 'UseSiteCss' ) ) {
+		if ( $this->type === 'style' && $config->get( MainConfigNames::UseSiteCss ) ) {
 			$pages["MediaWiki:Global.css"] = [ 'type' => 'style' ];
 			$pages['MediaWiki:Global-' . $context->getSkin() . '.css'] = [ 'type' => 'style' ];
-		} elseif ( $this->type === 'script' && $config->get( 'UseSiteJs' ) ) {
+		} elseif ( $this->type === 'script' && $config->get( MainConfigNames::UseSiteJs ) ) {
 			$pages["MediaWiki:Global.js"] = [ 'type' => 'script' ];
 			$pages['MediaWiki:Global-' . $context->getSkin() . '.js'] = [ 'type' => 'script' ];
 		}
@@ -60,6 +61,6 @@ class ResourceLoaderGlobalSiteModule extends ResourceLoaderGlobalModule {
 	 * @return string
 	 */
 	public function getGroup() {
-		return 'site';
+		return self::GROUP_SITE;
 	}
 }

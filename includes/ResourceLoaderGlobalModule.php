@@ -78,6 +78,13 @@ abstract class ResourceLoaderGlobalModule extends WikiModule {
 	/**
 	 * @return string
 	 */
+	public function getType() {
+		return $this->type === 'style' ? self::LOAD_STYLES : self::LOAD_GENERAL;
+	}
+
+	/**
+	 * @return string
+	 */
 	public function getSource() {
 		return $this->getCurrentWikiId() === $this->wiki ? 'local' : $this->source;
 	}
