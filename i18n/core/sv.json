@@ -5,16 +5,17 @@
 			"Sabelöga",
 			"Technic2",
 			"Tobulos1",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Stefan2255"
 		]
 	},
 	"globalcssjs-extensionname": "Global CSS/JS",
 	"globalcssjs-desc": "Tillåter CSS och JavaScript på en central wiki att laddas för alla anslutna wikier",
-	"globalcssjs-custom-css-js": "Delad CSS/JavaScript för alla wikier ([[:mw:Special:MyLanguage/Help:Extension:GlobalCssJs|more information]]):",
-	"globalcssjs-warning-js": "Alla JavaScript som läggs till på denna sida kommer att laddas på alla wikis där du har ett konto (se [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentationen]]).",
-	"globalcssjs-warning-css": "All CSS som läggs till på denna sida kommer att laddas på alla wikis där du har ett konto (se [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs|dokumentationen]]).",
+	"globalcssjs-custom-css-js": "Delad CSS/JavaScript för alla wikier ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs mer information]):",
+	"globalcssjs-warning-js": "Alla JavaScript som läggs till på denna sida kommer att laddas på alla wikis där du har ett konto (se [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs dokumentation]).",
+	"globalcssjs-warning-css": "All CSS som läggs till på denna sida kommer att laddas på alla wikier där du har ett konto (se [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs dokumentation]).",
 	"globalcssjs-custom-js": "Personligt JavaScript",
 	"globalcssjs-custom-css": "Personlig CSS",
-	"globalcssjs-delete-css": "Raderar CSS-sida på {{GENDER:$1|användarens}} begäran på grund av driftsättning av [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]",
-	"globalcssjs-delete-js": "Raderar JavaScript-sida på {{GENDER:$1|användarens}} begäran på grund av driftsättning av [[mw:Special:MyLanguage/Help:Extension:GlobalCssJs]]"
+	"globalcssjs-delete-css": "Raderar CSS-sida på {{GENDER:$1|användarens}} begäran på grund av driftsättning av [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]",
+	"globalcssjs-delete-js": "Raderar JavaScript-sida på {{GENDER:$1|användarens}} begäran på grund av driftsättning av [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]"
 }
