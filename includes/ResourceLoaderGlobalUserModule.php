@@ -46,7 +46,7 @@ class ResourceLoaderGlobalUserModule extends ResourceLoaderGlobalModule {
 		// foreign/central wiki. Use this object very carefully.
 		$user = $context->getUserIdentity();
 		$tempUserConfig = MediaWikiServices::getInstance()->getTempUserConfig();
-		if ( !$user || !$user->isRegistered() || $tempUserConfig->isTempName( $user->getName() ) ) {
+		if ( !$user || $tempUserConfig->isTempName( $user->getName() ) || !$user->isRegistered() ) {
 			return [];
 		}
 
