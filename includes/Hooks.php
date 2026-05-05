@@ -22,6 +22,7 @@
 namespace MediaWiki\GlobalCssJs;
 
 use MediaWiki\Config\Config;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\Linker\Linker;
@@ -238,9 +239,9 @@ class Hooks implements
 	 * @param array &$prefs
 	 */
 	public function onGetPreferences( $user, &$prefs ) {
-		$config = MediaWikiServices::getInstance()->getMainConfig();
-		$allowUserCss = $config->get( 'AllowUserCss' );
-		$allowUserJs = $config->get( 'AllowUserJs' );
+		$ctx = RequestContext::getMain();
+		$allowUserCss = $ctx->getConfig()->get( 'AllowUserCss' );
+		$allowUserJs = $ctx->getConfig()->get( 'AllowUserJs' );
 
 		if ( !$allowUserCss && !$allowUserJs ) {
 			// No user CSS or JS allowed
@@ -273,9 +274,7 @@ class Hooks implements
 			[ 'globalcssjs' => [
 				'type' => 'info',
 				'raw' => 'true',
-				'default' => static function ( $info ) {
-					return $info['parent']->getContext()->getLanguage()->pipeList( $linkTools );
-				},
+				'default' => $ctx->getLanguage()->pipeList( $linkTools ),
 				'label-message' => 'globalcssjs-custom-css-js',
 				'section' => 'rendering/skin',
 			] ],
