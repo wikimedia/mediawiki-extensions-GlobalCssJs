@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"globalcssjs-desc": "Waxay oggolaanaysaa in CSS iyo JavaScript ku yaal wiki dhexe lagu soo raro dhammaan wiki-yada ku xiran",
+	"globalcssjs-custom-css-js": "CSS/JavaScript la wadaago dhammaan wiki-yada ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs macluumaad dheeraad ah]):",
+	"globalcssjs-warning-js": "JavaScript kasta oo lagu daro boggan waxaa lagu soo rari doonaa dhammaan wiki-yada aad ku leedahay akoon (fiiri [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs dukumentiyada]).",
+	"globalcssjs-warning-css": "CSS kasta oo lagu daro boggan waxaa lagu soo rari doonaa dhammaan wiki-yada aad ku leedahay akoon (fiiri [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs dukumentiyada]).",
+	"globalcssjs-custom-js": "JavaScript gaar ah",
+	"globalcssjs-custom-css": "CSS gaar ah",
+	"globalcssjs-delete-css": "Tirtiridda bogga CSS ee codsiga {{GENDER:$1|isticmaale}} sababtuna waa hirgelinta [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]",
+	"globalcssjs-delete-js": "Tirtiridda bogga JavaScript ee codsiga {{GENDER:$1|isticmaale}} sababtuna waa hirgelinta [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]"
+}
