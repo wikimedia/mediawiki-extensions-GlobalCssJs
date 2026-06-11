@@ -6,7 +6,7 @@
 		]
 	},
 	"globalcssjs-extensionname": "CSS/JS-a global",
-	"globalcssjs-desc": "Destûrê dide CSS û JavaScript-a li ser wîkiya navendî ku ji bo hemû wîkiyên girêdayî werin barkirin",
+	"globalcssjs-desc": "Îznê dide CSS û JavaScript-a li ser wîkiya merkezî ku ji bo hemû wîkiyên girêdayî werin barkirin",
 	"globalcssjs-custom-css-js": "CSS/JavaScripta parvekirî ji bo hemû wîkiyan: ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs bêhtir melûmat]):",
 	"globalcssjs-warning-js": "Her JavaScriptê ku li vê rûpelê were zêdekirin dê li ser hemû wîkiyên ku hesabê te lê heye were barkirin (li [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs|belgekirinê] binêre).",
 	"globalcssjs-warning-css": "Her CSSê ku li vê rûpelê were zêdekirin dê li ser hemû wîkiyên ku hesabê we lê heye were barkirin (li [https\n://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs belgekirinê] binêre).",
