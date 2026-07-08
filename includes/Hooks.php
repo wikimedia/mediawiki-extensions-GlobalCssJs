@@ -36,6 +36,7 @@ use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
+use Wikimedia\ArrayUtils\ArrayUtils;
 
 class Hooks implements
 	BeforePageDisplayHook,
@@ -268,7 +269,7 @@ class Hooks implements
 			$linkTools[] = self::makeCentralLink( $jsPage, 'globalcssjs-custom-js' );
 		}
 
-		$prefs = wfArrayInsertAfter(
+		$prefs = ArrayUtils::insertAfter(
 			$prefs,
 			[ 'globalcssjs' => [
 				'type' => 'info',
