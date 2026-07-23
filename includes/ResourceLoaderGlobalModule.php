@@ -26,7 +26,7 @@ use InvalidArgumentException;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\ResourceLoader\WikiModule;
 use MediaWiki\WikiMap\WikiMap;
-use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\IReadableDatabase;
 
 /**
  * Base class for global modules.
@@ -96,17 +96,13 @@ abstract class ResourceLoaderGlobalModule extends WikiModule {
 		return WikiMap::getCurrentWikiId();
 	}
 
-	/**
-	 * @return IDatabase
-	 */
-	protected function getDB() {
-		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+	/** @inheritDoc */
+	protected function getDB(): IReadableDatabase {
+		$connectionProvider = MediaWikiServices::getInstance()->getConnectionProvider();
 		if ( $this->wiki === $this->getCurrentWikiId() ) {
-			$lb = $lbFactory->getMainLB();
-			return $lb->getConnection( DB_REPLICA );
+			return $connectionProvider->getReplicaDatabase();
 		} else {
-			$lb = $lbFactory->getMainLB( $this->wiki );
-			return $lb->getConnection( DB_REPLICA, [], $this->wiki );
+			return $connectionProvider->getReplicaDatabase( $this->wiki );
 		}
 	}
 }
