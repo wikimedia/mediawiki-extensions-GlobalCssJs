@@ -8,6 +8,10 @@
 	},
 	"globalcssjs-desc": "Umožňuje na všetkých prepojených wiki načítať CSS a JavaScript z centrálnej wiki",
 	"globalcssjs-custom-css-js": "Spoločné CSS/JavaScript pre všetky wiki ([https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs viac informácií]):",
+	"globalcssjs-warning-js": "Každý JavaScript pridaný na túto stránku sa načíta na všetkých wiki, kde máte účet (pozri [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs dokumentáciu]).",
+	"globalcssjs-warning-css": "Každý CSS kód pridaný na túto stránku sa načíta na všetkých wiki, kde máte účet (pozri [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs dokumentáciu]).",
 	"globalcssjs-custom-js": "Vlastný JS",
-	"globalcssjs-custom-css": "Vlastný CSS"
+	"globalcssjs-custom-css": "Vlastný CSS",
+	"globalcssjs-delete-css": "Mazanie CSS stránky na žiadosť {{GENDER:$1|používateľa|používateľky}} pre nasadenie [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]",
+	"globalcssjs-delete-js": "Mazanie JavaScriptovej stránky na žiadosť {{GENDER:$1|používateľa|používateľky}} pre nasadenie [https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:GlobalCssJs Help:Extension:GlobalCssJs]"
 }
