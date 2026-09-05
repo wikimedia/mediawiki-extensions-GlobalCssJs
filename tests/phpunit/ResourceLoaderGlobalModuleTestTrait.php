@@ -3,7 +3,6 @@
 namespace MediaWiki\GlobalCssJs\Test;
 
 use MediaWiki\Config\HashConfig;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\ResourceLoader\Context;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
@@ -20,7 +19,7 @@ trait ResourceLoaderGlobalModuleTestTrait {
 
 	protected function registerInConfigFactory() {
 		// Hacky stub so that Hooks::loadForUser is satisfied.
-		MediaWikiServices::getInstance()->getConfigFactory()->register(
+		$this->getServiceContainer()->getConfigFactory()->register(
 			'globalcssjs',
 			new HashConfig( [ 'GlobalCssJsConfig' => $this->getFakeOptions() ] )
 		);
