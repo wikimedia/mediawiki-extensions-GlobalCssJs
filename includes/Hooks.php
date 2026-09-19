@@ -22,9 +22,11 @@
 namespace MediaWiki\GlobalCssJs;
 
 use MediaWiki\Config\Config;
+use MediaWiki\Config\ConfigFactory;
 use MediaWiki\EditPage\EditPage;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use MediaWiki\Linker\Linker;
+use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
@@ -33,6 +35,7 @@ use MediaWiki\ResourceLoader\Hook\ResourceLoaderRegisterModulesHook;
 use MediaWiki\ResourceLoader\ResourceLoader;
 use MediaWiki\Skin\Skin;
 use MediaWiki\Title\Title;
+use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
 use MediaWiki\WikiMap\WikiMap;
@@ -44,6 +47,17 @@ class Hooks implements
 	EditPage__showEditForm_initialHook,
 	GetPreferencesHook
 {
+
+	private readonly Config $globalCssJsConfig;
+
+	public function __construct(
+		private readonly UserOptionsLookup $userOptionsLookup,
+		private readonly Config $mainConfig,
+		ConfigFactory $configFactory,
+		private readonly LinkRenderer $linkRenderer,
+	) {
+		$this->globalCssJsConfig = $configFactory->makeConfig( 'globalcssjs' );
+	}
 
 	/**
 	 * @return Config
@@ -70,9 +84,8 @@ class Hooks implements
 	 * @param Skin $skin
 	 */
 	public function onBeforePageDisplay( $out, $skin ): void {
-		$config = self::getConfig();
-		$useSiteCssJs = $config->get( 'UseGlobalSiteCssJs' );
-		$globalCssJsConfig = $config->get( 'GlobalCssJsConfig' );
+		$useSiteCssJs = $this->globalCssJsConfig->get( 'UseGlobalSiteCssJs' );
+		$globalCssJsConfig = $this->globalCssJsConfig->get( 'GlobalCssJsConfig' );
 
 		if ( !self::isConfiguredCorrectly( $globalCssJsConfig ) ) {
 			// Not configured yet, don't register any modules.
@@ -87,7 +100,7 @@ class Hooks implements
 		}
 
 		// Add help link
-		$rlConfig = $config->get( 'GlobalCssJsConfig' );
+		$rlConfig = $this->globalCssJsConfig->get( 'GlobalCssJsConfig' );
 		if ( $rlConfig['wiki'] === WikiMap::getCurrentWikiId() ) {
 			$title = $out->getTitle();
 			$user = $out->getUser();
@@ -134,7 +147,7 @@ class Hooks implements
 	 * @param ResourceLoader $resourceLoader
 	 */
 	public function onResourceLoaderRegisterModules( ResourceLoader $resourceLoader ): void {
-		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
+		$config = $this->globalCssJsConfig->get( 'GlobalCssJsConfig' );
 
 		if ( !self::isConfiguredCorrectly( $config ) ) {
 			// Not configured yet, don't register any modules.
@@ -153,7 +166,7 @@ class Hooks implements
 		] + $config;
 		$resourceLoader->register( 'ext.globalCssJs.user.styles', $userCss );
 
-		if ( self::getConfig()->get( 'UseGlobalSiteCssJs' ) ) {
+		if ( $this->globalCssJsConfig->get( 'UseGlobalSiteCssJs' ) ) {
 			$siteJs = [
 				'class' => ResourceLoaderGlobalSiteModule::class,
 				'type' => 'script',
@@ -176,7 +189,7 @@ class Hooks implements
 	 * @param OutputPage $output
 	 */
 	public function onEditPage__showEditForm_initial( $editPage, $output ) {
-		$gcssjsConfig = self::getConfig()->get( 'GlobalCssJsConfig' );
+		$gcssjsConfig = $this->globalCssJsConfig->get( 'GlobalCssJsConfig' );
 		$config = $output->getConfig();
 		$user = $output->getUser();
 		$title = $editPage->getTitle();
@@ -209,11 +222,11 @@ class Hooks implements
 	 * @return string HTMl link
 	 * @suppress SecurityCheck-DoubleEscaped phan false positive
 	 */
-	protected static function makeCentralLink( Title $title, string $msg ): string {
-		$config = self::getConfig()->get( 'GlobalCssJsConfig' );
+	private function makeCentralLink( Title $title, string $msg ): string {
+		$config = $this->globalCssJsConfig->get( 'GlobalCssJsConfig' );
 		$message = wfMessage( $msg );
 		if ( $config['wiki'] === WikiMap::getCurrentWikiId() ) {
-			return MediaWikiServices::getInstance()->getLinkRenderer()->makeLink( $title, $message->text() );
+			return $this->linkRenderer->makeLink( $title, $message->text() );
 		} elseif ( isset( $config['baseurl'] ) && $config['baseurl'] !== false ) {
 			return Linker::makeExternalLink(
 				// bug 66873, don't use localized namespace
@@ -239,16 +252,15 @@ class Hooks implements
 	 * @param array &$prefs
 	 */
 	public function onGetPreferences( $user, &$prefs ) {
-		$config = MediaWikiServices::getInstance()->getMainConfig();
-		$allowUserCss = $config->get( 'AllowUserCss' );
-		$allowUserJs = $config->get( 'AllowUserJs' );
+		$allowUserCss = $this->mainConfig->get( 'AllowUserCss' );
+		$allowUserJs = $this->mainConfig->get( 'AllowUserJs' );
 
 		if ( !$allowUserCss && !$allowUserJs ) {
 			// No user CSS or JS allowed
 			return;
 		}
 
-		$safeMode = MediaWikiServices::getInstance()->getUserOptionsLookup()->getOption( $user, 'forcesafemode' );
+		$safeMode = $this->userOptionsLookup->getOption( $user, 'forcesafemode' );
 		if ( $safeMode ) {
 			// Safe mode is enabled
 			return;
@@ -262,11 +274,11 @@ class Hooks implements
 		$linkTools = [];
 		if ( $allowUserCss ) {
 			$cssPage = Title::makeTitleSafe( NS_USER, $userName . '/global.css' );
-			$linkTools[] = self::makeCentralLink( $cssPage, 'globalcssjs-custom-css' );
+			$linkTools[] = $this->makeCentralLink( $cssPage, 'globalcssjs-custom-css' );
 		}
 		if ( $allowUserJs ) {
 			$jsPage = Title::makeTitleSafe( NS_USER, $userName . '/global.js' );
-			$linkTools[] = self::makeCentralLink( $jsPage, 'globalcssjs-custom-js' );
+			$linkTools[] = $this->makeCentralLink( $jsPage, 'globalcssjs-custom-js' );
 		}
 
 		$prefs = ArrayUtils::insertAfter(

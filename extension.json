@@ -16,7 +16,13 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "MediaWiki\\GlobalCssJs\\Hooks"
+			"class": "MediaWiki\\GlobalCssJs\\Hooks",
+			"services": [
+				"UserOptionsLookup",
+				"MainConfig",
+				"ConfigFactory",
+				"LinkRenderer"
+			]
 		}
 	},
 	"Hooks": {
